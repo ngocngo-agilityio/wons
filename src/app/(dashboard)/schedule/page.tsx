@@ -43,7 +43,6 @@ interface ISchedulePage {
 const SchedulePage = async ({ searchParams }: ISchedulePage) => (
   <main>
     <DashBoardLayout
-      isFilter
       title={PAGE_TITLES.TASK_PREVIEW}
       rightContent={<ScheduleListFilter />}
     >
