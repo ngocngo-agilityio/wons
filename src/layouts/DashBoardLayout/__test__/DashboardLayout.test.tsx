@@ -34,6 +34,7 @@ describe('DashboardLayout', () => {
   it('should match snapshot', () => {
     const { container } = renderComponent();
 
+    expect(container).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
 });
