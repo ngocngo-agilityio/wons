@@ -1,0 +1,454 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MobileSidebar is render correctly 1`] = `
+<div>
+  <div
+    data-overlay-container="true"
+  >
+    <script>
+      !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&false)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}else{c.add('light')}if(e==='light'||e==='dark'||!e)d.style.colorScheme=e||'light'}catch(e){}}()
+    </script>
+    <section
+      class="fixed top-0 duration-700 z-50 -left-60"
+      data-testid="mobile-sidebar-section"
+    >
+      <div
+        class="z-50 bg-white dark:bg-gray-400 px-6.25 py-7.5 flex flex-col transition-all max-w-60 min-h-screen"
+      >
+        <button
+          aria-label="Toggle sidebar"
+          class="z-0 group inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 !gap-0 transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-blue-500 border-transparent dark:bg-purple-600 text-white hover:bg-blue-100 text-md rounded-[10px] border-[1px] h-auto min-w-max absolute px-0.5 py-2 rounded-r-none -right-5 rotate-180"
+          type="button"
+        >
+          <div
+            class="flex items-center"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 320 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+              />
+            </svg>
+          </div>
+        </button>
+        <div
+          class="w-full flex flex-col items-center mb-12.5"
+        >
+          <img
+            alt="wons-logo"
+            data-nimg="1"
+            decoding="async"
+            fetchpriority="high"
+            height="26"
+            src="http://localhost/logo.svg"
+            style="color: transparent;"
+            width="42"
+          />
+          <h1
+            aria-level="1"
+            class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl font-medium text-[23px]"
+          >
+            Wons
+          </h1>
+        </div>
+        <div
+          class="flex flex-col justify-between min-h-[calc(100vh-170px)]"
+        >
+          <div
+            aria-label="Sidebar"
+            class="w-full relative flex flex-col gap-1 p-1"
+            data-slot="base"
+          >
+            <ul
+              aria-label="Sidebar"
+              class="w-full flex flex-col gap-0.5 outline-none"
+              data-slot="list"
+              id="react-aria-:r0:"
+              role="listbox"
+              tabindex="0"
+            >
+              <a
+                aria-label="Dashboard"
+                aria-labelledby="react-aria-:r4:"
+                class="flex group justify-between relative px-2 py-1.5 w-full h-full box-border rounded-small subpixel-antialiased cursor-pointer tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:dark:ring-offset-background-content1 data-[hover=true]:transition-colors data-[hover=true]:bg-default data-[hover=true]:text-default-foreground data-[selectable=true]:focus:bg-default data-[selectable=true]:focus:text-default-foreground dark:hover:bg-blue-800 mb-5 gap-4 items-center text-blue-800 dark:text-white opacity-80"
+                data-key="sb_dashboard"
+                href="/"
+                id="react-aria-:r0:-option-sb_dashboard"
+                role="option"
+                tabindex="-1"
+              >
+                <svg
+                  color="#06152b"
+                  height="20"
+                  opacity="0.4"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M2.54 0h3.38c1.41 0 2.54 1.15 2.54 2.561V5.97c0 1.42-1.13 2.56-2.54 2.56H2.54C1.14 8.53 0 7.39 0 5.97V2.561C0 1.15 1.14 0 2.54 0Zm0 11.47h3.38c1.41 0 2.54 1.14 2.54 2.56v3.41c0 1.41-1.13 2.56-2.54 2.56H2.54C1.14 20 0 18.85 0 17.44v-3.41c0-1.42 1.14-2.56 2.54-2.56ZM17.46 0h-3.38c-1.41 0-2.54 1.15-2.54 2.561V5.97c0 1.42 1.13 2.56 2.54 2.56h3.38c1.4 0 2.54-1.14 2.54-2.56V2.561C20 1.15 18.86 0 17.46 0Zm-3.38 11.47h3.38c1.4 0 2.54 1.14 2.54 2.56v3.41c0 1.41-1.14 2.56-2.54 2.56h-3.38c-1.41 0-2.54-1.15-2.54-2.56v-3.41c0-1.42 1.13-2.56 2.54-2.56Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <span
+                  class="flex-1 truncate text-xl font-medium"
+                  data-label="true"
+                  id="react-aria-:r4:"
+                >
+                  Dashboard
+                </span>
+              </a>
+              <a
+                aria-label="Customer"
+                aria-labelledby="react-aria-:r6:"
+                class="flex group justify-between relative px-2 py-1.5 w-full h-full box-border rounded-small subpixel-antialiased cursor-pointer tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:dark:ring-offset-background-content1 data-[hover=true]:transition-colors data-[hover=true]:bg-default data-[hover=true]:text-default-foreground data-[selectable=true]:focus:bg-default data-[selectable=true]:focus:text-default-foreground dark:hover:bg-blue-800 mb-5 gap-4 items-center text-blue-800 dark:text-white opacity-80"
+                data-key="sb_customer"
+                href="/customers"
+                id="react-aria-:r0:-option-sb_customer"
+                role="option"
+                tabindex="-1"
+              >
+                <svg
+                  class="w-5 h-5"
+                  color="#06152b"
+                  data-testid="customer-icon"
+                  fill="currentColor"
+                  height="1em"
+                  opacity="0.4"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  style="color: rgb(6, 21, 43);"
+                  viewBox="0 0 1024 1024"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M512 128c-212.1 0-384 171.9-384 384v360c0 13.3 10.7 24 24 24h184c35.3 0 64-28.7 64-64V624c0-35.3-28.7-64-64-64H200v-48c0-172.3 139.7-312 312-312s312 139.7 312 312v48H688c-35.3 0-64 28.7-64 64v208c0 35.3 28.7 64 64 64h184c13.3 0 24-10.7 24-24V512c0-212.1-171.9-384-384-384z"
+                  />
+                </svg>
+                <span
+                  class="flex-1 truncate text-xl font-medium"
+                  data-label="true"
+                  id="react-aria-:r6:"
+                >
+                  Customer
+                </span>
+              </a>
+              <a
+                aria-label="Product"
+                aria-labelledby="react-aria-:r8:"
+                class="flex group justify-between relative px-2 py-1.5 w-full h-full box-border rounded-small subpixel-antialiased cursor-pointer tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:dark:ring-offset-background-content1 data-[hover=true]:transition-colors data-[hover=true]:bg-default data-[hover=true]:text-default-foreground data-[selectable=true]:focus:bg-default data-[selectable=true]:focus:text-default-foreground dark:hover:bg-blue-800 mb-5 gap-4 items-center text-blue-800 dark:text-white opacity-80"
+                data-key="sb_product"
+                href="/products"
+                id="react-aria-:r0:-option-sb_product"
+                role="option"
+                tabindex="-1"
+              >
+                <svg
+                  class="w-5 h-5"
+                  color="#06152b"
+                  fill="currentColor"
+                  height="1em"
+                  opacity="0.4"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  style="color: rgb(6, 21, 43);"
+                  viewBox="0 0 512 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M326.3 218.8c0 20.5-16.7 37.2-37.2 37.2h-70.3v-74.4h70.3c20.5 0 37.2 16.7 37.2 37.2zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-128.1-37.2c0-47.9-38.9-86.8-86.8-86.8H169.2v248h49.6v-74.4h70.3c47.9 0 86.8-38.9 86.8-86.8z"
+                  />
+                </svg>
+                <span
+                  class="flex-1 truncate text-xl font-medium"
+                  data-label="true"
+                  id="react-aria-:r8:"
+                >
+                  Product
+                </span>
+              </a>
+              <a
+                aria-label="Invoice"
+                aria-labelledby="react-aria-:ra:"
+                class="flex group justify-between relative px-2 py-1.5 w-full h-full box-border rounded-small subpixel-antialiased cursor-pointer tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:dark:ring-offset-background-content1 data-[hover=true]:transition-colors data-[hover=true]:bg-default data-[hover=true]:text-default-foreground data-[selectable=true]:focus:bg-default data-[selectable=true]:focus:text-default-foreground dark:hover:bg-blue-800 mb-5 gap-4 items-center text-blue-800 dark:text-white opacity-80"
+                data-key="sb_invoice"
+                href="/invoices"
+                id="react-aria-:r0:-option-sb_invoice"
+                role="option"
+                tabindex="-1"
+              >
+                <svg
+                  color="#06152b"
+                  height="20"
+                  opacity="0.4"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M21.11 7.035a.775.775 0 0 1-.541.219c-.755 0-1.366.595-1.366 1.32 0 .73.604 1.322 1.352 1.33.42.004.779.29.779.7v2.545c0 2.143-1.785 3.88-3.987 3.88h-3.323a.614.614 0 0 1-.622-.605V14.28a.747.747 0 0 0-.765-.744.754.754 0 0 0-.765.744v2.144a.613.613 0 0 1-.62.606H4.236C2.044 17.03.25 15.293.25 13.149v-2.546c0-.41.358-.695.779-.7.748-.007 1.352-.6 1.352-1.33 0-.704-.592-1.24-1.366-1.24a.774.774 0 0 1-.54-.218.734.734 0 0 1-.225-.526v-2.57C.25 1.878 2.048.127 4.246.127h7.005c.343 0 .621.27.621.605v2.541a.76.76 0 0 0 .765.744.754.754 0 0 0 .765-.744V.734c0-.335.278-.606.622-.606h3.323c2.202 0 3.986 1.737 3.986 3.88V6.51a.734.734 0 0 1-.224.526Zm-8.473 4.576a.754.754 0 0 0 .765-.744v-3.97a.754.754 0 0 0-.765-.745.76.76 0 0 0-.764.745v3.97a.76.76 0 0 0 .764.744Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <span
+                  class="flex-1 truncate text-xl font-medium"
+                  data-label="true"
+                  id="react-aria-:ra:"
+                >
+                  Invoice
+                </span>
+              </a>
+              <a
+                aria-label="Schedule"
+                aria-labelledby="react-aria-:rc:"
+                class="flex group justify-between relative px-2 py-1.5 w-full h-full box-border rounded-small subpixel-antialiased cursor-pointer tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:dark:ring-offset-background-content1 data-[hover=true]:transition-colors data-[hover=true]:bg-default data-[hover=true]:text-default-foreground data-[selectable=true]:focus:bg-default data-[selectable=true]:focus:text-default-foreground dark:hover:bg-blue-800 mb-5 gap-4 items-center text-blue-800 dark:text-white opacity-80"
+                data-key="sb_schedule"
+                href="/schedule"
+                id="react-aria-:r0:-option-sb_schedule"
+                role="option"
+                tabindex="-1"
+              >
+                <svg
+                  color="#06152b"
+                  height="20"
+                  opacity="0.4"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M4.81 0h8.381C16.28 0 18 1.78 18 4.83v10.33c0 3.1-1.72 4.84-4.809 4.84H4.81C1.77 20 0 18.26 0 15.16V4.83C0 1.78 1.77 0 4.81 0Zm.27 4.66v-.01h2.989c.431 0 .781.35.781.779 0 .441-.35.791-.781.791H5.08a.78.78 0 0 1 0-1.56Zm0 6.08h7.84a.781.781 0 0 0 0-1.561H5.08a.781.781 0 0 0 0 1.561Zm0 4.57h7.84c.399-.04.7-.381.7-.78 0-.41-.301-.75-.7-.79H5.08a.795.795 0 0 0-.75 1.21c.16.25.45.4.75.36Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <span
+                  class="flex-1 truncate text-xl font-medium"
+                  data-label="true"
+                  id="react-aria-:rc:"
+                >
+                  Schedule
+                </span>
+              </a>
+              <a
+                aria-label="Calendar"
+                aria-labelledby="react-aria-:re:"
+                class="flex group justify-between relative px-2 py-1.5 w-full h-full box-border rounded-small subpixel-antialiased cursor-pointer tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:dark:ring-offset-background-content1 data-[hover=true]:transition-colors data-[hover=true]:bg-default data-[hover=true]:text-default-foreground data-[selectable=true]:focus:bg-default data-[selectable=true]:focus:text-default-foreground dark:hover:bg-blue-800 mb-5 gap-4 items-center text-blue-800 dark:text-white opacity-80"
+                data-key="sb_calendar"
+                href="/calendar"
+                id="react-aria-:r0:-option-sb_calendar"
+                role="option"
+                tabindex="-1"
+              >
+                <svg
+                  color="#06152b"
+                  height="20"
+                  opacity="0.4"
+                  viewBox="0 0 18 20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="m13.41.769.002.75c2.754.215 4.574 2.092 4.577 4.97L18 14.917c.004 3.138-1.968 5.069-5.128 5.074l-7.72.01c-3.14.004-5.137-1.973-5.141-5.12L0 6.553c-.004-2.898 1.752-4.77 4.506-5.023V.78a.746.746 0 0 1 .758-.77.747.747 0 0 1 .762.769v.7l5.865-.009v-.7A.747.747 0 0 1 12.65 0a.753.753 0 0 1 .76.769ZM1.522 6.862l14.949-.02v-.35c-.043-2.15-1.121-3.277-3.056-3.445v.77c0 .43-.334.77-.758.77a.752.752 0 0 1-.762-.768v-.81l-5.865.008v.81c0 .43-.324.77-.759.77a.752.752 0 0 1-.76-.769l-.002-.77c-1.925.193-2.99 1.325-2.987 3.493v.31Zm10.719 4.542v.011c.01.46.385.809.84.799a.823.823 0 0 0 .789-.852.83.83 0 0 0-.82-.797.828.828 0 0 0-.81.84Zm.815 4.488a.848.848 0 0 1-.821-.848.833.833 0 0 1 .809-.852h.01c.463 0 .84.379.84.848a.844.844 0 0 1-.838.852ZM8.172 11.42c.02.46.396.819.85.799a.823.823 0 0 0 .78-.86.816.816 0 0 0-.821-.8c-.454.02-.81.402-.809.861Zm.854 4.427a.823.823 0 0 1-.85-.798c0-.46.355-.84.809-.861a.815.815 0 0 1 .82.797c.02.461-.335.841-.779.862Zm-4.922-4.392c.02.46.396.82.85.799.445-.02.8-.4.778-.86a.815.815 0 0 0-.82-.8.852.852 0 0 0-.808.861Zm.854 4.397a.822.822 0 0 1-.85-.799.853.853 0 0 1 .809-.86.815.815 0 0 1 .82.799c.021.46-.333.84-.779.86Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <span
+                  class="flex-1 truncate text-xl font-medium"
+                  data-label="true"
+                  id="react-aria-:re:"
+                >
+                  Calendar
+                </span>
+              </a>
+              <a
+                aria-label="Messages"
+                aria-labelledby="react-aria-:rg:"
+                class="flex group justify-between relative px-2 py-1.5 w-full h-full box-border rounded-small subpixel-antialiased cursor-pointer tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:dark:ring-offset-background-content1 data-[hover=true]:transition-colors data-[hover=true]:bg-default data-[hover=true]:text-default-foreground data-[selectable=true]:focus:bg-default data-[selectable=true]:focus:text-default-foreground dark:hover:bg-blue-800 mb-5 gap-4 items-center text-blue-800 dark:text-white opacity-80"
+                data-key="sb_messages"
+                href="/messages"
+                id="react-aria-:r0:-option-sb_messages"
+                role="option"
+                tabindex="-1"
+              >
+                <svg
+                  color="#06152b"
+                  height="20"
+                  opacity="0.4"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M16.253 2.693a2.545 2.545 0 0 1 2.54-2.546c1.402 0 2.54 1.141 2.54 2.546a2.545 2.545 0 0 1-2.54 2.546 2.545 2.545 0 0 1-2.54-2.546Zm-4.058 10.934 3.046-3.94-.042.022a.792.792 0 0 0 .084-.792.777.777 0 0 0-.642-.465.81.81 0 0 0-.739.327l-2.55 3.307-2.92-2.303a.831.831 0 0 0-.602-.17.816.816 0 0 0-.527.317l-3.119 4.068-.064.095a.79.79 0 0 0 .221 1.003.884.884 0 0 0 .485.159.747.747 0 0 0 .622-.317l2.646-3.413 3.004 2.261.095.063a.788.788 0 0 0 1.002-.222ZM14.43 2.028a5.013 5.013 0 0 0-.064.793c0 2.377 1.919 4.298 4.28 4.298.264 0 .517-.03.78-.073v8.524c0 3.582-2.108 5.705-5.692 5.705h-7.79c-3.585 0-5.693-2.123-5.693-5.705V7.754c0-3.592 2.108-5.725 5.694-5.725h8.485Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <span
+                  class="flex-1 truncate text-xl font-medium"
+                  data-label="true"
+                  id="react-aria-:rg:"
+                >
+                  Messages
+                </span>
+                <div
+                  class="relative max-w-fit min-w-min inline-flex items-center justify-between box-border whitespace-nowrap px-1 h-7 text-small rounded-full text-default-foreground bg-red-500"
+                >
+                  <span
+                    class="flex-1 px-2 text-white font-medium text-xs"
+                  >
+                    49
+                  </span>
+                </div>
+              </a>
+              <a
+                aria-label="Notification"
+                aria-labelledby="react-aria-:ri:"
+                class="flex group justify-between relative px-2 py-1.5 w-full h-full box-border rounded-small subpixel-antialiased cursor-pointer tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:dark:ring-offset-background-content1 data-[hover=true]:transition-colors data-[hover=true]:bg-default data-[hover=true]:text-default-foreground data-[selectable=true]:focus:bg-default data-[selectable=true]:focus:text-default-foreground dark:hover:bg-blue-800 mb-5 gap-4 items-center text-blue-800 dark:text-white opacity-80"
+                data-key="sb_notification"
+                href="/notification"
+                id="react-aria-:r0:-option-sb_notification"
+                role="option"
+                tabindex="-1"
+              >
+                <svg
+                  color="#06152b"
+                  height="20"
+                  opacity="0.4"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M16.862 7.368c0 1.326.35 2.108 1.12 3.01.584.663.77 1.516.77 2.44 0 .924-.303 1.8-.91 2.512a4.779 4.779 0 0 1-3.057 1.493c-1.656.141-3.313.26-4.993.26-1.68 0-3.337-.07-4.993-.26a4.773 4.773 0 0 1-3.057-1.493 3.824 3.824 0 0 1-.91-2.512c0-.924.187-1.777.77-2.44.793-.902 1.12-1.684 1.12-3.01v-.45c0-1.777.442-2.939 1.353-4.076C5.428 1.183 7.598.188 9.745.188h.094c2.193 0 4.433 1.043 5.764 2.773.863 1.114 1.259 2.227 1.259 3.957v.45ZM6.706 19.267c0-.532.487-.776.938-.88.527-.112 3.738-.112 4.265 0 .45.104.938.348.938.88-.026.506-.323.955-.732 1.24a3.828 3.828 0 0 1-1.807.773 3.99 3.99 0 0 1-1.062 0 3.81 3.81 0 0 1-1.806-.774c-.411-.284-.708-.733-.734-1.24Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <span
+                  class="flex-1 truncate text-xl font-medium"
+                  data-label="true"
+                  id="react-aria-:ri:"
+                >
+                  Notification
+                </span>
+              </a>
+              <a
+                aria-label="Settings"
+                aria-labelledby="react-aria-:rk:"
+                class="flex group justify-between relative px-2 py-1.5 w-full h-full box-border rounded-small subpixel-antialiased cursor-pointer tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:dark:ring-offset-background-content1 data-[hover=true]:transition-colors data-[hover=true]:bg-default data-[hover=true]:text-default-foreground data-[selectable=true]:focus:bg-default data-[selectable=true]:focus:text-default-foreground dark:hover:bg-blue-800 mb-5 gap-4 items-center text-blue-800 dark:text-white opacity-80"
+                data-key="sb_settings"
+                href="/settings"
+                id="react-aria-:r0:-option-sb_settings"
+                role="option"
+                tabindex="-1"
+              >
+                <svg
+                  color="#06152b"
+                  height="20"
+                  opacity="0.4"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M19.65 12.464c.377.2.667.518.872.835.399.654.366 1.457-.021 2.165l-.755 1.268a2.244 2.244 0 0 1-1.906 1.098c-.377 0-.798-.105-1.142-.317-.28-.18-.604-.243-.948-.243-1.067 0-1.961.877-1.993 1.923 0 1.215-.992 2.165-2.23 2.165H10.06c-1.25 0-2.24-.95-2.24-2.165-.022-1.046-.916-1.923-1.983-1.923-.355 0-.678.064-.948.243a2.274 2.274 0 0 1-1.142.317 2.248 2.248 0 0 1-1.917-1.098l-.744-1.268c-.398-.687-.42-1.51-.021-2.165.172-.317.495-.634.862-.835.301-.148.495-.39.678-.676.539-.909.216-2.102-.7-2.641a2.162 2.162 0 0 1-.797-2.99l.722-1.246a2.237 2.237 0 0 1 3.038-.803c.937.507 2.154.17 2.704-.729.172-.295.27-.612.248-.93a1.888 1.888 0 0 1 .301-1.119A2.313 2.313 0 0 1 10.03.231h1.52c.796 0 1.518.444 1.917 1.099.194.317.323.708.29 1.12-.021.317.076.634.248.93.55.897 1.767 1.235 2.715.728a2.224 2.224 0 0 1 3.027.803l.722 1.247a2.144 2.144 0 0 1-.797 2.989c-.916.539-1.239 1.732-.69 2.64.173.286.367.53.668.677ZM7.745 10.805c0 1.659 1.368 2.98 3.06 2.98 1.69 0 3.027-1.321 3.027-2.98 0-1.658-1.336-2.99-3.028-2.99-1.691 0-3.06 1.332-3.06 2.99Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <span
+                  class="flex-1 truncate text-xl font-medium"
+                  data-label="true"
+                  id="react-aria-:rk:"
+                >
+                  Settings
+                </span>
+              </a>
+            </ul>
+          </div>
+          <section
+            class="flex flex-col gap-7.5"
+          >
+            <div
+              class="flex justify-between"
+            >
+              <div
+                class="flex items-center gap-2.5"
+              >
+                <div
+                  class="relative w-[45px] h-[43px]"
+                >
+                  <img
+                    alt="User Avatar"
+                    class="rounded-xl object-cover h-full"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="(min-width: 768px) 100px, 45px"
+                    src="http://localhost/_next/image?url=https%3A%2F%2Fas2.ftcdn.net%2Fv2%2Fjpg%2F03%2F31%2F69%2F91%2F1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fas2.ftcdn.net%2Fv2%2Fjpg%2F03%2F31%2F69%2F91%2F1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fas2.ftcdn.net%2Fv2%2Fjpg%2F03%2F31%2F69%2F91%2F1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fas2.ftcdn.net%2Fv2%2Fjpg%2F03%2F31%2F69%2F91%2F1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fas2.ftcdn.net%2Fv2%2Fjpg%2F03%2F31%2F69%2F91%2F1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fas2.ftcdn.net%2Fv2%2Fjpg%2F03%2F31%2F69%2F91%2F1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fas2.ftcdn.net%2Fv2%2Fjpg%2F03%2F31%2F69%2F91%2F1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fas2.ftcdn.net%2Fv2%2Fjpg%2F03%2F31%2F69%2F91%2F1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fas2.ftcdn.net%2Fv2%2Fjpg%2F03%2F31%2F69%2F91%2F1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fas2.ftcdn.net%2Fv2%2Fjpg%2F03%2F31%2F69%2F91%2F1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fas2.ftcdn.net%2Fv2%2Fjpg%2F03%2F31%2F69%2F91%2F1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fas2.ftcdn.net%2Fv2%2Fjpg%2F03%2F31%2F69%2F91%2F1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fas2.ftcdn.net%2Fv2%2Fjpg%2F03%2F31%2F69%2F91%2F1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fas2.ftcdn.net%2Fv2%2Fjpg%2F03%2F31%2F69%2F91%2F1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fas2.ftcdn.net%2Fv2%2Fjpg%2F03%2F31%2F69%2F91%2F1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fas2.ftcdn.net%2Fv2%2Fjpg%2F03%2F31%2F69%2F91%2F1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fas2.ftcdn.net%2Fv2%2Fjpg%2F03%2F31%2F69%2F91%2F1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+                  />
+                </div>
+                <div
+                  class="flex flex-col"
+                >
+                  <p
+                    class="font-dm-sans text-blue-800 dark:text-white text-md text-sm capitalize"
+                  >
+                    Super Admin
+                  </p>
+                  <p
+                    class="font-dm-sans text-blue-800 dark:text-white text-md text-xs opacity-60 capitalize"
+                  >
+                    Admin
+                  </p>
+                </div>
+              </div>
+              <button
+                aria-label="Sign out"
+                class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 !gap-0 transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover border-transparent text-blue-800 dark:text-white dark:hover:bg-gray-900 text-md rounded-[10px] border-[1px] min-w-max bg-transparent dark:bg-transparent hover:bg-transparent w-fit h-fit p-2"
+                type="button"
+              >
+                <div
+                  class="flex items-center"
+                >
+                  <svg
+                    class="text-blue-800/40 dark:text-white/50 w-5 h-5"
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M160 256a16 16 0 0 1 16-16h144V136c0-32-33.79-56-64-56H104a56.06 56.06 0 0 0-56 56v240a56.06 56.06 0 0 0 56 56h160a56.06 56.06 0 0 0 56-56V272H176a16 16 0 0 1-16-16zm299.31-11.31-80-80a16 16 0 0 0-22.62 22.62L409.37 240H320v32h89.37l-52.68 52.69a16 16 0 1 0 22.62 22.62l80-80a16 16 0 0 0 0-22.62z"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;

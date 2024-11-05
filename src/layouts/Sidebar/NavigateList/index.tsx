@@ -77,6 +77,7 @@ const NavigateList = ({ toggle = SidebarState.Open }: INavigateList) => {
           <AiFillCustomerService
             {...mappingIconColor(CUSTOMER)}
             className="w-5 h-5"
+            data-testid="customer-icon"
           />
         ),
       },
@@ -143,7 +144,7 @@ const NavigateList = ({ toggle = SidebarState.Open }: INavigateList) => {
       {MAPPING_SIDEBAR_CONTENTS.map(
         ({ id, href, startContent, endContent, content }) => (
           <ListboxItem
-            aria-label="list items"
+            aria-label={content}
             as={Link}
             key={id}
             href={href}
