@@ -9,3 +9,4 @@ export * from './task';
 export * from './event';
 export * from './images';
 export * from './toasts';
+export * from './avatars';
