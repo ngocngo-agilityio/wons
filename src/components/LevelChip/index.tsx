@@ -14,7 +14,7 @@ type TLevelCardProps = {
 const LevelChip = ({ level, size = 'md' }: TLevelCardProps): JSX.Element => {
   const chipClasses = {
     high: {
-      bg: 'bg-gray-500 dark:bg-gray-200',
+      bg: 'bg-gray-550 dark:bg-gray-200',
       color: 'text-white dark:text-gray-600',
     },
     medium: {
