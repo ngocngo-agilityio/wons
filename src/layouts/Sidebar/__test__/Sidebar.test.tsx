@@ -1,16 +1,10 @@
 // Components
 import Sidebar from '../index';
 
+import { useSession } from 'next-auth/react';
+
 jest.mock('next-auth/react', () => ({
-  useSession: jest.fn(() => ({
-    data: {
-      user: {
-        role: {
-          id: 3,
-        },
-      },
-    },
-  })),
+  useSession: jest.fn(),
 }));
 
 describe('Sidebar', () => {
@@ -20,10 +14,32 @@ describe('Sidebar', () => {
     jest.clearAllMocks();
   });
 
-  it('should match snapshot', () => {
+  it('renders correctly with valid session', () => {
+    (useSession as jest.Mock).mockReturnValue({
+      data: {
+        user: {
+          role: {
+            id: 3,
+          },
+        },
+      },
+      status: 'authenticated',
+    });
+
     const { container } = renderComponent();
 
     expect(container).toBeInTheDocument();
     expect(container).toMatchSnapshot();
+  });
+
+  it('renders correctly when session is undefined', () => {
+    (useSession as jest.Mock).mockReturnValue({
+      data: null,
+      status: 'unauthenticated',
+    });
+
+    const { container } = renderComponent();
+
+    expect(container).toBeInTheDocument();
   });
 });
