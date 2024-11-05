@@ -1,7 +1,10 @@
-import { screen, fireEvent, waitFor } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 
-// Constants
-import { ROUTES } from '@/constants';
+// Libraries
+import { usePathname } from 'next/navigation';
+
+// Themes
+import { colors } from '@/themes';
 
 // Components
 import NavigateList from '../index';
@@ -9,12 +12,13 @@ import NavigateList from '../index';
 // Types
 import { SidebarState } from '@/types';
 
-const mockUsePathname = jest.fn();
-
 jest.mock('next/navigation', () => ({
-  usePathname() {
-    return mockUsePathname();
-  },
+  ...jest.requireActual('next/navigation'),
+  usePathname: jest.fn(),
+}));
+
+jest.mock('next-themes', () => ({
+  useTheme: jest.fn(() => ({ theme: 'light' })),
 }));
 
 describe('NavigateList', () => {
@@ -32,21 +36,13 @@ describe('NavigateList', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('applies active styles when pathname equals href', async () => {
+  it('should apply active color when pathname matches url', () => {
+    (usePathname as jest.Mock).mockReturnValue('/customers');
+
     renderComponent();
 
-    const sidebarItem = screen.getByRole('option', {
-      name: /customer/i,
-    });
+    const customerIcon = screen.getByTestId('customer-icon');
 
-    fireEvent.click(sidebarItem);
-
-    mockUsePathname.mockImplementation(() => '/customers');
-
-    // const currentPathname = mockUsePathname();
-
-    const href = sidebarItem.getAttribute('href');
-
-    await waitFor(() => expect(href).toEqual(ROUTES.CUSTOMER));
+    expect(customerIcon).toHaveStyle({ color: colors.purple[600] });
   });
 });

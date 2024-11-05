@@ -75,7 +75,7 @@ exports[`MobileSidebar is render correctly 1`] = `
               tabindex="0"
             >
               <a
-                aria-label="list items"
+                aria-label="Dashboard"
                 aria-labelledby="react-aria-:r4:"
                 class="flex group justify-between relative px-2 py-1.5 w-full h-full box-border rounded-small subpixel-antialiased cursor-pointer tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:dark:ring-offset-background-content1 data-[hover=true]:transition-colors data-[hover=true]:bg-default data-[hover=true]:text-default-foreground data-[selectable=true]:focus:bg-default data-[selectable=true]:focus:text-default-foreground dark:hover:bg-blue-800 mb-5 gap-4 items-center text-blue-800 dark:text-white opacity-80"
                 data-key="sb_dashboard"
@@ -107,7 +107,7 @@ exports[`MobileSidebar is render correctly 1`] = `
                 </span>
               </a>
               <a
-                aria-label="list items"
+                aria-label="Customer"
                 aria-labelledby="react-aria-:r6:"
                 class="flex group justify-between relative px-2 py-1.5 w-full h-full box-border rounded-small subpixel-antialiased cursor-pointer tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:dark:ring-offset-background-content1 data-[hover=true]:transition-colors data-[hover=true]:bg-default data-[hover=true]:text-default-foreground data-[selectable=true]:focus:bg-default data-[selectable=true]:focus:text-default-foreground dark:hover:bg-blue-800 mb-5 gap-4 items-center text-blue-800 dark:text-white opacity-80"
                 data-key="sb_customer"
@@ -119,6 +119,7 @@ exports[`MobileSidebar is render correctly 1`] = `
                 <svg
                   class="w-5 h-5"
                   color="#06152b"
+                  data-testid="customer-icon"
                   fill="currentColor"
                   height="1em"
                   opacity="0.4"
@@ -142,7 +143,7 @@ exports[`MobileSidebar is render correctly 1`] = `
                 </span>
               </a>
               <a
-                aria-label="list items"
+                aria-label="Product"
                 aria-labelledby="react-aria-:r8:"
                 class="flex group justify-between relative px-2 py-1.5 w-full h-full box-border rounded-small subpixel-antialiased cursor-pointer tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:dark:ring-offset-background-content1 data-[hover=true]:transition-colors data-[hover=true]:bg-default data-[hover=true]:text-default-foreground data-[selectable=true]:focus:bg-default data-[selectable=true]:focus:text-default-foreground dark:hover:bg-blue-800 mb-5 gap-4 items-center text-blue-800 dark:text-white opacity-80"
                 data-key="sb_product"
@@ -177,7 +178,7 @@ exports[`MobileSidebar is render correctly 1`] = `
                 </span>
               </a>
               <a
-                aria-label="list items"
+                aria-label="Invoice"
                 aria-labelledby="react-aria-:ra:"
                 class="flex group justify-between relative px-2 py-1.5 w-full h-full box-border rounded-small subpixel-antialiased cursor-pointer tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:dark:ring-offset-background-content1 data-[hover=true]:transition-colors data-[hover=true]:bg-default data-[hover=true]:text-default-foreground data-[selectable=true]:focus:bg-default data-[selectable=true]:focus:text-default-foreground dark:hover:bg-blue-800 mb-5 gap-4 items-center text-blue-800 dark:text-white opacity-80"
                 data-key="sb_invoice"
@@ -209,7 +210,7 @@ exports[`MobileSidebar is render correctly 1`] = `
                 </span>
               </a>
               <a
-                aria-label="list items"
+                aria-label="Schedule"
                 aria-labelledby="react-aria-:rc:"
                 class="flex group justify-between relative px-2 py-1.5 w-full h-full box-border rounded-small subpixel-antialiased cursor-pointer tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:dark:ring-offset-background-content1 data-[hover=true]:transition-colors data-[hover=true]:bg-default data-[hover=true]:text-default-foreground data-[selectable=true]:focus:bg-default data-[selectable=true]:focus:text-default-foreground dark:hover:bg-blue-800 mb-5 gap-4 items-center text-blue-800 dark:text-white opacity-80"
                 data-key="sb_schedule"
@@ -241,7 +242,7 @@ exports[`MobileSidebar is render correctly 1`] = `
                 </span>
               </a>
               <a
-                aria-label="list items"
+                aria-label="Calendar"
                 aria-labelledby="react-aria-:re:"
                 class="flex group justify-between relative px-2 py-1.5 w-full h-full box-border rounded-small subpixel-antialiased cursor-pointer tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:dark:ring-offset-background-content1 data-[hover=true]:transition-colors data-[hover=true]:bg-default data-[hover=true]:text-default-foreground data-[selectable=true]:focus:bg-default data-[selectable=true]:focus:text-default-foreground dark:hover:bg-blue-800 mb-5 gap-4 items-center text-blue-800 dark:text-white opacity-80"
                 data-key="sb_calendar"
@@ -274,7 +275,7 @@ exports[`MobileSidebar is render correctly 1`] = `
                 </span>
               </a>
               <a
-                aria-label="list items"
+                aria-label="Messages"
                 aria-labelledby="react-aria-:rg:"
                 class="flex group justify-between relative px-2 py-1.5 w-full h-full box-border rounded-small subpixel-antialiased cursor-pointer tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:dark:ring-offset-background-content1 data-[hover=true]:transition-colors data-[hover=true]:bg-default data-[hover=true]:text-default-foreground data-[selectable=true]:focus:bg-default data-[selectable=true]:focus:text-default-foreground dark:hover:bg-blue-800 mb-5 gap-4 items-center text-blue-800 dark:text-white opacity-80"
                 data-key="sb_messages"
@@ -315,7 +316,7 @@ exports[`MobileSidebar is render correctly 1`] = `
                 </div>
               </a>
               <a
-                aria-label="list items"
+                aria-label="Notification"
                 aria-labelledby="react-aria-:ri:"
                 class="flex group justify-between relative px-2 py-1.5 w-full h-full box-border rounded-small subpixel-antialiased cursor-pointer tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:dark:ring-offset-background-content1 data-[hover=true]:transition-colors data-[hover=true]:bg-default data-[hover=true]:text-default-foreground data-[selectable=true]:focus:bg-default data-[selectable=true]:focus:text-default-foreground dark:hover:bg-blue-800 mb-5 gap-4 items-center text-blue-800 dark:text-white opacity-80"
                 data-key="sb_notification"
@@ -347,7 +348,7 @@ exports[`MobileSidebar is render correctly 1`] = `
                 </span>
               </a>
               <a
-                aria-label="list items"
+                aria-label="Settings"
                 aria-labelledby="react-aria-:rk:"
                 class="flex group justify-between relative px-2 py-1.5 w-full h-full box-border rounded-small subpixel-antialiased cursor-pointer tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[focus-visible=true]:dark:ring-offset-background-content1 data-[hover=true]:transition-colors data-[hover=true]:bg-default data-[hover=true]:text-default-foreground data-[selectable=true]:focus:bg-default data-[selectable=true]:focus:text-default-foreground dark:hover:bg-blue-800 mb-5 gap-4 items-center text-blue-800 dark:text-white opacity-80"
                 data-key="sb_settings"
