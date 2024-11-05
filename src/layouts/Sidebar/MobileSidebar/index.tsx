@@ -41,6 +41,7 @@ const MobileSidebar = ({
         'fixed top-0 duration-700 z-50',
         isToggleMobileSidebar ? 'left-0' : '-left-60',
       )}
+      data-testid="mobile-sidebar-section"
     >
       <div className="z-50 bg-white dark:bg-gray-400 px-6.25 py-7.5 flex flex-col transition-all max-w-60 min-h-screen">
         <SidebarHeader
