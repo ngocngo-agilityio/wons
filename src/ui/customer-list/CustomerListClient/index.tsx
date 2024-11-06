@@ -194,12 +194,13 @@ const CustomerListClient = ({
       />
 
       {/* Customer Form Edit Drawer */}
-      {(customerForm || toggleForm) && (
+      {customerForm && toggleForm && (
         <Drawer
           open={toggleForm}
           onClose={handleCloseFormDrawer}
           direction="right"
           size={isGreaterThanMd ? 450 : 375}
+          className="overflow-auto"
         >
           <div className="p-5 relative bg-white dark:bg-gray-400 h-full max-w-full">
             <Button
