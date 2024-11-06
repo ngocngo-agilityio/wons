@@ -402,7 +402,7 @@ exports[`dashboard page should match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-10 gap-6"
+        class="grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-10 gap-8"
       >
         <div
           class="xl:col-span-6"
