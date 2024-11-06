@@ -15,7 +15,7 @@ describe('CalendarModal Component', () => {
   const defaultProps = {
     title: 'Calendar Modal',
     eventTitle: 'Sample Event',
-    date: new Date(),
+    date: new Date('2024-11-06T10:30:00Z'),
     timeRange: { start: '10:00', end: '11:00' },
     time: undefined,
     isOpen: true,
@@ -70,6 +70,8 @@ describe('CalendarModal Component', () => {
 
   it('matches snapshot', () => {
     const { container } = setup();
+
+    expect(container).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
 });

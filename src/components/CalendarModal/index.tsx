@@ -1,14 +1,11 @@
 'use client';
 
-import { memo, useState } from 'react';
-import { CalendarDate } from '@internationalized/date';
+import { memo } from 'react';
+
+// Libraries
 import { IoClose } from 'react-icons/io5';
 import isEqual from 'react-fast-compare';
-
-import { Modal as NextModal, ModalContent, Calendar } from '@nextui-org/react';
-
-// Utils
-import { formatToCalendarDate } from '@/utils';
+import { Modal as NextModal, ModalContent } from '@nextui-org/react';
 
 // Models
 import { IEvent, TUser } from '@/models';
@@ -72,14 +69,6 @@ const CalendarModal = ({
   onClose,
   onSubmit,
 }: EventFormModalProps): JSX.Element => {
-  const [isOpenCalendar, setIsOpenCalendar] = useState(false);
-  const [calendarDate, setCalendarDate] = useState(formatToCalendarDate(date));
-
-  const handleDateChange = (newDate: CalendarDate) => {
-    setIsOpenCalendar(false);
-    setCalendarDate(newDate);
-  };
-
   const handleModalClose = () => {
     onClose();
   };
@@ -138,15 +127,6 @@ const CalendarModal = ({
       placement="center"
     >
       <ModalContent className="relative top-0 left-0 p-[30px_30px_40px] bg-white dark:bg-gray-800 rounded-[10px] shadow-[-14px_30px_20px_0px_rgba(0,0,0,0.05)] w-[467px]">
-        {isOpenCalendar && (
-          <Calendar
-            className="absolute top-[240px] left-[80px] z-10"
-            aria-label="Date"
-            value={calendarDate}
-            onChange={handleDateChange}
-          />
-        )}
-
         <Heading className="mt-[12px]" size="md" title={title} />
 
         <Button
