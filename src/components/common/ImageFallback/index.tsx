@@ -47,7 +47,7 @@ const ImageFallback = ({
       priority
       src={imgSrc}
       alt={alt}
-      placeholder={placeholder ? placeholder : undefined}
+      placeholder={placeholder ?? undefined}
       blurDataURL={blurDataURL}
       onLoad={handleLoad}
       onError={handleFallbackImage}

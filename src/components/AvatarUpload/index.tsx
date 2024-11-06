@@ -87,8 +87,8 @@ const AvatarUpload = ({
               height={128}
               className="rounded-full object-cover w-full h-full"
               data-testid="avatar-preview"
-              blurDataURL={undefined}
-              placeholder={undefined}
+              placeholder={null}
+              blurDataURL=""
             />
           ) : (
             <IoCamera
