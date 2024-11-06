@@ -4,9 +4,6 @@ import { useCallback, useState, useTransition } from 'react';
 import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css';
 
-// icons
-import { IoClose } from 'react-icons/io5';
-
 // Models
 import { ICustomer } from '@/models';
 
@@ -33,12 +30,22 @@ const CustomerDrawer = (): JSX.Element => {
   const { showToast } = useToast();
   const { isGreaterThanMd } = useBreakPoints();
 
+  const lockScroll = useCallback(() => {
+    document.body.style.overflow = 'hidden';
+  }, []);
+
+  const unlockScroll = useCallback(() => {
+    document.body.style.overflow = '';
+  }, []);
+
   const handleOpenDrawer = useCallback(() => {
     setIsDrawerOpen(true);
-  }, []);
+    lockScroll();
+  }, [lockScroll]);
 
   const handleCloseDrawer = () => {
     setIsDrawerOpen(false);
+    unlockScroll();
   };
 
   const handleFormSubmit = useCallback(
@@ -64,8 +71,9 @@ const CustomerDrawer = (): JSX.Element => {
 
       setIsDrawerOpen(false);
       setAvatarFile(undefined);
+      unlockScroll();
     },
-    [avatarFile, isAvatarDirty, showToast],
+    [avatarFile, isAvatarDirty, showToast, unlockScroll],
   );
 
   const handleAvatarChange = useCallback((avatarFile: File) => {
@@ -91,14 +99,9 @@ const CustomerDrawer = (): JSX.Element => {
           size={isGreaterThanMd ? 450 : 375}
         >
           <div className="p-8 bg-white dark:bg-gray-400 h-full max-w-full overflow-y-auto">
-            <Button
-              onClick={handleCloseDrawer}
-              className="absolute top-5 right-5 bg-pink-50 dark:bg-pink-600 text-pink-500 dark:text-pink-500 border-none rounded-full w-10 h-10 flex justify-center items-center cursor-pointer px-0"
-              data-testid="close-button"
-            >
-              <IoClose size={20} />
-            </Button>
             <CustomerForm
+              onCloseDrawer={handleCloseDrawer}
+              key={isDrawerOpen ? 'open' : 'closed'}
               isDisabledField={isPending}
               onSubmit={handleFormSubmit}
               onAvatarChange={handleAvatarChange}

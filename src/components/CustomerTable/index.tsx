@@ -73,7 +73,7 @@ const CustomersTable = ({
                 <Text
                   size="md"
                   text={`${firstName} ${lastName}`}
-                  className="text-nowrap"
+                  className="whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                 />
               </div>
             );
@@ -90,7 +90,11 @@ const CustomersTable = ({
             return (
               <div className="flex gap-2.5 items-center">
                 <Link href={`mailto:${email}`}>
-                  <Text size="md" text={email} className="text-nowrap" />
+                  <Text
+                    size="md"
+                    text={email}
+                    className="whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
+                  />
                 </Link>
               </div>
             );
@@ -109,7 +113,7 @@ const CustomersTable = ({
                 <Text
                   size="md"
                   text={formatPhoneNumberTyping(phone)}
-                  className="text-nowrap"
+                  className="whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                 />
               </Link>
             );

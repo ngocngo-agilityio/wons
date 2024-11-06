@@ -183,7 +183,7 @@ exports[`CustomersTable Component renders the table headers and customer data co
                     width="40"
                   />
                   <p
-                    class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                    class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                   >
                     John Doe
                   </p>
@@ -202,7 +202,7 @@ exports[`CustomersTable Component renders the table headers and customer data co
                     href="mailto:john.doe@example.com"
                   >
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     >
                       john.doe@example.com
                     </p>
@@ -219,7 +219,7 @@ exports[`CustomersTable Component renders the table headers and customer data co
                   href="tel:123-456-7890"
                 >
                   <p
-                    class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                    class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                   >
                     (123) 456-7890
                   </p>
@@ -276,7 +276,7 @@ exports[`CustomersTable Component renders the table headers and customer data co
                     width="40"
                   />
                   <p
-                    class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                    class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                   >
                     Jane Smith
                   </p>
@@ -295,7 +295,7 @@ exports[`CustomersTable Component renders the table headers and customer data co
                     href="mailto:jane.smith@example.com"
                   >
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     >
                       jane.smith@example.com
                     </p>
@@ -312,7 +312,7 @@ exports[`CustomersTable Component renders the table headers and customer data co
                   href="tel:987-654-3210"
                 >
                   <p
-                    class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                    class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                   >
                     (987) 654-3210
                   </p>
