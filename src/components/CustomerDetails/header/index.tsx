@@ -26,6 +26,8 @@ const CustomerDetailsHeader = ({
         src={avatar}
         alt={`${firstName}-${lastName}`}
         sizes="70px"
+        placeholder={null}
+        blurDataURL=""
         className="object-cover rounded-full h-full"
       />
     </div>

@@ -29,7 +29,7 @@ exports[`UserDetail render successful 1`] = `
               height="128"
               src="http://localhost/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=256&q=75"
               srcset="/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=256&q=75 2x"
-              style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+              style="color: transparent;"
               width="128"
             />
           </div>

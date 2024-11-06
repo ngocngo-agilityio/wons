@@ -221,7 +221,7 @@ const CustomerListClient = ({
       )}
 
       {/* Customer Details Drawer */}
-      {toggleDetails && (
+      {toggleDetails && customerDetails && (
         <Drawer
           open={toggleDetails}
           onClose={handleCloseDrawer}
