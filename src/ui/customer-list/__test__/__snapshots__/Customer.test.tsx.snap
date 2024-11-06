@@ -181,7 +181,7 @@ exports[`Customer List component should render all content with resolved data an
                     width="40"
                   />
                   <p
-                    class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                    class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                   >
                      
                   </p>
@@ -200,7 +200,7 @@ exports[`Customer List component should render all content with resolved data an
                     href="mailto:"
                   >
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     />
                   </a>
                 </div>
@@ -215,7 +215,7 @@ exports[`Customer List component should render all content with resolved data an
                   href="tel:"
                 >
                   <p
-                    class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                    class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                   />
                 </a>
               </td>
@@ -268,7 +268,7 @@ exports[`Customer List component should render all content with resolved data an
                     width="40"
                   />
                   <p
-                    class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                    class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                   >
                      
                   </p>
@@ -287,7 +287,7 @@ exports[`Customer List component should render all content with resolved data an
                     href="mailto:"
                   >
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     />
                   </a>
                 </div>
@@ -302,7 +302,7 @@ exports[`Customer List component should render all content with resolved data an
                   href="tel:"
                 >
                   <p
-                    class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                    class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                   />
                 </a>
               </td>
@@ -354,7 +354,7 @@ exports[`Customer List component should render all content with resolved data an
                     width="40"
                   />
                   <p
-                    class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                    class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                   >
                      
                   </p>
@@ -373,7 +373,7 @@ exports[`Customer List component should render all content with resolved data an
                     href="mailto:"
                   >
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     />
                   </a>
                 </div>
@@ -388,7 +388,7 @@ exports[`Customer List component should render all content with resolved data an
                   href="tel:"
                 >
                   <p
-                    class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                    class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                   />
                 </a>
               </td>

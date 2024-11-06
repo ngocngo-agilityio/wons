@@ -57,7 +57,8 @@ const DropdownActions = ({
         showArrow
         classNames={{
           base: 'bg-white dark:bg-[#1A202C] rounded-[15px]',
-          content: ' py-2 px-2 border border-transparent bg-dark-800 shadow-lg',
+          content:
+            'py-2 pb-0 px-2 border border-transparent bg-dark-800 shadow-lg',
         }}
       >
         <DropdownTrigger>
@@ -76,7 +77,7 @@ const DropdownActions = ({
           </Button>
         </DropdownTrigger>
         <DropdownMenu variant="flat" aria-label="Dropdown menu">
-          <DropdownSection>
+          <DropdownSection className="mb-[0.65rem]">
             <DropdownItem
               key="edit"
               className="bg-[#f5f5fc] dark:bg-[#2f3268] py-3 text-[#605cf8]"

@@ -26,6 +26,9 @@ import {
 // Models
 import { ICustomer } from '@/models';
 
+// icons
+import { IoClose } from 'react-icons/io5';
+
 const REQUIRED_FIELDS = [
   'firstName',
   'lastName',
@@ -44,6 +47,7 @@ export interface ICustomerFormProps {
   onAvatarChange: (file: File) => void;
   onSubmit: (data: ICustomer) => void;
   previewData?: ICustomer | null;
+  onCloseDrawer?: () => void;
 }
 
 const CustomerForm = ({
@@ -51,6 +55,7 @@ const CustomerForm = ({
   onAvatarChange,
   onSubmit,
   previewData = null,
+  onCloseDrawer,
 }: ICustomerFormProps) => {
   const {
     control,
@@ -112,8 +117,16 @@ const CustomerForm = ({
       className="w-full max-w-2xl mx-auto"
       onSubmit={handleSubmit(saveData)}
     >
-      <Heading title={previewData ? 'Update Customer' : 'Add Customer'} />
-
+      <div className="flex items-center justify-between">
+        <Heading title={previewData ? 'Update Customer' : 'Add Customer'} />
+        <Button
+          onClick={onCloseDrawer}
+          className="bg-pink-50 dark:bg-pink-600 text-pink-500 dark:text-pink-500 border-none rounded-full w-10 h-10 flex justify-center items-center cursor-pointer px-0 "
+          data-testid="close-button"
+        >
+          <IoClose size={20} />
+        </Button>
+      </div>
       <div className="flex justify-center mt-[21px]">
         <Controller
           control={control}

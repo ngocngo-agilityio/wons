@@ -74,7 +74,7 @@ const InvoiceDetailsBody = ({ data }: IInvoiceDetailsBody) => {
   );
 
   return (
-    <div className="base:px-2 md:pl-7.5 md:pr-5 pb-6.5 pt-10">
+    <div className="px-4 md:px-6 pb-6 pt-6">
       <Table
         isStripedRow
         variant="tertiary"

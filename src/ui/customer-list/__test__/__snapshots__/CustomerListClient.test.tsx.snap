@@ -203,7 +203,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                       width="40"
                     />
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     >
                       Arrora Gaur
                     </p>
@@ -222,7 +222,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                       href="mailto:arroragaur@gmail.com"
                     >
                       <p
-                        class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                       >
                         arroragaur@gmail.com
                       </p>
@@ -239,7 +239,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                     href="tel:(213) 555-5554"
                   >
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     >
                       (213) 555-5554
                     </p>
@@ -329,7 +329,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                       width="40"
                     />
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     >
                       Anne Jacob
                     </p>
@@ -348,7 +348,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                       href="mailto:annejacob@gmail.com"
                     >
                       <p
-                        class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                       >
                         annejacob@gmail.com
                       </p>
@@ -365,7 +365,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                     href="tel:(325) 987-6541"
                   >
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     >
                       (325) 987-6541
                     </p>
@@ -454,7 +454,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                       width="40"
                     />
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     >
                       John Doe
                     </p>
@@ -473,7 +473,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                       href="mailto:johndoe@example.com"
                     >
                       <p
-                        class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                       >
                         johndoe@example.com
                       </p>
@@ -490,7 +490,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                     href="tel:(555) 123-4567"
                   >
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     >
                       (555) 123-4567
                     </p>
@@ -580,7 +580,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                       width="40"
                     />
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     >
                       Jane Smith
                     </p>
@@ -599,7 +599,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                       href="mailto:janesmith@example.com"
                     >
                       <p
-                        class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                       >
                         janesmith@example.com
                       </p>
@@ -616,7 +616,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                     href="tel:(555) 765-4321"
                   >
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     >
                       (555) 765-4321
                     </p>
@@ -1118,7 +1118,7 @@ exports[`CustomerListClient section should match with snapshot 1`] = `
                       width="40"
                     />
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     >
                       Arrora Gaur
                     </p>
@@ -1137,7 +1137,7 @@ exports[`CustomerListClient section should match with snapshot 1`] = `
                       href="mailto:arroragaur@gmail.com"
                     >
                       <p
-                        class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                       >
                         arroragaur@gmail.com
                       </p>
@@ -1154,7 +1154,7 @@ exports[`CustomerListClient section should match with snapshot 1`] = `
                     href="tel:(213) 555-5554"
                   >
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     >
                       (213) 555-5554
                     </p>
@@ -1244,7 +1244,7 @@ exports[`CustomerListClient section should match with snapshot 1`] = `
                       width="40"
                     />
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     >
                       Anne Jacob
                     </p>
@@ -1263,7 +1263,7 @@ exports[`CustomerListClient section should match with snapshot 1`] = `
                       href="mailto:annejacob@gmail.com"
                     >
                       <p
-                        class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                       >
                         annejacob@gmail.com
                       </p>
@@ -1280,7 +1280,7 @@ exports[`CustomerListClient section should match with snapshot 1`] = `
                     href="tel:(325) 987-6541"
                   >
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     >
                       (325) 987-6541
                     </p>
@@ -1369,7 +1369,7 @@ exports[`CustomerListClient section should match with snapshot 1`] = `
                       width="40"
                     />
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     >
                       John Doe
                     </p>
@@ -1388,7 +1388,7 @@ exports[`CustomerListClient section should match with snapshot 1`] = `
                       href="mailto:johndoe@example.com"
                     >
                       <p
-                        class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                       >
                         johndoe@example.com
                       </p>
@@ -1405,7 +1405,7 @@ exports[`CustomerListClient section should match with snapshot 1`] = `
                     href="tel:(555) 123-4567"
                   >
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     >
                       (555) 123-4567
                     </p>
@@ -1495,7 +1495,7 @@ exports[`CustomerListClient section should match with snapshot 1`] = `
                       width="40"
                     />
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     >
                       Jane Smith
                     </p>
@@ -1514,7 +1514,7 @@ exports[`CustomerListClient section should match with snapshot 1`] = `
                       href="mailto:janesmith@example.com"
                     >
                       <p
-                        class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                       >
                         janesmith@example.com
                       </p>
@@ -1531,7 +1531,7 @@ exports[`CustomerListClient section should match with snapshot 1`] = `
                     href="tel:(555) 765-4321"
                   >
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     >
                       (555) 765-4321
                     </p>

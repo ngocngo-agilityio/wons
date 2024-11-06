@@ -6,12 +6,39 @@ exports[`CustomerForm renders CustomerForm with content 1`] = `
     class="w-full max-w-2xl mx-auto"
     data-testid="customer-form"
   >
-    <h2
-      aria-level="2"
-      class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl"
+    <div
+      class="flex items-center justify-between"
     >
-      Add Customer
-    </h2>
+      <h2
+        aria-level="2"
+        class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl"
+      >
+        Add Customer
+      </h2>
+      <button
+        class="z-0 group relative box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover border-transparent hover:bg-gray-200/50 dark:hover:bg-gray-900 pb-2.5 pt-[11px] text-md border-[1px] min-w-max bg-pink-50 dark:bg-pink-600 text-pink-500 dark:text-pink-500 border-none rounded-full w-10 h-10 flex justify-center items-center cursor-pointer px-0"
+        data-testid="close-button"
+        type="button"
+      >
+        <div
+          class="flex items-center"
+        >
+          <svg
+            fill="currentColor"
+            height="20"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m289.94 256 95-95A24 24 0 0 0 351 127l-95 95-95-95a24 24 0 0 0-34 34l95 95-95 95a24 24 0 1 0 34 34l95-95 95 95a24 24 0 0 0 34-34z"
+            />
+          </svg>
+        </div>
+      </button>
+    </div>
     <div
       class="flex justify-center mt-[21px]"
     >
