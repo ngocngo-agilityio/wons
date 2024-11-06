@@ -45,7 +45,7 @@ const SignUpForm = (): JSX.Element => {
         });
       }
 
-      const { email, password } = formData || {};
+      const { email, password } = formData;
       const loginRes = await authenticate({ identifier: email, password });
 
       if (loginRes) {

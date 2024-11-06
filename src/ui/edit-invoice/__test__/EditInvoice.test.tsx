@@ -1,17 +1,14 @@
-import { render, waitFor } from '@testing-library/react';
-import { FunctionComponent } from 'react';
-
-// components
-
-// apis
+// Api
 import { getCustomers, getInvoiceById, getProducts } from '@/api';
 
-// mocks
+// Mocks
 import {
   MOCK_PRODUCTS_WITH_STRAPI_MODEL,
   CUSTOMER_MOCK,
   MOCK_INVOICES_WITH_CUSTOMER,
 } from '@/mocks';
+
+// UI
 import { EditInvoice } from '@/ui';
 
 jest.mock('@/api', () => ({
@@ -51,11 +48,6 @@ afterAll(() => {
   global.fetch = originalFetch;
 });
 
-async function resolvedComponent<T>(Component: FunctionComponent<T>, props: T) {
-  const ComponentResolved = await Component(props);
-  return () => ComponentResolved;
-}
-
 describe('EditInvoice Component Test', () => {
   afterEach(() => {
     jest.clearAllMocks();
@@ -77,12 +69,37 @@ describe('EditInvoice Component Test', () => {
       },
     });
 
-    const EditInvoiceResolved = await resolvedComponent(EditInvoice, {
-      id: 1,
-    });
-    const { container } = render(<EditInvoiceResolved />);
+    const { container } = testLibJestUtils.render(
+      await EditInvoice({
+        id: 1,
+      }),
+    );
 
-    await waitFor(() => {
+    await testLibJestUtils.waitFor(() => {
+      expect(container).toMatchSnapshot();
+    });
+  });
+
+  it('match snapshot with data null', async () => {
+    (getProducts as jest.Mock).mockResolvedValue({
+      data: null,
+    });
+
+    (getCustomers as jest.Mock).mockResolvedValue({
+      data: null,
+    });
+
+    (getInvoiceById as jest.Mock).mockResolvedValue({
+      data: null,
+    });
+
+    const { container } = testLibJestUtils.render(
+      await EditInvoice({
+        id: 1,
+      }),
+    );
+
+    await testLibJestUtils.waitFor(() => {
       expect(container).toMatchSnapshot();
     });
   });

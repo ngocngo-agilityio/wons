@@ -8,7 +8,6 @@ exports[`RecentServicesSection should match snapshot 1`] = `
     <script>
       !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&false)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}else{c.add('light')}if(e==='light'||e==='dark'||!e)d.style.colorScheme=e||'light'}catch(e){}}()
     </script>
-     
     <section
       class="bg-white dark:bg-gray-400 base:p-6 md:p-7 rounded-10 "
     >
@@ -17,7 +16,7 @@ exports[`RecentServicesSection should match snapshot 1`] = `
       >
         <h2
           aria-level="2"
-          class="font-bold font-dm-sans text-blue-800 dark:text-white text-2xl text-blue-800/70 dark:text-white/70"
+          class="font-bold font-dm-sans text-blue-400 dark:text-gray-850 text-2xl font-medium"
         >
           Recent Orders
         </h2>
@@ -30,7 +29,8 @@ exports[`RecentServicesSection should match snapshot 1`] = `
         >
           <table
             aria-describedby=""
-            class="min-w-full h-auto table-auto w-full px-0 dark:[&>tbody>*:nth-child(odd)]:bg-gray-400 dark:[&>tbody>*:nth-child(even)]:bg-gray-600"
+            aria-label="Table"
+            class="min-w-full h-auto table-auto w-full px-0 dark:[&>tbody>*:nth-child(odd)]:bg-gray-400 [&>tbody>*:nth-child(even)]:bg-gray-50/50 dark:[&>tbody>*:nth-child(even)]:bg-gray-600"
             id="react-aria-:r0:"
             role="grid"
             tabindex="0"
@@ -44,16 +44,16 @@ exports[`RecentServicesSection should match snapshot 1`] = `
                 role="row"
               >
                 <th
-                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 bg-white dark:bg-gray-400 border-b-[1px] px-[21px]"
-                  data-key="Order ID0"
-                  id="react-aria-:r0:-OrderID0"
+                  aria-hidden="false"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
+                  data-key="id0"
+                  data-testid="sort-btn"
+                  id="react-aria-:r0:-id0"
                   role="columnheader"
                   tabindex="-1"
                 >
-                  <button
-                    class="z-0 group relative box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 h-10 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none bg-default data-[hover=true]:opacity-hover justify-start p-0 !bg-transparent dark:!bg-transparent hover:!bg-transparent dark:hover:!bg-transparent flex opacity-70 gap-2 items-center text-blue-800 dark:text-white font-normal text-[13px] leading-[17px]"
-                    type="button"
-                    value="id"
+                  <div
+                    class="flex items-center gap-2"
                   >
                     Order ID
                     <svg
@@ -69,19 +69,19 @@ exports[`RecentServicesSection should match snapshot 1`] = `
                         d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
                       />
                     </svg>
-                  </button>
+                  </div>
                 </th>
                 <th
-                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 bg-white dark:bg-gray-400 border-b-[1px] px-[21px]"
-                  data-key="Service Name1"
-                  id="react-aria-:r0:-ServiceName1"
+                  aria-hidden="false"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
+                  data-key="title1"
+                  data-testid="sort-btn"
+                  id="react-aria-:r0:-title1"
                   role="columnheader"
                   tabindex="-1"
                 >
-                  <button
-                    class="z-0 group relative box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 h-10 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none bg-default data-[hover=true]:opacity-hover justify-start p-0 !bg-transparent dark:!bg-transparent hover:!bg-transparent dark:hover:!bg-transparent flex opacity-70 gap-2 items-center text-blue-800 dark:text-white font-normal text-[13px] leading-[17px]"
-                    type="button"
-                    value="title"
+                  <div
+                    class="flex items-center gap-2"
                   >
                     Service Name
                     <svg
@@ -97,19 +97,19 @@ exports[`RecentServicesSection should match snapshot 1`] = `
                         d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
                       />
                     </svg>
-                  </button>
+                  </div>
                 </th>
                 <th
-                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 bg-white dark:bg-gray-400 border-b-[1px] px-[21px]"
-                  data-key="Price2"
-                  id="react-aria-:r0:-Price2"
+                  aria-hidden="false"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
+                  data-key="price2"
+                  data-testid="sort-btn"
+                  id="react-aria-:r0:-price2"
                   role="columnheader"
                   tabindex="-1"
                 >
-                  <button
-                    class="z-0 group relative box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 h-10 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none bg-default data-[hover=true]:opacity-hover justify-start p-0 !bg-transparent dark:!bg-transparent hover:!bg-transparent dark:hover:!bg-transparent flex opacity-70 gap-2 items-center text-blue-800 dark:text-white font-normal text-[13px] leading-[17px]"
-                    type="button"
-                    value="price"
+                  <div
+                    class="flex items-center gap-2"
                   >
                     Price
                     <svg
@@ -125,19 +125,19 @@ exports[`RecentServicesSection should match snapshot 1`] = `
                         d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
                       />
                     </svg>
-                  </button>
+                  </div>
                 </th>
                 <th
-                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 bg-white dark:bg-gray-400 border-b-[1px] px-[21px]"
-                  data-key="Total Order3"
-                  id="react-aria-:r0:-TotalOrder3"
+                  aria-hidden="false"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
+                  data-key="quantity3"
+                  data-testid="sort-btn"
+                  id="react-aria-:r0:-quantity3"
                   role="columnheader"
                   tabindex="-1"
                 >
-                  <button
-                    class="z-0 group relative box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 h-10 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none bg-default data-[hover=true]:opacity-hover justify-start p-0 !bg-transparent dark:!bg-transparent hover:!bg-transparent dark:hover:!bg-transparent flex opacity-70 gap-2 items-center text-blue-800 dark:text-white font-normal text-[13px] leading-[17px]"
-                    type="button"
-                    value="quantity"
+                  <div
+                    class="flex items-center gap-2"
                   >
                     Total Order
                     <svg
@@ -153,21 +153,26 @@ exports[`RecentServicesSection should match snapshot 1`] = `
                         d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
                       />
                     </svg>
-                  </button>
+                  </div>
                 </th>
                 <th
-                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 bg-white dark:bg-gray-400 border-b-[1px] px-[21px]"
-                  data-key="Total Amount4"
-                  id="react-aria-:r0:-TotalAmount4"
+                  aria-hidden="false"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
+                  data-key="undefined4"
+                  data-testid="sort-btn"
+                  id="react-aria-:r0:-undefined4"
                   role="columnheader"
                   tabindex="-1"
                 >
-                  <button
-                    class="z-0 group relative box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 h-10 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none bg-default data-[hover=true]:opacity-hover justify-start p-0 !bg-transparent dark:!bg-transparent hover:!bg-transparent dark:hover:!bg-transparent flex opacity-70 gap-2 items-center text-blue-800 dark:text-white font-normal text-[13px] leading-[17px]"
-                    type="button"
+                  <div
+                    class="flex items-center gap-2"
                   >
-                    Total Amount
-                  </button>
+                    <p
+                      class="font-dm-sans text-blue-800 dark:text-white text-md text-right block w-full"
+                    >
+                      Total Amount
+                    </p>
+                  </div>
                 </th>
               </tr>
               <tr
@@ -181,7 +186,7 @@ exports[`RecentServicesSection should match snapshot 1`] = `
               role="rowgroup"
             >
               <tr
-                aria-labelledby="react-aria-:r0:-1-OrderID0"
+                aria-labelledby="react-aria-:r0:-1-id0"
                 class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 rounded-[5px]"
                 data-first="true"
                 data-id="1"
@@ -190,64 +195,62 @@ exports[`RecentServicesSection should match snapshot 1`] = `
                 tabindex="-1"
               >
                 <td
-                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-s-lg last:before:rounded-e-lg text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
-                  data-key="table-cell-0"
-                  id="react-aria-:r0:-1-OrderID0"
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="id-table-cell-0"
+                  id="react-aria-:r0:-1-id0"
                   role="rowheader"
                   tabindex="-1"
                 >
                   <p
-                    class="font-dm-sans text-blue-800 dark:text-white text-sm "
+                    class="font-dm-sans text-blue-800 dark:text-white text-sm"
                   >
                     #1
                   </p>
                 </td>
                 <td
-                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-s-lg last:before:rounded-e-lg text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
-                  data-key="table-cell-1"
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="title-table-cell-1"
                   role="gridcell"
                   tabindex="-1"
                 >
                   <div
-                    class="flex gap-2 items-center"
+                    class="flex gap-2 items-center h-[40px]"
                   >
-                    <div
-                      class="relative w-8 h-8"
-                    >
-                      <img
-                        alt="ui-ux-design"
-                        class="rounded-5"
-                        data-nimg="fill"
-                        decoding="async"
-                        loading="lazy"
-                        sizes="100vw"
-                        src="http://localhost/_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=3840&q=75"
-                        srcset="/_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=3840&q=75 3840w"
-                        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
-                      />
-                    </div>
+                    <img
+                      alt="ui-ux-design"
+                      class="rounded-5 h-full object-cover"
+                      data-nimg="1"
+                      decoding="async"
+                      fetchpriority="high"
+                      height="40"
+                      sizes="40px"
+                      src="http://localhost/_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=3840&q=75"
+                      srcset="/_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=3840&q=75 3840w"
+                      style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+                      width="40"
+                    />
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-sm "
+                      class="font-dm-sans text-blue-800 dark:text-white text-sm"
                     >
                       Macbook
                     </p>
                   </div>
                 </td>
                 <td
-                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-s-lg last:before:rounded-e-lg text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
-                  data-key="table-cell-2"
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="price-table-cell-2"
                   role="gridcell"
                   tabindex="-1"
                 >
                   <p
-                    class="font-dm-sans text-blue-800 dark:text-white text-sm "
+                    class="font-dm-sans text-blue-800 dark:text-white text-sm"
                   >
                     $3,443
                   </p>
                 </td>
                 <td
-                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-s-lg last:before:rounded-e-lg text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
-                  data-key="table-cell-3"
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="quantity-table-cell-3"
                   role="gridcell"
                   tabindex="-1"
                 >
@@ -262,20 +265,20 @@ exports[`RecentServicesSection should match snapshot 1`] = `
                   </div>
                 </td>
                 <td
-                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-s-lg last:before:rounded-e-lg text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
-                  data-key="table-cell-4"
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-4"
                   role="gridcell"
                   tabindex="-1"
                 >
                   <p
-                    class="font-dm-sans text-blue-800 dark:text-white text-sm "
+                    class="font-dm-sans text-blue-800 dark:text-white text-sm text-right"
                   >
                     $10,329
                   </p>
                 </td>
               </tr>
               <tr
-                aria-labelledby="react-aria-:r0:-2-OrderID0"
+                aria-labelledby="react-aria-:r0:-2-id0"
                 class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 rounded-[5px]"
                 data-id="2"
                 data-key="2"
@@ -285,64 +288,62 @@ exports[`RecentServicesSection should match snapshot 1`] = `
                 tabindex="-1"
               >
                 <td
-                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-s-lg last:before:rounded-e-lg text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
-                  data-key="table-cell-0"
-                  id="react-aria-:r0:-2-OrderID0"
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="id-table-cell-0"
+                  id="react-aria-:r0:-2-id0"
                   role="rowheader"
                   tabindex="-1"
                 >
                   <p
-                    class="font-dm-sans text-blue-800 dark:text-white text-sm "
+                    class="font-dm-sans text-blue-800 dark:text-white text-sm"
                   >
                     #2
                   </p>
                 </td>
                 <td
-                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-s-lg last:before:rounded-e-lg text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
-                  data-key="table-cell-1"
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="title-table-cell-1"
                   role="gridcell"
                   tabindex="-1"
                 >
                   <div
-                    class="flex gap-2 items-center"
+                    class="flex gap-2 items-center h-[40px]"
                   >
-                    <div
-                      class="relative w-8 h-8"
-                    >
-                      <img
-                        alt="ui-ux-design"
-                        class="rounded-5"
-                        data-nimg="fill"
-                        decoding="async"
-                        loading="lazy"
-                        sizes="100vw"
-                        src="http://localhost/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=3840&q=75"
-                        srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=3840&q=75 3840w"
-                        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
-                      />
-                    </div>
+                    <img
+                      alt="ui-ux-design"
+                      class="rounded-5 h-full object-cover"
+                      data-nimg="1"
+                      decoding="async"
+                      fetchpriority="high"
+                      height="40"
+                      sizes="40px"
+                      src="http://localhost/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=3840&q=75"
+                      srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=3840&q=75 3840w"
+                      style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+                      width="40"
+                    />
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-sm "
+                      class="font-dm-sans text-blue-800 dark:text-white text-sm"
                     >
                       I phone
                     </p>
                   </div>
                 </td>
                 <td
-                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-s-lg last:before:rounded-e-lg text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
-                  data-key="table-cell-2"
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="price-table-cell-2"
                   role="gridcell"
                   tabindex="-1"
                 >
                   <p
-                    class="font-dm-sans text-blue-800 dark:text-white text-sm "
+                    class="font-dm-sans text-blue-800 dark:text-white text-sm"
                   >
                     $4,543
                   </p>
                 </td>
                 <td
-                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-s-lg last:before:rounded-e-lg text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
-                  data-key="table-cell-3"
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="quantity-table-cell-3"
                   role="gridcell"
                   tabindex="-1"
                 >
@@ -357,13 +358,13 @@ exports[`RecentServicesSection should match snapshot 1`] = `
                   </div>
                 </td>
                 <td
-                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-s-lg last:before:rounded-e-lg text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
-                  data-key="table-cell-4"
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-4"
                   role="gridcell"
                   tabindex="-1"
                 >
                   <p
-                    class="font-dm-sans text-blue-800 dark:text-white text-sm "
+                    class="font-dm-sans text-blue-800 dark:text-white text-sm text-right"
                   >
                     $4,543
                   </p>
@@ -374,9 +375,1309 @@ exports[`RecentServicesSection should match snapshot 1`] = `
         </div>
       </div>
     </section>
+  </div>
+</div>
+`;
+
+exports[`RecentServicesSection should match snapshot with error 1`] = `
+<div>
+  <div
+    data-overlay-container="true"
+  >
+    <script>
+      !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&false)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}else{c.add('light')}if(e==='light'||e==='dark'||!e)d.style.colorScheme=e||'light'}catch(e){}}()
+    </script>
     <div
-      class="fixed top-4 right-4"
-    />
+      class="text-center h-screen flex justify-center items-center flex-col max-h-[400px]"
+    >
+      <h2
+        aria-level="2"
+        class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-4xl"
+      >
+        Something went wrong!
+      </h2>
+      <p
+        class="font-dm-sans text-blue-800 dark:text-white text-md"
+      >
+        Something went wrong.
+      </p>
+      <button
+        class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-blue-500 border-transparent dark:bg-purple-600 text-white hover:bg-blue-100 px-5 pb-2.5 pt-[11px] text-md rounded-[10px] border-[1px] h-auto min-w-max mt-8"
+        type="button"
+      >
+        <div
+          class="flex items-center"
+        >
+          Try again
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`RecentServicesSection should match snapshot with search params is undefined 1`] = `
+<div>
+  <div
+    data-overlay-container="true"
+  >
+    <script>
+      !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&false)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}else{c.add('light')}if(e==='light'||e==='dark'||!e)d.style.colorScheme=e||'light'}catch(e){}}()
+    </script>
+    <section
+      class="bg-white dark:bg-gray-400 base:p-6 md:p-7 rounded-10 "
+    >
+      <div
+        class="flex justify-between mb-2"
+      >
+        <h2
+          aria-level="2"
+          class="font-bold font-dm-sans text-blue-400 dark:text-gray-850 text-2xl font-medium"
+        >
+          Recent Orders
+        </h2>
+      </div>
+      <div
+        class="flex-col relative gap-4 w-full grid"
+      >
+        <div
+          class="z-0 flex flex-col relative justify-between gap-4 bg-content1 overflow-auto rounded-large w-full p-0 shadow-none dark:bg-gray-400"
+        >
+          <table
+            aria-describedby=""
+            aria-label="Table"
+            class="min-w-full h-auto table-auto w-full px-0 dark:[&>tbody>*:nth-child(odd)]:bg-gray-400 [&>tbody>*:nth-child(even)]:bg-gray-50/50 dark:[&>tbody>*:nth-child(even)]:bg-gray-600"
+            id="react-aria-:r2:"
+            role="grid"
+            tabindex="0"
+          >
+            <thead
+              class="[&>tr]:first:rounded-lg"
+              role="rowgroup"
+            >
+              <tr
+                class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2"
+                role="row"
+              >
+                <th
+                  aria-hidden="false"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
+                  data-key="id0"
+                  data-testid="sort-btn"
+                  id="react-aria-:r2:-id0"
+                  role="columnheader"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  >
+                    Order ID
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                      />
+                    </svg>
+                  </div>
+                </th>
+                <th
+                  aria-hidden="false"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
+                  data-key="title1"
+                  data-testid="sort-btn"
+                  id="react-aria-:r2:-title1"
+                  role="columnheader"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  >
+                    Service Name
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                      />
+                    </svg>
+                  </div>
+                </th>
+                <th
+                  aria-hidden="false"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
+                  data-key="price2"
+                  data-testid="sort-btn"
+                  id="react-aria-:r2:-price2"
+                  role="columnheader"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  >
+                    Price
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                      />
+                    </svg>
+                  </div>
+                </th>
+                <th
+                  aria-hidden="false"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
+                  data-key="quantity3"
+                  data-testid="sort-btn"
+                  id="react-aria-:r2:-quantity3"
+                  role="columnheader"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  >
+                    Total Order
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                      />
+                    </svg>
+                  </div>
+                </th>
+                <th
+                  aria-hidden="false"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
+                  data-key="undefined4"
+                  data-testid="sort-btn"
+                  id="react-aria-:r2:-undefined4"
+                  role="columnheader"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  >
+                    <p
+                      class="font-dm-sans text-blue-800 dark:text-white text-md text-right block w-full"
+                    >
+                      Total Amount
+                    </p>
+                  </div>
+                </th>
+              </tr>
+              <tr
+                aria-hidden="true"
+                class="w-px h-px block"
+                style="margin-left: 0.25rem; margin-top: 0.25rem;"
+                tabindex="-1"
+              />
+            </thead>
+            <tbody
+              role="rowgroup"
+            >
+              <tr
+                aria-labelledby="react-aria-:r2:-1-id0"
+                class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 rounded-[5px]"
+                data-first="true"
+                data-id="1"
+                data-key="1"
+                role="row"
+                tabindex="-1"
+              >
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="id-table-cell-0"
+                  id="react-aria-:r2:-1-id0"
+                  role="rowheader"
+                  tabindex="-1"
+                >
+                  <p
+                    class="font-dm-sans text-blue-800 dark:text-white text-sm"
+                  >
+                    #1
+                  </p>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="title-table-cell-1"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex gap-2 items-center h-[40px]"
+                  >
+                    <img
+                      alt="ui-ux-design"
+                      class="rounded-5 h-full object-cover"
+                      data-nimg="1"
+                      decoding="async"
+                      fetchpriority="high"
+                      height="40"
+                      sizes="40px"
+                      src="http://localhost/_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=3840&q=75"
+                      srcset="/_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=3840&q=75 3840w"
+                      style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+                      width="40"
+                    />
+                    <p
+                      class="font-dm-sans text-blue-800 dark:text-white text-sm"
+                    >
+                      Macbook
+                    </p>
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="price-table-cell-2"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <p
+                    class="font-dm-sans text-blue-800 dark:text-white text-sm"
+                  >
+                    $3,443
+                  </p>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="quantity-table-cell-3"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="relative min-w-min inline-flex items-center justify-between box-border whitespace-nowrap px-1 text-small text-default-foreground w-[61px] max-w-[61px] h-7.5 max-h-7.5 rounded-[8px] bg-blue-500/20 dark:bg-purple-600/20"
+                  >
+                    <span
+                      class="flex-1 font-normal px-2 text-center text-sm text-blue-500 dark:text-white"
+                    >
+                      3
+                    </span>
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-4"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <p
+                    class="font-dm-sans text-blue-800 dark:text-white text-sm text-right"
+                  >
+                    $10,329
+                  </p>
+                </td>
+              </tr>
+              <tr
+                aria-labelledby="react-aria-:r2:-2-id0"
+                class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 rounded-[5px]"
+                data-id="2"
+                data-key="2"
+                data-last="true"
+                data-odd="true"
+                role="row"
+                tabindex="-1"
+              >
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="id-table-cell-0"
+                  id="react-aria-:r2:-2-id0"
+                  role="rowheader"
+                  tabindex="-1"
+                >
+                  <p
+                    class="font-dm-sans text-blue-800 dark:text-white text-sm"
+                  >
+                    #2
+                  </p>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="title-table-cell-1"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex gap-2 items-center h-[40px]"
+                  >
+                    <img
+                      alt="ui-ux-design"
+                      class="rounded-5 h-full object-cover"
+                      data-nimg="1"
+                      decoding="async"
+                      fetchpriority="high"
+                      height="40"
+                      sizes="40px"
+                      src="http://localhost/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=3840&q=75"
+                      srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=3840&q=75 3840w"
+                      style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+                      width="40"
+                    />
+                    <p
+                      class="font-dm-sans text-blue-800 dark:text-white text-sm"
+                    >
+                      I phone
+                    </p>
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="price-table-cell-2"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <p
+                    class="font-dm-sans text-blue-800 dark:text-white text-sm"
+                  >
+                    $4,543
+                  </p>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="quantity-table-cell-3"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="relative min-w-min inline-flex items-center justify-between box-border whitespace-nowrap px-1 text-small text-default-foreground w-[61px] max-w-[61px] h-7.5 max-h-7.5 rounded-[8px] bg-blue-500/20 dark:bg-purple-600/20"
+                  >
+                    <span
+                      class="flex-1 font-normal px-2 text-center text-sm text-blue-500 dark:text-white"
+                    >
+                      1
+                    </span>
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-4"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <p
+                    class="font-dm-sans text-blue-800 dark:text-white text-sm text-right"
+                  >
+                    $4,543
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;
+
+exports[`RecentServicesSection should match snapshot with sortBy is not title 1`] = `
+<div>
+  <div
+    data-overlay-container="true"
+  >
+    <script>
+      !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&false)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}else{c.add('light')}if(e==='light'||e==='dark'||!e)d.style.colorScheme=e||'light'}catch(e){}}()
+    </script>
+    <section
+      class="bg-white dark:bg-gray-400 base:p-6 md:p-7 rounded-10 "
+    >
+      <div
+        class="flex justify-between mb-2"
+      >
+        <h2
+          aria-level="2"
+          class="font-bold font-dm-sans text-blue-400 dark:text-gray-850 text-2xl font-medium"
+        >
+          Recent Orders
+        </h2>
+      </div>
+      <div
+        class="flex-col relative gap-4 w-full grid"
+      >
+        <div
+          class="z-0 flex flex-col relative justify-between gap-4 bg-content1 overflow-auto rounded-large w-full p-0 shadow-none dark:bg-gray-400"
+        >
+          <table
+            aria-describedby=""
+            aria-label="Table"
+            class="min-w-full h-auto table-auto w-full px-0 dark:[&>tbody>*:nth-child(odd)]:bg-gray-400 [&>tbody>*:nth-child(even)]:bg-gray-50/50 dark:[&>tbody>*:nth-child(even)]:bg-gray-600"
+            id="react-aria-:r4:"
+            role="grid"
+            tabindex="0"
+          >
+            <thead
+              class="[&>tr]:first:rounded-lg"
+              role="rowgroup"
+            >
+              <tr
+                class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2"
+                role="row"
+              >
+                <th
+                  aria-hidden="false"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
+                  data-key="id0"
+                  data-testid="sort-btn"
+                  id="react-aria-:r4:-id0"
+                  role="columnheader"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  >
+                    Order ID
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                      />
+                    </svg>
+                  </div>
+                </th>
+                <th
+                  aria-hidden="false"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
+                  data-key="title1"
+                  data-testid="sort-btn"
+                  id="react-aria-:r4:-title1"
+                  role="columnheader"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  >
+                    Service Name
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                      />
+                    </svg>
+                  </div>
+                </th>
+                <th
+                  aria-hidden="false"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
+                  data-key="price2"
+                  data-testid="sort-btn"
+                  id="react-aria-:r4:-price2"
+                  role="columnheader"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  >
+                    Price
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                      />
+                    </svg>
+                  </div>
+                </th>
+                <th
+                  aria-hidden="false"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
+                  data-key="quantity3"
+                  data-testid="sort-btn"
+                  id="react-aria-:r4:-quantity3"
+                  role="columnheader"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  >
+                    Total Order
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                      />
+                    </svg>
+                  </div>
+                </th>
+                <th
+                  aria-hidden="false"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
+                  data-key="undefined4"
+                  data-testid="sort-btn"
+                  id="react-aria-:r4:-undefined4"
+                  role="columnheader"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  >
+                    <p
+                      class="font-dm-sans text-blue-800 dark:text-white text-md text-right block w-full"
+                    >
+                      Total Amount
+                    </p>
+                  </div>
+                </th>
+              </tr>
+              <tr
+                aria-hidden="true"
+                class="w-px h-px block"
+                style="margin-left: 0.25rem; margin-top: 0.25rem;"
+                tabindex="-1"
+              />
+            </thead>
+            <tbody
+              role="rowgroup"
+            >
+              <tr
+                aria-labelledby="react-aria-:r4:-1-id0"
+                class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 rounded-[5px]"
+                data-first="true"
+                data-id="1"
+                data-key="1"
+                role="row"
+                tabindex="-1"
+              >
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="id-table-cell-0"
+                  id="react-aria-:r4:-1-id0"
+                  role="rowheader"
+                  tabindex="-1"
+                >
+                  <p
+                    class="font-dm-sans text-blue-800 dark:text-white text-sm"
+                  >
+                    #1
+                  </p>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="title-table-cell-1"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex gap-2 items-center h-[40px]"
+                  >
+                    <img
+                      alt="ui-ux-design"
+                      class="rounded-5 h-full object-cover"
+                      data-nimg="1"
+                      decoding="async"
+                      fetchpriority="high"
+                      height="40"
+                      sizes="40px"
+                      src="http://localhost/_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=3840&q=75"
+                      srcset="/_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimages.rawpixel.com%2Fimage_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg&w=3840&q=75 3840w"
+                      style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+                      width="40"
+                    />
+                    <p
+                      class="font-dm-sans text-blue-800 dark:text-white text-sm"
+                    >
+                      Macbook
+                    </p>
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="price-table-cell-2"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <p
+                    class="font-dm-sans text-blue-800 dark:text-white text-sm"
+                  >
+                    $3,443
+                  </p>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="quantity-table-cell-3"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="relative min-w-min inline-flex items-center justify-between box-border whitespace-nowrap px-1 text-small text-default-foreground w-[61px] max-w-[61px] h-7.5 max-h-7.5 rounded-[8px] bg-blue-500/20 dark:bg-purple-600/20"
+                  >
+                    <span
+                      class="flex-1 font-normal px-2 text-center text-sm text-blue-500 dark:text-white"
+                    >
+                      3
+                    </span>
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-4"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <p
+                    class="font-dm-sans text-blue-800 dark:text-white text-sm text-right"
+                  >
+                    $10,329
+                  </p>
+                </td>
+              </tr>
+              <tr
+                aria-labelledby="react-aria-:r4:-2-id0"
+                class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 rounded-[5px]"
+                data-id="2"
+                data-key="2"
+                data-last="true"
+                data-odd="true"
+                role="row"
+                tabindex="-1"
+              >
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="id-table-cell-0"
+                  id="react-aria-:r4:-2-id0"
+                  role="rowheader"
+                  tabindex="-1"
+                >
+                  <p
+                    class="font-dm-sans text-blue-800 dark:text-white text-sm"
+                  >
+                    #2
+                  </p>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="title-table-cell-1"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex gap-2 items-center h-[40px]"
+                  >
+                    <img
+                      alt="ui-ux-design"
+                      class="rounded-5 h-full object-cover"
+                      data-nimg="1"
+                      decoding="async"
+                      fetchpriority="high"
+                      height="40"
+                      sizes="40px"
+                      src="http://localhost/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=3840&q=75"
+                      srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=3840&q=75 3840w"
+                      style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+                      width="40"
+                    />
+                    <p
+                      class="font-dm-sans text-blue-800 dark:text-white text-sm"
+                    >
+                      I phone
+                    </p>
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="price-table-cell-2"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <p
+                    class="font-dm-sans text-blue-800 dark:text-white text-sm"
+                  >
+                    $4,543
+                  </p>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="quantity-table-cell-3"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="relative min-w-min inline-flex items-center justify-between box-border whitespace-nowrap px-1 text-small text-default-foreground w-[61px] max-w-[61px] h-7.5 max-h-7.5 rounded-[8px] bg-blue-500/20 dark:bg-purple-600/20"
+                  >
+                    <span
+                      class="flex-1 font-normal px-2 text-center text-sm text-blue-500 dark:text-white"
+                    >
+                      1
+                    </span>
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-4"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <p
+                    class="font-dm-sans text-blue-800 dark:text-white text-sm text-right"
+                  >
+                    $4,543
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;
+
+exports[`skeleton should match snapshot 1`] = `
+<div>
+  <div
+    data-overlay-container="true"
+  >
+    <script>
+      !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&false)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}else{c.add('light')}if(e==='light'||e==='dark'||!e)d.style.colorScheme=e||'light'}catch(e){}}()
+    </script>
+    <section
+      class="bg-white dark:bg-gray-400 base:p-6 md:p-7 rounded-10 "
+    >
+      <div
+        class="flex justify-between mb-2"
+      >
+        <h2
+          aria-level="2"
+          class="font-bold font-dm-sans text-blue-400 dark:text-gray-850 text-2xl font-medium"
+        >
+          Recent Orders
+        </h2>
+      </div>
+      <div
+        class="flex-col relative gap-4 w-full grid"
+      >
+        <div
+          class="z-0 flex flex-col relative justify-between gap-4 bg-content1 overflow-auto rounded-large w-full p-0 shadow-none dark:bg-gray-400"
+        >
+          <table
+            aria-describedby=""
+            aria-label="Table"
+            class="min-w-full h-auto table-auto w-full px-0 dark:[&>tbody>*:nth-child(odd)]:bg-gray-400 [&>tbody>*:nth-child(even)]:bg-gray-50/50 dark:[&>tbody>*:nth-child(even)]:bg-gray-600"
+            id="react-aria-:r6:"
+            role="grid"
+            tabindex="0"
+          >
+            <thead
+              class="[&>tr]:first:rounded-lg"
+              role="rowgroup"
+            >
+              <tr
+                class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2"
+                role="row"
+              >
+                <th
+                  aria-hidden="false"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
+                  data-key="undefined0"
+                  data-testid="sort-btn"
+                  id="react-aria-:r6:-undefined0"
+                  role="columnheader"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  >
+                    Order ID
+                  </div>
+                </th>
+                <th
+                  aria-hidden="false"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
+                  data-key="undefined1"
+                  data-testid="sort-btn"
+                  id="react-aria-:r6:-undefined1"
+                  role="columnheader"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  >
+                    Service Name
+                  </div>
+                </th>
+                <th
+                  aria-hidden="false"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
+                  data-key="undefined2"
+                  data-testid="sort-btn"
+                  id="react-aria-:r6:-undefined2"
+                  role="columnheader"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  >
+                    Price
+                  </div>
+                </th>
+                <th
+                  aria-hidden="false"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
+                  data-key="undefined3"
+                  data-testid="sort-btn"
+                  id="react-aria-:r6:-undefined3"
+                  role="columnheader"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  >
+                    Total Order
+                  </div>
+                </th>
+                <th
+                  aria-hidden="false"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
+                  data-key="undefined4"
+                  data-testid="sort-btn"
+                  id="react-aria-:r6:-undefined4"
+                  role="columnheader"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  >
+                    Total Amount
+                  </div>
+                </th>
+              </tr>
+              <tr
+                aria-hidden="true"
+                class="w-px h-px block"
+                style="margin-left: 0.25rem; margin-top: 0.25rem;"
+                tabindex="-1"
+              />
+            </thead>
+            <tbody
+              role="rowgroup"
+            >
+              <tr
+                aria-labelledby="react-aria-:r6:-1-undefined0"
+                class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 rounded-[5px]"
+                data-first="true"
+                data-id="1"
+                data-key="1"
+                role="row"
+                tabindex="-1"
+              >
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-0"
+                  id="react-aria-:r6:-1-undefined0"
+                  role="rowheader"
+                  tabindex="-1"
+                >
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-3/5 rounded-lg"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-1"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex gap-2 items-center"
+                  >
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-8 rounded-lg"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-3/5 rounded-lg"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-2"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-3/5 rounded-lg"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-3"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-3/5 rounded-lg"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-4"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-3/5 rounded-lg"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
+                </td>
+              </tr>
+              <tr
+                aria-labelledby="react-aria-:r6:-2-undefined0"
+                class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 rounded-[5px]"
+                data-id="2"
+                data-key="2"
+                data-middle="true"
+                data-odd="true"
+                role="row"
+                tabindex="-1"
+              >
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-0"
+                  id="react-aria-:r6:-2-undefined0"
+                  role="rowheader"
+                  tabindex="-1"
+                >
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-3/5 rounded-lg"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-1"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex gap-2 items-center"
+                  >
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-8 rounded-lg"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-3/5 rounded-lg"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-2"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-3/5 rounded-lg"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-3"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-3/5 rounded-lg"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-4"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-3/5 rounded-lg"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
+                </td>
+              </tr>
+              <tr
+                aria-labelledby="react-aria-:r6:-3-undefined0"
+                class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 rounded-[5px]"
+                data-id="3"
+                data-key="3"
+                data-middle="true"
+                role="row"
+                tabindex="-1"
+              >
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-0"
+                  id="react-aria-:r6:-3-undefined0"
+                  role="rowheader"
+                  tabindex="-1"
+                >
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-3/5 rounded-lg"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-1"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex gap-2 items-center"
+                  >
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-8 rounded-lg"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-3/5 rounded-lg"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-2"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-3/5 rounded-lg"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-3"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-3/5 rounded-lg"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-4"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-3/5 rounded-lg"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
+                </td>
+              </tr>
+              <tr
+                aria-labelledby="react-aria-:r6:-4-undefined0"
+                class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 rounded-[5px]"
+                data-id="4"
+                data-key="4"
+                data-last="true"
+                data-odd="true"
+                role="row"
+                tabindex="-1"
+              >
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-0"
+                  id="react-aria-:r6:-4-undefined0"
+                  role="rowheader"
+                  tabindex="-1"
+                >
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-3/5 rounded-lg"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-1"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex gap-2 items-center"
+                  >
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-8 rounded-lg"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-3/5 rounded-lg"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-2"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-3/5 rounded-lg"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-3"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-3/5 rounded-lg"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-data-[odd=true]:before:bg-default-100 group-data-[odd=true]:before:opacity-100 group-data-[odd=true]:before:-z-10 first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start group-data-[odd=true]:data-[selected=true]:before:bg-default/60 first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                  data-key="undefined-table-cell-4"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 h-8 w-3/5 rounded-lg"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
   </div>
 </div>
 `;

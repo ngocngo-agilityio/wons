@@ -41,6 +41,7 @@ const config: Config = {
     '<rootDir>/src/constants/*',
     '<rootDir>/src/contexts/',
     '<rootDir>/src/themes/*',
+    '<rootDir>/src/ui/calendar/CalendarClient/index.tsx',
   ],
 };
 

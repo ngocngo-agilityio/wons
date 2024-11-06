@@ -20,6 +20,7 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
           <table
             aria-describedby=""
             aria-label="Table"
+            aria-multiselectable="true"
             class="min-w-full h-auto table-auto w-full border-separate border-spacing-x-0 border-spacing-y-[10px] bg-gray-50 dark:bg-gray-600"
             id="react-aria-:r0:"
             role="grid"
@@ -30,15 +31,60 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
               role="rowgroup"
             >
               <tr
-                class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2"
+                class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 cursor-default"
                 role="row"
               >
                 <th
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny font-semibold rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none bg-gray-50 dark:bg-gray-600 px-[17px]"
+                  data-key="row-header-column-tjima90t7ui"
+                  id="react-aria-:r0:-row-header-column-tjima90t7ui"
+                  role="columnheader"
+                  tabindex="-1"
+                >
+                  <label
+                    aria-label="Select All"
+                    class="group relative max-w-fit inline-flex items-center justify-start cursor-pointer tap-highlight-transparent p-2 -m-2"
+                  >
+                    <span
+                      style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+                    >
+                      <input
+                        aria-label="Select All"
+                        aria-labelledby=":r2:"
+                        type="checkbox"
+                        value=""
+                      />
+                    </span>
+                    <span
+                      aria-hidden="true"
+                      class="relative inline-flex items-center justify-center flex-shrink-0 overflow-hidden before:content-[''] before:absolute before:inset-0 before:border-solid before:box-border after:content-[''] after:absolute after:inset-0 after:scale-50 after:opacity-0 after:origin-center group-data-[selected=true]:after:scale-100 group-data-[selected=true]:after:opacity-100 group-data-[hover=true]:before:bg-default-100 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background after:text-primary-foreground text-primary-foreground rtl:ml-2 rtl:mr-[unset] before:transition-colors group-data-[pressed=true]:scale-95 transition-transform after:transition-transform-opacity after:!ease-linear after:!duration-200 motion-reduce:transition-none after:bg-blue-500 dark:after:bg-purple-600 after:hover:bg-blue-500 dark:after:hover:bg-purple-600 before:border-blue-800/30 dark:before:border-white/30 rounded-sm before:rounded-sm after:rounded-sm w-5 h-5 mx-4 before:border"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="z-10 opacity-0 group-data-[selected=true]:opacity-100 w-4 h-3 transition-opacity motion-reduce:transition-none text-white dark:text-gray-400"
+                        role="presentation"
+                        viewBox="0 0 17 18"
+                      >
+                        <polyline
+                          fill="none"
+                          points="1 9 7 14 15 4"
+                          stroke="currentColor"
+                          stroke-dasharray="22"
+                          stroke-dashoffset="66"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </th>
+                <th
                   aria-hidden="false"
                   class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-gray-50 dark:bg-gray-600 px-[17px]"
-                  data-key="row-header-column-tjima90t7ui"
+                  data-key="invoiceId0"
                   data-testid="sort-btn"
-                  id="react-aria-:r0:-row-header-column-tjima90t7ui"
+                  id="react-aria-:r0:-invoiceId0"
                   role="columnheader"
                   tabindex="-1"
                 >
@@ -186,6 +232,51 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
                     class="flex items-center gap-2"
                   />
                 </th>
+                <th
+                  aria-hidden="false"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-gray-50 dark:bg-gray-600 px-[17px]"
+                  data-key="undefined6"
+                  data-testid="sort-btn"
+                  id="react-aria-:r0:-undefined6"
+                  role="columnheader"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  >
+                    <button
+                      class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 pointer-events-none !gap-0 transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover border-transparent text-blue-800 dark:text-white opacity-50 cursor-not-allowed px-5 pb-2.5 pt-[11px] text-md rounded-[10px] border-[1px] min-w-max w-20 h-10 bg-transparent dark:bg-transparent hover:bg-transparent dark:hover:bg-transparent"
+                      data-disabled="true"
+                      data-testid="multiple-delete-btn"
+                      disabled=""
+                      type="button"
+                    >
+                      <div
+                        class="flex items-center"
+                      >
+                        <svg
+                          aria-label="Delete Button"
+                          class="text-blue-800/30 dark:text-white/40"
+                          fill="currentColor"
+                          height="20"
+                          stroke="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 24 24"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          />
+                          <path
+                            d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                </th>
               </tr>
               <tr
                 aria-hidden="true"
@@ -199,7 +290,8 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
             >
               <tr
                 aria-labelledby="react-aria-:r0:-4-invoiceId0"
-                class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 bg-white dark:bg-gray-400"
+                aria-selected="false"
+                class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 cursor-default bg-white dark:bg-gray-400"
                 data-first="true"
                 data-id="4"
                 data-key="4"
@@ -207,7 +299,53 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
                 tabindex="-1"
               >
                 <td
-                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-tl-lg group-data-[first=true]:rtl:first:before:rounded-tr-lg group-data-[first=true]:rtl:first:before:rounded-tl-[unset] group-data-[first=true]:last:before:rounded-tr-lg group-data-[first=true]:rtl:last:before:rounded-tl-lg group-data-[first=true]:rtl:last:before:rounded-tr-[unset] group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bl-lg group-data-[last=true]:rtl:first:before:rounded-br-lg group-data-[last=true]:rtl:first:before:rounded-bl-[unset] group-data-[last=true]:last:before:rounded-br-lg group-data-[last=true]:rtl:last:before:rounded-bl-lg group-data-[last=true]:rtl:last:before:rounded-br-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  data-key="4header"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <label
+                    aria-label="Select"
+                    aria-labelledby="react-aria-:r3: react-aria-:r0:-4-invoiceId0"
+                    class="group relative max-w-fit inline-flex items-center justify-start cursor-pointer tap-highlight-transparent p-2 -m-2"
+                    id="react-aria-:r3:"
+                  >
+                    <span
+                      style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+                    >
+                      <input
+                        aria-label="Select"
+                        aria-labelledby="react-aria-:r3: react-aria-:r0:-4-invoiceId0"
+                        type="checkbox"
+                        value=""
+                      />
+                    </span>
+                    <span
+                      aria-hidden="true"
+                      class="relative inline-flex items-center justify-center flex-shrink-0 overflow-hidden before:content-[''] before:absolute before:inset-0 before:border-solid before:box-border after:content-[''] after:absolute after:inset-0 after:scale-50 after:opacity-0 after:origin-center group-data-[selected=true]:after:scale-100 group-data-[selected=true]:after:opacity-100 group-data-[hover=true]:before:bg-default-100 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background after:text-primary-foreground text-primary-foreground rtl:ml-2 rtl:mr-[unset] before:transition-colors group-data-[pressed=true]:scale-95 transition-transform after:transition-transform-opacity after:!ease-linear after:!duration-200 motion-reduce:transition-none after:bg-blue-500 dark:after:bg-purple-600 after:hover:bg-blue-500 dark:after:hover:bg-purple-600 before:border-blue-800/30 dark:before:border-white/30 rounded-sm before:rounded-sm after:rounded-sm w-5 h-5 mx-4 before:border"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="z-10 opacity-0 group-data-[selected=true]:opacity-100 w-4 h-3 transition-opacity motion-reduce:transition-none text-white dark:text-gray-400"
+                        role="presentation"
+                        viewBox="0 0 17 18"
+                      >
+                        <polyline
+                          fill="none"
+                          points="1 9 7 14 15 4"
+                          stroke="currentColor"
+                          stroke-dasharray="22"
+                          stroke-dashoffset="66"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-tl-lg group-data-[first=true]:rtl:first:before:rounded-tr-lg group-data-[first=true]:rtl:first:before:rounded-tl-[unset] group-data-[first=true]:last:before:rounded-tr-lg group-data-[first=true]:rtl:last:before:rounded-tl-lg group-data-[first=true]:rtl:last:before:rounded-tr-[unset] group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bl-lg group-data-[last=true]:rtl:first:before:rounded-br-lg group-data-[last=true]:rtl:first:before:rounded-bl-[unset] group-data-[last=true]:last:before:rounded-br-lg group-data-[last=true]:rtl:last:before:rounded-bl-lg group-data-[last=true]:rtl:last:before:rounded-br-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
                   data-key="invoiceId-table-cell-0"
                   id="react-aria-:r0:-4-invoiceId0"
                   role="rowheader"
@@ -220,7 +358,7 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
                   </p>
                 </td>
                 <td
-                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-tl-lg group-data-[first=true]:rtl:first:before:rounded-tr-lg group-data-[first=true]:rtl:first:before:rounded-tl-[unset] group-data-[first=true]:last:before:rounded-tr-lg group-data-[first=true]:rtl:last:before:rounded-tl-lg group-data-[first=true]:rtl:last:before:rounded-tr-[unset] group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bl-lg group-data-[last=true]:rtl:first:before:rounded-br-lg group-data-[last=true]:rtl:first:before:rounded-bl-[unset] group-data-[last=true]:last:before:rounded-br-lg group-data-[last=true]:rtl:last:before:rounded-bl-lg group-data-[last=true]:rtl:last:before:rounded-br-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
                   data-key="customer.fullName-table-cell-1"
                   role="gridcell"
                   tabindex="-1"
@@ -249,7 +387,7 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
                   </div>
                 </td>
                 <td
-                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-tl-lg group-data-[first=true]:rtl:first:before:rounded-tr-lg group-data-[first=true]:rtl:first:before:rounded-tl-[unset] group-data-[first=true]:last:before:rounded-tr-lg group-data-[first=true]:rtl:last:before:rounded-tl-lg group-data-[first=true]:rtl:last:before:rounded-tr-[unset] group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bl-lg group-data-[last=true]:rtl:first:before:rounded-br-lg group-data-[last=true]:rtl:first:before:rounded-bl-[unset] group-data-[last=true]:last:before:rounded-br-lg group-data-[last=true]:rtl:last:before:rounded-bl-lg group-data-[last=true]:rtl:last:before:rounded-br-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
                   data-key="email-table-cell-2"
                   role="gridcell"
                   tabindex="-1"
@@ -284,7 +422,7 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
                   </div>
                 </td>
                 <td
-                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-tl-lg group-data-[first=true]:rtl:first:before:rounded-tr-lg group-data-[first=true]:rtl:first:before:rounded-tl-[unset] group-data-[first=true]:last:before:rounded-tr-lg group-data-[first=true]:rtl:last:before:rounded-tl-lg group-data-[first=true]:rtl:last:before:rounded-tr-[unset] group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bl-lg group-data-[last=true]:rtl:first:before:rounded-br-lg group-data-[last=true]:rtl:first:before:rounded-bl-[unset] group-data-[last=true]:last:before:rounded-br-lg group-data-[last=true]:rtl:last:before:rounded-bl-lg group-data-[last=true]:rtl:last:before:rounded-br-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
                   data-key="date-table-cell-3"
                   role="gridcell"
                   tabindex="-1"
@@ -315,7 +453,7 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
                   </div>
                 </td>
                 <td
-                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-tl-lg group-data-[first=true]:rtl:first:before:rounded-tr-lg group-data-[first=true]:rtl:first:before:rounded-tl-[unset] group-data-[first=true]:last:before:rounded-tr-lg group-data-[first=true]:rtl:last:before:rounded-tl-lg group-data-[first=true]:rtl:last:before:rounded-tr-[unset] group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bl-lg group-data-[last=true]:rtl:first:before:rounded-br-lg group-data-[last=true]:rtl:first:before:rounded-bl-[unset] group-data-[last=true]:last:before:rounded-br-lg group-data-[last=true]:rtl:last:before:rounded-bl-lg group-data-[last=true]:rtl:last:before:rounded-br-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
                   data-key="status-table-cell-4"
                   role="gridcell"
                   tabindex="-1"
@@ -331,7 +469,7 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
                   </div>
                 </td>
                 <td
-                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-tl-lg group-data-[first=true]:rtl:first:before:rounded-tr-lg group-data-[first=true]:rtl:first:before:rounded-tl-[unset] group-data-[first=true]:last:before:rounded-tr-lg group-data-[first=true]:rtl:last:before:rounded-tl-lg group-data-[first=true]:rtl:last:before:rounded-tr-[unset] group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bl-lg group-data-[last=true]:rtl:first:before:rounded-br-lg group-data-[last=true]:rtl:first:before:rounded-bl-[unset] group-data-[last=true]:last:before:rounded-br-lg group-data-[last=true]:rtl:last:before:rounded-bl-lg group-data-[last=true]:rtl:last:before:rounded-br-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
                   data-key="undefined-table-cell-5"
                   role="gridcell"
                   tabindex="-1"
@@ -362,10 +500,44 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
                     </div>
                   </button>
                 </td>
+                <td
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-tl-lg group-data-[first=true]:rtl:first:before:rounded-tr-lg group-data-[first=true]:rtl:first:before:rounded-tl-[unset] group-data-[first=true]:last:before:rounded-tr-lg group-data-[first=true]:rtl:last:before:rounded-tl-lg group-data-[first=true]:rtl:last:before:rounded-tr-[unset] group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bl-lg group-data-[last=true]:rtl:first:before:rounded-br-lg group-data-[last=true]:rtl:first:before:rounded-bl-[unset] group-data-[last=true]:last:before:rounded-br-lg group-data-[last=true]:rtl:last:before:rounded-bl-lg group-data-[last=true]:rtl:last:before:rounded-br-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  data-key="undefined-table-cell-6"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    aria-label="More actions for item"
+                    class="group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none text-default-foreground data-[hover=true]:opacity-hover z-10 aria-expanded:scale-[0.97] aria-expanded:opacity-70 subpixel-antialiased border-none bg-bone undefined"
+                    data-slot="trigger"
+                    data-testid="actions-btn"
+                    id="react-aria-:r5:"
+                    type="button"
+                  >
+                    <svg
+                      aria-label="Dropdown Actions"
+                      class="text-blue-800/30 dark:text-white/30"
+                      fill="currentColor"
+                      height="14"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="14"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+                      />
+                    </svg>
+                  </button>
+                </td>
               </tr>
               <tr
                 aria-labelledby="react-aria-:r0:-2-invoiceId0"
-                class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 bg-white dark:bg-gray-400"
+                aria-selected="false"
+                class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 cursor-default bg-white dark:bg-gray-400"
                 data-id="2"
                 data-key="2"
                 data-last="true"
@@ -374,7 +546,53 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
                 tabindex="-1"
               >
                 <td
-                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-tl-lg group-data-[first=true]:rtl:first:before:rounded-tr-lg group-data-[first=true]:rtl:first:before:rounded-tl-[unset] group-data-[first=true]:last:before:rounded-tr-lg group-data-[first=true]:rtl:last:before:rounded-tl-lg group-data-[first=true]:rtl:last:before:rounded-tr-[unset] group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bl-lg group-data-[last=true]:rtl:first:before:rounded-br-lg group-data-[last=true]:rtl:first:before:rounded-bl-[unset] group-data-[last=true]:last:before:rounded-br-lg group-data-[last=true]:rtl:last:before:rounded-bl-lg group-data-[last=true]:rtl:last:before:rounded-br-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  data-key="2header"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <label
+                    aria-label="Select"
+                    aria-labelledby="react-aria-:rb: react-aria-:r0:-2-invoiceId0"
+                    class="group relative max-w-fit inline-flex items-center justify-start cursor-pointer tap-highlight-transparent p-2 -m-2"
+                    id="react-aria-:rb:"
+                  >
+                    <span
+                      style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+                    >
+                      <input
+                        aria-label="Select"
+                        aria-labelledby="react-aria-:rb: react-aria-:r0:-2-invoiceId0"
+                        type="checkbox"
+                        value=""
+                      />
+                    </span>
+                    <span
+                      aria-hidden="true"
+                      class="relative inline-flex items-center justify-center flex-shrink-0 overflow-hidden before:content-[''] before:absolute before:inset-0 before:border-solid before:box-border after:content-[''] after:absolute after:inset-0 after:scale-50 after:opacity-0 after:origin-center group-data-[selected=true]:after:scale-100 group-data-[selected=true]:after:opacity-100 group-data-[hover=true]:before:bg-default-100 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background after:text-primary-foreground text-primary-foreground rtl:ml-2 rtl:mr-[unset] before:transition-colors group-data-[pressed=true]:scale-95 transition-transform after:transition-transform-opacity after:!ease-linear after:!duration-200 motion-reduce:transition-none after:bg-blue-500 dark:after:bg-purple-600 after:hover:bg-blue-500 dark:after:hover:bg-purple-600 before:border-blue-800/30 dark:before:border-white/30 rounded-sm before:rounded-sm after:rounded-sm w-5 h-5 mx-4 before:border"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="z-10 opacity-0 group-data-[selected=true]:opacity-100 w-4 h-3 transition-opacity motion-reduce:transition-none text-white dark:text-gray-400"
+                        role="presentation"
+                        viewBox="0 0 17 18"
+                      >
+                        <polyline
+                          fill="none"
+                          points="1 9 7 14 15 4"
+                          stroke="currentColor"
+                          stroke-dasharray="22"
+                          stroke-dashoffset="66"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-tl-lg group-data-[first=true]:rtl:first:before:rounded-tr-lg group-data-[first=true]:rtl:first:before:rounded-tl-[unset] group-data-[first=true]:last:before:rounded-tr-lg group-data-[first=true]:rtl:last:before:rounded-tl-lg group-data-[first=true]:rtl:last:before:rounded-tr-[unset] group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bl-lg group-data-[last=true]:rtl:first:before:rounded-br-lg group-data-[last=true]:rtl:first:before:rounded-bl-[unset] group-data-[last=true]:last:before:rounded-br-lg group-data-[last=true]:rtl:last:before:rounded-bl-lg group-data-[last=true]:rtl:last:before:rounded-br-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
                   data-key="invoiceId-table-cell-0"
                   id="react-aria-:r0:-2-invoiceId0"
                   role="rowheader"
@@ -387,7 +605,7 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
                   </p>
                 </td>
                 <td
-                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-tl-lg group-data-[first=true]:rtl:first:before:rounded-tr-lg group-data-[first=true]:rtl:first:before:rounded-tl-[unset] group-data-[first=true]:last:before:rounded-tr-lg group-data-[first=true]:rtl:last:before:rounded-tl-lg group-data-[first=true]:rtl:last:before:rounded-tr-[unset] group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bl-lg group-data-[last=true]:rtl:first:before:rounded-br-lg group-data-[last=true]:rtl:first:before:rounded-bl-[unset] group-data-[last=true]:last:before:rounded-br-lg group-data-[last=true]:rtl:last:before:rounded-bl-lg group-data-[last=true]:rtl:last:before:rounded-br-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
                   data-key="customer.fullName-table-cell-1"
                   role="gridcell"
                   tabindex="-1"
@@ -416,7 +634,7 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
                   </div>
                 </td>
                 <td
-                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-tl-lg group-data-[first=true]:rtl:first:before:rounded-tr-lg group-data-[first=true]:rtl:first:before:rounded-tl-[unset] group-data-[first=true]:last:before:rounded-tr-lg group-data-[first=true]:rtl:last:before:rounded-tl-lg group-data-[first=true]:rtl:last:before:rounded-tr-[unset] group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bl-lg group-data-[last=true]:rtl:first:before:rounded-br-lg group-data-[last=true]:rtl:first:before:rounded-bl-[unset] group-data-[last=true]:last:before:rounded-br-lg group-data-[last=true]:rtl:last:before:rounded-bl-lg group-data-[last=true]:rtl:last:before:rounded-br-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
                   data-key="email-table-cell-2"
                   role="gridcell"
                   tabindex="-1"
@@ -451,7 +669,7 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
                   </div>
                 </td>
                 <td
-                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-tl-lg group-data-[first=true]:rtl:first:before:rounded-tr-lg group-data-[first=true]:rtl:first:before:rounded-tl-[unset] group-data-[first=true]:last:before:rounded-tr-lg group-data-[first=true]:rtl:last:before:rounded-tl-lg group-data-[first=true]:rtl:last:before:rounded-tr-[unset] group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bl-lg group-data-[last=true]:rtl:first:before:rounded-br-lg group-data-[last=true]:rtl:first:before:rounded-bl-[unset] group-data-[last=true]:last:before:rounded-br-lg group-data-[last=true]:rtl:last:before:rounded-bl-lg group-data-[last=true]:rtl:last:before:rounded-br-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
                   data-key="date-table-cell-3"
                   role="gridcell"
                   tabindex="-1"
@@ -482,7 +700,7 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
                   </div>
                 </td>
                 <td
-                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-tl-lg group-data-[first=true]:rtl:first:before:rounded-tr-lg group-data-[first=true]:rtl:first:before:rounded-tl-[unset] group-data-[first=true]:last:before:rounded-tr-lg group-data-[first=true]:rtl:last:before:rounded-tl-lg group-data-[first=true]:rtl:last:before:rounded-tr-[unset] group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bl-lg group-data-[last=true]:rtl:first:before:rounded-br-lg group-data-[last=true]:rtl:first:before:rounded-bl-[unset] group-data-[last=true]:last:before:rounded-br-lg group-data-[last=true]:rtl:last:before:rounded-bl-lg group-data-[last=true]:rtl:last:before:rounded-br-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
                   data-key="status-table-cell-4"
                   role="gridcell"
                   tabindex="-1"
@@ -498,7 +716,7 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
                   </div>
                 </td>
                 <td
-                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-tl-lg group-data-[first=true]:rtl:first:before:rounded-tr-lg group-data-[first=true]:rtl:first:before:rounded-tl-[unset] group-data-[first=true]:last:before:rounded-tr-lg group-data-[first=true]:rtl:last:before:rounded-tl-lg group-data-[first=true]:rtl:last:before:rounded-tr-[unset] group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bl-lg group-data-[last=true]:rtl:first:before:rounded-br-lg group-data-[last=true]:rtl:first:before:rounded-bl-[unset] group-data-[last=true]:last:before:rounded-br-lg group-data-[last=true]:rtl:last:before:rounded-bl-lg group-data-[last=true]:rtl:last:before:rounded-br-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
                   data-key="undefined-table-cell-5"
                   role="gridcell"
                   tabindex="-1"
@@ -527,6 +745,39 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
                         />
                       </svg>
                     </div>
+                  </button>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-tl-lg group-data-[first=true]:rtl:first:before:rounded-tr-lg group-data-[first=true]:rtl:first:before:rounded-tl-[unset] group-data-[first=true]:last:before:rounded-tr-lg group-data-[first=true]:rtl:last:before:rounded-tl-lg group-data-[first=true]:rtl:last:before:rounded-tr-[unset] group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bl-lg group-data-[last=true]:rtl:first:before:rounded-br-lg group-data-[last=true]:rtl:first:before:rounded-bl-[unset] group-data-[last=true]:last:before:rounded-br-lg group-data-[last=true]:rtl:last:before:rounded-bl-lg group-data-[last=true]:rtl:last:before:rounded-br-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  data-key="undefined-table-cell-6"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    aria-label="More actions for item"
+                    class="group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none text-default-foreground data-[hover=true]:opacity-hover z-10 aria-expanded:scale-[0.97] aria-expanded:opacity-70 subpixel-antialiased border-none bg-bone undefined"
+                    data-slot="trigger"
+                    data-testid="actions-btn"
+                    id="react-aria-:rd:"
+                    type="button"
+                  >
+                    <svg
+                      aria-label="Dropdown Actions"
+                      class="text-blue-800/30 dark:text-white/30"
+                      fill="currentColor"
+                      height="14"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="14"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+                      />
+                    </svg>
                   </button>
                 </td>
               </tr>

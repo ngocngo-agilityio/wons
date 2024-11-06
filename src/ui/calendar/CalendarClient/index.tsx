@@ -1,6 +1,7 @@
 'use client';
 
 import { ComponentType, memo, useCallback, useState } from 'react';
+import { useSession } from 'next-auth/react';
 import isEqual from 'react-fast-compare';
 
 // libs
@@ -21,7 +22,7 @@ import 'react-big-calendar/lib/css/react-big-calendar.css';
 import './index.css';
 
 // Models
-import { ICalendarTask, IEvent, TUser } from '@/models';
+import { ICalendarTask, IEvent } from '@/models';
 
 // Constants
 import { MESSAGES, ROUTES } from '@/constants';
@@ -69,7 +70,6 @@ type ViewType = 'month' | 'week' | 'work_week' | 'day' | 'agenda';
 interface CalendarClientProps extends Omit<CalendarProps, 'localizer'> {
   events: (Event & IEvent & ICalendarTask)[];
   isAdmin: boolean;
-  user: TUser;
   createEvent: (data: Partial<IEvent>) => Promise<{ error?: string } | void>;
   updateEvent: (
     id: number,
@@ -83,7 +83,6 @@ interface Slot {
 }
 
 const CalendarClient = ({
-  user,
   events,
   isAdmin,
   createEvent,
@@ -103,6 +102,8 @@ const CalendarClient = ({
   const timeZone = getLocalTimeZone();
   const [isTask, setIsTask] = useState<boolean>(false);
   const [isEdit, setIsEdit] = useState<boolean>(false);
+  const { data: session } = useSession();
+  const { user } = session ?? {};
 
   const onCloseFormModal = () => {
     onToggleEventFormModal();

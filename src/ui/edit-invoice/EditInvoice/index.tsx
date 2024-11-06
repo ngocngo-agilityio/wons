@@ -25,7 +25,7 @@ const EditInvoice = async ({ id }: EditInvoiceProps) => {
     ]);
 
   const productInvoice = formattedResponseData(
-    invoice.attributes.invoice_products?.data || [],
+    invoice?.attributes?.invoice_products?.data || [],
   );
 
   const formattedPreviewProduct = productInvoice.map((data) => {
@@ -45,9 +45,9 @@ const EditInvoice = async ({ id }: EditInvoiceProps) => {
   });
 
   const formattedInvoice = {
-    ...invoice.attributes,
-    id: invoice.id,
-    customerId: invoice.attributes.customer?.data?.id.toString() ?? '',
+    ...invoice?.attributes,
+    id: invoice?.id,
+    customerId: invoice?.attributes?.customer?.data?.id.toString() ?? '',
   };
 
   return (

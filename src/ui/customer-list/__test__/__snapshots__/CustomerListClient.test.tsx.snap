@@ -21,7 +21,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
             aria-describedby=""
             aria-label="Table"
             class="min-w-full h-auto table-auto w-full border-separate border-spacing-x-0 border-spacing-y-[10px] bg-gray-50 dark:bg-gray-600"
-            id="react-aria-:r2:"
+            id="react-aria-:rq:"
             role="grid"
             tabindex="-1"
           >
@@ -38,7 +38,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                   class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-gray-50 dark:bg-gray-600 px-[17px]"
                   data-key="fullName0"
                   data-testid="sort-btn"
-                  id="react-aria-:r2:-fullName0"
+                  id="react-aria-:rq:-fullName0"
                   role="columnheader"
                   tabindex="-1"
                 >
@@ -66,7 +66,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                   class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-gray-50 dark:bg-gray-600 px-[17px]"
                   data-key="email1"
                   data-testid="sort-btn"
-                  id="react-aria-:r2:-email1"
+                  id="react-aria-:rq:-email1"
                   role="columnheader"
                   tabindex="-1"
                 >
@@ -94,7 +94,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                   class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-gray-50 dark:bg-gray-600 px-[17px]"
                   data-key="phone2"
                   data-testid="sort-btn"
-                  id="react-aria-:r2:-phone2"
+                  id="react-aria-:rq:-phone2"
                   role="columnheader"
                   tabindex="-1"
                 >
@@ -122,7 +122,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                   class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-gray-50 dark:bg-gray-600 px-[17px]"
                   data-key="gender3"
                   data-testid="sort-btn"
-                  id="react-aria-:r2:-gender3"
+                  id="react-aria-:rq:-gender3"
                   role="columnheader"
                   tabindex="-1"
                 >
@@ -145,6 +145,19 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                     </svg>
                   </div>
                 </th>
+                <th
+                  aria-hidden="true"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-gray-50 dark:bg-gray-600 px-[17px]"
+                  data-key="undefined4"
+                  data-testid="sort-btn"
+                  id="react-aria-:rq:-undefined4"
+                  role="columnheader"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  />
+                </th>
               </tr>
               <tr
                 aria-hidden="true"
@@ -157,7 +170,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
               role="rowgroup"
             >
               <tr
-                aria-labelledby="react-aria-:r2:-1-fullName0"
+                aria-labelledby="react-aria-:rq:-1-fullName0"
                 class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 bg-white dark:bg-gray-400"
                 data-first="true"
                 data-focus-visible="true"
@@ -169,7 +182,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                 <td
                   class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
                   data-key="fullName-table-cell-0"
-                  id="react-aria-:r2:-1-fullName0"
+                  id="react-aria-:rq:-1-fullName0"
                   role="rowheader"
                   tabindex="-1"
                 >
@@ -248,9 +261,42 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                     </span>
                   </div>
                 </td>
+                <td
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  data-key="undefined-table-cell-4"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    aria-label="More actions for item"
+                    class="group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none text-default-foreground data-[hover=true]:opacity-hover z-10 aria-expanded:scale-[0.97] aria-expanded:opacity-70 subpixel-antialiased border-none bg-bone undefined"
+                    data-slot="trigger"
+                    data-testid="actions-btn"
+                    id="react-aria-:rs:"
+                    type="button"
+                  >
+                    <svg
+                      aria-label="Dropdown Actions"
+                      class="text-blue-800/30 dark:text-white/30"
+                      fill="currentColor"
+                      height="14"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="14"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+                      />
+                    </svg>
+                  </button>
+                </td>
               </tr>
               <tr
-                aria-labelledby="react-aria-:r2:-2-fullName0"
+                aria-labelledby="react-aria-:rq:-2-fullName0"
                 class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 bg-white dark:bg-gray-400"
                 data-id="2"
                 data-key="2"
@@ -262,7 +308,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                 <td
                   class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
                   data-key="fullName-table-cell-0"
-                  id="react-aria-:r2:-2-fullName0"
+                  id="react-aria-:rq:-2-fullName0"
                   role="rowheader"
                   tabindex="-1"
                 >
@@ -341,9 +387,42 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                     </span>
                   </div>
                 </td>
+                <td
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  data-key="undefined-table-cell-4"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    aria-label="More actions for item"
+                    class="group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none text-default-foreground data-[hover=true]:opacity-hover z-10 aria-expanded:scale-[0.97] aria-expanded:opacity-70 subpixel-antialiased border-none bg-bone undefined"
+                    data-slot="trigger"
+                    data-testid="actions-btn"
+                    id="react-aria-:r12:"
+                    type="button"
+                  >
+                    <svg
+                      aria-label="Dropdown Actions"
+                      class="text-blue-800/30 dark:text-white/30"
+                      fill="currentColor"
+                      height="14"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="14"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+                      />
+                    </svg>
+                  </button>
+                </td>
               </tr>
               <tr
-                aria-labelledby="react-aria-:r2:-3-fullName0"
+                aria-labelledby="react-aria-:rq:-3-fullName0"
                 class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 bg-white dark:bg-gray-400"
                 data-id="3"
                 data-key="3"
@@ -354,7 +433,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                 <td
                   class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
                   data-key="fullName-table-cell-0"
-                  id="react-aria-:r2:-3-fullName0"
+                  id="react-aria-:rq:-3-fullName0"
                   role="rowheader"
                   tabindex="-1"
                 >
@@ -433,9 +512,42 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                     </span>
                   </div>
                 </td>
+                <td
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  data-key="undefined-table-cell-4"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    aria-label="More actions for item"
+                    class="group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none text-default-foreground data-[hover=true]:opacity-hover z-10 aria-expanded:scale-[0.97] aria-expanded:opacity-70 subpixel-antialiased border-none bg-bone undefined"
+                    data-slot="trigger"
+                    data-testid="actions-btn"
+                    id="react-aria-:r18:"
+                    type="button"
+                  >
+                    <svg
+                      aria-label="Dropdown Actions"
+                      class="text-blue-800/30 dark:text-white/30"
+                      fill="currentColor"
+                      height="14"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="14"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+                      />
+                    </svg>
+                  </button>
+                </td>
               </tr>
               <tr
-                aria-labelledby="react-aria-:r2:-4-fullName0"
+                aria-labelledby="react-aria-:rq:-4-fullName0"
                 class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 bg-white dark:bg-gray-400"
                 data-id="4"
                 data-key="4"
@@ -447,7 +559,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                 <td
                   class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
                   data-key="fullName-table-cell-0"
-                  id="react-aria-:r2:-4-fullName0"
+                  id="react-aria-:rq:-4-fullName0"
                   role="rowheader"
                   tabindex="-1"
                 >
@@ -525,6 +637,39 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                       female
                     </span>
                   </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  data-key="undefined-table-cell-4"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    aria-label="More actions for item"
+                    class="group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none text-default-foreground data-[hover=true]:opacity-hover z-10 aria-expanded:scale-[0.97] aria-expanded:opacity-70 subpixel-antialiased border-none bg-bone undefined"
+                    data-slot="trigger"
+                    data-testid="actions-btn"
+                    id="react-aria-:r1e:"
+                    type="button"
+                  >
+                    <svg
+                      aria-label="Dropdown Actions"
+                      class="text-blue-800/30 dark:text-white/30"
+                      fill="currentColor"
+                      height="14"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="14"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+                      />
+                    </svg>
+                  </button>
                 </td>
               </tr>
             </tbody>
@@ -764,6 +909,9 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
         style="background-color: rgb(0, 0, 0); opacity: 0.4; z-index: 100;"
       />
     </div>
+    <div
+      class="fixed top-4 right-4"
+    />
   </div>
 </div>
 `;
@@ -913,6 +1061,19 @@ exports[`CustomerListClient section should match with snapshot 1`] = `
                     </svg>
                   </div>
                 </th>
+                <th
+                  aria-hidden="true"
+                  class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-gray-50 dark:bg-gray-600 px-[17px]"
+                  data-key="undefined4"
+                  data-testid="sort-btn"
+                  id="react-aria-:r0:-undefined4"
+                  role="columnheader"
+                  tabindex="-1"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  />
+                </th>
               </tr>
               <tr
                 aria-hidden="true"
@@ -1015,6 +1176,39 @@ exports[`CustomerListClient section should match with snapshot 1`] = `
                     </span>
                   </div>
                 </td>
+                <td
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  data-key="undefined-table-cell-4"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    aria-label="More actions for item"
+                    class="group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none text-default-foreground data-[hover=true]:opacity-hover z-10 aria-expanded:scale-[0.97] aria-expanded:opacity-70 subpixel-antialiased border-none bg-bone undefined"
+                    data-slot="trigger"
+                    data-testid="actions-btn"
+                    id="react-aria-:r2:"
+                    type="button"
+                  >
+                    <svg
+                      aria-label="Dropdown Actions"
+                      class="text-blue-800/30 dark:text-white/30"
+                      fill="currentColor"
+                      height="14"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="14"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+                      />
+                    </svg>
+                  </button>
+                </td>
               </tr>
               <tr
                 aria-labelledby="react-aria-:r0:-2-fullName0"
@@ -1108,6 +1302,39 @@ exports[`CustomerListClient section should match with snapshot 1`] = `
                     </span>
                   </div>
                 </td>
+                <td
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  data-key="undefined-table-cell-4"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    aria-label="More actions for item"
+                    class="group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none text-default-foreground data-[hover=true]:opacity-hover z-10 aria-expanded:scale-[0.97] aria-expanded:opacity-70 subpixel-antialiased border-none bg-bone undefined"
+                    data-slot="trigger"
+                    data-testid="actions-btn"
+                    id="react-aria-:r8:"
+                    type="button"
+                  >
+                    <svg
+                      aria-label="Dropdown Actions"
+                      class="text-blue-800/30 dark:text-white/30"
+                      fill="currentColor"
+                      height="14"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="14"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+                      />
+                    </svg>
+                  </button>
+                </td>
               </tr>
               <tr
                 aria-labelledby="react-aria-:r0:-3-fullName0"
@@ -1199,6 +1426,39 @@ exports[`CustomerListClient section should match with snapshot 1`] = `
                       male
                     </span>
                   </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  data-key="undefined-table-cell-4"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    aria-label="More actions for item"
+                    class="group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none text-default-foreground data-[hover=true]:opacity-hover z-10 aria-expanded:scale-[0.97] aria-expanded:opacity-70 subpixel-antialiased border-none bg-bone undefined"
+                    data-slot="trigger"
+                    data-testid="actions-btn"
+                    id="react-aria-:re:"
+                    type="button"
+                  >
+                    <svg
+                      aria-label="Dropdown Actions"
+                      class="text-blue-800/30 dark:text-white/30"
+                      fill="currentColor"
+                      height="14"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="14"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+                      />
+                    </svg>
+                  </button>
                 </td>
               </tr>
               <tr
@@ -1292,6 +1552,39 @@ exports[`CustomerListClient section should match with snapshot 1`] = `
                       female
                     </span>
                   </div>
+                </td>
+                <td
+                  class="relative align-middle whitespace-normal font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg last:group-data-[middle=true]:before:rounded-r-lg text-[10px] sm:text-[14px] leading-[18px] py-[17px] px-[17px]"
+                  data-key="undefined-table-cell-4"
+                  role="gridcell"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    aria-label="More actions for item"
+                    class="group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none text-default-foreground data-[hover=true]:opacity-hover z-10 aria-expanded:scale-[0.97] aria-expanded:opacity-70 subpixel-antialiased border-none bg-bone undefined"
+                    data-slot="trigger"
+                    data-testid="actions-btn"
+                    id="react-aria-:rk:"
+                    type="button"
+                  >
+                    <svg
+                      aria-label="Dropdown Actions"
+                      class="text-blue-800/30 dark:text-white/30"
+                      fill="currentColor"
+                      height="14"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="14"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+                      />
+                    </svg>
+                  </button>
                 </td>
               </tr>
             </tbody>
@@ -1387,6 +1680,9 @@ exports[`CustomerListClient section should match with snapshot 1`] = `
         </ul>
       </nav>
     </div>
+    <div
+      class="fixed top-4 right-4"
+    />
   </div>
 </div>
 `;

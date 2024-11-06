@@ -70,7 +70,7 @@ const SignUpForm = ({ isPending = false, onSubmit }: ISignUpFormProps) => {
     onSubmit({ ...formData, avatar: IMAGES.AVATAR_DEFAULT });
 
   return (
-    <form onSubmit={handleSubmit(handleSignUp)}>
+    <form data-testid="sign-up-form" onSubmit={handleSubmit(handleSignUp)}>
       {/* Full Name */}
       <Controller
         name="fullName"

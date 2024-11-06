@@ -25,10 +25,10 @@ const InvoiceDetailsSection = async ({ id }: IInvoiceDetailsSectionProps) => {
     id: id,
   });
   const invoices: StrapiModel<TInvoiceProduct<StrapiModel<IProduct>>>[] =
-    data.attributes.invoice_products.data;
-  const { address = '', email = '', date = '' } = data.attributes ?? {};
+    data?.attributes?.invoice_products?.data;
+  const { address = '', email = '', date = '' } = data?.attributes ?? {};
   const { phone = '', fullName = '' } =
-    data.attributes.customer?.data.attributes ?? {};
+    data?.attributes?.customer?.data?.attributes ?? {};
 
   if (!data) notFound();
 

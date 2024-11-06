@@ -20,9 +20,6 @@ import { deleteTask, getTaskDetails, updateTaskWithAssignees } from '@/actions';
 // Hooks
 import { useBreakPoints, useToast } from '@/hooks';
 
-// Models
-import { TUser } from '@/models';
-
 // Apis
 import { uploadImage } from '@/api/image';
 
@@ -287,7 +284,6 @@ const TaskCard = ({ index, task, isAdmin }: TTaskCardProps) => {
                   <TaskForm
                     previewData={taskForm}
                     onAvatarChange={handleAvatarChange}
-                    user={{} as TUser}
                     isDisabledField={isPending}
                     onCloseDrawer={handleCloseFormModal}
                     onSubmit={handleFormSubmit}

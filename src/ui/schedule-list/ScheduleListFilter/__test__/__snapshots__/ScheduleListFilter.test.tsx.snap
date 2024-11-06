@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Schedule list filter should match snapshot 1`] = `
+<div>
+  <div
+    data-overlay-container="true"
+  >
+    <script>
+      !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&false)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}else{c.add('light')}if(e==='light'||e==='dark'||!e)d.style.colorScheme=e||'light'}catch(e){}}()
+    </script>
+    <div
+      class="mb-1 flex items-center gap-5 base:flex-col md:flex-row"
+    >
+      <button
+        aria-expanded="false"
+        class="group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover aria-expanded:scale-[0.97] aria-expanded:opacity-70 subpixel-antialiased w-full bg-blue-500 border-transparent dark:bg-purple-600 text-white px-5 py-3 text-md rounded-[10px] border-[1px] h-auto min-w-max font-medium z-auto"
+        data-slot="trigger"
+        type="button"
+      >
+        Filter
+        <svg
+          aria-hidden="true"
+          color="#ffffff"
+          fill="none"
+          focusable="false"
+          height="13"
+          tabindex="-1"
+          width="14"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M4.853 3.1c0 1.283-1.058 2.324-2.364 2.324C1.184 5.424.125 4.384.125 3.1.125 1.818 1.184.777 2.489.777c1.306 0 2.364 1.04 2.364 2.323Zm7.986-1.017c.572 0 1.036.456 1.036 1.017 0 .562-.464 1.019-1.036 1.019H8.32A1.028 1.028 0 0 1 7.282 3.1c0-.561.464-1.017 1.037-1.017h4.52ZM1.162 9.686h4.52c.572 0 1.037.456 1.037 1.018s-.465 1.019-1.037 1.019h-4.52a1.029 1.029 0 0 1-1.037-1.019c0-.562.464-1.018 1.037-1.018Zm10.349 3.313c1.306 0 2.364-1.04 2.364-2.322 0-1.284-1.058-2.324-2.364-2.324-1.306 0-2.364 1.04-2.364 2.324 0 1.282 1.058 2.322 2.364 2.322Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
