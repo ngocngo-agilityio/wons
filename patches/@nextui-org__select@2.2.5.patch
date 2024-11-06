@@ -1,0 +1,104 @@
+diff --git a/dist/chunk-43LZFR5C.mjs b/dist/chunk-43LZFR5C.mjs
+index df84e89dd2fc08f2103a2645db53c60d830372fc..043392c04165d6641bf166ff1761534ba2408953 100644
+--- a/dist/chunk-43LZFR5C.mjs
++++ b/dist/chunk-43LZFR5C.mjs
+@@ -37,11 +37,12 @@ function useHiddenSelect(props, state, triggerRef) {
+   return {
+     containerProps: {
+       ...visuallyHiddenProps,
+-      "aria-hidden": true,
++      "aria-hidden": false,
+       ["data-a11y-ignore"]: "aria-hidden-focus"
+     },
+     inputProps: {
+       type: "text",
++      "aria-label": "Input",
+       tabIndex: modality == null || state.isFocused || state.isOpen ? -1 : 0,
+       autoComplete,
+       value: (_a = [...state.selectedKeys].join(",")) != null ? _a : "",
+@@ -57,6 +58,7 @@ function useHiddenSelect(props, state, triggerRef) {
+     },
+     selectProps: {
+       name,
++      "aria-label": "Select",
+       tabIndex: -1,
+       autoComplete,
+       disabled: isDisabled,
+diff --git a/dist/hidden-select.js b/dist/hidden-select.js
+index 9cec3b0b862d2ce86955266b06203079e7d527a8..4fea2b0c75f70662d0deb87971fd35267ae1da4b 100644
+--- a/dist/hidden-select.js
++++ b/dist/hidden-select.js
+@@ -75,11 +75,12 @@ function useHiddenSelect(props, state, triggerRef) {
+   return {
+     containerProps: {
+       ...visuallyHiddenProps,
+-      "aria-hidden": true,
++      "aria-hidden": false,
+       ["data-a11y-ignore"]: "aria-hidden-focus"
+     },
+     inputProps: {
+       type: "text",
++      "aria-label": "Input",
+       tabIndex: modality == null || state.isFocused || state.isOpen ? -1 : 0,
+       autoComplete,
+       value: (_a = [...state.selectedKeys].join(",")) != null ? _a : "",
+@@ -95,6 +96,7 @@ function useHiddenSelect(props, state, triggerRef) {
+     },
+     selectProps: {
+       name,
++      "aria-label": "Select",
+       tabIndex: -1,
+       autoComplete,
+       disabled: isDisabled,
+diff --git a/dist/index.js b/dist/index.js
+index 79e0f056d93301cf879312457e93aa42d519f12c..26b2e4ea4728060770ddfdadb6795854ac41e2e9 100644
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -548,11 +548,12 @@ function useHiddenSelect(props, state, triggerRef) {
+   return {
+     containerProps: {
+       ...visuallyHiddenProps,
+-      "aria-hidden": true,
++      "aria-hidden": false,
+       ["data-a11y-ignore"]: "aria-hidden-focus"
+     },
+     inputProps: {
+       type: "text",
++      "aria-label": "Input",
+       tabIndex: modality == null || state.isFocused || state.isOpen ? -1 : 0,
+       autoComplete,
+       value: (_a = [...state.selectedKeys].join(",")) != null ? _a : "",
+@@ -568,6 +569,7 @@ function useHiddenSelect(props, state, triggerRef) {
+     },
+     selectProps: {
+       name,
++      "aria-label": "Select",
+       tabIndex: -1,
+       autoComplete,
+       disabled: isDisabled,
+diff --git a/dist/select.js b/dist/select.js
+index bcda67963a32f1d593f856e369bf83a579cbb3f9..acb738cbc3e5252d32e044bf0361fbb9aef2f8c2 100644
+--- a/dist/select.js
++++ b/dist/select.js
+@@ -541,11 +541,12 @@ function useHiddenSelect(props, state, triggerRef) {
+   return {
+     containerProps: {
+       ...visuallyHiddenProps,
+-      "aria-hidden": true,
++      "aria-hidden": false,
+       ["data-a11y-ignore"]: "aria-hidden-focus"
+     },
+     inputProps: {
+       type: "text",
++      "aria-label": "Input",
+       tabIndex: modality == null || state.isFocused || state.isOpen ? -1 : 0,
+       autoComplete,
+       value: (_a = [...state.selectedKeys].join(",")) != null ? _a : "",
+@@ -561,6 +562,7 @@ function useHiddenSelect(props, state, triggerRef) {
+     },
+     selectProps: {
+       name,
++      "aria-label": "Select",
+       tabIndex: -1,
+       autoComplete,
+       disabled: isDisabled,
