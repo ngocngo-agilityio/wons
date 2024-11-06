@@ -78,7 +78,8 @@
   "pnpm": {
     "patchedDependencies": {
       "@nextui-org/pagination@2.0.35": "patches/@nextui-org__pagination@2.0.35.patch",
-      "react-big-calendar@1.14.1": "patches/react-big-calendar@1.14.1.patch"
+      "react-big-calendar@1.14.1": "patches/react-big-calendar@1.14.1.patch",
+      "@nextui-org/select@2.2.5": "patches/@nextui-org__select@2.2.5.patch"
     }
   }
 }
