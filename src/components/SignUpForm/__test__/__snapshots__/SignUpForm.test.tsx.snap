@@ -8,7 +8,9 @@ exports[`SignUpForm should match snapshot for SignInForm 1`] = `
     <script>
       !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&false)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}else{c.add('light')}if(e==='light'||e==='dark'||!e)d.style.colorScheme=e||'light'}catch(e){}}()
     </script>
-    <form>
+    <form
+      data-testid="sign-up-form"
+    >
       <div
         class="group flex flex-col data-[hidden=true]:hidden w-full group relative justify-end data-[has-label=true]:mt-[29px] h-[71px]"
         data-filled="true"

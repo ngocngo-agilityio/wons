@@ -2,7 +2,9 @@
 
 exports[`SignUp Page render should render and match with snapshot 1`] = `
 <div>
-  <form>
+  <form
+    data-testid="sign-up-form"
+  >
     <div
       class="group flex flex-col data-[hidden=true]:hidden w-full group relative justify-end data-[has-label=true]:mt-[29px] h-[71px]"
       data-filled="true"

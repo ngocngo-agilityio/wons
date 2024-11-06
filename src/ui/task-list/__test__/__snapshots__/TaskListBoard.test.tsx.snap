@@ -1,0 +1,481 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Task List Board should match snapshot 1`] = `
+<div>
+  <div
+    data-overlay-container="true"
+  >
+    <script>
+      !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&false)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}else{c.add('light')}if(e==='light'||e==='dark'||!e)d.style.colorScheme=e||'light'}catch(e){}}()
+    </script>
+    <div
+      class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 w-full h-full mt-8"
+    >
+      <div
+        class="w-full md:w-1/4 flex-grow"
+        data-rfd-droppable-context-id=":r0:"
+        data-rfd-droppable-id="ToDo"
+      >
+        <h2
+          aria-level="2"
+          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-4"
+        >
+          ToDo
+        </h2>
+        <div
+          class="space-y-4 max-h-[calc(100vh-300px)] overflow-auto"
+        >
+          <div
+            aria-describedby="rfd-hidden-text-:r0:-hidden-text-:r1:"
+            class="w-full bg-white dark:bg-gray-400 p-[20px] rounded-5 shadow-md "
+            data-rfd-drag-handle-context-id=":r0:"
+            data-rfd-drag-handle-draggable-id="1"
+            data-rfd-draggable-context-id=":r0:"
+            data-rfd-draggable-id="1"
+            draggable="false"
+            role="none"
+            tabindex="0"
+          >
+            <div
+              class="flex flex-row items-center justify-between mb-[15px]"
+            >
+              <p
+                class="font-dm-sans text-blue-800 dark:text-white text-md text-md"
+              >
+                Dashboard Design
+              </p>
+            </div>
+            <div
+              class="relative max-w-fit min-w-min inline-flex items-center justify-between box-border whitespace-nowrap text-small text-default-foreground px-[22px] h-[30px] max-h-[30px] rounded-[22px] bg-pink-850 dark:bg-pink-500"
+            >
+              <span
+                class="flex-1 font-normal px-2 text-center text-md capitalize text-white dark:text-gray-600"
+              >
+                low
+              </span>
+            </div>
+            <p
+              class="font-dm-sans text-blue-800 dark:text-white text-md mt-[20px] text-sm text-justify"
+            >
+              Discussion for management dashboard ui design
+            </p>
+            <div
+              class="mt-[20px]"
+            >
+              <div
+                class="flex flex-row justify-between max-w-[235px] gap-[0_12px] xl:gap-[0_21px]"
+              >
+                <div
+                  class="w-[107px] h-[90px] relative"
+                >
+                  <img
+                    alt="Dashboard Design"
+                    class="rounded-[10px] object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    fetchpriority="high"
+                    sizes="100vw"
+                    src="http://localhost/_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+                  />
+                </div>
+                <div
+                  class="w-[107px] h-[90px] relative"
+                >
+                  <img
+                    alt="Dashboard Design"
+                    class="rounded-[10px] object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    fetchpriority="high"
+                    sizes="100vw"
+                    src="http://localhost/_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="mt-[20px]"
+            >
+              <div
+                class="flex items-center"
+              >
+                <div
+                  class="w-7 h-7"
+                >
+                  <img
+                    alt="ngocngo"
+                    class="h-full rounded-full object-cover"
+                    data-nimg="1"
+                    decoding="async"
+                    fetchpriority="high"
+                    height="28"
+                    src="http://localhost/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F06%2F17%2F13%2F26%2F360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg&w=64&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F06%2F17%2F13%2F26%2F360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F06%2F17%2F13%2F26%2F360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg&w=64&q=75 2x"
+                    style="color: transparent;"
+                    width="28"
+                  />
+                </div>
+                <div
+                  class="w-7 h-7 -ml-3"
+                >
+                  <img
+                    alt="user"
+                    class="h-full rounded-full object-cover"
+                    data-nimg="1"
+                    decoding="async"
+                    fetchpriority="high"
+                    height="28"
+                    src="http://localhost/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F06%2F17%2F13%2F26%2F360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg&w=64&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F06%2F17%2F13%2F26%2F360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F06%2F17%2F13%2F26%2F360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg&w=64&q=75 2x"
+                    style="color: transparent;"
+                    width="28"
+                  />
+                </div>
+                <div
+                  class="w-7 h-7 -ml-3"
+                >
+                  <img
+                    alt="user34"
+                    class="h-full rounded-full object-cover"
+                    data-nimg="1"
+                    decoding="async"
+                    fetchpriority="high"
+                    height="28"
+                    src="http://localhost/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F06%2F17%2F13%2F26%2F360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg&w=64&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F06%2F17%2F13%2F26%2F360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F06%2F17%2F13%2F26%2F360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg&w=64&q=75 2x"
+                    style="color: transparent;"
+                    width="28"
+                  />
+                </div>
+                <button
+                  aria-label="Plus Button"
+                  class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 !gap-0 transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-teal-500 text-white dark:bg-teal-300 text-md min-w-max w-7 h-7 p-0 -ml-3 rounded-full border-0"
+                  type="button"
+                >
+                  <div
+                    class="flex items-center"
+                  >
+                    <svg
+                      fill="none"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <line
+                        x1="12"
+                        x2="12"
+                        y1="5"
+                        y2="19"
+                      />
+                      <line
+                        x1="5"
+                        x2="19"
+                        y1="12"
+                        y2="12"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full md:w-1/4 flex-grow"
+        data-rfd-droppable-context-id=":r0:"
+        data-rfd-droppable-id="In Progress"
+      >
+        <h2
+          aria-level="2"
+          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-4"
+        >
+          In Progress
+        </h2>
+        <div
+          class="space-y-4 max-h-[calc(100vh-300px)] overflow-auto"
+        />
+      </div>
+      <div
+        class="w-full md:w-1/4 flex-grow"
+        data-rfd-droppable-context-id=":r0:"
+        data-rfd-droppable-id="In Review"
+      >
+        <h2
+          aria-level="2"
+          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-4"
+        >
+          In Review
+        </h2>
+        <div
+          class="space-y-4 max-h-[calc(100vh-300px)] overflow-auto"
+        />
+      </div>
+      <div
+        class="w-full md:w-1/4 flex-grow"
+        data-rfd-droppable-context-id=":r0:"
+        data-rfd-droppable-id="Done"
+      >
+        <h2
+          aria-level="2"
+          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-4"
+        >
+          Done
+        </h2>
+        <div
+          class="space-y-4 max-h-[calc(100vh-300px)] overflow-auto"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Task List Board should match snapshot with search params is undefined 1`] = `
+<div>
+  <div
+    data-overlay-container="true"
+  >
+    <script>
+      !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&false)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}else{c.add('light')}if(e==='light'||e==='dark'||!e)d.style.colorScheme=e||'light'}catch(e){}}()
+    </script>
+    <div
+      class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 w-full h-full mt-8"
+    >
+      <div
+        class="w-full md:w-1/4 flex-grow"
+        data-rfd-droppable-context-id=":ra:"
+        data-rfd-droppable-id="ToDo"
+      >
+        <h2
+          aria-level="2"
+          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-4"
+        >
+          ToDo
+        </h2>
+        <div
+          class="space-y-4 max-h-[calc(100vh-300px)] overflow-auto"
+        >
+          <div
+            aria-describedby="rfd-hidden-text-:ra:-hidden-text-:rb:"
+            class="w-full bg-white dark:bg-gray-400 p-[20px] rounded-5 shadow-md "
+            data-rfd-drag-handle-context-id=":ra:"
+            data-rfd-drag-handle-draggable-id="1"
+            data-rfd-draggable-context-id=":ra:"
+            data-rfd-draggable-id="1"
+            draggable="false"
+            role="none"
+            tabindex="0"
+          >
+            <div
+              class="flex flex-row items-center justify-between mb-[15px]"
+            >
+              <p
+                class="font-dm-sans text-blue-800 dark:text-white text-md text-md"
+              >
+                Dashboard Design
+              </p>
+            </div>
+            <div
+              class="relative max-w-fit min-w-min inline-flex items-center justify-between box-border whitespace-nowrap text-small text-default-foreground px-[22px] h-[30px] max-h-[30px] rounded-[22px] bg-pink-850 dark:bg-pink-500"
+            >
+              <span
+                class="flex-1 font-normal px-2 text-center text-md capitalize text-white dark:text-gray-600"
+              >
+                low
+              </span>
+            </div>
+            <p
+              class="font-dm-sans text-blue-800 dark:text-white text-md mt-[20px] text-sm text-justify"
+            >
+              Discussion for management dashboard ui design
+            </p>
+            <div
+              class="mt-[20px]"
+            >
+              <div
+                class="flex flex-row justify-between max-w-[235px] gap-[0_12px] xl:gap-[0_21px]"
+              >
+                <div
+                  class="w-[107px] h-[90px] relative"
+                >
+                  <img
+                    alt="Dashboard Design"
+                    class="rounded-[10px] object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    fetchpriority="high"
+                    sizes="100vw"
+                    src="http://localhost/_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+                  />
+                </div>
+                <div
+                  class="w-[107px] h-[90px] relative"
+                >
+                  <img
+                    alt="Dashboard Design"
+                    class="rounded-[10px] object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    fetchpriority="high"
+                    sizes="100vw"
+                    src="http://localhost/_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="mt-[20px]"
+            >
+              <div
+                class="flex items-center"
+              >
+                <div
+                  class="w-7 h-7"
+                >
+                  <img
+                    alt="ngocngo"
+                    class="h-full rounded-full object-cover"
+                    data-nimg="1"
+                    decoding="async"
+                    fetchpriority="high"
+                    height="28"
+                    src="http://localhost/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F06%2F17%2F13%2F26%2F360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg&w=64&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F06%2F17%2F13%2F26%2F360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F06%2F17%2F13%2F26%2F360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg&w=64&q=75 2x"
+                    style="color: transparent;"
+                    width="28"
+                  />
+                </div>
+                <div
+                  class="w-7 h-7 -ml-3"
+                >
+                  <img
+                    alt="user"
+                    class="h-full rounded-full object-cover"
+                    data-nimg="1"
+                    decoding="async"
+                    fetchpriority="high"
+                    height="28"
+                    src="http://localhost/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F06%2F17%2F13%2F26%2F360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg&w=64&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F06%2F17%2F13%2F26%2F360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F06%2F17%2F13%2F26%2F360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg&w=64&q=75 2x"
+                    style="color: transparent;"
+                    width="28"
+                  />
+                </div>
+                <div
+                  class="w-7 h-7 -ml-3"
+                >
+                  <img
+                    alt="user34"
+                    class="h-full rounded-full object-cover"
+                    data-nimg="1"
+                    decoding="async"
+                    fetchpriority="high"
+                    height="28"
+                    src="http://localhost/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F06%2F17%2F13%2F26%2F360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg&w=64&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F06%2F17%2F13%2F26%2F360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F06%2F17%2F13%2F26%2F360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg&w=64&q=75 2x"
+                    style="color: transparent;"
+                    width="28"
+                  />
+                </div>
+                <button
+                  aria-label="Plus Button"
+                  class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 !gap-0 transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-teal-500 text-white dark:bg-teal-300 text-md min-w-max w-7 h-7 p-0 -ml-3 rounded-full border-0"
+                  type="button"
+                >
+                  <div
+                    class="flex items-center"
+                  >
+                    <svg
+                      fill="none"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <line
+                        x1="12"
+                        x2="12"
+                        y1="5"
+                        y2="19"
+                      />
+                      <line
+                        x1="5"
+                        x2="19"
+                        y1="12"
+                        y2="12"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full md:w-1/4 flex-grow"
+        data-rfd-droppable-context-id=":ra:"
+        data-rfd-droppable-id="In Progress"
+      >
+        <h2
+          aria-level="2"
+          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-4"
+        >
+          In Progress
+        </h2>
+        <div
+          class="space-y-4 max-h-[calc(100vh-300px)] overflow-auto"
+        />
+      </div>
+      <div
+        class="w-full md:w-1/4 flex-grow"
+        data-rfd-droppable-context-id=":ra:"
+        data-rfd-droppable-id="In Review"
+      >
+        <h2
+          aria-level="2"
+          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-4"
+        >
+          In Review
+        </h2>
+        <div
+          class="space-y-4 max-h-[calc(100vh-300px)] overflow-auto"
+        />
+      </div>
+      <div
+        class="w-full md:w-1/4 flex-grow"
+        data-rfd-droppable-context-id=":ra:"
+        data-rfd-droppable-id="Done"
+      >
+        <h2
+          aria-level="2"
+          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-4"
+        >
+          Done
+        </h2>
+        <div
+          class="space-y-4 max-h-[calc(100vh-300px)] overflow-auto"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

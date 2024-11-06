@@ -1,9 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 
-// Mocks
-import { MOCK_USERS } from '@/mocks';
-
 // Components
 import TaskForm from './index';
 
@@ -34,6 +31,5 @@ export const Default: Story = {
     previewData: null,
     onCloseDrawer: fn(),
     onAvatarChange: fn(),
-    user: MOCK_USERS[0],
   },
 };

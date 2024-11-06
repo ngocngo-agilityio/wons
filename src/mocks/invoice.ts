@@ -174,6 +174,32 @@ export const MOCK_INVOICES_WITH_CUSTOMER: TInvoiceDataResponse[] = [
   },
 ];
 
+export const MOCK_INVOICE_DETAILS = {
+  data: {
+    id: MOCK_INVOICES_WITH_CUSTOMER[0].id,
+    attributes: {
+      ...MOCK_INVOICES_WITH_CUSTOMER[0].attributes,
+      invoice_products: {
+        data: [
+          {
+            ...MOCK_INVOICES_WITH_CUSTOMER[0].attributes.invoice_products
+              .data[0],
+            attributes: {
+              product: {
+                data: {
+                  attributes:
+                    MOCK_INVOICES_WITH_CUSTOMER[0].attributes.invoice_products
+                      .data[0].attributes.product.data,
+                },
+              },
+            },
+          },
+        ],
+      },
+    },
+  },
+};
+
 export const MOCK_INVOICES_RESPONSE: TInvoiceListResponse = {
   data: MOCK_INVOICES_WITH_CUSTOMER,
   meta: {

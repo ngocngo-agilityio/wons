@@ -4,9 +4,6 @@ import { memo, useCallback, useState, useTransition } from 'react';
 import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css';
 
-// Models
-import { TUser } from '@/models';
-
 // Hocs
 import { withAccountState } from '@/hocs/withAccountState';
 
@@ -32,11 +29,10 @@ import { formatErrorMessage } from '@/utils';
 import { BsPlus, Button, TaskForm } from '@/components';
 
 interface TaskDrawerProps {
-  user: TUser;
   isAdmin: boolean;
 }
 
-const TaskDrawer = ({ user, isAdmin }: TaskDrawerProps): JSX.Element => {
+const TaskDrawer = ({ isAdmin }: TaskDrawerProps): JSX.Element => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [avatarFiles, setAvatarFiles] = useState<File[]>([]);
   const [isAvatarDirty, setIsAvatarDirty] = useState(false);
@@ -132,7 +128,6 @@ const TaskDrawer = ({ user, isAdmin }: TaskDrawerProps): JSX.Element => {
           <div className="p-8 bg-white dark:bg-gray-400 h-full max-w-full overflow-y-auto">
             <TaskForm
               onAvatarChange={handleAvatarChange}
-              user={user}
               onCloseDrawer={handleCloseDrawer}
               key={isDrawerOpen ? 'open' : 'closed'}
               onSubmit={handleFormSubmit}

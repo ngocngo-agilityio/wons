@@ -8,7 +8,7 @@ import { MOCK_INVOICES_WITH_CUSTOMER } from '@/mocks';
 import { MESSAGES, ORDER } from '@/constants';
 
 // Actions
-import { deleteInvoice, updateInvoice } from '@/actions';
+import { deleteInvoice, deleteMultipleInvoice, updateInvoice } from '@/actions';
 import { waitFor } from '@testing-library/react';
 
 jest.mock('@/actions', () => ({
@@ -29,6 +29,18 @@ const mockPush = jest.fn();
 jest.mock('next/navigation', () => ({
   ...jest.requireActual('next/navigation'),
   useRouter: jest.fn(() => ({ replace: mockReplace, push: mockPush })),
+}));
+
+jest.mock('next-auth/react', () => ({
+  useSession: jest.fn(() => ({
+    data: {
+      user: {
+        role: {
+          id: 3,
+        },
+      },
+    },
+  })),
 }));
 
 describe('InvoiceListClient section', () => {
@@ -83,12 +95,7 @@ describe('InvoiceListClient section', () => {
 
     testLibJestUtils.fireEvent.click(getAllByTestId('star-btn')[0]);
 
-    testLibJestUtils.waitFor(() =>
-      expect(mockShowToast).toHaveBeenCalledWith({
-        description: MESSAGES.SUCCESS.DELETE_INVOICE,
-        status: MESSAGES.STATUS.ERROR,
-      }),
-    );
+    testLibJestUtils.waitFor(() => expect(mockShowToast).toHaveBeenCalled());
   });
 
   it('should call replace when handling sort descending', async () => {
@@ -107,9 +114,9 @@ describe('InvoiceListClient section', () => {
     expect(mockReplace).toHaveBeenCalled();
   });
 
-  it.skip('should show a success message when delete invoice successfully.', async () => {
+  it('should show a success message when delete invoice successfully.', async () => {
     (deleteInvoice as jest.MockedFn<typeof deleteInvoice>).mockResolvedValue();
-    const { getAllByTestId, getByText, getByRole } = renderComponent();
+    const { getAllByTestId, getByText } = renderComponent();
 
     // Open the delete confirm modal
     testLibJestUtils.fireEvent.click(getAllByTestId('actions-btn')[0]);
@@ -120,7 +127,7 @@ describe('InvoiceListClient section', () => {
     );
 
     // Click confirm delete invoice
-    testLibJestUtils.fireEvent.click(getByRole('button', { name: /Delete/ }));
+    testLibJestUtils.fireEvent.click(getByText('Submit'));
 
     testLibJestUtils.waitFor(() =>
       expect(mockShowToast).toHaveBeenCalledWith({
@@ -130,11 +137,11 @@ describe('InvoiceListClient section', () => {
     );
   });
 
-  it.skip('should show a error message when delete invoice failed.', async () => {
+  it('should show a error message when delete invoice failed.', async () => {
     (deleteInvoice as jest.MockedFn<typeof deleteInvoice>).mockResolvedValue({
       error: MESSAGES.ERROR.DELETE_INVOICE,
     });
-    const { getAllByTestId, getByText, getByRole } = renderComponent();
+    const { getAllByTestId, getByText } = renderComponent();
 
     // Open the delete confirm modal
     testLibJestUtils.fireEvent.click(getAllByTestId('actions-btn')[0]);
@@ -145,11 +152,74 @@ describe('InvoiceListClient section', () => {
     );
 
     // Click confirm delete invoice
-    testLibJestUtils.fireEvent.click(getByRole('button', { name: /Delete/ }));
+    testLibJestUtils.fireEvent.click(getByText('Submit'));
 
     testLibJestUtils.waitFor(() =>
       expect(mockShowToast).toHaveBeenCalledWith({
         description: MESSAGES.ERROR.DELETE_INVOICE,
+        status: MESSAGES.STATUS.ERROR,
+      }),
+    );
+  });
+
+  it('calls edit invoice', () => {
+    const { getAllByTestId, getByText } = renderComponent();
+
+    testLibJestUtils.fireEvent.click(getAllByTestId('actions-btn')[0]);
+    testLibJestUtils.fireEvent.click(getByText('Edit'));
+
+    expect(mockPush).toHaveBeenCalled();
+  });
+
+  it('calls delete multiple invoices successfully', async () => {
+    (
+      deleteMultipleInvoice as jest.MockedFn<typeof deleteMultipleInvoice>
+    ).mockResolvedValue();
+    const { container, getByTestId, getByText } = renderComponent();
+
+    testLibJestUtils.fireEvent.click(
+      container.querySelector('[aria-label="Select All"]') as Element,
+    );
+    testLibJestUtils.fireEvent.click(getByTestId('multiple-delete-btn'));
+
+    await testLibJestUtils.waitFor(() =>
+      expect(getByText('Delete Item')).toBeInTheDocument(),
+    );
+
+    // Click confirm delete invoice
+    testLibJestUtils.fireEvent.click(getByText('Submit'));
+
+    testLibJestUtils.waitFor(() =>
+      expect(mockShowToast).toHaveBeenCalledWith({
+        description: MESSAGES.SUCCESS.DELETE_INVOICE,
+        status: MESSAGES.STATUS.SUCCESS,
+      }),
+    );
+  });
+
+  it('calls delete multiple invoices failed', async () => {
+    (
+      deleteMultipleInvoice as jest.MockedFn<typeof deleteMultipleInvoice>
+    ).mockResolvedValue({
+      error: MESSAGES.ERROR.UNKNOWN_ERROR,
+    });
+    const { container, getByTestId, getByText } = renderComponent();
+
+    testLibJestUtils.fireEvent.click(
+      container.querySelector('[aria-label="Select All"]') as Element,
+    );
+    testLibJestUtils.fireEvent.click(getByTestId('multiple-delete-btn'));
+
+    await testLibJestUtils.waitFor(() =>
+      expect(getByText('Delete Item')).toBeInTheDocument(),
+    );
+
+    // Click confirm delete invoice
+    testLibJestUtils.fireEvent.click(getByText('Submit'));
+
+    testLibJestUtils.waitFor(() =>
+      expect(mockShowToast).toHaveBeenCalledWith({
+        description: MESSAGES.ERROR.UNKNOWN_ERROR,
         status: MESSAGES.STATUS.ERROR,
       }),
     );

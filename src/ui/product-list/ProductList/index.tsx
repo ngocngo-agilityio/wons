@@ -38,7 +38,7 @@ const ProductList = async ({ searchParams = {} }: TProductListPageProps) => {
     order = '',
     startTime = '',
     endTime = '',
-  } = searchParams;
+  } = searchParams ?? {};
 
   const filters: Record<string, string> = {
     'createdAt[$gte]': startTime,

@@ -99,7 +99,7 @@ const ProductListClient = ({
   const handleOpenDrawer = useCallback(
     (id: number) => {
       const productByID = getDataByID<TProductInvoiceResponse>(productList, id);
-      const { attributes } = productByID || {};
+      const { attributes } = productByID ?? {};
       const { product } = attributes || {};
       const { data } = product || {};
       const { attributes: productAttributes } = data || {};
@@ -146,26 +146,12 @@ const ProductListClient = ({
         formData.imageUrl = url;
       }
 
-      const { error } = await onEdit(
-        {
-          ...formData,
-          title: `${formData.title}`,
-        },
-        idProduct,
-      );
+      const { error } = (await onEdit(formData, idProduct)) ?? {};
 
-      if (error) {
-        showToast({
-          description: error,
-          status: MESSAGES.STATUS.ERROR,
-        });
-        return;
-      } else {
-        showToast({
-          description: MESSAGES.SUCCESS.UPDATE_PRODUCT,
-          status: MESSAGES.STATUS.SUCCESS,
-        });
-      }
+      showToast({
+        description: error ?? MESSAGES.SUCCESS.UPDATE_PRODUCT,
+        status: error ? MESSAGES.STATUS.ERROR : MESSAGES.STATUS.SUCCESS,
+      });
 
       setToggleEditProduct(false);
       setAvatarFile(undefined);

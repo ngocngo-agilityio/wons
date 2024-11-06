@@ -31,7 +31,7 @@ const RecentServicesSection = async ({
     'createdAt[$lte]': endTime,
   };
   const { error, data } = await getInvoiceProducts({
-    sort: searchParams.sortBy
+    sort: searchParams?.sortBy
       ? `${sortBy === 'title' ? `product.${sortBy}` : sortBy}:${order}`
       : '',
     filters,

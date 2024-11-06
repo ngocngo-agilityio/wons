@@ -117,6 +117,7 @@ const ProductForm = ({
     >
       <div className="flex items-center">
         <Button
+          data-testid="close-product-form"
           onClick={onCloseDrawer}
           className="p-2 bg-transparent dark:bg-transparent text-gray-200 dark:text-gray-300 hover:bg-transparent dark:hover:bg-transparent"
         >

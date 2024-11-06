@@ -8,6 +8,7 @@ import {
   useState,
   useTransition,
 } from 'react';
+import { useSession } from 'next-auth/react';
 
 // libs
 import { Select, SelectItem, Textarea } from '@nextui-org/react';
@@ -50,7 +51,6 @@ export interface ITaskFormProps {
   previewData?: TaskWithStringAssignees | null;
   onCloseDrawer?: () => void;
   onAvatarChange: (files: File[]) => void;
-  user: TUser;
 }
 const TaskForm = ({
   isDisabledField = false,
@@ -58,7 +58,6 @@ const TaskForm = ({
   setReset,
   previewData = null,
   onCloseDrawer,
-  user,
   onAvatarChange,
 }: ITaskFormProps) => {
   const {
@@ -162,6 +161,8 @@ const TaskForm = ({
     handleGetUserList();
   }, [handleGetUserList]);
 
+  const { data: session } = useSession();
+  const { user } = session ?? {};
   const usersOptions = users
     .filter((userAssign) => userAssign.id.toString() !== user?.id?.toString())
     .map((user) => ({

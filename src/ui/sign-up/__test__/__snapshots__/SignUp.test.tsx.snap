@@ -1,0 +1,304 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sign up should match snapshot 1`] = `
+<div>
+  <div
+    data-overlay-container="true"
+  >
+    <script>
+      !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&false)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}else{c.add('light')}if(e==='light'||e==='dark'||!e)d.style.colorScheme=e||'light'}catch(e){}}()
+    </script>
+    <form
+      data-testid="sign-up-form"
+    >
+      <div
+        class="group flex flex-col data-[hidden=true]:hidden w-full group relative justify-end data-[has-label=true]:mt-[29px] h-[71px]"
+        data-filled="true"
+        data-filled-within="true"
+        data-has-elements="true"
+        data-has-label="true"
+        data-slot="base"
+      >
+        <div
+          class="h-full flex flex-col"
+          data-slot="main-wrapper"
+        >
+          <div
+            class="relative w-full inline-flex tap-highlight-transparent flex-row items-center shadow-sm gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-primary-100 text-primary placeholder:text-primary outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:bg-gray-900 focus-within:bg-gray-50 dark:focus-within:bg-gray-600 group-data-[focus=true]:bg-gray-50 dark:group-data-[focus=true]:bg-gray-600 h-12.5 p-3.75 rounded-[10px]"
+            data-slot="input-wrapper"
+            style="cursor: text;"
+          >
+            <label
+              class="absolute pointer-events-none origin-top-left rtl:origin-top-right subpixel-antialiased block will-change-auto !duration-200 !ease-out motion-reduce:transition-none transition-[transform,color,left,opacity] text-primary group-data-[filled-within=true]:pointer-events-auto pb-0 z-20 -translate-y-1/2 group-data-[filled-within=true]:left-0 left-3 rtl:left-auto rtl:right-3 group-data-[filled-within=true]:-translate-y-[calc(100%_+_theme(fontSize.small)/2_+_20px)] pe-2 max-w-full text-ellipsis overflow-hidden group-data-[filled-within=true]:text-blue-800 dark:group-data-[filled-within=true]:text-white font-medium text-xl top-5"
+              data-slot="label"
+              for="react-aria-:r0:"
+              id="react-aria-:r1:"
+            >
+              Full Name
+            </label>
+            <div
+              class="inline-flex w-full items-center h-full box-border"
+              data-slot="inner-wrapper"
+            >
+              <input
+                aria-label="Full Name"
+                aria-labelledby="react-aria-:r0: react-aria-:r1:"
+                class="w-full font-normal !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-blue-800/70 dark:text-white/70 placeholder:text-blue-800/40 dark:placeholder:text-white/40 bg-transparent text-md"
+                data-slot="input"
+                id="react-aria-:r0:"
+                placeholder=" "
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="group flex flex-col data-[hidden=true]:hidden w-full group relative justify-end data-[has-label=true]:mt-[29px] h-[71px]"
+        data-filled="true"
+        data-filled-within="true"
+        data-has-elements="true"
+        data-has-label="true"
+        data-slot="base"
+      >
+        <div
+          class="h-full flex flex-col"
+          data-slot="main-wrapper"
+        >
+          <div
+            class="relative w-full inline-flex tap-highlight-transparent flex-row items-center shadow-sm gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-primary-100 text-primary placeholder:text-primary outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:bg-gray-900 focus-within:bg-gray-50 dark:focus-within:bg-gray-600 group-data-[focus=true]:bg-gray-50 dark:group-data-[focus=true]:bg-gray-600 h-12.5 p-3.75 rounded-[10px]"
+            data-slot="input-wrapper"
+            style="cursor: text;"
+          >
+            <label
+              class="absolute pointer-events-none origin-top-left rtl:origin-top-right subpixel-antialiased block will-change-auto !duration-200 !ease-out motion-reduce:transition-none transition-[transform,color,left,opacity] text-primary group-data-[filled-within=true]:pointer-events-auto pb-0 z-20 -translate-y-1/2 group-data-[filled-within=true]:left-0 left-3 rtl:left-auto rtl:right-3 group-data-[filled-within=true]:-translate-y-[calc(100%_+_theme(fontSize.small)/2_+_20px)] pe-2 max-w-full text-ellipsis overflow-hidden group-data-[filled-within=true]:text-blue-800 dark:group-data-[filled-within=true]:text-white font-medium text-xl top-5"
+              data-slot="label"
+              for="react-aria-:r5:"
+              id="react-aria-:r6:"
+            >
+              Email Address
+            </label>
+            <div
+              class="inline-flex w-full items-center h-full box-border"
+              data-slot="inner-wrapper"
+            >
+              <input
+                aria-label="Email Address"
+                aria-labelledby="react-aria-:r5: react-aria-:r6:"
+                class="w-full font-normal !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-blue-800/70 dark:text-white/70 placeholder:text-blue-800/40 dark:placeholder:text-white/40 bg-transparent text-md"
+                data-slot="input"
+                id="react-aria-:r5:"
+                placeholder=" "
+                type="email"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="group flex flex-col data-[hidden=true]:hidden w-full group relative justify-end data-[has-label=true]:mt-[29px] h-[71px]"
+        data-filled="true"
+        data-filled-within="true"
+        data-has-elements="true"
+        data-has-label="true"
+        data-slot="base"
+      >
+        <div
+          class="h-full flex flex-col"
+          data-slot="main-wrapper"
+        >
+          <div
+            class="relative w-full inline-flex tap-highlight-transparent flex-row items-center shadow-sm gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-primary-100 text-primary placeholder:text-primary outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:bg-gray-900 focus-within:bg-gray-50 dark:focus-within:bg-gray-600 group-data-[focus=true]:bg-gray-50 dark:group-data-[focus=true]:bg-gray-600 h-12.5 p-3.75 rounded-[10px]"
+            data-slot="input-wrapper"
+            style="cursor: text;"
+          >
+            <label
+              class="absolute pointer-events-none origin-top-left rtl:origin-top-right subpixel-antialiased block will-change-auto !duration-200 !ease-out motion-reduce:transition-none transition-[transform,color,left,opacity] text-primary group-data-[filled-within=true]:pointer-events-auto pb-0 z-20 -translate-y-1/2 group-data-[filled-within=true]:left-0 left-3 rtl:left-auto rtl:right-3 group-data-[filled-within=true]:-translate-y-[calc(100%_+_theme(fontSize.small)/2_+_20px)] pe-2 max-w-full text-ellipsis overflow-hidden group-data-[filled-within=true]:text-blue-800 dark:group-data-[filled-within=true]:text-white font-medium text-xl top-5"
+              data-slot="label"
+              for="react-aria-:ra:"
+              id="react-aria-:rb:"
+            >
+              Username
+            </label>
+            <div
+              class="inline-flex w-full items-center h-full box-border"
+              data-slot="inner-wrapper"
+            >
+              <input
+                aria-label="Username"
+                aria-labelledby="react-aria-:ra: react-aria-:rb:"
+                class="w-full font-normal !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-blue-800/70 dark:text-white/70 placeholder:text-blue-800/40 dark:placeholder:text-white/40 bg-transparent text-md"
+                data-slot="input"
+                id="react-aria-:ra:"
+                placeholder=" "
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="group flex flex-col data-[hidden=true]:hidden w-full group relative justify-end data-[has-label=true]:mt-[29px]"
+        data-filled="true"
+        data-filled-within="true"
+        data-has-elements="true"
+        data-has-label="true"
+        data-slot="base"
+      >
+        <div
+          class="h-full flex flex-col"
+          data-slot="main-wrapper"
+        >
+          <div
+            class="relative w-full inline-flex tap-highlight-transparent flex-row items-center shadow-sm gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-primary-100 text-primary placeholder:text-primary outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-offset-background bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:bg-gray-900 focus-within:bg-gray-50 dark:focus-within:bg-gray-600 group-data-[focus=true]:bg-gray-50 dark:group-data-[focus=true]:bg-gray-600 h-12.5 p-3.75 rounded-[10px] group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-blue-500"
+            data-slot="input-wrapper"
+            style="cursor: text;"
+          >
+            <label
+              class="absolute pointer-events-none origin-top-left rtl:origin-top-right subpixel-antialiased block will-change-auto !duration-200 !ease-out motion-reduce:transition-none transition-[transform,color,left,opacity] text-primary group-data-[filled-within=true]:pointer-events-auto pb-0 z-20 -translate-y-1/2 group-data-[filled-within=true]:left-0 left-3 rtl:left-auto rtl:right-3 group-data-[filled-within=true]:-translate-y-[calc(100%_+_theme(fontSize.small)/2_+_20px)] pe-2 max-w-full text-ellipsis overflow-hidden group-data-[filled-within=true]:text-blue-800 dark:group-data-[filled-within=true]:text-white font-medium text-xl top-5"
+              data-slot="label"
+              for="react-aria-:rf:"
+              id="react-aria-:rg:"
+            >
+              Password
+            </label>
+            <div
+              class="inline-flex w-full items-center h-full box-border"
+              data-slot="inner-wrapper"
+            >
+              <input
+                aria-label="Password"
+                aria-labelledby="react-aria-:rf: react-aria-:rg:"
+                class="w-full font-normal !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-blue-800/70 dark:text-white/70 placeholder:text-blue-800/40 dark:placeholder:text-white/40 bg-transparent text-md"
+                data-has-end-content="true"
+                data-slot="input"
+                id="react-aria-:rf:"
+                placeholder=" "
+                type="password"
+                value=""
+              />
+              <svg
+                class="w-5 h-5 cursor-pointer text-blue-800/50 dark:text-white/50"
+                data-testid="show-password"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M256 105c-101.8 0-188.4 62.4-224 151 35.6 88.6 122.2 151 224 151s188.4-62.4 224-151c-35.6-88.6-122.2-151-224-151zm0 251.7c-56 0-101.8-45.3-101.8-100.7S200 155.3 256 155.3 357.8 200.6 357.8 256 312 356.7 256 356.7zm0-161.1c-33.6 0-61.1 27.2-61.1 60.4s27.5 60.4 61.1 60.4 61.1-27.2 61.1-60.4-27.5-60.4-61.1-60.4z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex gap-0.5 items-start mt-6.25"
+      >
+        <label
+          aria-label="Policy"
+          class="group relative max-w-fit inline-flex items-center justify-start cursor-pointer tap-highlight-transparent p-2 -m-2"
+          data-testid="policy"
+        >
+          <span
+            style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+          >
+            <input
+              aria-label="Policy"
+              aria-labelledby=":rk:"
+              type="checkbox"
+              value=""
+            />
+          </span>
+          <span
+            aria-hidden="true"
+            class="relative inline-flex items-center justify-center flex-shrink-0 overflow-hidden before:content-[''] before:absolute before:inset-0 before:border-solid before:box-border after:content-[''] after:absolute after:inset-0 after:scale-50 after:opacity-0 after:origin-center group-data-[selected=true]:after:scale-100 group-data-[selected=true]:after:opacity-100 group-data-[hover=true]:before:bg-default-100 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background after:text-primary-foreground text-primary-foreground mr-2 rtl:ml-2 rtl:mr-[unset] before:transition-colors group-data-[pressed=true]:scale-95 transition-transform after:transition-transform-opacity after:!ease-linear after:!duration-200 motion-reduce:transition-none after:bg-blue-500 dark:after:bg-purple-600 after:hover:bg-blue-500 dark:after:hover:bg-purple-600 before:border-blue-800/30 dark:before:border-white/30 w-3.75 h-3.75 before:border rounded-sm before:rounded-sm after:rounded-sm mt-1"
+          >
+            <svg
+              aria-hidden="true"
+              class="z-10 opacity-0 group-data-[selected=true]:opacity-100 w-4 h-3 transition-opacity motion-reduce:transition-none text-white dark:text-gray-400"
+              role="presentation"
+              viewBox="0 0 17 18"
+            >
+              <polyline
+                fill="none"
+                points="1 9 7 14 15 4"
+                stroke="currentColor"
+                stroke-dasharray="22"
+                stroke-dashoffset="66"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </span>
+        </label>
+        <div
+          class="flex flex-wrap items-center"
+        >
+          <p
+            class="font-dm-sans text-blue-800 dark:text-white text-xl text-blue-900 font-medium inline"
+          >
+            By creating an account you agree to the
+          </p>
+           
+          <a
+            class="text-blue-500 dark:text-purple-500 text-xl font-medium inline hover:underline"
+            href="#"
+          >
+            terms of use
+          </a>
+           
+          <p
+            class="font-dm-sans text-blue-800 dark:text-white text-xl text-blue-900 font-medium inline"
+          >
+            and our
+          </p>
+           
+          <a
+            class="text-blue-500 dark:text-purple-500 text-xl font-medium inline hover:underline"
+            href="#"
+          >
+            privacy policy.
+          </a>
+        </div>
+      </div>
+      <button
+        class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-3 pointer-events-none [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-blue-500 border-transparent dark:bg-purple-600 text-white hover:bg-blue-100 opacity-50 cursor-not-allowed px-[30px] pt-[15px] pb-[14px] rounded-[10px] border-[1px] h-auto min-w-max w-full mt-8 text-xl font-medium"
+        data-disabled="true"
+        disabled=""
+        type="submit"
+      >
+        <div
+          class="flex items-center"
+        >
+          Create account
+        </div>
+      </button>
+      <div
+        class="flex justify-center items-center mt-7.5"
+      >
+        <p
+          class="font-dm-sans text-blue-800 dark:text-white text-xl color-blue-900 font-medium inline"
+        >
+          Already have an account?
+        </p>
+         
+        <a
+          class="text-blue-500 dark:text-purple-500 text-xl font-medium inline hover:underline"
+          href="/sign-in"
+        >
+          Sign in
+        </a>
+      </div>
+    </form>
+  </div>
+</div>
+`;

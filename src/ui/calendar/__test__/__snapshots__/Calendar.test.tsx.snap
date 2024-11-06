@@ -1,0 +1,1621 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calendar should match snapshot 1`] = `
+<div>
+  <div
+    data-overlay-container="true"
+  >
+    <script>
+      !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&false)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}else{c.add('light')}if(e==='light'||e==='dark'||!e)d.style.colorScheme=e||'light'}catch(e){}}()
+    </script>
+    <div
+      class="flex h-screen md:h-[calc(100vh-120px)]  gap-4 md:gap-6 lg:gap-[37px] xl:gap-10 relative"
+    >
+      <div
+        class="hidden md:flex bg-white dark:bg-gray-400 px-[18px] md:px-[28px] py-3 md:py-[32px] rounded-[5px] md:flex-col justify-between"
+      >
+        <div
+          aria-label="Calendar"
+          class="relative max-w-full shadow-small inline-block rounded-large w-[calc(var(--visible-months)_*_var(--calendar-width))] dark:bg-gray-400 bg-white border border-white solid overflow-hidden current-month"
+          data-slot="base"
+          id="react-aria-:r2:"
+          role="application"
+          style="--visible-months: 1; --calendar-width: 256px;"
+          value="2024-11-06"
+        >
+          <div
+            class="flex absolute w-4/5 justify-between top-[17px] right-[24px] z-100 bg-white dark:bg-gray-400"
+          >
+            <p
+              class="font-dm-sans text-blue-800 dark:text-white text-md z-100"
+            >
+              November 2024
+            </p>
+          </div>
+          <div
+            style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+          >
+            <h2>
+              Calendar, November 2024
+            </h2>
+          </div>
+          <div>
+            <div
+              class="w-[calc(var(--visible-months)_*_var(--calendar-width))]"
+              data-slot="content"
+            >
+              <div
+                class="px-4 py-2 flex items-center justify-between gap-2 bg-content1 overflow-hidden [&_.chevron-icon]:flex-none after:content-[''] after:bg-content1 origin-top after:w-full after:h-0 after:absolute after:top-0 after:left-0 dark:bg-gray-400"
+                data-slot="header-wrapper"
+              >
+                <button
+                  aria-label="Previous"
+                  class="z-0 group inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-tiny gap-2 rounded-full px-0 !gap-0 transition-transform-colors-opacity motion-reduce:transition-none bg-transparent text-default-foreground data-[hover=true]:bg-default/40 min-w-8 w-8 h-8 absolute right-10"
+                  data-slot="prev-button"
+                  tabindex="0"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    fill="none"
+                    focusable="false"
+                    height="1em"
+                    role="presentation"
+                    viewBox="0 0 16 16"
+                    width="1em"
+                  >
+                    <path
+                      d="M10 3.33334L6 8.00001L10 12.6667"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </button>
+                <header
+                  class="flex w-full items-center justify-center gap-2 z-[-1]"
+                  data-slot="header"
+                >
+                  <span
+                    aria-hidden="true"
+                    class="text-small font-medium text-white dark:text-white/80 z-[-1]"
+                    data-slot="title"
+                    style="transform: translateX(0%) translateZ(0);"
+                  >
+                    November 2024
+                  </span>
+                </header>
+                <button
+                  aria-label="Next"
+                  class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-tiny gap-2 rounded-full px-0 !gap-0 transition-transform-colors-opacity motion-reduce:transition-none bg-transparent text-default-foreground data-[hover=true]:bg-default/40 min-w-8 w-8 h-8 dark:text-white"
+                  data-slot="next-button"
+                  tabindex="0"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    fill="none"
+                    focusable="false"
+                    height="1em"
+                    role="presentation"
+                    viewBox="0 0 16 16"
+                    width="1em"
+                  >
+                    <path
+                      d="M6 3.33334L10 8.00001L6 12.6667"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="flex max-w-full overflow-hidden pb-2 h-auto relative"
+                data-slot="grid-wrapper"
+              >
+                <table
+                  aria-label="Calendar, November 2024"
+                  class="w-full border-collapse z-0"
+                  data-slot="grid"
+                  id="react-aria-:r5:"
+                  role="grid"
+                  tabindex="-1"
+                >
+                  <thead
+                    aria-hidden="true"
+                    class="bg-content1 shadow-[0px_20px_20px_0px_rgb(0_0_0/0.05)] dark:bg-gray-400"
+                    data-slot="grid-header"
+                  >
+                    <tr
+                      class="px-4 pb-2 flex justify-center text-default-400"
+                      data-slot="grid-header-row"
+                    >
+                      <th
+                        class="flex w-8 justify-center items-center text-small text-blue-800 dark:text-white/80 font-normal dark:bg-gray-400"
+                        data-slot="grid-header-cell"
+                      >
+                        <span>
+                          S
+                        </span>
+                      </th>
+                      <th
+                        class="flex w-8 justify-center items-center text-small text-blue-800 dark:text-white/80 font-normal dark:bg-gray-400"
+                        data-slot="grid-header-cell"
+                      >
+                        <span>
+                          M
+                        </span>
+                      </th>
+                      <th
+                        class="flex w-8 justify-center items-center text-small text-blue-800 dark:text-white/80 font-normal dark:bg-gray-400"
+                        data-slot="grid-header-cell"
+                      >
+                        <span>
+                          T
+                        </span>
+                      </th>
+                      <th
+                        class="flex w-8 justify-center items-center text-small text-blue-800 dark:text-white/80 font-normal dark:bg-gray-400"
+                        data-slot="grid-header-cell"
+                      >
+                        <span>
+                          W
+                        </span>
+                      </th>
+                      <th
+                        class="flex w-8 justify-center items-center text-small text-blue-800 dark:text-white/80 font-normal dark:bg-gray-400"
+                        data-slot="grid-header-cell"
+                      >
+                        <span>
+                          T
+                        </span>
+                      </th>
+                      <th
+                        class="flex w-8 justify-center items-center text-small text-blue-800 dark:text-white/80 font-normal dark:bg-gray-400"
+                        data-slot="grid-header-cell"
+                      >
+                        <span>
+                          F
+                        </span>
+                      </th>
+                      <th
+                        class="flex w-8 justify-center items-center text-small text-blue-800 dark:text-white/80 font-normal dark:bg-gray-400"
+                        data-slot="grid-header-cell"
+                      >
+                        <span>
+                          S
+                        </span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody
+                    class="bg-white dark:bg-gray-400"
+                    data-slot="grid-body"
+                    style="transform: translateX(0%) translateZ(0);"
+                  >
+                    <tr
+                      class="flex justify-center items-center first:mt-2"
+                      data-slot="grid-body-row"
+                    >
+                      <td
+                        aria-disabled="true"
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-disabled="true"
+                          aria-label="Sunday, October 27, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          data-disabled="true"
+                          data-outside-month="true"
+                          role="button"
+                        >
+                          <span>
+                            27
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        aria-disabled="true"
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-disabled="true"
+                          aria-label="Monday, October 28, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          data-disabled="true"
+                          data-outside-month="true"
+                          role="button"
+                        >
+                          <span>
+                            28
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        aria-disabled="true"
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-disabled="true"
+                          aria-label="Tuesday, October 29, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          data-disabled="true"
+                          data-outside-month="true"
+                          role="button"
+                        >
+                          <span>
+                            29
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        aria-disabled="true"
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-disabled="true"
+                          aria-label="Wednesday, October 30, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          data-disabled="true"
+                          data-outside-month="true"
+                          role="button"
+                        >
+                          <span>
+                            30
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        aria-disabled="true"
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-disabled="true"
+                          aria-label="Thursday, October 31, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          data-disabled="true"
+                          data-outside-month="true"
+                          role="button"
+                        >
+                          <span>
+                            31
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Friday, November 1, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            1
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Saturday, November 2, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            2
+                          </span>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr
+                      class="flex justify-center items-center first:mt-2"
+                      data-slot="grid-body-row"
+                    >
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Sunday, November 3, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            3
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Monday, November 4, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            4
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Tuesday, November 5, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            5
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        aria-selected="true"
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Today, Wednesday, November 6, 2024 selected"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          data-selected="true"
+                          data-today="true"
+                          role="button"
+                          tabindex="0"
+                        >
+                          <span>
+                            6
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Thursday, November 7, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            7
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Friday, November 8, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            8
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Saturday, November 9, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            9
+                          </span>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr
+                      class="flex justify-center items-center first:mt-2"
+                      data-slot="grid-body-row"
+                    >
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Sunday, November 10, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            10
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Monday, November 11, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            11
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Tuesday, November 12, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            12
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Wednesday, November 13, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            13
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Thursday, November 14, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            14
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Friday, November 15, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            15
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Saturday, November 16, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            16
+                          </span>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr
+                      class="flex justify-center items-center first:mt-2"
+                      data-slot="grid-body-row"
+                    >
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Sunday, November 17, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            17
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Monday, November 18, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            18
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Tuesday, November 19, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            19
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Wednesday, November 20, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            20
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Thursday, November 21, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            21
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Friday, November 22, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            22
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Saturday, November 23, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            23
+                          </span>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr
+                      class="flex justify-center items-center first:mt-2"
+                      data-slot="grid-body-row"
+                    >
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Sunday, November 24, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            24
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Monday, November 25, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            25
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Tuesday, November 26, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            26
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Wednesday, November 27, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            27
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Thursday, November 28, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            28
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Friday, November 29, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            29
+                          </span>
+                        </span>
+                      </td>
+                      <td
+                        class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
+                        data-slot="cell"
+                        role="gridcell"
+                      >
+                        <span
+                          aria-label="Saturday, November 30, 2024"
+                          class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          role="button"
+                          tabindex="-1"
+                        >
+                          <span>
+                            30
+                          </span>
+                        </span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div
+            style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+          >
+            <button
+              aria-label="Next"
+              tabindex="-1"
+            />
+          </div>
+        </div>
+        <a
+          class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-transparent text-blue-500 border-blue-500 dark:text-purple-450 dark:border-purple-600 hover:bg-blue-500 hover:text-white dark:hover:text-blue-800 dark:hover:bg-white px-5 pb-2.5 pt-[11px] text-md rounded-[10px] border-[1px] h-auto min-w-max"
+          href="/schedule"
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="flex items-center"
+          >
+            My Schedule
+          </div>
+        </a>
+      </div>
+      <div
+        class="flex-1 overflow-auto"
+      >
+        <div
+          class="rbc-calendar"
+        >
+          <div
+            class="mb-5 flex flex-col sm:flex-row justify-between items-start md:items-center"
+          >
+            <h2
+              aria-level="2"
+              class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl mb-5 md:mb-0"
+            >
+              Calendar
+            </h2>
+            <div
+              class="flex gap-5"
+            >
+              <button
+                class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover border-transparent hover:bg-blue-100 px-5 pb-2.5 pt-[11px] sm:px-5 sm:pb-2.5 sm:pt-[11px] text-md rounded-[10px] border-[1px] h-auto min-w-max bg-blue-500/5 text-blue-800/70 dark:text-white dark:bg-purple-600/30"
+                type="button"
+              >
+                <div
+                  class="flex items-center"
+                >
+                  Day
+                </div>
+              </button>
+              <button
+                class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover border-transparent hover:bg-blue-100 px-5 pb-2.5 pt-[11px] text-md rounded-[10px] border-[1px] h-auto min-w-max bg-blue-500/5 text-blue-800/70 dark:text-white dark:bg-purple-600/30"
+                type="button"
+              >
+                <div
+                  class="flex items-center"
+                >
+                  Week
+                </div>
+              </button>
+              <button
+                class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover border-transparent dark:bg-purple-600 text-white hover:bg-blue-100 px-5 pb-2.5 pt-[11px] text-md rounded-[10px] border-[1px] h-auto min-w-max bg-blue-500"
+                type="button"
+              >
+                <div
+                  class="flex items-center"
+                >
+                  Month
+                </div>
+              </button>
+            </div>
+          </div>
+          <div
+            class="mb-5 flex pl-[15px] pr-[21px] py-[15px] rounded-tl-[10px] rounded-tr-[10px] bg-white justify-between dark:bg-gray-400"
+          >
+            <p
+              class="font-dm-sans text-blue-800 dark:text-white text-md"
+            >
+              November 2024
+            </p>
+            <div
+              class="flex gap-[15px] justify-between"
+            >
+              <svg
+                class="text-blue-800/50 cursor-pointer dark:text-white/50"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 192 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z"
+                />
+              </svg>
+              <svg
+                class="text-blue-800/50 cursor-pointer dark:text-white/50"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 192 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            aria-label="Month View"
+            class="rbc-month-view"
+            role="table"
+          >
+            <div
+              class="rbc-row rbc-month-header"
+              role="row"
+            >
+              <div
+                class="rbc-header"
+              >
+                <span
+                  aria-sort="none"
+                  role="columnheader"
+                >
+                  Sun
+                </span>
+              </div>
+              <div
+                class="rbc-header"
+              >
+                <span
+                  aria-sort="none"
+                  role="columnheader"
+                >
+                  Mon
+                </span>
+              </div>
+              <div
+                class="rbc-header"
+              >
+                <span
+                  aria-sort="none"
+                  role="columnheader"
+                >
+                  Tue
+                </span>
+              </div>
+              <div
+                class="rbc-header"
+              >
+                <span
+                  aria-sort="none"
+                  role="columnheader"
+                >
+                  Wed
+                </span>
+              </div>
+              <div
+                class="rbc-header"
+              >
+                <span
+                  aria-sort="none"
+                  role="columnheader"
+                >
+                  Thu
+                </span>
+              </div>
+              <div
+                class="rbc-header"
+              >
+                <span
+                  aria-sort="none"
+                  role="columnheader"
+                >
+                  Fri
+                </span>
+              </div>
+              <div
+                class="rbc-header"
+              >
+                <span
+                  aria-sort="none"
+                  role="columnheader"
+                >
+                  Sat
+                </span>
+              </div>
+            </div>
+            <div
+              class="rbc-month-row"
+              role="rowgroup"
+            >
+              <div
+                class="rbc-row-bg"
+              >
+                <div
+                  class="rbc-day-bg rbc-off-range-bg"
+                />
+                <div
+                  class="rbc-day-bg rbc-off-range-bg"
+                />
+                <div
+                  class="rbc-day-bg rbc-off-range-bg"
+                />
+                <div
+                  class="rbc-day-bg rbc-off-range-bg"
+                />
+                <div
+                  class="rbc-day-bg rbc-off-range-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+              </div>
+              <div
+                class="rbc-row-content"
+                role="row"
+              >
+                <div
+                  class="rbc-row "
+                >
+                  <div
+                    class="rbc-date-cell rbc-off-range"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      27
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell rbc-off-range"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      28
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell rbc-off-range"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      29
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell rbc-off-range"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      30
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell rbc-off-range"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      31
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      01
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      02
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rbc-month-row"
+              role="rowgroup"
+            >
+              <div
+                class="rbc-row-bg"
+              >
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg rbc-today"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+              </div>
+              <div
+                class="rbc-row-content"
+                role="row"
+              >
+                <div
+                  class="rbc-row "
+                >
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      03
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      04
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      05
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell rbc-now rbc-current"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      06
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      07
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      08
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      09
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rbc-month-row"
+              role="rowgroup"
+            >
+              <div
+                class="rbc-row-bg"
+              >
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+              </div>
+              <div
+                class="rbc-row-content"
+                role="row"
+              >
+                <div
+                  class="rbc-row "
+                >
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      10
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      11
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      12
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      13
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      14
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      15
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      16
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rbc-month-row"
+              role="rowgroup"
+            >
+              <div
+                class="rbc-row-bg"
+              >
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+              </div>
+              <div
+                class="rbc-row-content"
+                role="row"
+              >
+                <div
+                  class="rbc-row "
+                >
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      17
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      18
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      19
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      20
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      21
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      22
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      23
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rbc-month-row"
+              role="rowgroup"
+            >
+              <div
+                class="rbc-row-bg"
+              >
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+                <div
+                  class="rbc-day-bg"
+                />
+              </div>
+              <div
+                class="rbc-row-content"
+                role="row"
+              >
+                <div
+                  class="rbc-row "
+                >
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      24
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      25
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      26
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      27
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      28
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      29
+                    </button>
+                  </div>
+                  <div
+                    class="rbc-date-cell"
+                    role="cell"
+                  >
+                    <button
+                      class="rbc-button-link"
+                      role="cell"
+                      type="button"
+                    >
+                      30
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

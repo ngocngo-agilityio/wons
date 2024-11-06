@@ -1,16 +1,9 @@
-import { auth } from '@/configs';
-
-// Actions
-import { updateUser } from '@/actions';
-
-// APIs
-import { getProfile } from '@/api';
-
-// Constants
-import { ROLES } from '@/constants';
-
 // Components
 import UserDetailContainer from '..';
+
+// Mocks
+import { MOCK_AUTH } from '@/mocks';
+import { useSession } from 'next-auth/react';
 
 jest.mock('@/configs', () => ({
   auth: jest.fn(),
@@ -20,45 +13,26 @@ jest.mock('@/actions', () => ({
   updateUser: jest.fn(),
 }));
 
+jest.mock('next-auth/react', () => ({
+  useSession: jest.fn(),
+}));
+
 describe('UserDetailContainer', () => {
-  const mockUser = {
-    token: 'mock-token',
-    id: 123,
-  };
-
-  const mockProfile = {
-    avatar: 'mock-avatar-url',
-    email: 'mock-email@example.com',
-    role: { name: ROLES[0].name },
-    fullName: 'Mock Full Name',
-    username: 'mockUsername',
-  };
-
   beforeEach(() => {
     jest.clearAllMocks();
   });
 
-  it.skip('fetches user data and returns UserDetailClient component with correct props', async () => {
-    // Mock the auth and getProfile functions
-    (auth as jest.Mock).mockResolvedValueOnce({ user: mockUser });
-    (getProfile as jest.Mock).mockResolvedValueOnce(mockProfile);
+  it('match snapshot', async () => {
+    (useSession as jest.Mock).mockReturnValue({ data: MOCK_AUTH[0] });
+    const { container } = testLibJestUtils.render(<UserDetailContainer />);
 
-    // Call the component function (since it's async) and wait for the result
-    const component = await UserDetailContainer();
+    expect(container).toMatchSnapshot();
+  });
 
-    // Check that the component contains the correct props
-    expect(component.props.user).toEqual({
-      avatar: 'mock-avatar-url',
-      email: 'mock-email@example.com',
-      fullName: 'Mock Full Name',
-      username: 'mockUsername',
-      role: ROLES[0].name,
-    });
-    expect(component.props.id).toBe(123);
-    expect(component.props.onEdit).toBe(updateUser);
+  it('match snapshot with data null', async () => {
+    (useSession as jest.Mock).mockReturnValue({ data: null });
+    const { container } = testLibJestUtils.render(<UserDetailContainer />);
 
-    // Assert that the API calls were made
-    expect(auth).toHaveBeenCalled();
-    expect(getProfile).toHaveBeenCalledWith('mock-token');
+    expect(container).toMatchSnapshot();
   });
 });

@@ -147,6 +147,8 @@ const InvoiceForm = ({
 
   const handleSubmitButton = async (formData: TInvoiceFormData) => {
     if (hasEmptyField) {
+      console.log('huy dao=======================');
+
       return setErrorProducts(MESSAGES.ERROR.FIELD_REQUIRED);
     }
 
@@ -198,6 +200,7 @@ const InvoiceForm = ({
     <>
       {isPending && <LoadingIndicator />}
       <form
+        data-testid="invoice-form"
         className="w-full max-w-[700px] justify-center"
         onSubmit={handleSubmit(handleSubmitButton)}
       >

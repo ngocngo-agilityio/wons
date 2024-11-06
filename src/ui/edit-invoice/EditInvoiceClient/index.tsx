@@ -33,7 +33,7 @@ const EditInvoiceClient = ({
   products,
   onEditInvoice,
 }: EditInvoiceClientProps) => {
-  const handleEditInvoice = async (
+  const handleEditInvoice = (
     data: Partial<TInvoice>,
     products: TInvoiceProduct<IProduct & { id: number }>[],
   ) => onEditInvoice(invoice.id, data, products);

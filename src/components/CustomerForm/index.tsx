@@ -108,6 +108,7 @@ const CustomerForm = ({
 
   return (
     <form
+      data-testid="customer-form"
       className="w-full max-w-2xl mx-auto"
       onSubmit={handleSubmit(saveData)}
     >

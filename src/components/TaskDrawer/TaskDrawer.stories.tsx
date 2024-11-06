@@ -7,9 +7,6 @@ import { fn } from '@storybook/test';
 import { SessionProvider } from 'next-auth/react';
 import Drawer from 'react-modern-drawer';
 
-// Mocks
-import { MOCK_USERS } from '@/mocks';
-
 // Hooks
 import { useBreakPoints } from '@/hooks';
 
@@ -72,7 +69,6 @@ const BasicUsage = () => {
           <div className="p-8 bg-white dark:bg-gray-400 h-full max-w-full overflow-y-auto">
             <TaskForm
               onAvatarChange={fn()}
-              user={MOCK_USERS[0]}
               onCloseDrawer={handleCloseDrawer}
               key={isDrawerOpen ? 'open' : 'closed'}
               onSubmit={fn()}
