@@ -13,7 +13,7 @@ exports[`ProductDetails Component matches snapshot 1`] = `
       >
         <img
           alt="Test Brand+/test-image.jpg"
-          class="object-cover rounded-full h-full"
+          class="opacity-0 object-cover rounded-full h-full"
           data-nimg="fill"
           decoding="async"
           fetchpriority="high"
@@ -22,6 +22,13 @@ exports[`ProductDetails Component matches snapshot 1`] = `
           srcset="/_next/image?url=%2Ftest-image.jpg&w=16&q=75 16w, /_next/image?url=%2Ftest-image.jpg&w=32&q=75 32w, /_next/image?url=%2Ftest-image.jpg&w=48&q=75 48w, /_next/image?url=%2Ftest-image.jpg&w=64&q=75 64w, /_next/image?url=%2Ftest-image.jpg&w=96&q=75 96w, /_next/image?url=%2Ftest-image.jpg&w=128&q=75 128w, /_next/image?url=%2Ftest-image.jpg&w=256&q=75 256w, /_next/image?url=%2Ftest-image.jpg&w=384&q=75 384w, /_next/image?url=%2Ftest-image.jpg&w=640&q=75 640w, /_next/image?url=%2Ftest-image.jpg&w=750&q=75 750w, /_next/image?url=%2Ftest-image.jpg&w=828&q=75 828w, /_next/image?url=%2Ftest-image.jpg&w=1080&q=75 1080w, /_next/image?url=%2Ftest-image.jpg&w=1200&q=75 1200w, /_next/image?url=%2Ftest-image.jpg&w=1920&q=75 1920w, /_next/image?url=%2Ftest-image.jpg&w=2048&q=75 2048w, /_next/image?url=%2Ftest-image.jpg&w=3840&q=75 3840w"
           style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
         />
+        <div
+          class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-full h-full"
+        >
+          <div
+            class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+          />
+        </div>
       </div>
       <div
         class="flex flex-col items-center"

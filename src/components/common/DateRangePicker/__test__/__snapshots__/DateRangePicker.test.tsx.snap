@@ -20,7 +20,7 @@ exports[`DateRangePicker match snapshot 1`] = `
           <p
             class="text-[15.02px] ml-[17.96px]"
           >
-            31-10-2024
+            01-11-2024
           </p>
           <div
             class="absolute flex items-center h-full right-0 px-2"
@@ -52,7 +52,7 @@ exports[`DateRangePicker match snapshot 1`] = `
           <p
             class="text-[15.02px] ml-[17.96px]"
           >
-            06-11-2024
+            07-11-2024
           </p>
           <div
             class="absolute flex items-center h-full right-0 px-2"
@@ -115,7 +115,7 @@ exports[`DateRangePicker match snapshot 1`] = `
                 data-slot="start-input"
                 role="presentation"
                 style="max-width: fit-content;"
-                value="2024-10-31"
+                value="2024-11-01"
               >
                 <div
                   aria-describedby="react-aria-description-2 react-aria-:r4:"
@@ -124,8 +124,8 @@ exports[`DateRangePicker match snapshot 1`] = `
                   aria-labelledby="react-aria-:rc: react-aria-:r1:"
                   aria-valuemax="12"
                   aria-valuemin="1"
-                  aria-valuenow="10"
-                  aria-valuetext="10 – October"
+                  aria-valuenow="11"
+                  aria-valuetext="11 – November"
                   autocorrect="off"
                   class="group first:-ml-0.5 [&:not(:first-child)]:-ml-1 px-0.5 my-auto box-content tabular-nums text-start inline-block outline-none focus:shadow-sm rounded-md text-foreground-500 data-[editable=true]:text-foreground data-[editable=true]:data-[placeholder=true]:text-foreground-500 data-[invalid=true]:text-danger-300 data-[invalid=true]:data-[editable=true]:text-danger data-[invalid=true]:focus:bg-danger-400/50 dark:data-[invalid=true]:focus:bg-danger-400/20 data-[invalid=true]:data-[editable=true]:focus:text-danger focus:bg-default-400/50 data-[editable=true]:focus:text-default-foreground"
                   contenteditable="true"
@@ -141,7 +141,7 @@ exports[`DateRangePicker match snapshot 1`] = `
                   style="caret-color: transparent;"
                   tabindex="0"
                 >
-                  10
+                  11
                 </div>
                 <div
                   aria-hidden="true"
@@ -157,10 +157,10 @@ exports[`DateRangePicker match snapshot 1`] = `
                   aria-invalid="true"
                   aria-label="day, Start Date, "
                   aria-labelledby="react-aria-:rg: react-aria-:r1:"
-                  aria-valuemax="31"
+                  aria-valuemax="30"
                   aria-valuemin="1"
-                  aria-valuenow="31"
-                  aria-valuetext="31"
+                  aria-valuenow="1"
+                  aria-valuetext="1"
                   autocorrect="off"
                   class="group first:-ml-0.5 [&:not(:first-child)]:-ml-1 px-0.5 my-auto box-content tabular-nums text-start inline-block outline-none focus:shadow-sm rounded-md text-foreground-500 data-[editable=true]:text-foreground data-[editable=true]:data-[placeholder=true]:text-foreground-500 data-[invalid=true]:text-danger-300 data-[invalid=true]:data-[editable=true]:text-danger data-[invalid=true]:focus:bg-danger-400/50 dark:data-[invalid=true]:focus:bg-danger-400/20 data-[invalid=true]:data-[editable=true]:focus:text-danger focus:bg-default-400/50 data-[editable=true]:focus:text-default-foreground"
                   contenteditable="true"
@@ -176,7 +176,7 @@ exports[`DateRangePicker match snapshot 1`] = `
                   style="caret-color: transparent;"
                   tabindex="0"
                 >
-                  31
+                  1
                 </div>
                 <div
                   aria-hidden="true"
@@ -215,7 +215,7 @@ exports[`DateRangePicker match snapshot 1`] = `
                 </div>
                 <input
                   type="hidden"
-                  value="2024-10-31"
+                  value="2024-11-01"
                 />
               </div>
               <span
@@ -233,7 +233,7 @@ exports[`DateRangePicker match snapshot 1`] = `
                 class="flex h-full gap-x-0.5 w-full font-normal text-small"
                 data-slot="end-input"
                 role="presentation"
-                value="2024-11-06"
+                value="2024-11-07"
               >
                 <div
                   aria-describedby="react-aria-description-2 react-aria-:r4:"
@@ -277,8 +277,8 @@ exports[`DateRangePicker match snapshot 1`] = `
                   aria-labelledby="react-aria-:rv: react-aria-:r1:"
                   aria-valuemax="30"
                   aria-valuemin="1"
-                  aria-valuenow="6"
-                  aria-valuetext="6"
+                  aria-valuenow="7"
+                  aria-valuetext="7"
                   autocorrect="off"
                   class="group first:-ml-0.5 [&:not(:first-child)]:-ml-1 px-0.5 my-auto box-content tabular-nums text-start inline-block outline-none focus:shadow-sm rounded-md text-foreground-500 data-[editable=true]:text-foreground data-[editable=true]:data-[placeholder=true]:text-foreground-500 data-[invalid=true]:text-danger-300 data-[invalid=true]:data-[editable=true]:text-danger data-[invalid=true]:focus:bg-danger-400/50 dark:data-[invalid=true]:focus:bg-danger-400/20 data-[invalid=true]:data-[editable=true]:focus:text-danger focus:bg-default-400/50 data-[editable=true]:focus:text-default-foreground"
                   contenteditable="true"
@@ -294,7 +294,7 @@ exports[`DateRangePicker match snapshot 1`] = `
                   style="caret-color: transparent;"
                   tabindex="0"
                 >
-                  6
+                  7
                 </div>
                 <div
                   aria-hidden="true"
@@ -333,7 +333,7 @@ exports[`DateRangePicker match snapshot 1`] = `
                 </div>
                 <input
                   type="hidden"
-                  value="2024-11-06"
+                  value="2024-11-07"
                 />
               </div>
               <button
