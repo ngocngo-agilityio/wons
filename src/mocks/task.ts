@@ -132,18 +132,20 @@ export const MOCK_TASKS: TasksState = {
   done: [],
 };
 
-export const MOCK_TASK_WITH_STRING_ASSIGNEES: Partial<TaskWithStringAssignees> =
-  {
-    title: 'Test Task',
-    label: 'inProgress',
-    level: Level.Medium,
-    description: 'This is a test task',
-    createdAt: '2024-10-13T10:00:00Z',
-    updatedAt: '2024-10-13T12:00:00Z',
-    publishedAt: '2024-10-13T12:00:00Z',
-    images: ['image1.png', 'image2.png'],
-    assignees: [123, 456],
-  };
+export const MOCK_TASK_WITH_STRING_ASSIGNEES: TaskWithStringAssignees = {
+  title: 'Test Task',
+  label: 'inProgress',
+  level: Level.Medium,
+  description: 'This is a test task',
+  createdAt: '2024-10-13T10:00:00Z',
+  updatedAt: '2024-10-13T12:00:00Z',
+  publishedAt: '2024-10-13T12:00:00Z',
+  images: [
+    'https://t3.ftcdn.net/jpg/00/92/53/56/360_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg',
+    'https://media.istockphoto.com/id/627795510/photo/example.jpg?s=612x612&w=0&k=20&c=lpUf5rjPVd6Kl_M6heqC8sUncR4FLmtsRzeYdTr5X_I=',
+  ],
+  assignees: [1],
+};
 
 export const MOCK_DATA_TASKS_WITHOUT_STRAPI_MODEL = {
   title: 'Updated Task',

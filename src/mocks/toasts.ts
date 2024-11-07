@@ -27,3 +27,18 @@ export const MOCK_SUCCESS_TOASTS = [
     status: 'success',
   },
 ];
+
+export const TOAST_MOCK = [
+  {
+    id: '1',
+    title: 'Success',
+    description: 'Operation completed successfully.',
+    status: 'success',
+  },
+  {
+    id: '2',
+    title: 'Error',
+    description: 'Something went wrong.',
+    status: 'error',
+  },
+];

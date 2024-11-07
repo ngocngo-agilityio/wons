@@ -40,6 +40,7 @@ const Toast = ({
       </div>
 
       <Button
+        data-testid="toast-close-button"
         isIconOnly
         className={`ml-2 p-0 hover:bg-transparent dark:hover:bg-transparent text-white ${statusColor}`}
         onClick={handleClose}

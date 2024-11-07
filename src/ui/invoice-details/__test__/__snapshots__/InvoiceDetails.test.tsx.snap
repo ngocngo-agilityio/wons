@@ -448,7 +448,7 @@ exports[`Invoice details should match snapshot 1`] = `
           <p
             class="font-dm-sans text-blue-800 dark:text-white text-2xs text-gray-200 mb-8"
           >
-            All amounts are in dollars.   Please make the payment within 15 days from the issue of date of this invoice.   Tax is not charged on the basis of paragraph 1 of Article 94 of the Value Added   Tax Act (I am not liable for VAT).
+            All amounts are in dollars. Please make the payment within 15 days from the issue of date of this invoice. Tax is not charged on the basis of paragraph 1 of Article 94 of the Value Added Tax Act (I am not liable for VAT).
           </p>
           <p
             class="font-dm-sans text-blue-800 dark:text-white text-2xs text-gray-200"
