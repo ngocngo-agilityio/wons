@@ -228,6 +228,18 @@ export const MOCK_PRODUCTS: (IProduct & { id: number })[] = [
     publishedAt: '2024-09-22T22:25:15.041Z',
     totalSale: 969,
   },
+  {
+    id: 3,
+    imageUrl:
+      'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D',
+    title: 'Iphone 11',
+    price: 1000,
+    rating: 5,
+    createdAt: '2024-09-22T22:25:15.043Z',
+    updatedAt: '2024-09-22T22:25:15.043Z',
+    publishedAt: '2024-09-22T22:25:15.041Z',
+    totalSale: 999,
+  },
 ];
 
 export const MOCK_PRODUCT_LIST: TProductInvoiceResponse[] = [

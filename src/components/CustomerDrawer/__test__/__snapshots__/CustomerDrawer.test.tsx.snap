@@ -3,35 +3,42 @@
 exports[`CustomerDrawer matches snapshot 1`] = `
 <div>
   <div
-    class="w-full flex justify-center md:justify-end"
+    data-overlay-container="true"
   >
-    <button
-      class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-blue-500 border-transparent dark:bg-purple-600 text-white hover:bg-blue-100 pb-2.5 pt-[11px] rounded-[10px] border-[1px] min-w-max text-xl font-medium md:w-auto h-10 px-2.5 w-full mt-10 md:mt-0"
-      type="button"
+    <script>
+      !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&false)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}else{c.add('light')}if(e==='light'||e==='dark'||!e)d.style.colorScheme=e||'light'}catch(e){}}()
+    </script>
+    <div
+      class="w-full flex justify-center md:justify-end"
     >
-      <svg
-        aria-hidden="true"
-        class="text-white"
-        fill="currentColor"
-        focusable="false"
-        height="22"
-        stroke="currentColor"
-        stroke-width="0"
-        tabindex="-1"
-        viewBox="0 0 16 16"
-        width="22"
-        xmlns="http://www.w3.org/2000/svg"
+      <button
+        class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-blue-500 border-transparent dark:bg-purple-600 text-white hover:bg-blue-100 pb-2.5 pt-[11px] rounded-[10px] border-[1px] min-w-max text-xl font-medium md:w-auto h-10 px-2.5 w-full mt-10 md:mt-0"
+        type="button"
       >
-        <path
-          d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
-        />
-      </svg>
-      <div
-        class="flex items-center"
-      >
-        Add Customer
-      </div>
-    </button>
+        <svg
+          aria-hidden="true"
+          class="text-white"
+          fill="currentColor"
+          focusable="false"
+          height="22"
+          stroke="currentColor"
+          stroke-width="0"
+          tabindex="-1"
+          viewBox="0 0 16 16"
+          width="22"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+          />
+        </svg>
+        <div
+          class="flex items-center"
+        >
+          Add Customer
+        </div>
+      </button>
+    </div>
   </div>
 </div>
 `;

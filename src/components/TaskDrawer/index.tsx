@@ -131,7 +131,6 @@ const TaskDrawer = ({ isAdmin }: TaskDrawerProps): JSX.Element => {
               onCloseDrawer={handleCloseDrawer}
               key={isDrawerOpen ? 'open' : 'closed'}
               onSubmit={handleFormSubmit}
-              setReset={() => {}}
             />
           </div>
         </Drawer>

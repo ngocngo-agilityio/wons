@@ -36,8 +36,8 @@ describe('getSerialNumberWithMedal', () => {
 });
 
 describe('sortByTotalSaleDescending', () => {
-  it.skip('should sort products by totalSale in descending order', () => {
-    const products = [
+  it('should sort products by totalSale in descending order', () => {
+    const productsBeforeSort = [
       {
         id: 1,
         attributes: MOCK_PRODUCTS[0],
@@ -52,9 +52,24 @@ describe('sortByTotalSaleDescending', () => {
       },
     ] as unknown as TProductInvoiceWithTotalSaleResponse[];
 
-    const sortedProducts = sortByTotalSaleDescending(products);
+    const productsAfterSort = [
+      {
+        id: 3,
+        attributes: MOCK_PRODUCTS[2],
+      },
+      {
+        id: 2,
+        attributes: MOCK_PRODUCTS[1],
+      },
+      {
+        id: 1,
+        attributes: MOCK_PRODUCTS[0],
+      },
+    ] as unknown as TProductInvoiceWithTotalSaleResponse[];
 
-    expect(sortedProducts).toEqual(products);
+    const sortedProducts = sortByTotalSaleDescending(productsBeforeSort);
+
+    expect(sortedProducts).toEqual(productsAfterSort);
   });
 
   it('should handle products with missing totalSale values, treating them as 0', () => {

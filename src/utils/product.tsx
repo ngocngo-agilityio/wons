@@ -41,7 +41,7 @@ export const sortByTotalSaleDescending = (
   products: TProductInvoiceWithTotalSaleResponse[],
 ) =>
   products.toSorted(
-    (a, b) => (b.attributes.totalSale ?? 0) - (a.attributes.totalSale ?? 0),
+    (a, b) => (b.attributes?.totalSale ?? 0) - (a.attributes?.totalSale ?? 0),
   );
 
 export const sortProductsByTotalSale = (

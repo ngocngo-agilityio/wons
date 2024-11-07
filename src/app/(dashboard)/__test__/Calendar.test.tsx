@@ -12,7 +12,7 @@ jest.mock('@/api', () => ({
 }));
 
 describe('Calendar page', () => {
-  it.skip('should match snapshot', async () => {
+  it('should match snapshot', async () => {
     const { container } = testLibJestUtils.render(<CalendarPage />);
 
     await testLibJestUtils.waitFor(() => {
