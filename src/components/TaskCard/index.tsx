@@ -287,7 +287,6 @@ const TaskCard = ({ index, task, isAdmin }: TTaskCardProps) => {
                     isDisabledField={isPending}
                     onCloseDrawer={handleCloseFormModal}
                     onSubmit={handleFormSubmit}
-                    setReset={() => {}}
                   />
                 </div>
               </Drawer>

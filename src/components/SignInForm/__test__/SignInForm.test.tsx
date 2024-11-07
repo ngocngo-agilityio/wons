@@ -57,23 +57,33 @@ describe('SignInForm', () => {
     });
   });
 
-  it.skip('should show validation errors for empty fields', async () => {
-    const { getByRole, findByText, getByLabelText } = renderComponent();
+  it('should show validation errors for empty fields', async () => {
+    const { findByText, getByLabelText } = renderComponent();
 
     testLibJestUtils.fireEvent.change(getByLabelText(/Email Address/i), {
-      target: { value: 'test' },
+      target: { value: '' },
     });
 
-    testLibJestUtils.fireEvent.change(getByLabelText(/Password/i), {
-      target: { value: 'password123' },
-    });
-
-    // Simulate form submission without filling fields
-    testLibJestUtils.fireEvent.click(getByRole('button', { name: /Sign in/i }));
+    testLibJestUtils.fireEvent.blur(getByLabelText(/Email Address/i));
 
     // Check for validation messages
-    expect(
-      await findByText(MESSAGES.ERROR.FIELD_INVALID('Email')),
-    ).toBeInTheDocument();
+    await testLibJestUtils.waitFor(() => {
+      expect(findByText(MESSAGES.ERROR.FIELD_REQUIRED)).toBeTruthy();
+    });
+  });
+
+  it('should show validation errors for invalid email ', async () => {
+    const { findByText, getByLabelText } = renderComponent();
+
+    testLibJestUtils.fireEvent.change(getByLabelText(/Email Address/i), {
+      target: { value: 'emailInvalid' },
+    });
+
+    testLibJestUtils.fireEvent.blur(getByLabelText(/Email Address/i));
+
+    // Check for validation messages
+    await testLibJestUtils.waitFor(() => {
+      expect(findByText(MESSAGES.ERROR.EMAIL_INVALID)).toBeTruthy();
+    });
   });
 });

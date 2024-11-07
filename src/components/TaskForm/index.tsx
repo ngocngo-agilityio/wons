@@ -47,7 +47,7 @@ const REQUIRED_FIELDS = ['title', 'label', 'level', 'description', 'assignees'];
 export interface ITaskFormProps {
   isDisabledField?: boolean;
   onSubmit: (data: TaskWithStringAssignees) => void;
-  setReset: (reset: UseFormReset<Partial<TaskWithStringAssignees>>) => void;
+  setReset?: (reset: UseFormReset<Partial<TaskWithStringAssignees>>) => void;
   previewData?: TaskWithStringAssignees | null;
   onCloseDrawer?: () => void;
   onAvatarChange: (files: File[]) => void;

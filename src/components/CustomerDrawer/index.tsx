@@ -98,7 +98,10 @@ const CustomerDrawer = (): JSX.Element => {
           direction="right"
           size={isGreaterThanMd ? 450 : 375}
         >
-          <div className="p-8 bg-white dark:bg-gray-400 h-full max-w-full overflow-y-auto">
+          <div
+            data-testid="customer-drawer"
+            className="p-8 bg-white dark:bg-gray-400 h-full max-w-full overflow-y-auto"
+          >
             <CustomerForm
               onCloseDrawer={handleCloseDrawer}
               key={isDrawerOpen ? 'open' : 'closed'}
