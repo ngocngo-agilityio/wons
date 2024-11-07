@@ -17,14 +17,15 @@ interface SignUpLayoutProps {
 const SignUpLayout = ({ children }: SignUpLayoutProps): JSX.Element => (
   <AuthLayout
     image={
-      <ImageFallback
-        src={IMAGES.SIGN_UP_IMAGE}
-        alt="sign-up"
-        width={0}
-        height={0}
-        sizes="100vw"
-        className="h-[200px] lg:h-[427px] w-auto object-cover"
-      />
+      <div className="relative lg:w-[550px] h-[380px] lg:h-[427px]">
+        <ImageFallback
+          fill
+          src={IMAGES.SIGN_UP_IMAGE}
+          alt="sign-up"
+          sizes="100vw"
+          className="object-contain"
+        />
+      </div>
     }
   >
     <div className="flex flex-col items-center pt-[47px] pb-[90px] mx-auto base:w-full xs:max-w-[348px]">

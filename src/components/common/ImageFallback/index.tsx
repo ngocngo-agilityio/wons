@@ -72,7 +72,7 @@ const ImageFallback = ({
       {!loaded && (
         <Skeleton
           className={clsx(
-            'rounded-full',
+            className.includes('rounded-full') && 'rounded-full',
             width && height
               ? `w-[${width}px] h-[${height}px]`
               : 'w-full h-full',
