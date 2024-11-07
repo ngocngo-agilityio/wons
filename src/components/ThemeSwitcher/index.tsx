@@ -27,9 +27,9 @@ const ThemeSwitcher = () => {
       className="p-2"
     >
       {theme === THEME_MODES.DARK ? (
-        <FiSun className="w-6 h-6" />
+        <FiSun data-testid="FiSun" className="w-6 h-6" />
       ) : (
-        <IoMoonOutline className="w-6 h-6" />
+        <IoMoonOutline data-testid="IoMoonOutline" className="w-6 h-6" />
       )}
     </Button>
   );

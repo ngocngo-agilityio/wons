@@ -23,10 +23,11 @@ const ToastList = ({ toasts, onClose }: IToastListProps) => (
         title = '',
         description = '',
         status = MESSAGES.STATUS.SUCCESS,
-      } = toast || {};
+      } = toast;
 
       return (
         <Toast
+          data-testid="toast"
           key={id}
           id={id}
           title={title}

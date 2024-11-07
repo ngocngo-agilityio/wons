@@ -400,13 +400,12 @@ exports[`CustomerForm renders CustomerForm with content 1`] = `
         data-slot="base"
       >
         <div
-          aria-hidden="false"
+          aria-hidden="true"
           data-a11y-ignore="aria-hidden-focus"
           data-testid="hidden-select-container"
           style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
         >
           <input
-            aria-label="Input"
             style="font-size: 16px;"
             tabindex="-1"
             type="text"
@@ -415,7 +414,6 @@ exports[`CustomerForm renders CustomerForm with content 1`] = `
           <label>
             Gender
             <select
-              aria-label="Select"
               name="gender"
               size="2"
               tabindex="-1"
