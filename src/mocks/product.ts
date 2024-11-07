@@ -405,3 +405,28 @@ export const MOCK_PRODUCT_LIST: TProductInvoiceResponse[] = [
     },
   },
 ];
+
+export const PRODUCT_WITHOUT_STRAPI_MODEL = [
+  {
+    id: 1,
+    imageUrl: 'http://example.com/image1.png',
+    title: 'Product 1',
+    price: 10,
+    rating: 5,
+    createdAt: '2021-01-01',
+    updatedAt: '2021-01-02',
+    publishedAt: '2021-01-01',
+    totalSale: 100,
+  },
+  {
+    id: 2,
+    imageUrl: 'http://example.com/image2.png',
+    title: 'Product 2',
+    price: 20,
+    rating: 4,
+    createdAt: '2021-01-01',
+    updatedAt: '2021-01-02',
+    publishedAt: '2021-01-01',
+    totalSale: 150,
+  },
+];
