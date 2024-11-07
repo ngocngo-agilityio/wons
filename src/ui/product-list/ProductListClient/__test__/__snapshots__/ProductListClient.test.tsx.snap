@@ -253,7 +253,7 @@ exports[`Product list client calls close edit drawer 1`] = `
                   >
                     <img
                       alt="customer avatar"
-                      class="rounded-full h-full object-cover"
+                      class="opacity-0 rounded-full h-full object-cover"
                       data-nimg="1"
                       decoding="async"
                       fetchpriority="high"
@@ -264,6 +264,13 @@ exports[`Product list client calls close edit drawer 1`] = `
                       style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                       width="40"
                     />
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[40px] h-[40px]"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
                     <p
                       class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
                     >
@@ -398,7 +405,7 @@ exports[`Product list client calls close edit drawer 1`] = `
                   >
                     <img
                       alt="customer avatar"
-                      class="rounded-full h-full object-cover"
+                      class="opacity-0 rounded-full h-full object-cover"
                       data-nimg="1"
                       decoding="async"
                       fetchpriority="high"
@@ -409,6 +416,13 @@ exports[`Product list client calls close edit drawer 1`] = `
                       style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                       width="40"
                     />
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[40px] h-[40px]"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
                     <p
                       class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
                     >
@@ -542,7 +556,7 @@ exports[`Product list client calls close edit drawer 1`] = `
                   >
                     <img
                       alt="customer avatar"
-                      class="rounded-full h-full object-cover"
+                      class="opacity-0 rounded-full h-full object-cover"
                       data-nimg="1"
                       decoding="async"
                       fetchpriority="high"
@@ -553,6 +567,13 @@ exports[`Product list client calls close edit drawer 1`] = `
                       style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                       width="40"
                     />
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[40px] h-[40px]"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
                     <p
                       class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
                     >
@@ -664,7 +685,7 @@ exports[`Product list client calls close edit drawer 1`] = `
                   >
                     <img
                       alt="customer avatar"
-                      class="rounded-full h-full object-cover"
+                      class="opacity-0 rounded-full h-full object-cover"
                       data-nimg="1"
                       decoding="async"
                       fetchpriority="high"
@@ -675,6 +696,13 @@ exports[`Product list client calls close edit drawer 1`] = `
                       style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                       width="40"
                     />
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[40px] h-[40px]"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
                     <p
                       class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
                     >
@@ -785,7 +813,7 @@ exports[`Product list client calls close edit drawer 1`] = `
                   >
                     <img
                       alt="customer avatar"
-                      class="rounded-full h-full object-cover"
+                      class="opacity-0 rounded-full h-full object-cover"
                       data-nimg="1"
                       decoding="async"
                       fetchpriority="high"
@@ -796,6 +824,13 @@ exports[`Product list client calls close edit drawer 1`] = `
                       style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                       width="40"
                     />
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[40px] h-[40px]"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
                     <p
                       class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
                     >
@@ -907,7 +942,7 @@ exports[`Product list client calls close edit drawer 1`] = `
                   >
                     <img
                       alt="customer avatar"
-                      class="rounded-full h-full object-cover"
+                      class="opacity-0 rounded-full h-full object-cover"
                       data-nimg="1"
                       decoding="async"
                       fetchpriority="high"
@@ -918,6 +953,13 @@ exports[`Product list client calls close edit drawer 1`] = `
                       style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                       width="40"
                     />
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[40px] h-[40px]"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
                     <p
                       class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
                     >
@@ -1257,7 +1299,7 @@ exports[`Product list client calls open details 1`] = `
                   >
                     <img
                       alt="customer avatar"
-                      class="rounded-full h-full object-cover"
+                      class="opacity-0 rounded-full h-full object-cover"
                       data-nimg="1"
                       decoding="async"
                       fetchpriority="high"
@@ -1268,6 +1310,13 @@ exports[`Product list client calls open details 1`] = `
                       style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                       width="40"
                     />
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[40px] h-[40px]"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
                     <p
                       class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
                     >
@@ -1402,7 +1451,7 @@ exports[`Product list client calls open details 1`] = `
                   >
                     <img
                       alt="customer avatar"
-                      class="rounded-full h-full object-cover"
+                      class="opacity-0 rounded-full h-full object-cover"
                       data-nimg="1"
                       decoding="async"
                       fetchpriority="high"
@@ -1413,6 +1462,13 @@ exports[`Product list client calls open details 1`] = `
                       style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                       width="40"
                     />
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[40px] h-[40px]"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
                     <p
                       class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
                     >
@@ -1546,7 +1602,7 @@ exports[`Product list client calls open details 1`] = `
                   >
                     <img
                       alt="customer avatar"
-                      class="rounded-full h-full object-cover"
+                      class="opacity-0 rounded-full h-full object-cover"
                       data-nimg="1"
                       decoding="async"
                       fetchpriority="high"
@@ -1557,6 +1613,13 @@ exports[`Product list client calls open details 1`] = `
                       style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                       width="40"
                     />
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[40px] h-[40px]"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
                     <p
                       class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
                     >
@@ -1668,7 +1731,7 @@ exports[`Product list client calls open details 1`] = `
                   >
                     <img
                       alt="customer avatar"
-                      class="rounded-full h-full object-cover"
+                      class="opacity-0 rounded-full h-full object-cover"
                       data-nimg="1"
                       decoding="async"
                       fetchpriority="high"
@@ -1679,6 +1742,13 @@ exports[`Product list client calls open details 1`] = `
                       style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                       width="40"
                     />
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[40px] h-[40px]"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
                     <p
                       class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
                     >
@@ -1790,7 +1860,7 @@ exports[`Product list client calls open details 1`] = `
                   >
                     <img
                       alt="customer avatar"
-                      class="rounded-full h-full object-cover"
+                      class="opacity-0 rounded-full h-full object-cover"
                       data-nimg="1"
                       decoding="async"
                       fetchpriority="high"
@@ -1801,6 +1871,13 @@ exports[`Product list client calls open details 1`] = `
                       style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                       width="40"
                     />
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[40px] h-[40px]"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
                     <p
                       class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
                     >
@@ -1912,7 +1989,7 @@ exports[`Product list client calls open details 1`] = `
                   >
                     <img
                       alt="customer avatar"
-                      class="rounded-full h-full object-cover"
+                      class="opacity-0 rounded-full h-full object-cover"
                       data-nimg="1"
                       decoding="async"
                       fetchpriority="high"
@@ -1923,6 +2000,13 @@ exports[`Product list client calls open details 1`] = `
                       style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                       width="40"
                     />
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[40px] h-[40px]"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
                     <p
                       class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
                     >
@@ -2032,7 +2116,7 @@ exports[`Product list client calls open details 1`] = `
             >
               <img
                 alt="Apple+https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D"
-                class="object-cover rounded-full h-full"
+                class="opacity-0 object-cover rounded-full h-full"
                 data-nimg="fill"
                 decoding="async"
                 fetchpriority="high"
@@ -2041,6 +2125,13 @@ exports[`Product list client calls open details 1`] = `
                 srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1505740420928-5e560c06d30e%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&w=3840&q=75 3840w"
                 style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
               />
+              <div
+                class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-full h-full"
+              >
+                <div
+                  class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                />
+              </div>
             </div>
             <div
               class="flex flex-col items-center"
@@ -2361,7 +2452,7 @@ exports[`Product list client should match snapshot 1`] = `
                   >
                     <img
                       alt="customer avatar"
-                      class="rounded-full h-full object-cover"
+                      class="opacity-0 rounded-full h-full object-cover"
                       data-nimg="1"
                       decoding="async"
                       fetchpriority="high"
@@ -2372,6 +2463,13 @@ exports[`Product list client should match snapshot 1`] = `
                       style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                       width="40"
                     />
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[40px] h-[40px]"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
                     <p
                       class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
                     >
@@ -2506,7 +2604,7 @@ exports[`Product list client should match snapshot 1`] = `
                   >
                     <img
                       alt="customer avatar"
-                      class="rounded-full h-full object-cover"
+                      class="opacity-0 rounded-full h-full object-cover"
                       data-nimg="1"
                       decoding="async"
                       fetchpriority="high"
@@ -2517,6 +2615,13 @@ exports[`Product list client should match snapshot 1`] = `
                       style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                       width="40"
                     />
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[40px] h-[40px]"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
                     <p
                       class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
                     >
@@ -2650,7 +2755,7 @@ exports[`Product list client should match snapshot 1`] = `
                   >
                     <img
                       alt="customer avatar"
-                      class="rounded-full h-full object-cover"
+                      class="opacity-0 rounded-full h-full object-cover"
                       data-nimg="1"
                       decoding="async"
                       fetchpriority="high"
@@ -2661,6 +2766,13 @@ exports[`Product list client should match snapshot 1`] = `
                       style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                       width="40"
                     />
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[40px] h-[40px]"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
                     <p
                       class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
                     >
@@ -2772,7 +2884,7 @@ exports[`Product list client should match snapshot 1`] = `
                   >
                     <img
                       alt="customer avatar"
-                      class="rounded-full h-full object-cover"
+                      class="opacity-0 rounded-full h-full object-cover"
                       data-nimg="1"
                       decoding="async"
                       fetchpriority="high"
@@ -2783,6 +2895,13 @@ exports[`Product list client should match snapshot 1`] = `
                       style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                       width="40"
                     />
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[40px] h-[40px]"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
                     <p
                       class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
                     >
@@ -2893,7 +3012,7 @@ exports[`Product list client should match snapshot 1`] = `
                   >
                     <img
                       alt="customer avatar"
-                      class="rounded-full h-full object-cover"
+                      class="opacity-0 rounded-full h-full object-cover"
                       data-nimg="1"
                       decoding="async"
                       fetchpriority="high"
@@ -2904,6 +3023,13 @@ exports[`Product list client should match snapshot 1`] = `
                       style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                       width="40"
                     />
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[40px] h-[40px]"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
                     <p
                       class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
                     >
@@ -3015,7 +3141,7 @@ exports[`Product list client should match snapshot 1`] = `
                   >
                     <img
                       alt="customer avatar"
-                      class="rounded-full h-full object-cover"
+                      class="opacity-0 rounded-full h-full object-cover"
                       data-nimg="1"
                       decoding="async"
                       fetchpriority="high"
@@ -3026,6 +3152,13 @@ exports[`Product list client should match snapshot 1`] = `
                       style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                       width="40"
                     />
+                    <div
+                      class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[40px] h-[40px]"
+                    >
+                      <div
+                        class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                      />
+                    </div>
                     <p
                       class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
                     >

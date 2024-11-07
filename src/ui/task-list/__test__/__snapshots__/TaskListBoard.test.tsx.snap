@@ -70,7 +70,7 @@ exports[`Task List Board should match snapshot 1`] = `
                 >
                   <img
                     alt="Dashboard Design"
-                    class="rounded-[10px] object-cover"
+                    class="opacity-0 rounded-[10px] object-cover"
                     data-nimg="fill"
                     decoding="async"
                     fetchpriority="high"
@@ -79,13 +79,20 @@ exports[`Task List Board should match snapshot 1`] = `
                     srcset="/_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=3840&q=75 3840w"
                     style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                   />
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-full h-full"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
                 </div>
                 <div
                   class="w-[107px] h-[90px] relative"
                 >
                   <img
                     alt="Dashboard Design"
-                    class="rounded-[10px] object-cover"
+                    class="opacity-0 rounded-[10px] object-cover"
                     data-nimg="fill"
                     decoding="async"
                     fetchpriority="high"
@@ -94,6 +101,13 @@ exports[`Task List Board should match snapshot 1`] = `
                     srcset="/_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=3840&q=75 3840w"
                     style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                   />
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-full h-full"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -108,7 +122,7 @@ exports[`Task List Board should match snapshot 1`] = `
                 >
                   <img
                     alt="ngocngo"
-                    class="h-full rounded-full object-cover"
+                    class="opacity-0 h-full rounded-full object-cover"
                     data-nimg="1"
                     decoding="async"
                     fetchpriority="high"
@@ -118,13 +132,20 @@ exports[`Task List Board should match snapshot 1`] = `
                     style="color: transparent;"
                     width="28"
                   />
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[28px] h-[28px]"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
                 </div>
                 <div
                   class="w-7 h-7 -ml-3"
                 >
                   <img
                     alt="user"
-                    class="h-full rounded-full object-cover"
+                    class="opacity-0 h-full rounded-full object-cover"
                     data-nimg="1"
                     decoding="async"
                     fetchpriority="high"
@@ -134,13 +155,20 @@ exports[`Task List Board should match snapshot 1`] = `
                     style="color: transparent;"
                     width="28"
                   />
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[28px] h-[28px]"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
                 </div>
                 <div
                   class="w-7 h-7 -ml-3"
                 >
                   <img
                     alt="user34"
-                    class="h-full rounded-full object-cover"
+                    class="opacity-0 h-full rounded-full object-cover"
                     data-nimg="1"
                     decoding="async"
                     fetchpriority="high"
@@ -150,6 +178,13 @@ exports[`Task List Board should match snapshot 1`] = `
                     style="color: transparent;"
                     width="28"
                   />
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[28px] h-[28px]"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
                 </div>
                 <button
                   aria-label="Plus Button"
@@ -310,7 +345,7 @@ exports[`Task List Board should match snapshot with search params is undefined 1
                 >
                   <img
                     alt="Dashboard Design"
-                    class="rounded-[10px] object-cover"
+                    class="opacity-0 rounded-[10px] object-cover"
                     data-nimg="fill"
                     decoding="async"
                     fetchpriority="high"
@@ -319,13 +354,20 @@ exports[`Task List Board should match snapshot with search params is undefined 1
                     srcset="/_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-14-finish-select-202209-6-1inch-yellow_FMT_WHH%3Fwid%3D1280%26hei%3D492%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DbjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbjRRVTNjZitXallzNXA5ZUIwM25xZHVqay8zY0s4VHBsVmhRS2dCdnNPUHBwYUdQQkdYL0crTjZtOXJzeHgrYU02WjdNRmRCc09Pek5waThFRitZTkR0NEZTY1VIaEpLYkJrOVY3am50SHB3PT0%3D%26traceId%3D1&w=3840&q=75 3840w"
                     style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                   />
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-full h-full"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
                 </div>
                 <div
                   class="w-[107px] h-[90px] relative"
                 >
                   <img
                     alt="Dashboard Design"
-                    class="rounded-[10px] object-cover"
+                    class="opacity-0 rounded-[10px] object-cover"
                     data-nimg="fill"
                     decoding="async"
                     fetchpriority="high"
@@ -334,6 +376,13 @@ exports[`Task List Board should match snapshot with search params is undefined 1
                     srcset="/_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fproduct.hstatic.net%2F1000300544%2Fproduct%2Fiphone-12-purple-select-2021_c2f1208cec9f4dcdab82932a1cc87c85.png&w=3840&q=75 3840w"
                     style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                   />
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-full h-full"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -348,7 +397,7 @@ exports[`Task List Board should match snapshot with search params is undefined 1
                 >
                   <img
                     alt="ngocngo"
-                    class="h-full rounded-full object-cover"
+                    class="opacity-0 h-full rounded-full object-cover"
                     data-nimg="1"
                     decoding="async"
                     fetchpriority="high"
@@ -358,13 +407,20 @@ exports[`Task List Board should match snapshot with search params is undefined 1
                     style="color: transparent;"
                     width="28"
                   />
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[28px] h-[28px]"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
                 </div>
                 <div
                   class="w-7 h-7 -ml-3"
                 >
                   <img
                     alt="user"
-                    class="h-full rounded-full object-cover"
+                    class="opacity-0 h-full rounded-full object-cover"
                     data-nimg="1"
                     decoding="async"
                     fetchpriority="high"
@@ -374,13 +430,20 @@ exports[`Task List Board should match snapshot with search params is undefined 1
                     style="color: transparent;"
                     width="28"
                   />
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[28px] h-[28px]"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
                 </div>
                 <div
                   class="w-7 h-7 -ml-3"
                 >
                   <img
                     alt="user34"
-                    class="h-full rounded-full object-cover"
+                    class="opacity-0 h-full rounded-full object-cover"
                     data-nimg="1"
                     decoding="async"
                     fetchpriority="high"
@@ -390,6 +453,13 @@ exports[`Task List Board should match snapshot with search params is undefined 1
                     style="color: transparent;"
                     width="28"
                   />
+                  <div
+                    class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[28px] h-[28px]"
+                  >
+                    <div
+                      class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                    />
+                  </div>
                 </div>
                 <button
                   aria-label="Plus Button"
