@@ -1,6 +1,6 @@
 'use client';
 
-import { memo, useCallback, useState } from 'react';
+import { memo, useCallback, useState, useEffect } from 'react';
 import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css';
 
@@ -23,7 +23,7 @@ import { useBreakPoints, useToast } from '@/hooks';
 import { createProduct } from '@/actions';
 
 // Utils
-import { handleUpdateImage } from '@/utils/formHandler';
+import { handleUpdateImage, preventScrollFromState } from '@/utils';
 
 // Components
 import { BsPlus, Button, ProductForm } from '@/components';
@@ -89,6 +89,10 @@ const ProductDrawer = ({ isAdmin }: ProductDrawerProps): JSX.Element => {
     setAvatarFile(avatarFile);
     setIsAvatarDirty(true);
   }, []);
+
+  useEffect(() => {
+    preventScrollFromState(isDrawerOpen);
+  }, [isDrawerOpen]);
 
   return (
     <div className="flex flex-col md:flex-row justify-between md:items-center w-full mb-8">

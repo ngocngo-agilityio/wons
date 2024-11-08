@@ -1,7 +1,14 @@
 'use client';
 
 // Libs
-import { Key, memo, useCallback, useState, useTransition } from 'react';
+import {
+  Key,
+  memo,
+  useCallback,
+  useState,
+  useTransition,
+  useEffect,
+} from 'react';
 import isEqual from 'react-fast-compare';
 import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css';
@@ -38,7 +45,11 @@ import { ICustomer } from '@/models';
 import { IoClose } from 'react-icons/io5';
 
 // Utils
-import { formatPhoneNumberTyping, handleUpdateImage } from '@/utils';
+import {
+  formatPhoneNumberTyping,
+  handleUpdateImage,
+  preventScrollFromState,
+} from '@/utils';
 
 export type TCustomerListClientProps = {
   customerList: TCustomerDataResponse[];
@@ -179,6 +190,12 @@ const CustomerListClient = ({
     [idCustomer, showToast, avatarFile, isAvatarDirty],
   );
 
+  useEffect(() => {
+    // Prevent scrolling based on toggleForm and toggleDetails states
+    const shouldDisableScroll = toggleDetails || toggleForm;
+    preventScrollFromState(shouldDisableScroll);
+  }, [toggleDetails, toggleForm]);
+
   return (
     <>
       {isLoading && <LoadingIndicator />}
@@ -227,6 +244,7 @@ const CustomerListClient = ({
           onClose={handleCloseDrawer}
           direction="right"
           size={302}
+          className="overflow-y-auto"
         >
           <CustomerDetails
             customer={customerDetails}

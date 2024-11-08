@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useState, useTransition } from 'react';
+import { useCallback, useState, useTransition, useEffect } from 'react';
 import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css';
 
@@ -20,7 +20,11 @@ import { createCustomer } from '@/actions';
 import { useBreakPoints, useToast } from '@/hooks';
 
 // Utils
-import { formatPhoneNumberTyping, handleUpdateImage } from '@/utils';
+import {
+  formatPhoneNumberTyping,
+  handleUpdateImage,
+  preventScrollFromState,
+} from '@/utils';
 
 const CustomerDrawer = (): JSX.Element => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -80,6 +84,10 @@ const CustomerDrawer = (): JSX.Element => {
     setAvatarFile(avatarFile);
     setIsAvatarDirty(true);
   }, []);
+
+  useEffect(() => {
+    preventScrollFromState(isDrawerOpen);
+  }, [isDrawerOpen]);
 
   return (
     <div className="w-full flex justify-center md:justify-end">

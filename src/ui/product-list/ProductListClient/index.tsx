@@ -1,7 +1,7 @@
 'use client';
 
 import isEqual from 'react-fast-compare';
-import { Key, memo, useCallback, useState } from 'react';
+import { Key, memo, useCallback, useState, useEffect } from 'react';
 import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css';
 
@@ -20,7 +20,11 @@ import { TProductInvoiceResponse } from '@/types';
 import { MESSAGES } from '@/constants';
 
 // Utils
-import { getDataByID, handleUpdateImage } from '@/utils';
+import {
+  getDataByID,
+  handleUpdateImage,
+  preventScrollFromState,
+} from '@/utils';
 
 // Models
 import { IProductDetail } from '@/models';
@@ -160,6 +164,12 @@ const ProductListClient = ({
     [avatarFile, idProduct, isAvatarDirty, onEdit, showToast],
   );
 
+  useEffect(() => {
+    // Prevent scrolling based on toggleEditProduct and toggleProductDetails states
+    const shouldDisableScroll = toggleProductDetails || toggleEditProduct;
+    preventScrollFromState(shouldDisableScroll);
+  }, [toggleEditProduct, toggleProductDetails]);
+
   return (
     <>
       {isLoading && <LoadingIndicator />}
@@ -175,6 +185,7 @@ const ProductListClient = ({
           onClose={handleCloseProductDetail}
           direction="right"
           size={isGreaterThanLg ? 369 : 302}
+          className="overflow-y-auto"
         >
           <ProductDetails product={productDetailsByID} />
         </Drawer>

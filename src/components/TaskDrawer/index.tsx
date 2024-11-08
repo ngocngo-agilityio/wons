@@ -1,6 +1,6 @@
 'use client';
 
-import { memo, useCallback, useState, useTransition } from 'react';
+import { memo, useCallback, useState, useTransition, useEffect } from 'react';
 import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css';
 
@@ -23,7 +23,7 @@ import { MESSAGES } from '@/constants';
 import { uploadImage } from '@/api/image';
 
 // utils
-import { formatErrorMessage } from '@/utils';
+import { formatErrorMessage, preventScrollFromState } from '@/utils';
 
 // components
 import { BsPlus, Button, TaskForm } from '@/components';
@@ -104,6 +104,10 @@ const TaskDrawer = ({ isAdmin }: TaskDrawerProps): JSX.Element => {
     setAvatarFiles(files);
     setIsAvatarDirty(true);
   }, []);
+
+  useEffect(() => {
+    preventScrollFromState(isDrawerOpen);
+  }, [isDrawerOpen]);
 
   return (
     <div className="flex flex-col md:flex-row justify-between md:items-center w-full md:w-fit">
