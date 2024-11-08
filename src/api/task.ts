@@ -5,7 +5,7 @@ import { httpClient } from '@/services';
 import { formatErrorMessage, formatFilterMultipleUser } from '@/utils';
 
 // Constants
-import { API_PATH } from '@/constants';
+import { API_PATH, TIME_BASE } from '@/constants';
 
 // Types
 import { StrapiModel, StrapiResponse, Task, TTasksResponse } from '@/types';
@@ -32,6 +32,7 @@ export const getTasks = async ({
       configOptions: {
         next: {
           tags: [API_PATH.TASKS],
+          revalidate: TIME_BASE[3600],
         },
       },
     });
@@ -62,7 +63,7 @@ export const getTaskById = async ({
     >({
       endpoint,
       configOptions: {
-        next: { tags: [API_PATH.TASKS] },
+        next: { tags: [API_PATH.TASKS], revalidate: TIME_BASE[3600] },
       },
     });
 

@@ -1,5 +1,11 @@
 // Constants
-import { API_PATH, DEFAULT_PAGE, ORDER, PAGE_SIZE } from '@/constants';
+import {
+  API_PATH,
+  DEFAULT_PAGE,
+  ORDER,
+  PAGE_SIZE,
+  TIME_BASE,
+} from '@/constants';
 
 // Services
 import { httpClient } from '@/services';
@@ -37,7 +43,7 @@ export const getCustomers = async ({
       {
         endpoint,
         configOptions: {
-          next: { tags: [API_PATH.CUSTOMERS] },
+          next: { tags: [API_PATH.CUSTOMERS], revalidate: TIME_BASE[3600] },
         },
       },
     );
