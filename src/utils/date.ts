@@ -162,7 +162,5 @@ export const getDayOfMonth = (
 export const covertDateToISO = (date: string): string => {
   if (!date) return '';
 
-  return dayjs(date.replace(/:(\d{2})$/, 'Z').replace(/:\d{2}Z$/, 'Z')).format(
-    'YYYY-MM-DDTHH:mm:ss[Z]',
-  );
+  return dayjs(date).utc().format('YYYY-MM-DDTHH:mm:ss[Z]');
 };

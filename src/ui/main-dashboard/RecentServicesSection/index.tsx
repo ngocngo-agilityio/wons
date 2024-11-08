@@ -33,6 +33,7 @@ const RecentServicesSection = async ({
     'createdAt[$gte]': covertDateToISO(startTime),
     'createdAt[$lte]': covertDateToISO(endTime),
   };
+
   const { error, data } = await getInvoiceProducts({
     sort: searchParams?.sortBy
       ? `${sortBy === 'title' ? `product.${sortBy}` : sortBy}:${order}`
