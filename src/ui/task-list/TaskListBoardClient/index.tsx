@@ -82,13 +82,9 @@ const TaskListBoardClient = ({ data }: ITaskListBoardProps) => {
     setTasks(convertTasksByStatus(data));
   }, [data]);
 
-  if (!data || data.length === 0) {
-    return (
-      <div className="h-[10rem] flex justify-center items-center">
-        <Text className="text-center" size="xl" text="No Tasks Found" />
-      </div>
-    );
-  }
+  const hasTasks = Object.values(tasks).some(
+    (columnTasks) => columnTasks.length > 0,
+  );
 
   return (
     <DragDropContext onDragEnd={handleDragEnd}>
@@ -98,6 +94,12 @@ const TaskListBoardClient = ({ data }: ITaskListBoardProps) => {
         <Column status={TaskStatus.InReview} tasks={tasks.inReview} />
         <Column status={TaskStatus.Done} tasks={tasks.done} />
       </div>
+
+      {!hasTasks && (
+        <div className="w-full flex justify-center items-center mt-4">
+          <Text className="text-center" size="xl" text="No Tasks Found" />
+        </div>
+      )}
     </DragDropContext>
   );
 };

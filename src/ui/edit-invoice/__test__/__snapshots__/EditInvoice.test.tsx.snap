@@ -205,7 +205,7 @@ exports[`EditInvoice Component Test match snapshot with data null 1`] = `
                     aria-labelledby="react-aria-:r35: react-aria-:r2t: react-aria-:r2n: react-aria-:r2o:"
                     aria-valuemax="30"
                     aria-valuemin="1"
-                    aria-valuenow="7"
+                    aria-valuenow="8"
                     aria-valuetext="Empty"
                     autocorrect="off"
                     class="group first:-ml-0.5 [&:not(:first-child)]:-ml-1 px-0.5 my-auto box-content tabular-nums text-start inline-block outline-none focus:shadow-sm rounded-md text-foreground-500 data-[editable=true]:text-foreground data-[editable=true]:data-[placeholder=true]:text-foreground-500 data-[invalid=true]:text-danger-300 data-[invalid=true]:data-[editable=true]:text-danger data-[invalid=true]:focus:bg-danger-400/50 dark:data-[invalid=true]:focus:bg-danger-400/20 data-[invalid=true]:data-[editable=true]:focus:text-danger focus:bg-default-400/50 data-[editable=true]:focus:text-default-foreground transition-colors motion-reduce:transition-none"
@@ -303,13 +303,12 @@ exports[`EditInvoice Component Test match snapshot with data null 1`] = `
               data-slot="base"
             >
               <div
-                aria-hidden="false"
+                aria-hidden="true"
                 data-a11y-ignore="aria-hidden-focus"
                 data-testid="hidden-select-container"
                 style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
               >
                 <input
-                  aria-label="Input"
                   style="font-size: 16px;"
                   tabindex="-1"
                   type="text"
@@ -318,7 +317,6 @@ exports[`EditInvoice Component Test match snapshot with data null 1`] = `
                 <label>
                   Name
                   <select
-                    aria-label="Select"
                     name="customerId"
                     tabindex="-1"
                     title=""
@@ -392,13 +390,12 @@ exports[`EditInvoice Component Test match snapshot with data null 1`] = `
               data-slot="base"
             >
               <div
-                aria-hidden="false"
+                aria-hidden="true"
                 data-a11y-ignore="aria-hidden-focus"
                 data-testid="hidden-select-container"
                 style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
               >
                 <input
-                  aria-label="Input"
                   style="font-size: 16px;"
                   tabindex="-1"
                   type="text"
@@ -407,7 +404,6 @@ exports[`EditInvoice Component Test match snapshot with data null 1`] = `
                 <label>
                   Status
                   <select
-                    aria-label="Select"
                     name="status"
                     size="3"
                     tabindex="-1"
@@ -821,13 +817,12 @@ exports[`EditInvoice Component Test match snapshot with data null 1`] = `
                           data-slot="base"
                         >
                           <div
-                            aria-hidden="false"
+                            aria-hidden="true"
                             data-a11y-ignore="aria-hidden-focus"
                             data-testid="hidden-select-container"
                             style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
                           >
                             <input
-                              aria-label="Input"
                               style="font-size: 16px;"
                               tabindex="-1"
                               type="text"
@@ -835,7 +830,6 @@ exports[`EditInvoice Component Test match snapshot with data null 1`] = `
                             />
                             <label>
                               <select
-                                aria-label="Select"
                                 tabindex="-1"
                                 title=""
                               >
@@ -1342,13 +1336,12 @@ exports[`EditInvoice Component Test should render all content with resolved data
               data-slot="base"
             >
               <div
-                aria-hidden="false"
+                aria-hidden="true"
                 data-a11y-ignore="aria-hidden-focus"
                 data-testid="hidden-select-container"
                 style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
               >
                 <input
-                  aria-label="Input"
                   style="font-size: 16px;"
                   tabindex="-1"
                   type="text"
@@ -1357,7 +1350,6 @@ exports[`EditInvoice Component Test should render all content with resolved data
                 <label>
                   Name
                   <select
-                    aria-label="Select"
                     name="customerId"
                     size="3"
                     tabindex="-1"
@@ -1440,13 +1432,12 @@ exports[`EditInvoice Component Test should render all content with resolved data
               data-slot="base"
             >
               <div
-                aria-hidden="false"
+                aria-hidden="true"
                 data-a11y-ignore="aria-hidden-focus"
                 data-testid="hidden-select-container"
                 style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
               >
                 <input
-                  aria-label="Input"
                   style="font-size: 16px;"
                   tabindex="-1"
                   type="text"
@@ -1455,7 +1446,6 @@ exports[`EditInvoice Component Test should render all content with resolved data
                 <label>
                   Status
                   <select
-                    aria-label="Select"
                     name="status"
                     size="3"
                     tabindex="-1"
@@ -1876,13 +1866,12 @@ exports[`EditInvoice Component Test should render all content with resolved data
                           data-slot="base"
                         >
                           <div
-                            aria-hidden="false"
+                            aria-hidden="true"
                             data-a11y-ignore="aria-hidden-focus"
                             data-testid="hidden-select-container"
                             style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
                           >
                             <input
-                              aria-label="Input"
                               style="font-size: 16px;"
                               tabindex="-1"
                               type="text"
@@ -1890,7 +1879,6 @@ exports[`EditInvoice Component Test should render all content with resolved data
                             />
                             <label>
                               <select
-                                aria-label="Select"
                                 size="3"
                                 tabindex="-1"
                                 title=""
