@@ -8,6 +8,7 @@ import ProductListClient from '../ProductListClient';
 import {
   aggregateProductQuantities,
   filterProductsNotInInvoice,
+  covertDateToISO,
   formatProduct,
   sortProductsByTotalSale,
 } from '@/utils';
@@ -41,8 +42,8 @@ const ProductList = async ({ searchParams = {} }: TProductListPageProps) => {
   } = searchParams ?? {};
 
   const filters: Record<string, string> = {
-    'createdAt[$gte]': startTime,
-    'createdAt[$lte]': endTime,
+    'createdAt[$gte]': covertDateToISO(startTime),
+    'createdAt[$lte]': covertDateToISO(endTime),
   };
 
   const result: TProductInvoiceListResponse = (await getInvoiceProducts({
