@@ -10,11 +10,11 @@ exports[`DashboardLayout should match snapshot 1`] = `
     </script>
     <section>
       <div
-        class="base:mb-6 md:mb-7.5 w-full md:flex md:justify-between md:items-center"
+        class="base:mb-10 md:mb-7.5 w-full md:flex md:justify-between md:items-center"
       >
         <h2
           aria-level="2"
-          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl w-full"
+          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl w-full base:mb-8 md:mb-0"
         >
           Dashboard
         </h2>

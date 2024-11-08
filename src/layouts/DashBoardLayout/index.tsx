@@ -18,11 +18,11 @@ const DashboardLayout = ({
   <section>
     <div
       className={clsx(
-        'base:mb-6 md:mb-7.5',
+        'base:mb-10 md:mb-7.5',
         'w-full md:flex md:justify-between md:items-center',
       )}
     >
-      {title && <Heading className="w-full" title={title} />}
+      {title && <Heading className="w-full base:mb-8 md:mb-0" title={title} />}
       {rightContent}
     </div>
     {children}

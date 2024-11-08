@@ -9,7 +9,7 @@ exports[`Task List Board should match snapshot 1`] = `
       !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&false)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}else{c.add('light')}if(e==='light'||e==='dark'||!e)d.style.colorScheme=e||'light'}catch(e){}}()
     </script>
     <div
-      class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 w-full h-full mt-8"
+      class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 w-full h-full base:mt-10 md:mt-6"
     >
       <div
         class="w-full md:w-1/4 flex-grow"
@@ -18,7 +18,7 @@ exports[`Task List Board should match snapshot 1`] = `
       >
         <h2
           aria-level="2"
-          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-4"
+          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-6"
         >
           ToDo
         </h2>
@@ -232,7 +232,7 @@ exports[`Task List Board should match snapshot 1`] = `
       >
         <h2
           aria-level="2"
-          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-4"
+          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-6"
         >
           In Progress
         </h2>
@@ -247,7 +247,7 @@ exports[`Task List Board should match snapshot 1`] = `
       >
         <h2
           aria-level="2"
-          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-4"
+          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-6"
         >
           In Review
         </h2>
@@ -262,7 +262,7 @@ exports[`Task List Board should match snapshot 1`] = `
       >
         <h2
           aria-level="2"
-          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-4"
+          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-6"
         >
           Done
         </h2>
@@ -284,7 +284,7 @@ exports[`Task List Board should match snapshot with search params is undefined 1
       !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&false)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}else{c.add('light')}if(e==='light'||e==='dark'||!e)d.style.colorScheme=e||'light'}catch(e){}}()
     </script>
     <div
-      class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 w-full h-full mt-8"
+      class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 w-full h-full base:mt-10 md:mt-6"
     >
       <div
         class="w-full md:w-1/4 flex-grow"
@@ -293,7 +293,7 @@ exports[`Task List Board should match snapshot with search params is undefined 1
       >
         <h2
           aria-level="2"
-          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-4"
+          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-6"
         >
           ToDo
         </h2>
@@ -507,7 +507,7 @@ exports[`Task List Board should match snapshot with search params is undefined 1
       >
         <h2
           aria-level="2"
-          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-4"
+          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-6"
         >
           In Progress
         </h2>
@@ -522,7 +522,7 @@ exports[`Task List Board should match snapshot with search params is undefined 1
       >
         <h2
           aria-level="2"
-          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-4"
+          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-6"
         >
           In Review
         </h2>
@@ -537,7 +537,7 @@ exports[`Task List Board should match snapshot with search params is undefined 1
       >
         <h2
           aria-level="2"
-          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-4"
+          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-6"
         >
           Done
         </h2>
