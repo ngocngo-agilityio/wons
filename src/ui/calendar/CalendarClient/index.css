@@ -115,7 +115,6 @@
 
 .rbc-date-cell.rbc-now {
   color: var(--c-calendar-current-date-color-dark);
-  line-height: 33.37px;
   font-size: 25.63px;
 }
 
