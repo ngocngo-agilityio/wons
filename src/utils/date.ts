@@ -158,3 +158,11 @@ export const getDayOfMonth = (
     ? localizer.format(date, 'DD', culture ?? '')
     : dayjs(date).format('DD');
 };
+
+export const covertDateToISO = (date: string): string => {
+  if (!date) return '';
+
+  return dayjs(date.replace(/:(\d{2})$/, 'Z').replace(/:\d{2}Z$/, 'Z')).format(
+    'YYYY-MM-DDTHH:mm:ss[Z]',
+  );
+};

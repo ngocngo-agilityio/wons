@@ -12,6 +12,9 @@ import { ISearchParams } from '@/types';
 // Components
 import { ErrorBoundary, RecentServicesTable } from '@/components';
 
+// Utils
+import { covertDateToISO } from '@/utils';
+
 interface IRecentServicesSection {
   searchParams: ISearchParams;
 }
@@ -27,8 +30,8 @@ const RecentServicesSection = async ({
   } = searchParams || {};
 
   const filters: Record<string, string> = {
-    'createdAt[$gte]': startTime,
-    'createdAt[$lte]': endTime,
+    'createdAt[$gte]': covertDateToISO(startTime),
+    'createdAt[$lte]': covertDateToISO(endTime),
   };
   const { error, data } = await getInvoiceProducts({
     sort: searchParams?.sortBy
