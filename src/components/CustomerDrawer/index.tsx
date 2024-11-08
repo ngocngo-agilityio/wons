@@ -86,11 +86,7 @@ const CustomerDrawer = (): JSX.Element => {
   }, []);
 
   useEffect(() => {
-    // Prevent scrolling based on isDrawerOpen state
     preventScrollFromState(isDrawerOpen);
-
-    // Enable scrolling when the component unmounts
-    return () => preventScrollFromState(false);
   }, [isDrawerOpen]);
 
   return (

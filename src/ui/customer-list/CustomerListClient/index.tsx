@@ -194,9 +194,6 @@ const CustomerListClient = ({
     // Prevent scrolling based on toggleForm and toggleDetails states
     const shouldDisableScroll = toggleDetails || toggleForm;
     preventScrollFromState(shouldDisableScroll);
-
-    // Enable scrolling when the component unmounts
-    return () => preventScrollFromState(false);
   }, [toggleDetails, toggleForm]);
 
   return (

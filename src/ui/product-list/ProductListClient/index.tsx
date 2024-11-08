@@ -168,9 +168,6 @@ const ProductListClient = ({
     // Prevent scrolling based on toggleEditProduct and toggleProductDetails states
     const shouldDisableScroll = toggleProductDetails || toggleEditProduct;
     preventScrollFromState(shouldDisableScroll);
-
-    // Enable scrolling when the component unmounts
-    return () => preventScrollFromState(false);
   }, [toggleEditProduct, toggleProductDetails]);
 
   return (
