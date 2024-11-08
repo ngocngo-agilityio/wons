@@ -26,7 +26,7 @@ const Column = ({ status, tasks = [] }: TColumnProps) => (
         ref={provided.innerRef}
       >
         <Heading
-          className="text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-4"
+          className="text-base md:text-xl lg:text-2xl text-blue-400 dark:text-gray-850 font-bold mb-6"
           title={status}
         />
         <div className="space-y-4 max-h-[calc(100vh-300px)] overflow-auto">

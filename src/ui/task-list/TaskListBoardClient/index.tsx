@@ -92,7 +92,7 @@ const TaskListBoardClient = ({ data }: ITaskListBoardProps) => {
 
   return (
     <DragDropContext onDragEnd={handleDragEnd}>
-      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 w-full h-full mt-8">
+      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 w-full h-full base:mt-10 md:mt-6">
         <Column status={TaskStatus.Todo} tasks={tasks.todo} />
         <Column status={TaskStatus.InProgress} tasks={tasks.inProgress} />
         <Column status={TaskStatus.InReview} tasks={tasks.inReview} />

@@ -52,13 +52,15 @@ const SchedulePage = async ({ searchParams }: ISchedulePage) => (
           disabledKeys={[TASK_TABS[0].key, TASK_TABS[2].key]}
           tabs={TASK_TABS}
           customVariant="secondary"
-          className="px-0 base:w-full md:w-fit"
+          className="p-0 base:w-full md:w-fit"
           classNames={{
             tabList: 'base:w-full md:w-fit',
           }}
         />
+
         <ScheduleListActions />
       </div>
+
       <Suspense fallback={<SkeletonTaskListBoard />}>
         <TaskListBoard searchParams={searchParams} />
       </Suspense>
