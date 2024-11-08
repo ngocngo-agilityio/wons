@@ -1,6 +1,6 @@
 'use client';
 
-import { memo, useCallback, useState, useTransition } from 'react';
+import { memo, useCallback, useState, useTransition, useEffect } from 'react';
 import { Draggable } from '@hello-pangea/dnd';
 import Drawer from 'react-modern-drawer';
 import dynamic from 'next/dynamic';
@@ -24,7 +24,7 @@ import { useBreakPoints, useToast } from '@/hooks';
 import { uploadImage } from '@/api/image';
 
 // Utils
-import { formatErrorMessage } from '@/utils';
+import { formatErrorMessage, preventScrollFromState } from '@/utils';
 
 // Components
 import {
@@ -216,6 +216,14 @@ const TaskCard = ({ index, task, isAdmin }: TTaskCardProps) => {
     },
     [avatarFiles, idTask, isAvatarDirty, showToast],
   );
+
+  useEffect(() => {
+    // Prevent scrolling based on isDrawerOpen state
+    preventScrollFromState(isDrawerOpen);
+
+    // Enable scrolling when the component unmounts
+    return () => preventScrollFromState(false);
+  }, [isDrawerOpen]);
 
   return (
     <>
