@@ -1,7 +1,7 @@
 'use server';
 
 // Constants
-import { API_PATH } from '@/constants';
+import { API_PATH, TIME_BASE } from '@/constants';
 
 // Models
 import { TUser } from '@/models';
@@ -45,7 +45,7 @@ export const getUsers = async (): Promise<TUser[]> => {
     const customerResponse = await httpClient.getRequest<TUser[]>({
       endpoint,
       configOptions: {
-        next: { tags: [API_PATH.USERS] },
+        next: { tags: [API_PATH.USERS], revalidate: TIME_BASE[3600] },
       },
     });
 

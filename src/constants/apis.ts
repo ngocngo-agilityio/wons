@@ -25,3 +25,8 @@ export const STATUS_CODE = {
   CONFLICT: 409,
   INTERNAL_SERVER_ERROR: 500,
 };
+
+export const TIME_BASE = {
+  3600: 3600, // 1 hour
+  86400: 86400, // 1 day
+};

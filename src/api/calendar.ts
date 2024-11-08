@@ -1,5 +1,5 @@
 // Constants
-import { API_PATH } from '@/constants';
+import { API_PATH, TIME_BASE } from '@/constants';
 
 // Models
 import { ICalendarTask, IEvent } from '@/models';
@@ -25,6 +25,7 @@ export const getCalendarEvents = async (): Promise<{
       configOptions: {
         next: {
           tags: [API_PATH.EVENTS],
+          revalidate: TIME_BASE[3600],
         },
       },
     });
@@ -48,6 +49,7 @@ export const getCalendarTasks = async (): Promise<{
       configOptions: {
         next: {
           tags: [API_PATH.EVENTS],
+          revalidate: TIME_BASE[3600],
         },
       },
     });
