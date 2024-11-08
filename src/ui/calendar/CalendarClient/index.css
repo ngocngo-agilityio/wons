@@ -271,33 +271,18 @@
 }
 
 @media screen and (min-width: 768px) {
-  /* Time view */
-  .rbc-time-header-content .rbc-button-link {
-    font-size: 0.625rem;
-  }
-
   .rbc-month-view {
     min-height: 0;
   }
 }
 
 @media screen and (min-width: 992px) {
-  /* Time view */
-  .rbc-time-header-content .rbc-button-link {
-    font-size: 0.75rem;
-  }
-
   .rbc-month-view {
     min-height: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  /* Time view */
-  .rbc-time-header-content .rbc-button-link {
-    font-size: 0.875rem;
-  }
-
   .rbc-month-view {
     min-height: 0;
   }

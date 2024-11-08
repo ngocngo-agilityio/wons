@@ -179,13 +179,12 @@ exports[`TaskForm should match snapshot 1`] = `
             data-slot="base"
           >
             <div
-              aria-hidden="false"
+              aria-hidden="true"
               data-a11y-ignore="aria-hidden-focus"
               data-testid="hidden-select-container"
               style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
             >
               <input
-                aria-label="Input"
                 style="font-size: 16px;"
                 tabindex="-1"
                 type="text"
@@ -194,7 +193,6 @@ exports[`TaskForm should match snapshot 1`] = `
               <label>
                 Label
                 <select
-                  aria-label="Select"
                   name="label"
                   size="4"
                   tabindex="-1"
@@ -289,13 +287,12 @@ exports[`TaskForm should match snapshot 1`] = `
             data-slot="base"
           >
             <div
-              aria-hidden="false"
+              aria-hidden="true"
               data-a11y-ignore="aria-hidden-focus"
               data-testid="hidden-select-container"
               style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
             >
               <input
-                aria-label="Input"
                 style="font-size: 16px;"
                 tabindex="-1"
                 type="text"
@@ -304,7 +301,6 @@ exports[`TaskForm should match snapshot 1`] = `
               <label>
                 Priority Level
                 <select
-                  aria-label="Select"
                   name="level"
                   size="3"
                   tabindex="-1"
@@ -425,13 +421,12 @@ exports[`TaskForm should match snapshot 1`] = `
           data-slot="base"
         >
           <div
-            aria-hidden="false"
+            aria-hidden="true"
             data-a11y-ignore="aria-hidden-focus"
             data-testid="hidden-select-container"
             style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
           >
             <input
-              aria-label="Input"
               style="font-size: 16px;"
               tabindex="-1"
               type="text"
@@ -440,7 +435,6 @@ exports[`TaskForm should match snapshot 1`] = `
             <label>
               Assignees
               <select
-                aria-label="Select"
                 multiple=""
                 tabindex="-1"
                 title=""

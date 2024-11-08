@@ -23,8 +23,8 @@ const CustomToolBar = ({ label, view, onView, onNavigate }: ToolbarProps) => {
 
   return (
     <>
-      <div className="mb-5 flex flex-col sm:flex-row justify-between items-start md:items-center">
-        <Heading className="mb-5 md:mb-0" title="Calendar" />
+      <div className="mb-5 flex flex-col xl:flex-row justify-between items-start xl:items-center">
+        <Heading className="mb-5 xl:mb-0" title="Calendar" />
         <div className="flex gap-5">
           <Button
             color="primary"

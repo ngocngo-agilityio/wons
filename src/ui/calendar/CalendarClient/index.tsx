@@ -87,7 +87,6 @@ const CalendarClient = ({
   isAdmin,
   createEvent,
   updateEvent,
-  dayLayoutAlgorithm = 'no-overlap',
   ...rest
 }: CalendarClientProps) => {
   const [view, setView] = useState<ViewType>(Views.MONTH);
@@ -365,7 +364,6 @@ const CalendarClient = ({
           formats={{
             dayFormat,
           }}
-          dayLayoutAlgorithm={dayLayoutAlgorithm}
           defaultView={Views.MONTH}
           onView={setView}
           views={[Views.MONTH, Views.WEEK, Views.DAY]}
