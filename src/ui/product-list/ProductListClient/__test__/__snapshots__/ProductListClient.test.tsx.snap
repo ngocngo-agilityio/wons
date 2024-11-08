@@ -2104,7 +2104,7 @@ exports[`Product list client calls open details 1`] = `
         type="checkbox"
       />
       <nav
-        class="EZDrawer__container undefined"
+        class="EZDrawer__container overflow-y-auto"
         id="EZDrawer__container"
         role="navigation"
         style="z-index: 101; transition-duration: 500ms; top: 0px; right: 0px; transform: translate3d(100%, 0, 0); width: 369px; height: 100vh;"
