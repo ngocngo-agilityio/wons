@@ -138,7 +138,11 @@ const InvoiceForm = ({
   });
 
   const isDisableSubmit = previewData
-    ? !(enableSubmit || !getDirtyState(defaultValues ?? {}, watch()))
+    ? !(
+        enableSubmit ||
+        !getDirtyState(defaultValues ?? {}, watch()) ||
+        !isEqual(productsValues, previewInvoiceProducts)
+      )
     : !allFieldsFilled;
 
   const hasEmptyField =
@@ -147,8 +151,6 @@ const InvoiceForm = ({
 
   const handleSubmitButton = async (formData: TInvoiceFormData) => {
     if (hasEmptyField) {
-      console.log('huy dao=======================');
-
       return setErrorProducts(MESSAGES.ERROR.FIELD_REQUIRED);
     }
 
