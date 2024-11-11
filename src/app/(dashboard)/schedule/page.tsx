@@ -11,10 +11,15 @@ import { IMAGES, PAGE_TITLES } from '@/constants';
 import { DashBoardLayout } from '@/layouts';
 
 // Tabs
-import { Tabs, SkeletonTaskListBoard } from '@/components';
+import {
+  Tabs,
+  SkeletonTaskListBoard,
+  SearchInput,
+  TaskDrawer,
+} from '@/components';
 
 // ui
-import { ScheduleListFilter, TaskListBoard, ScheduleListActions } from '@/ui';
+import { ScheduleListFilter, TaskListBoard } from '@/ui';
 
 // Types
 import { ISearchParams } from '@/types';
@@ -58,7 +63,11 @@ const SchedulePage = async ({ searchParams }: ISchedulePage) => (
           }}
         />
 
-        <ScheduleListActions />
+        <div className="flex items-center base:gap-10 md:gap-5 mt-10 md:mt-0 base:flex-col md:flex-row">
+          <SearchInput className="base:w-full md:w-fit" />
+
+          <TaskDrawer />
+        </div>
       </div>
 
       <Suspense fallback={<SkeletonTaskListBoard />}>
