@@ -1,6 +1,6 @@
 'use client';
 
-import { ChangeEvent } from 'react';
+import { ChangeEvent, useCallback } from 'react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useDebouncedCallback } from 'use-debounce';
 import { Input, InputProps } from '@nextui-org/react';
@@ -20,11 +20,11 @@ const SearchInput = ({ ...props }: InputProps) => {
     ?.toString() as string;
 
   const { PAGE, QUERY } = SEARCH_QUERIES;
+  const params = new URLSearchParams(searchParams);
 
   const handleSearch = useDebouncedCallback(
     (event: ChangeEvent<HTMLInputElement>) => {
       const term = event.target.value;
-      const params = new URLSearchParams(searchParams);
 
       params.set(PAGE, DEFAULT_PAGE.toString());
 
@@ -38,6 +38,11 @@ const SearchInput = ({ ...props }: InputProps) => {
     },
     500,
   );
+
+  const handleClearSearchInput = useCallback(() => {
+    params.delete(QUERY);
+    replace(`${pathname}?${params.toString()}`);
+  }, [params, pathname]);
 
   return (
     <Input
@@ -58,7 +63,9 @@ const SearchInput = ({ ...props }: InputProps) => {
       placeholder="Search"
       defaultValue={defaultValueSearch}
       onChange={handleSearch}
-      endContent={
+      isClearable
+      onClear={handleClearSearchInput}
+      startContent={
         <CiSearch className="w-3 h-3 text-blue-800/60 dark:text-white/60 cursor-pointer" />
       }
       {...props}
