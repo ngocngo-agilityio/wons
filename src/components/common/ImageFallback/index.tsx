@@ -76,7 +76,6 @@ const ImageFallback = ({
             width && height
               ? `w-[${width}px] h-[${height}px]`
               : 'w-full h-full',
-            'absolute top-0 bottom-0 left-0 right-0',
           )}
         />
       )}
