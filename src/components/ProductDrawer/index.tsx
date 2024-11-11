@@ -65,18 +65,10 @@ const ProductDrawer = ({ isAdmin }: ProductDrawerProps): JSX.Element => {
         title: `${formData.title}`,
       });
 
-      if (error) {
-        showToast({
-          description: error,
-          status: MESSAGES.STATUS.ERROR,
-        });
-        return;
-      } else {
-        showToast({
-          description: MESSAGES.SUCCESS.CREATE_PRODUCT,
-          status: MESSAGES.STATUS.SUCCESS,
-        });
-      }
+      showToast({
+        description: error || MESSAGES.SUCCESS.CREATE_PRODUCT,
+        status: error ? MESSAGES.STATUS.ERROR : MESSAGES.STATUS.SUCCESS,
+      });
 
       setIsDrawerOpen(false);
       setAvatarFile(undefined);
