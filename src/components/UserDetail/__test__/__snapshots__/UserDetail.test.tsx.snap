@@ -14,27 +14,23 @@ exports[`UserDetail render successful 1`] = `
         <div
           class="relative w-[128px] h-[128px]"
         >
+          <img
+            alt="User Avatar"
+            class="opacity-0 rounded-full object-cover h-full"
+            data-nimg="fill"
+            decoding="async"
+            fetchpriority="high"
+            sizes="100vw"
+            src="http://localhost/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+          />
           <div
-            class="w-[undefinedpx] h-[undefinedpx] relative"
+            class="group overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-full h-full absolute top-0 bottom-0 left-0 right-0"
           >
-            <img
-              alt="User Avatar"
-              class="opacity-0 rounded-full object-cover h-full"
-              data-nimg="fill"
-              decoding="async"
-              fetchpriority="high"
-              sizes="100vw"
-              src="http://localhost/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=3840&q=75"
-              srcset="/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=3840&q=75 3840w"
-              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
-            />
             <div
-              class="group overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-full h-full absolute top-0 bottom-0 left-0 right-0"
-            >
-              <div
-                class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
-              />
-            </div>
+              class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+            />
           </div>
         </div>
         <dl

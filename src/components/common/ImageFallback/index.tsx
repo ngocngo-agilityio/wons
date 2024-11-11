@@ -54,7 +54,7 @@ const ImageFallback = ({
   const handleLoadingComplete = useCallback(() => setLoaded(true), []);
 
   return (
-    <div className={clsx(`w-[${width}px] h-[${height}px]`, 'relative')}>
+    <>
       <Image
         priority
         src={imgSrc}
@@ -80,7 +80,7 @@ const ImageFallback = ({
           )}
         />
       )}
-    </div>
+    </>
   );
 };
 

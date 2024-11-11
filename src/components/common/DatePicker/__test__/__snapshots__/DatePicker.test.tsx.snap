@@ -227,7 +227,7 @@ exports[`DatePicker component should match with snapshot 1`] = `
             </div>
             <input
               type="hidden"
-              value="2024-09-08T01:45:22+07:00[Asia/Bangkok]"
+              value="2024-09-08T01:45:22+07:00[Asia/Saigon]"
             />
           </div>
           <button
