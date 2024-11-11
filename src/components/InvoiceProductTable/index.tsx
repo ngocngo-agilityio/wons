@@ -32,6 +32,7 @@ import { formatTotalAmount, sortProducts } from '@/utils';
 // Types
 import { TInvoiceProductTable } from '@/types';
 import isEqual from 'react-fast-compare';
+import { Controller, useForm } from 'react-hook-form';
 
 interface InvoiceProductTableProps {
   products: (IProduct & { id: number })[];
@@ -64,6 +65,8 @@ const InvoiceProductTable = ({
   errorProducts,
   productsValues,
 }: InvoiceProductTableProps) => {
+  const { control, setError, clearErrors } = useForm();
+
   useEffect(() => {
     if (!productsValues.length) {
       setProductsValues([initInvoiceProduct]);
@@ -104,6 +107,8 @@ const InvoiceProductTable = ({
             : p,
         );
       });
+
+      clearErrors(`productName_${id}`);
     }
   };
 
@@ -128,30 +133,55 @@ const InvoiceProductTable = ({
         );
 
         return (
-          <Select
-            classNames={{
-              trigger: clsx(
-                'bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:data-[hover=true]:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600 w-40',
-              ),
-            }}
-            selectedKeys={
-              data.product?.data?.id?.toString()
-                ? [data.product.data.id.toString()]
-                : []
-            }
-            onChange={(event) => {
-              // Extract the selected value from the event
-              const selectedValue = event.target.value;
-              handleChangeProductName(selectedValue, data.product.data.id);
-            }}
-            aria-label="Product Name field"
-          >
-            {[...current, ...optionsElse].map(({ value, label }) => (
-              <SelectItem key={value} value={value}>
-                {label}
-              </SelectItem>
-            ))}
-          </Select>
+          <Controller
+            control={control}
+            name={`productName_${data.product.data.id}`}
+            render={({ field, fieldState: { error } }) => (
+              <Select
+                {...field}
+                classNames={{
+                  trigger: clsx(
+                    'bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:data-[hover=true]:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600 w-40',
+                  ),
+                }}
+                selectedKeys={
+                  data.product?.data?.id?.toString()
+                    ? [data.product.data.id.toString()]
+                    : []
+                }
+                onChange={(event: ChangeEvent<HTMLSelectElement>) => {
+                  const selectedValue: Key | null = event.target.value;
+                  handleChangeProductName(selectedValue, data.product.data.id);
+                  field.onChange(selectedValue);
+                }}
+                aria-label="Product Name field"
+                onClose={() => {
+                  if (!field.value) {
+                    setError(`productName_${data.product.data.id}`, {
+                      type: 'manual',
+                      message: 'This field is required',
+                    });
+                  } else {
+                    clearErrors(`productName_${data.product.data.id}`);
+                    setError(`productName_${data.product.data.id}`, {
+                      type: 'manual',
+                      message: '',
+                    });
+                  }
+                }}
+                isInvalid={!!error?.message}
+                errorMessage={error?.message}
+              >
+                {[...current, ...optionsElse].map(
+                  ({ value, label }: { value: string; label: string }) => (
+                    <SelectItem key={value} value={value}>
+                      {label}
+                    </SelectItem>
+                  ),
+                )}
+              </Select>
+            )}
+          />
         );
       },
       value: 'title',
