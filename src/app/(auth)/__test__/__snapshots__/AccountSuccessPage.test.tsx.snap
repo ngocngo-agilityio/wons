@@ -20,7 +20,7 @@ exports[`Account success page match snapshot 1`] = `
         >
           <img
             alt="Account Success"
-            class="opacity-0 base:mt-[80px] sm:mt-[100px] md:mt-[150px] xl:mt-[186px]"
+            class="opacity-0 hidden base:mt-[80px] sm:mt-[100px] md:mt-[150px] xl:mt-[186px]"
             data-nimg="1"
             decoding="async"
             fetchpriority="high"

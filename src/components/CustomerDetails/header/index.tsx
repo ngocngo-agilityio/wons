@@ -22,7 +22,6 @@ const CustomerDetailsHeader = ({
     <div className="relative w-[70px] h-[70px]">
       <ImageFallback
         fill
-        priority={false}
         src={avatar}
         alt={`${firstName}-${lastName}`}
         sizes="70px"

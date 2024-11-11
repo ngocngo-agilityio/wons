@@ -17,7 +17,7 @@ exports[`AccountSuccess Component should match snapshot in dark theme 1`] = `
       >
         <img
           alt="Account Success"
-          class="opacity-0 base:mt-[80px] sm:mt-[100px] md:mt-[150px] xl:mt-[186px]"
+          class="opacity-0 hidden base:mt-[80px] sm:mt-[100px] md:mt-[150px] xl:mt-[186px]"
           data-nimg="1"
           decoding="async"
           fetchpriority="high"
@@ -75,7 +75,7 @@ exports[`AccountSuccess Component should match snapshot in light theme 1`] = `
       >
         <img
           alt="Account Success"
-          class="opacity-0 base:mt-[80px] sm:mt-[100px] md:mt-[150px] xl:mt-[186px]"
+          class="opacity-0 hidden base:mt-[80px] sm:mt-[100px] md:mt-[150px] xl:mt-[186px]"
           data-nimg="1"
           decoding="async"
           fetchpriority="high"

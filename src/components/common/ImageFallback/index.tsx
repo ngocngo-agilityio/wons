@@ -65,7 +65,7 @@ const ImageFallback = ({
         height={height}
         onLoad={handleLoad}
         onError={handleFallbackImage}
-        className={clsx(loaded ? 'opacity-100' : 'opacity-0', className)}
+        className={clsx(loaded ? 'opacity-100' : 'opacity-0 hidden', className)}
         onLoadingComplete={handleLoadingComplete}
         {...rest}
       />
@@ -76,6 +76,7 @@ const ImageFallback = ({
             width && height
               ? `w-[${width}px] h-[${height}px]`
               : 'w-full h-full',
+            rest.sizes === '40px' && 'size-10',
           )}
         />
       )}

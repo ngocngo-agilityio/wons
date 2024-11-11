@@ -57,7 +57,7 @@ exports[`TaskCard Component matches the snapshot 1`] = `
             >
               <img
                 alt="Dashboard Design"
-                class="opacity-0 rounded-[10px] object-cover"
+                class="opacity-0 hidden rounded-[10px] object-cover"
                 data-nimg="fill"
                 decoding="async"
                 fetchpriority="high"
@@ -79,7 +79,7 @@ exports[`TaskCard Component matches the snapshot 1`] = `
             >
               <img
                 alt="Dashboard Design"
-                class="opacity-0 rounded-[10px] object-cover"
+                class="opacity-0 hidden rounded-[10px] object-cover"
                 data-nimg="fill"
                 decoding="async"
                 fetchpriority="high"
@@ -109,7 +109,7 @@ exports[`TaskCard Component matches the snapshot 1`] = `
             >
               <img
                 alt="ngocngo"
-                class="opacity-0 h-full rounded-full object-cover"
+                class="opacity-0 hidden h-full rounded-full object-cover"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -132,7 +132,7 @@ exports[`TaskCard Component matches the snapshot 1`] = `
             >
               <img
                 alt="user"
-                class="opacity-0 h-full rounded-full object-cover"
+                class="opacity-0 hidden h-full rounded-full object-cover"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"
@@ -155,7 +155,7 @@ exports[`TaskCard Component matches the snapshot 1`] = `
             >
               <img
                 alt="user34"
-                class="opacity-0 h-full rounded-full object-cover"
+                class="opacity-0 hidden h-full rounded-full object-cover"
                 data-nimg="1"
                 decoding="async"
                 fetchpriority="high"

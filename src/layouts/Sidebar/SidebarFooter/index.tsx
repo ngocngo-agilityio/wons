@@ -88,12 +88,11 @@ const SidebarFooter = ({
           )}
         >
           <div className="flex items-center gap-2.5">
-            <div className="relative w-[45px] h-[43px]">
+            <div className="relative w-11 h-11">
               <ImageFallback
-                className="rounded-xl object-cover h-full"
                 fill
+                className="rounded-xl object-cover h-full"
                 sizes="(min-width: 768px) 100px, 45px"
-                priority={false}
                 src={avatar}
                 alt="User Avatar"
               />

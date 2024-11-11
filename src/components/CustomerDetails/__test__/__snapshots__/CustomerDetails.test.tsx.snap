@@ -19,10 +19,10 @@ exports[`CustomerDetails should match snapshot 1`] = `
         >
           <img
             alt="John-Doe"
-            class="opacity-0 object-cover rounded-full h-full"
+            class="opacity-0 hidden object-cover rounded-full h-full"
             data-nimg="fill"
             decoding="async"
-            loading="lazy"
+            fetchpriority="high"
             sizes="70px"
             src="http://localhost/_next/image?url=https%3A%2F%2Fdev.perlinks.com%2Fapi%2Fget-image%2FWGpHZ&w=3840&q=75"
             srcset="/_next/image?url=https%3A%2F%2Fdev.perlinks.com%2Fapi%2Fget-image%2FWGpHZ&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fdev.perlinks.com%2Fapi%2Fget-image%2FWGpHZ&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fdev.perlinks.com%2Fapi%2Fget-image%2FWGpHZ&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fdev.perlinks.com%2Fapi%2Fget-image%2FWGpHZ&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fdev.perlinks.com%2Fapi%2Fget-image%2FWGpHZ&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fdev.perlinks.com%2Fapi%2Fget-image%2FWGpHZ&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fdev.perlinks.com%2Fapi%2Fget-image%2FWGpHZ&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fdev.perlinks.com%2Fapi%2Fget-image%2FWGpHZ&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fdev.perlinks.com%2Fapi%2Fget-image%2FWGpHZ&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fdev.perlinks.com%2Fapi%2Fget-image%2FWGpHZ&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fdev.perlinks.com%2Fapi%2Fget-image%2FWGpHZ&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fdev.perlinks.com%2Fapi%2Fget-image%2FWGpHZ&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fdev.perlinks.com%2Fapi%2Fget-image%2FWGpHZ&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fdev.perlinks.com%2Fapi%2Fget-image%2FWGpHZ&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fdev.perlinks.com%2Fapi%2Fget-image%2FWGpHZ&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fdev.perlinks.com%2Fapi%2Fget-image%2FWGpHZ&w=3840&q=75 3840w"
