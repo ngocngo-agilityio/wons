@@ -1,6 +1,6 @@
 'use client';
 
-import { memo, useCallback, useMemo, useState, useTransition } from 'react';
+import { memo, useMemo, useState, useTransition } from 'react';
 import isEqual from 'react-fast-compare';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Controller, useForm } from 'react-hook-form';
@@ -40,16 +40,12 @@ import {
 // Components
 import {
   AddressInput,
-  AvatarUpload,
   Button,
   DatePicker,
   Input,
   InvoiceProductTable,
   LoadingIndicator,
 } from '@/components';
-
-// api
-import { uploadImage } from '@/api/image';
 
 // Hooks
 import { useToast } from '@/hooks';
@@ -90,8 +86,6 @@ const InvoiceForm = ({
     previewInvoiceProducts ?? [],
   );
   const [errorProducts, setErrorProducts] = useState<string>('');
-  const [avatarFile, setAvatarFile] = useState<File>();
-  const [isAvatarDirty, setIsAvatarDirty] = useState(false);
   const [isPending, startTransition] = useTransition();
   const { showToast } = useToast();
   const router = useRouter();
@@ -154,16 +148,6 @@ const InvoiceForm = ({
       return setErrorProducts(MESSAGES.ERROR.FIELD_REQUIRED);
     }
 
-    if (isAvatarDirty && avatarFile) {
-      const imageUrl = await uploadImage(avatarFile);
-
-      if (imageUrl?.downloadURL) {
-        formData.imageUrl = imageUrl.downloadURL;
-      } else {
-        return { error: imageUrl.error };
-      }
-    }
-
     startTransition(async () => {
       const { error, data } = await onSubmit(
         {
@@ -193,11 +177,6 @@ const InvoiceForm = ({
     });
   };
 
-  const handleAvatarChange = useCallback((avatarFile: File) => {
-    setAvatarFile(avatarFile);
-    setIsAvatarDirty(true);
-  }, []);
-
   return (
     <>
       {isPending && <LoadingIndicator />}
@@ -206,31 +185,6 @@ const InvoiceForm = ({
         className="w-full max-w-[700px] justify-center"
         onSubmit={handleSubmit(handleSubmitButton)}
       >
-        {isEdit && (
-          <div className="flex justify-center sm:mt-[21px]">
-            <Controller
-              control={control}
-              name="imageUrl"
-              render={({
-                field: { onChange, value, name },
-                fieldState: { error },
-              }) => (
-                <AvatarUpload
-                  value={value}
-                  error={error?.message}
-                  onChange={(e) => {
-                    onChange(e);
-
-                    // Clear error message on change
-                    clearErrorOnChange(name, errors, clearErrors);
-                  }}
-                  onFileChange={handleAvatarChange}
-                />
-              )}
-            />
-          </div>
-        )}
-
         <div className="flex flex-col sm:flex-row sm:gap-[30px] sm:mt-[30px]">
           {/* Invoice Id*/}
           <Controller
