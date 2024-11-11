@@ -19,25 +19,29 @@ exports[`UserDetail render successful 1`] = `
           <div
             class="rounded-full w-32 h-32 bg-gray-50 dark:bg-gray-600 flex justify-center items-center"
           >
-            <img
-              alt="Avatar"
-              class="opacity-0 rounded-full object-cover w-full h-full"
-              data-nimg="1"
-              data-testid="avatar-preview"
-              decoding="async"
-              fetchpriority="high"
-              height="128"
-              src="http://localhost/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=256&q=75"
-              srcset="/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=256&q=75 2x"
-              style="color: transparent;"
-              width="128"
-            />
             <div
-              class="group relative overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[128px] h-[128px]"
+              class="w-[128px] h-[128px] relative"
             >
-              <div
-                class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+              <img
+                alt="Avatar"
+                class="opacity-0 rounded-full object-cover w-full h-full"
+                data-nimg="1"
+                data-testid="avatar-preview"
+                decoding="async"
+                fetchpriority="high"
+                height="128"
+                src="http://localhost/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=256&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=256&q=75 2x"
+                style="color: transparent;"
+                width="128"
               />
+              <div
+                class="group overflow-hidden bg-content3 dark:bg-content2 pointer-events-none before:opacity-100 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-content4/30 before:bg-gradient-to-r before:from-transparent before:via-content4 dark:before:via-default-700/10 before:to-transparent after:opacity-100 after:absolute after:inset-0 after:-z-10 after:bg-content3 dark:after:bg-content2 data-[loaded=true]:pointer-events-auto data-[loaded=true]:overflow-visible data-[loaded=true]:!bg-transparent data-[loaded=true]:before:opacity-0 data-[loaded=true]:before:animate-none data-[loaded=true]:after:opacity-0 transition-background !duration-300 before:transition-opacity before:!duration-300 rounded-full w-[128px] h-[128px] absolute top-0 bottom-0 left-0 right-0"
+              >
+                <div
+                  class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
+                />
+              </div>
             </div>
           </div>
         </label>

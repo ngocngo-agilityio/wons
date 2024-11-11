@@ -103,7 +103,7 @@ export const invoiceSchema = z.object({
 // Zod schema validation for ProductForm
 export const productFormSchema = z.object({
   title: z.string().nonempty(MESSAGES.ERROR.FIELD_REQUIRED),
-  brand: z.enum(['apple', 'samsung', 'huawei', 'xioami', 'oppo', 'google'], {
+  brand: z.enum(['apple', 'samsung', 'huawei', 'xiaomi', 'oppo', 'google'], {
     errorMap: () => ({ message: MESSAGES.ERROR.FIELD_REQUIRED }),
   }),
   imageUrl: z.string().nonempty({
