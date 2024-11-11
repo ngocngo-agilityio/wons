@@ -111,6 +111,8 @@ export const productFormSchema = z.object({
   }),
   price: z.preprocess(
     (value) => {
+      if (typeof value === 'string' && value.trim() === '') return undefined;
+
       if (typeof value === 'string') {
         const numericValue = value.replace(REGEX.PRICE_PRODUCT, '');
         return parseFloat(numericValue);
@@ -120,6 +122,7 @@ export const productFormSchema = z.object({
     z
       .number({ invalid_type_error: MESSAGES.ERROR.FIELD_INVALID('Price') })
       .min(0, MESSAGES.ERROR.FIELD_INVALID('Price'))
+      .refine((val) => !!val, { message: MESSAGES.ERROR.FIELD_REQUIRED })
       .refine((val) => String(Math.floor(val)).length <= 9, {
         message: MESSAGES.ERROR.FIELD_INVALID('Price cannot exceed 7 digits'),
       }),
