@@ -1,6 +1,6 @@
 'use client';
 
-import { Key, memo, useCallback, useState } from 'react';
+import { Key, memo, useCallback, useEffect, useState } from 'react';
 import isEqual from 'react-fast-compare';
 
 // constants
@@ -43,6 +43,11 @@ const ProductTable = ({
     useState<TProductInvoiceResponse[]>(data);
   const [order, setOrder] = useState<string>(ASC);
   const [sortBy, setSortBy] = useState<string>('');
+
+  useEffect(() => {
+    setProductsBySort(data);
+  }, [data]);
+
   const columns = [
     {
       header: 'SN',
