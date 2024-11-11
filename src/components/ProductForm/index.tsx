@@ -177,7 +177,7 @@ const ProductForm = ({
         name="brand"
         control={control}
         render={({
-          field: { name, onChange, value },
+          field: { name, onChange, value, onBlur },
           fieldState: { error },
         }) => (
           <div className="flex flex-col w-full h-[71px] mb-5">
@@ -204,6 +204,9 @@ const ProductForm = ({
                 onChange(e.target.value);
                 clearErrorOnChange(name, errors, clearErrors);
               }}
+              onClose={onBlur}
+              isInvalid={!!error}
+              errorMessage={error?.message}
             >
               {BRANDS.map((brand) => (
                 <SelectItem key={brand.key} value={brand.key}>
@@ -211,10 +214,6 @@ const ProductForm = ({
                 </SelectItem>
               ))}
             </Select>
-
-            {error && (
-              <p className="text-red-500 text-xs mt-1">{error.message}</p>
-            )}
           </div>
         )}
       />
@@ -238,7 +237,11 @@ const ProductForm = ({
                   value={formattedValue}
                   classNames={{ base: 'h-[71px]' }}
                   isInvalid={!!error}
-                  errorMessage={error?.message}
+                  errorMessage={
+                    error?.message === 'Required'
+                      ? MESSAGES.ERROR.FIELD_REQUIRED
+                      : error?.message
+                  }
                   isDisabled={isDisabledField}
                   onChange={(e) => {
                     const rawValue = e.target.value.replace(/\$|,/g, '');
