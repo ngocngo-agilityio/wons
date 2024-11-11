@@ -91,6 +91,8 @@ describe('customerFormSchema', () => {
       email: 'john.doe@example.com',
       phone: '1234567890',
       gender: 'male',
+      job: 'Engineer',
+      address: '123 Main St, Anytown, USA',
       avatar: 'avatar.jpg',
     };
     expect(() => customerFormSchema.parse(data)).not.toThrow();

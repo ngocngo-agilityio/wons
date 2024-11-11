@@ -153,7 +153,11 @@ const InvoicesTable = ({
                   sizes="40px"
                   className="rounded-full h-full object-cover"
                 />
-                <Text size="md" text={fullName} className="text-nowrap" />
+                <Text
+                  size="md"
+                  text={fullName}
+                  className="whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
+                />
               </div>
             );
           },
@@ -170,7 +174,11 @@ const InvoicesTable = ({
               <div className="flex gap-2.5 items-center">
                 <EmailIcon className="text-blue-500 dark:text-purple-600" />
                 <Link href={`mailto:${email}`}>
-                  <Text size="md" text={email} className="text-nowrap" />
+                  <Text
+                    size="md"
+                    text={email}
+                    className="whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
+                  />
                 </Link>
               </div>
             );

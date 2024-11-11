@@ -387,7 +387,7 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
                       />
                     </div>
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     >
                       Arrora Gaur
                     </p>
@@ -421,7 +421,7 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
                       href="mailto:arroragaur@gmail.com"
                     >
                       <p
-                        class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                       >
                         arroragaur@gmail.com
                       </p>
@@ -641,7 +641,7 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
                       />
                     </div>
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                     >
                       Anne Jacob
                     </p>
@@ -675,7 +675,7 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
                       href="mailto:annejacob@gmail.com"
                     >
                       <p
-                        class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
+                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
                       >
                         annejacob@gmail.com
                       </p>

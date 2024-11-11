@@ -4,6 +4,7 @@ import { memo, useCallback, useMemo, useTransition } from 'react';
 import { Select, SelectItem } from '@nextui-org/react';
 import { Controller, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+import clsx from 'clsx';
 
 // Utils
 import {
@@ -35,6 +36,8 @@ const REQUIRED_FIELDS = [
   'phone',
   'email',
   'gender',
+  'job',
+  'address',
   'avatar',
 ];
 const genders = [
@@ -298,7 +301,7 @@ const CustomerForm = ({
         name="gender"
         control={control}
         render={({
-          field: { name, onChange, value },
+          field: { name, onChange, value, onBlur },
           fieldState: { error },
         }) => (
           <div className="flex flex-col w-full h-[71px] mb-5">
@@ -307,24 +310,30 @@ const CustomerForm = ({
               id="gender"
               defaultSelectedKeys={[value as string]}
               labelPlacement="outside"
+              onClose={onBlur}
               placeholder=" "
               label="Gender"
-              className={`w-full ${
-                error ? 'border-red-500' : 'border-gray-300'
-              } rounded-md`}
+              className={clsx('w-full rounded-md', {
+                'border-red-500': error,
+                'border-gray-300': !error,
+              })}
               classNames={{
-                trigger: `w-full ${
+                trigger: clsx(
+                  'w-full py-[26px] mt-5',
                   error
-                    ? 'bg-danger-50 hover:bg-danger-200/50 focus:bg-danger-200/50 dark:hover:bg-gray-600'
-                    : 'bg-gray-50 dark:bg-gray-600 hover:bg-gray-200/50 dark:hover:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600'
-                } py-[26px] mt-5`,
-                label: 'text-xl font-medium pb-1',
+                    ? 'bg-danger-50 hover:data-[hover=true]:bg-danger-200/50 focus:bg-danger-200/50 dark:hover:data-[hover=true]:bg-gray-600'
+                    : 'bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:data-[hover=true]:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600',
+                ),
+                label:
+                  'text-xl font-medium pb-1 !text-blue-800 dark:!text-white',
               }}
               isDisabled={isDisabledField}
               onChange={(e) => {
                 onChange(e.target.value);
                 clearErrorOnChange(name, errors, clearErrors);
               }}
+              isInvalid={!!error}
+              errorMessage={error?.message}
             >
               {genders.map((gender) => (
                 <SelectItem key={gender.key} value={gender.key}>
@@ -332,10 +341,6 @@ const CustomerForm = ({
                 </SelectItem>
               ))}
             </Select>
-
-            {error && (
-              <p className="text-red-500 text-xs mt-1">{error.message}</p>
-            )}
           </div>
         )}
       />
