@@ -303,12 +303,13 @@ exports[`EditInvoiceClient section should match with snapshot 1`] = `
               data-slot="base"
             >
               <div
-                aria-hidden="true"
+                aria-hidden="false"
                 data-a11y-ignore="aria-hidden-focus"
                 data-testid="hidden-select-container"
                 style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
               >
                 <input
+                  aria-label="Input"
                   style="font-size: 16px;"
                   tabindex="-1"
                   type="text"
@@ -317,6 +318,7 @@ exports[`EditInvoiceClient section should match with snapshot 1`] = `
                 <label>
                   Name
                   <select
+                    aria-label="Select"
                     name="customerId"
                     tabindex="-1"
                     title=""
@@ -391,12 +393,13 @@ exports[`EditInvoiceClient section should match with snapshot 1`] = `
               data-slot="base"
             >
               <div
-                aria-hidden="true"
+                aria-hidden="false"
                 data-a11y-ignore="aria-hidden-focus"
                 data-testid="hidden-select-container"
                 style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
               >
                 <input
+                  aria-label="Input"
                   style="font-size: 16px;"
                   tabindex="-1"
                   type="text"
@@ -405,6 +408,7 @@ exports[`EditInvoiceClient section should match with snapshot 1`] = `
                 <label>
                   Status
                   <select
+                    aria-label="Select"
                     name="status"
                     size="3"
                     tabindex="-1"
@@ -825,12 +829,13 @@ exports[`EditInvoiceClient section should match with snapshot 1`] = `
                           data-slot="base"
                         >
                           <div
-                            aria-hidden="true"
+                            aria-hidden="false"
                             data-a11y-ignore="aria-hidden-focus"
                             data-testid="hidden-select-container"
                             style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
                           >
                             <input
+                              aria-label="Input"
                               style="font-size: 16px;"
                               tabindex="-1"
                               type="text"
@@ -838,6 +843,7 @@ exports[`EditInvoiceClient section should match with snapshot 1`] = `
                             />
                             <label>
                               <select
+                                aria-label="Select"
                                 tabindex="-1"
                                 title=""
                               >
@@ -1343,12 +1349,13 @@ exports[`EditInvoiceClient section should match with snapshot with invoice is nu
               data-slot="base"
             >
               <div
-                aria-hidden="true"
+                aria-hidden="false"
                 data-a11y-ignore="aria-hidden-focus"
                 data-testid="hidden-select-container"
                 style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
               >
                 <input
+                  aria-label="Input"
                   style="font-size: 16px;"
                   tabindex="-1"
                   type="text"
@@ -1357,6 +1364,7 @@ exports[`EditInvoiceClient section should match with snapshot with invoice is nu
                 <label>
                   Name
                   <select
+                    aria-label="Select"
                     name="customerId"
                     tabindex="-1"
                     title=""
@@ -1431,12 +1439,13 @@ exports[`EditInvoiceClient section should match with snapshot with invoice is nu
               data-slot="base"
             >
               <div
-                aria-hidden="true"
+                aria-hidden="false"
                 data-a11y-ignore="aria-hidden-focus"
                 data-testid="hidden-select-container"
                 style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
               >
                 <input
+                  aria-label="Input"
                   style="font-size: 16px;"
                   tabindex="-1"
                   type="text"
@@ -1445,6 +1454,7 @@ exports[`EditInvoiceClient section should match with snapshot with invoice is nu
                 <label>
                   Status
                   <select
+                    aria-label="Select"
                     name="status"
                     size="3"
                     tabindex="-1"
@@ -1865,12 +1875,13 @@ exports[`EditInvoiceClient section should match with snapshot with invoice is nu
                           data-slot="base"
                         >
                           <div
-                            aria-hidden="true"
+                            aria-hidden="false"
                             data-a11y-ignore="aria-hidden-focus"
                             data-testid="hidden-select-container"
                             style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
                           >
                             <input
+                              aria-label="Input"
                               style="font-size: 16px;"
                               tabindex="-1"
                               type="text"
@@ -1878,6 +1889,7 @@ exports[`EditInvoiceClient section should match with snapshot with invoice is nu
                             />
                             <label>
                               <select
+                                aria-label="Select"
                                 tabindex="-1"
                                 title=""
                               >

@@ -4,7 +4,7 @@ exports[`ImageFallback component should match snapshot for ImageFallback 1`] = `
 <div>
   <img
     alt="image"
-    class="opacity-0"
+    class="opacity-0 hidden"
     data-nimg="1"
     decoding="async"
     fetchpriority="high"

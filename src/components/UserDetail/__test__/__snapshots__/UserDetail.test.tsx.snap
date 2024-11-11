@@ -16,7 +16,7 @@ exports[`UserDetail render successful 1`] = `
         >
           <img
             alt="User Avatar"
-            class="opacity-0 rounded-full object-cover h-full"
+            class="opacity-0 hidden rounded-full object-cover h-full"
             data-nimg="fill"
             decoding="async"
             fetchpriority="high"

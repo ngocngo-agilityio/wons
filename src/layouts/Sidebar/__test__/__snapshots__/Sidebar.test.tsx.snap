@@ -42,7 +42,7 @@ exports[`Sidebar renders correctly with valid session 1`] = `
         >
           <img
             alt="wons-logo"
-            class="opacity-0"
+            class="opacity-0 hidden"
             data-nimg="1"
             decoding="async"
             fetchpriority="high"
@@ -380,14 +380,14 @@ exports[`Sidebar renders correctly with valid session 1`] = `
                 class="flex items-center gap-2.5"
               >
                 <div
-                  class="relative w-[45px] h-[43px]"
+                  class="relative w-11 h-11"
                 >
                   <img
                     alt="User Avatar"
-                    class="opacity-0 rounded-xl object-cover h-full"
+                    class="opacity-0 hidden rounded-xl object-cover h-full"
                     data-nimg="fill"
                     decoding="async"
-                    loading="lazy"
+                    fetchpriority="high"
                     sizes="(min-width: 768px) 100px, 45px"
                     src="http://localhost/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=3840&q=75"
                     srcset="/_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F26%2F91%2F78%2F360_F_126917812_XlWgkaV9f81Hde4wvmvJWM3huJRvy5EM.webp&w=3840&q=75 3840w"

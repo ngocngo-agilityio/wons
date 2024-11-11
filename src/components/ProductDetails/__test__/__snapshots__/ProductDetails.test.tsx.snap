@@ -13,7 +13,7 @@ exports[`ProductDetails Component matches snapshot 1`] = `
       >
         <img
           alt="Test Brand+/test-image.jpg"
-          class="opacity-0 object-cover rounded-full h-full"
+          class="opacity-0 hidden object-cover rounded-full h-full"
           data-nimg="fill"
           decoding="async"
           fetchpriority="high"
