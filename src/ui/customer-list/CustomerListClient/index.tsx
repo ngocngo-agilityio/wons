@@ -139,7 +139,6 @@ const CustomerListClient = ({
 
   const handleCloseDrawer = () => {
     setToggleDetails(false);
-    setToggleForm(false);
   };
 
   const handleRowAction = useCallback(
@@ -233,7 +232,7 @@ const CustomerListClient = ({
               isDisabledField={isPending}
               onAvatarChange={handleAvatarChange}
               onSubmit={handleFormSubmit}
-              onCloseDrawer={handleCloseDrawer}
+              onCloseDrawer={handleCloseFormDrawer}
             />
           </div>
         </Drawer>
