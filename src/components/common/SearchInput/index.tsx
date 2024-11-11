@@ -1,6 +1,6 @@
 'use client';
 
-import React, { memo } from 'react';
+import { ChangeEvent } from 'react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useDebouncedCallback } from 'use-debounce';
 import { Input, InputProps } from '@nextui-org/react';
@@ -22,7 +22,7 @@ const SearchInput = ({ ...props }: InputProps) => {
   const { PAGE, QUERY } = SEARCH_QUERIES;
 
   const handleSearch = useDebouncedCallback(
-    (event: React.ChangeEvent<HTMLInputElement>) => {
+    (event: ChangeEvent<HTMLInputElement>) => {
       const term = event.target.value;
       const params = new URLSearchParams(searchParams);
 
@@ -66,4 +66,4 @@ const SearchInput = ({ ...props }: InputProps) => {
   );
 };
 
-export default memo(SearchInput);
+export default SearchInput;
