@@ -78,26 +78,27 @@ const AvatarUpload = ({
         htmlFor="file"
         className="cursor-pointer hover:scale-110 transition-transform"
       >
-        <div className="rounded-full w-32 h-32 bg-gray-50 dark:bg-gray-600 flex justify-center items-center">
-          {previewURL || value ? (
+        {previewURL || value ? (
+          <div className="relative w-32 h-32">
             <ImageFallback
+              fill
               src={previewURL || value}
               alt="Avatar"
-              width={128}
-              height={128}
-              className="rounded-full object-cover w-full h-full"
+              className="rounded-full object-cover"
               data-testid="avatar-preview"
               placeholder={null}
               blurDataURL=""
             />
-          ) : (
+          </div>
+        ) : (
+          <div className="rounded-full w-32 h-32 bg-gray-50 dark:bg-gray-600 flex justify-center items-center">
             <IoCamera
               data-testid="avatar-upload-icon"
               size={32}
               className="text-blue-800/70 dark:text-white/70"
             />
-          )}
-        </div>
+          </div>
+        )}
       </label>
 
       <Input
