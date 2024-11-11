@@ -205,7 +205,7 @@ exports[`EditInvoice Component Test match snapshot with data null 1`] = `
                     aria-labelledby="react-aria-:r35: react-aria-:r2t: react-aria-:r2n: react-aria-:r2o:"
                     aria-valuemax="30"
                     aria-valuemin="1"
-                    aria-valuenow="8"
+                    aria-valuenow="11"
                     aria-valuetext="Empty"
                     autocorrect="off"
                     class="group first:-ml-0.5 [&:not(:first-child)]:-ml-1 px-0.5 my-auto box-content tabular-nums text-start inline-block outline-none focus:shadow-sm rounded-md text-foreground-500 data-[editable=true]:text-foreground data-[editable=true]:data-[placeholder=true]:text-foreground-500 data-[invalid=true]:text-danger-300 data-[invalid=true]:data-[editable=true]:text-danger data-[invalid=true]:focus:bg-danger-400/50 dark:data-[invalid=true]:focus:bg-danger-400/20 data-[invalid=true]:data-[editable=true]:focus:text-danger focus:bg-default-400/50 data-[editable=true]:focus:text-default-foreground transition-colors motion-reduce:transition-none"

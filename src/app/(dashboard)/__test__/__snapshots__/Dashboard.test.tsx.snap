@@ -30,7 +30,7 @@ exports[`dashboard page should match snapshot 1`] = `
               <p
                 class="text-[15.02px] ml-[17.96px]"
               >
-                02-11-2024
+                05-11-2024
               </p>
               <div
                 class="absolute flex items-center h-full right-0 px-2"
@@ -62,7 +62,7 @@ exports[`dashboard page should match snapshot 1`] = `
               <p
                 class="text-[15.02px] ml-[17.96px]"
               >
-                08-11-2024
+                11-11-2024
               </p>
               <div
                 class="absolute flex items-center h-full right-0 px-2"
@@ -123,7 +123,7 @@ exports[`dashboard page should match snapshot 1`] = `
                     data-slot="start-input"
                     role="presentation"
                     style="max-width: fit-content;"
-                    value="2024-11-02"
+                    value="2024-11-05"
                   >
                     <div
                       aria-describedby="react-aria-description-2"
@@ -162,8 +162,8 @@ exports[`dashboard page should match snapshot 1`] = `
                       aria-labelledby="react-aria-:rg: react-aria-:r1:"
                       aria-valuemax="30"
                       aria-valuemin="1"
-                      aria-valuenow="2"
-                      aria-valuetext="2"
+                      aria-valuenow="5"
+                      aria-valuetext="5"
                       autocorrect="off"
                       class="group first:-ml-0.5 [&:not(:first-child)]:-ml-1 px-0.5 my-auto box-content tabular-nums text-start inline-block outline-none focus:shadow-sm rounded-md text-foreground-500 data-[editable=true]:text-foreground data-[editable=true]:data-[placeholder=true]:text-foreground-500 data-[invalid=true]:text-danger-300 data-[invalid=true]:data-[editable=true]:text-danger data-[invalid=true]:focus:bg-danger-400/50 dark:data-[invalid=true]:focus:bg-danger-400/20 data-[invalid=true]:data-[editable=true]:focus:text-danger focus:bg-default-400/50 data-[editable=true]:focus:text-default-foreground"
                       contenteditable="true"
@@ -178,7 +178,7 @@ exports[`dashboard page should match snapshot 1`] = `
                       style="caret-color: transparent;"
                       tabindex="0"
                     >
-                      2
+                      5
                     </div>
                     <div
                       aria-hidden="true"
@@ -213,7 +213,7 @@ exports[`dashboard page should match snapshot 1`] = `
                     </div>
                     <input
                       type="hidden"
-                      value="2024-11-02"
+                      value="2024-11-05"
                     />
                   </div>
                   <span
@@ -231,7 +231,7 @@ exports[`dashboard page should match snapshot 1`] = `
                     class="flex h-full gap-x-0.5 w-full font-normal text-small"
                     data-slot="end-input"
                     role="presentation"
-                    value="2024-11-08"
+                    value="2024-11-11"
                   >
                     <div
                       aria-describedby="react-aria-description-2"
@@ -270,8 +270,8 @@ exports[`dashboard page should match snapshot 1`] = `
                       aria-labelledby="react-aria-:rv: react-aria-:r1:"
                       aria-valuemax="30"
                       aria-valuemin="1"
-                      aria-valuenow="8"
-                      aria-valuetext="8"
+                      aria-valuenow="11"
+                      aria-valuetext="11"
                       autocorrect="off"
                       class="group first:-ml-0.5 [&:not(:first-child)]:-ml-1 px-0.5 my-auto box-content tabular-nums text-start inline-block outline-none focus:shadow-sm rounded-md text-foreground-500 data-[editable=true]:text-foreground data-[editable=true]:data-[placeholder=true]:text-foreground-500 data-[invalid=true]:text-danger-300 data-[invalid=true]:data-[editable=true]:text-danger data-[invalid=true]:focus:bg-danger-400/50 dark:data-[invalid=true]:focus:bg-danger-400/20 data-[invalid=true]:data-[editable=true]:focus:text-danger focus:bg-default-400/50 data-[editable=true]:focus:text-default-foreground"
                       contenteditable="true"
@@ -286,7 +286,7 @@ exports[`dashboard page should match snapshot 1`] = `
                       style="caret-color: transparent;"
                       tabindex="0"
                     >
-                      8
+                      11
                     </div>
                     <div
                       aria-hidden="true"
@@ -321,7 +321,7 @@ exports[`dashboard page should match snapshot 1`] = `
                     </div>
                     <input
                       type="hidden"
-                      value="2024-11-08"
+                      value="2024-11-11"
                     />
                   </div>
                   <button
