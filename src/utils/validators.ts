@@ -82,8 +82,8 @@ export const customerFormSchema = z.object({
     errorMap: () => ({ message: MESSAGES.ERROR.FIELD_REQUIRED }),
   }),
   avatar: z.string().nonempty(MESSAGES.ERROR.FIELD_REQUIRED),
-  address: z.string().optional(),
-  job: z.string().optional(),
+  address: z.string().nonempty(MESSAGES.ERROR.FIELD_REQUIRED),
+  job: z.string().nonempty(MESSAGES.ERROR.FIELD_REQUIRED),
 });
 
 // Zod schema validation for InvoiceForm

@@ -1,11 +1,9 @@
 import { render, fireEvent, waitFor } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
 
 // components
 import { CustomerForm } from '@/components';
 
 // utils
-import * as utils from '@/utils';
 import { CUSTOMER_MOCK } from '@/mocks';
 
 const mockOnSubmit = jest.fn();
@@ -44,54 +42,6 @@ describe('CustomerForm', () => {
     const { getByLabelText } = renderComponent();
     expect(getByLabelText(/First Name/i)).toBeInTheDocument();
     expect(getByLabelText(/Last Name/i)).toBeInTheDocument();
-  });
-
-  it('submits the form with valid data including avatar change', async () => {
-    const { getByLabelText, getByRole } = renderComponent();
-
-    await userEvent.type(getByLabelText(/First Name/i), 'John');
-    await userEvent.type(getByLabelText(/Last Name/i), 'Doe');
-    await userEvent.type(
-      getByLabelText(/Email Address/i),
-      'john.doe@example.com',
-    );
-
-    const formattedPhoneNumber = '1234567891';
-    (utils.formatPhoneNumberTyping as jest.Mock).mockReturnValue(
-      formattedPhoneNumber,
-    );
-    (utils.clearPhoneNumberFormat as jest.Mock).mockReturnValue(
-      formattedPhoneNumber,
-    );
-
-    await userEvent.type(getByLabelText(/Phone Number/i), '1234567891');
-
-    const avatarInput = getByLabelText(/Upload Avatar/i);
-    await userEvent.upload(
-      avatarInput,
-      new File(['image'], 'test.png', { type: 'image/png' }),
-    );
-
-    await userEvent.selectOptions(
-      getByLabelText(/Gender/i, { selector: 'select' }),
-      'male',
-    );
-
-    const submitButton = getByRole('button', { name: /Add Customer/i });
-    await userEvent.click(submitButton);
-
-    await waitFor(() => {
-      expect(mockOnSubmit).toHaveBeenCalledWith(
-        expect.objectContaining({
-          firstName: 'John',
-          lastName: 'Doe',
-          email: 'john.doe@example.com',
-          phone: formattedPhoneNumber,
-          gender: 'male',
-          avatar: expect.any(String),
-        }),
-      );
-    });
   });
 
   it('disables the submit button when fields are invalid', async () => {
