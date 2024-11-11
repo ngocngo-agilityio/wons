@@ -232,6 +232,7 @@ const CustomerListClient = ({
               isDisabledField={isPending}
               onAvatarChange={handleAvatarChange}
               onSubmit={handleFormSubmit}
+              onCloseDrawer={handleCloseFormDrawer}
             />
           </div>
         </Drawer>
