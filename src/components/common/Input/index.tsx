@@ -24,7 +24,7 @@ const CustomInput = extendVariants(NextUIInput, {
           'bg-transparent',
         ],
         label: [
-          'group-data-[filled-within=true]:text-blue-800 dark:group-data-[filled-within=true]:text-white',
+          'group-data-[filled-within=true]:!text-blue-800 dark:group-data-[filled-within=true]:!text-white',
         ],
       },
       secondary: {
