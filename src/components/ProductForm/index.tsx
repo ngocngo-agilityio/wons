@@ -52,7 +52,7 @@ const ProductForm = ({
 }: IProductFormProps) => {
   const {
     control,
-    formState: { dirtyFields, errors, defaultValues },
+    formState: { dirtyFields, errors, defaultValues, isValid },
     clearErrors,
     handleSubmit,
     watch,
@@ -315,7 +315,7 @@ const ProductForm = ({
       <Button
         type="submit"
         isLoading={isPending}
-        isDisabled={isDisableSubmit || isPending}
+        isDisabled={isDisableSubmit || isPending || !isValid}
         size="lg"
         color="primary"
         className="w-full mt-8 text-xl font-medium cursor-pointer"

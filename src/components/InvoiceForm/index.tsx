@@ -92,7 +92,7 @@ const InvoiceForm = ({
 
   const {
     control,
-    formState: { dirtyFields, errors, defaultValues },
+    formState: { dirtyFields, errors, defaultValues, isValid },
     clearErrors,
     watch,
     handleSubmit,
@@ -413,7 +413,7 @@ const InvoiceForm = ({
           </Button>
           <Button
             type="submit"
-            isDisabled={isDisableSubmit || hasEmptyField}
+            isDisabled={isDisableSubmit || hasEmptyField || !isValid}
             isLoading={isPending}
             size="lg"
             color="primary"
