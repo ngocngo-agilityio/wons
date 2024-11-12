@@ -272,7 +272,7 @@ exports[`Product list client calls close edit drawer 1`] = `
                       />
                     </div>
                     <p
-                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
+                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap whitespace-nowrap overflow-hidden text-ellipsis max-w-[130px]"
                     >
                       Macbook pro m3
                     </p>
@@ -299,7 +299,7 @@ exports[`Product list client calls close edit drawer 1`] = `
                   <p
                     class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
                   >
-                    5 Piece
+                    5 Pieces
                   </p>
                 </td>
                 <td
@@ -347,7 +347,7 @@ exports[`Product list client calls close edit drawer 1`] = `
                     </svg>
                     <span
                       class="nextui-ripple"
-                      style="position: absolute; background-color: currentColor; border-radius: 100%; transform-origin: center; pointer-events: none; overflow: hidden; inset: 0; z-index: 0; top: 0px; left: 0px; width: 0px; height: 0px; transform: scale(1.83929); opacity: 0.028123998014780216; will-change: transform, opacity;"
+                      style="position: absolute; background-color: currentColor; border-radius: 100%; transform-origin: center; pointer-events: none; overflow: hidden; inset: 0; z-index: 0; top: 0px; left: 0px; width: 0px; height: 0px; transform: scale(2); opacity: 0; will-change: auto;"
                     />
                   </button>
                 </td>
@@ -428,7 +428,7 @@ exports[`Product list client calls close edit drawer 1`] = `
                       />
                     </div>
                     <p
-                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
+                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap whitespace-nowrap overflow-hidden text-ellipsis max-w-[130px]"
                     >
                       Samsung A13
                     </p>
@@ -455,7 +455,7 @@ exports[`Product list client calls close edit drawer 1`] = `
                   <p
                     class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
                   >
-                    5 Piece
+                    5 Pieces
                   </p>
                 </td>
                 <td
@@ -579,7 +579,7 @@ exports[`Product list client calls close edit drawer 1`] = `
                       />
                     </div>
                     <p
-                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
+                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap whitespace-nowrap overflow-hidden text-ellipsis max-w-[130px]"
                     >
                       Macbook m1
                     </p>
@@ -606,7 +606,7 @@ exports[`Product list client calls close edit drawer 1`] = `
                   <p
                     class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
                   >
-                    2 Piece
+                    2 Pieces
                   </p>
                 </td>
                 <td
@@ -708,7 +708,7 @@ exports[`Product list client calls close edit drawer 1`] = `
                       />
                     </div>
                     <p
-                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
+                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap whitespace-nowrap overflow-hidden text-ellipsis max-w-[130px]"
                     >
                       Samsung Laptop
                     </p>
@@ -735,7 +735,7 @@ exports[`Product list client calls close edit drawer 1`] = `
                   <p
                     class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
                   >
-                    3 Piece
+                    3 Pieces
                   </p>
                 </td>
                 <td
@@ -836,7 +836,7 @@ exports[`Product list client calls close edit drawer 1`] = `
                       />
                     </div>
                     <p
-                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
+                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap whitespace-nowrap overflow-hidden text-ellipsis max-w-[130px]"
                     >
                       I phone 12
                     </p>
@@ -965,7 +965,7 @@ exports[`Product list client calls close edit drawer 1`] = `
                       />
                     </div>
                     <p
-                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
+                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap whitespace-nowrap overflow-hidden text-ellipsis max-w-[130px]"
                     >
                       aaaaa
                     </p>
@@ -1322,7 +1322,7 @@ exports[`Product list client calls open details 1`] = `
                       />
                     </div>
                     <p
-                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
+                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap whitespace-nowrap overflow-hidden text-ellipsis max-w-[130px]"
                     >
                       Macbook pro m3
                     </p>
@@ -1349,7 +1349,7 @@ exports[`Product list client calls open details 1`] = `
                   <p
                     class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
                   >
-                    5 Piece
+                    5 Pieces
                   </p>
                 </td>
                 <td
@@ -1474,7 +1474,7 @@ exports[`Product list client calls open details 1`] = `
                       />
                     </div>
                     <p
-                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
+                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap whitespace-nowrap overflow-hidden text-ellipsis max-w-[130px]"
                     >
                       Samsung A13
                     </p>
@@ -1501,7 +1501,7 @@ exports[`Product list client calls open details 1`] = `
                   <p
                     class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
                   >
-                    5 Piece
+                    5 Pieces
                   </p>
                 </td>
                 <td
@@ -1625,7 +1625,7 @@ exports[`Product list client calls open details 1`] = `
                       />
                     </div>
                     <p
-                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
+                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap whitespace-nowrap overflow-hidden text-ellipsis max-w-[130px]"
                     >
                       Macbook m1
                     </p>
@@ -1652,7 +1652,7 @@ exports[`Product list client calls open details 1`] = `
                   <p
                     class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
                   >
-                    2 Piece
+                    2 Pieces
                   </p>
                 </td>
                 <td
@@ -1754,7 +1754,7 @@ exports[`Product list client calls open details 1`] = `
                       />
                     </div>
                     <p
-                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
+                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap whitespace-nowrap overflow-hidden text-ellipsis max-w-[130px]"
                     >
                       Samsung Laptop
                     </p>
@@ -1781,7 +1781,7 @@ exports[`Product list client calls open details 1`] = `
                   <p
                     class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
                   >
-                    3 Piece
+                    3 Pieces
                   </p>
                 </td>
                 <td
@@ -1883,7 +1883,7 @@ exports[`Product list client calls open details 1`] = `
                       />
                     </div>
                     <p
-                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
+                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap whitespace-nowrap overflow-hidden text-ellipsis max-w-[130px]"
                     >
                       I phone 12
                     </p>
@@ -2012,7 +2012,7 @@ exports[`Product list client calls open details 1`] = `
                       />
                     </div>
                     <p
-                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
+                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap whitespace-nowrap overflow-hidden text-ellipsis max-w-[130px]"
                     >
                       aaaaa
                     </p>
@@ -2166,7 +2166,7 @@ exports[`Product list client calls open details 1`] = `
               <p
                 class="font-dm-sans text-blue-800 dark:text-white text-xl opacity-70 font-medium"
               >
-                Price: $
+                Price: $0
               </p>
               <p
                 class="font-dm-sans text-blue-800 dark:text-white text-xl opacity-70 font-medium"
@@ -2182,7 +2182,7 @@ exports[`Product list client calls open details 1`] = `
             <p
               class="font-dm-sans text-blue-800 dark:text-white text-xl opacity-70 font-medium border-b-1 border-blue-800/10 dark:border-white/10 py-4"
             >
-              Total Sales: $
+              Total Sales: $0
             </p>
             <p
               class="font-dm-sans text-blue-800 dark:text-white text-xl opacity-70 font-medium py-4"
@@ -2475,7 +2475,7 @@ exports[`Product list client should match snapshot 1`] = `
                       />
                     </div>
                     <p
-                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
+                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap whitespace-nowrap overflow-hidden text-ellipsis max-w-[130px]"
                     >
                       Macbook pro m3
                     </p>
@@ -2502,7 +2502,7 @@ exports[`Product list client should match snapshot 1`] = `
                   <p
                     class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
                   >
-                    5 Piece
+                    5 Pieces
                   </p>
                 </td>
                 <td
@@ -2627,7 +2627,7 @@ exports[`Product list client should match snapshot 1`] = `
                       />
                     </div>
                     <p
-                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
+                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap whitespace-nowrap overflow-hidden text-ellipsis max-w-[130px]"
                     >
                       Samsung A13
                     </p>
@@ -2654,7 +2654,7 @@ exports[`Product list client should match snapshot 1`] = `
                   <p
                     class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
                   >
-                    5 Piece
+                    5 Pieces
                   </p>
                 </td>
                 <td
@@ -2778,7 +2778,7 @@ exports[`Product list client should match snapshot 1`] = `
                       />
                     </div>
                     <p
-                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
+                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap whitespace-nowrap overflow-hidden text-ellipsis max-w-[130px]"
                     >
                       Macbook m1
                     </p>
@@ -2805,7 +2805,7 @@ exports[`Product list client should match snapshot 1`] = `
                   <p
                     class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
                   >
-                    2 Piece
+                    2 Pieces
                   </p>
                 </td>
                 <td
@@ -2907,7 +2907,7 @@ exports[`Product list client should match snapshot 1`] = `
                       />
                     </div>
                     <p
-                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
+                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap whitespace-nowrap overflow-hidden text-ellipsis max-w-[130px]"
                     >
                       Samsung Laptop
                     </p>
@@ -2934,7 +2934,7 @@ exports[`Product list client should match snapshot 1`] = `
                   <p
                     class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
                   >
-                    3 Piece
+                    3 Pieces
                   </p>
                 </td>
                 <td
@@ -3035,7 +3035,7 @@ exports[`Product list client should match snapshot 1`] = `
                       />
                     </div>
                     <p
-                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
+                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap whitespace-nowrap overflow-hidden text-ellipsis max-w-[130px]"
                     >
                       I phone 12
                     </p>
@@ -3164,7 +3164,7 @@ exports[`Product list client should match snapshot 1`] = `
                       />
                     </div>
                     <p
-                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap"
+                      class="font-dm-sans text-blue-500 dark:text-purple-500 text-md text-nowrap whitespace-nowrap overflow-hidden text-ellipsis max-w-[130px]"
                     >
                       aaaaa
                     </p>

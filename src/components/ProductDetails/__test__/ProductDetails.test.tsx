@@ -67,7 +67,7 @@ describe('ProductDetails Component', () => {
     setup();
 
     expect(screen.getByText('Price: $100.00')).toBeInTheDocument();
-    expect(screen.getByText('Total Order: 5 Piece')).toBeInTheDocument();
+    expect(screen.getByText('Total Order: 5 Pieces')).toBeInTheDocument();
     expect(screen.getByText('Total Sales: $500.00')).toBeInTheDocument();
   });
 

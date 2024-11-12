@@ -57,7 +57,7 @@ const ProductDetails = ({ product }: IProductDetailsProps) => {
 
         <div className="flex items-center justify-between border-b-1 border-blue-800/10 dark:border-white/10 py-4">
           <Text
-            text={`Price: $${formatPrice(price)}`}
+            text={`Price: $${formatPrice(price) || 0}`}
             size="xl"
             className="opacity-70 font-medium"
           />
@@ -70,12 +70,12 @@ const ProductDetails = ({ product }: IProductDetailsProps) => {
           )}
         </div>
         <Text
-          text={`Total Order: ${quantity} Piece`}
+          text={`Total Order: ${quantity} ${quantity > 1 ? 'Pieces' : 'Piece'}`}
           size="xl"
           className="opacity-70 font-medium border-b-1 border-blue-800/10 dark:border-white/10 py-4"
         />
         <Text
-          text={`Total Sales: $${formatTotalAmount(price, quantity)}`}
+          text={`Total Sales: $${formatTotalAmount(price, quantity) || 0}`}
           size="xl"
           className="opacity-70 font-medium border-b-1 border-blue-800/10 dark:border-white/10 py-4"
         />

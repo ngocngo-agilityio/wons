@@ -79,7 +79,7 @@ const ProductTable = ({
               size="md"
               text={title}
               textColor="text-blue-500 dark:text-purple-500"
-              className="text-nowrap"
+              className="text-nowrap whitespace-nowrap overflow-hidden text-ellipsis max-w-[130px]"
             />
           </div>
         );
@@ -116,7 +116,7 @@ const ProductTable = ({
         return (
           <Text
             size="md"
-            text={`${quantity.toString()} Piece`}
+            text={`${quantity} ${quantity > 1 ? 'Pieces' : 'Piece'}`}
             className="text-nowrap"
           />
         );
