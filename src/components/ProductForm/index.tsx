@@ -129,7 +129,7 @@ const ProductForm = ({
         />
       </div>
 
-      <div className="flex justify-center mt-[21px]">
+      <div className="flex justify-center mt-[39px]">
         <Controller
           control={control}
           name="imageUrl"
@@ -150,166 +150,169 @@ const ProductForm = ({
         />
       </div>
 
-      <Controller
-        name="title"
-        control={control}
-        render={({
-          field: { name, onChange, ...rest },
-          fieldState: { error },
-        }) => (
-          <Input
-            label="Product Name"
-            classNames={{ base: 'h-[71px]' }}
-            isInvalid={!!error}
-            errorMessage={error?.message}
-            isDisabled={isDisabledField}
-            onChange={(e) => {
-              onChange(e.target.value);
-
-              clearErrorOnChange(name, errors, clearErrors);
-            }}
-            {...rest}
-          />
-        )}
-      />
-
-      <Controller
-        name="brand"
-        control={control}
-        render={({
-          field: { name, onChange, value, onBlur },
-          fieldState: { error },
-        }) => (
-          <div className="flex flex-col w-full h-[71px] mb-5">
-            <Select
-              name={name}
-              id="brand"
-              defaultSelectedKeys={[value as string]}
-              labelPlacement="outside"
-              placeholder=" "
-              label="Brand"
-              className={`w-full ${
-                error ? 'border-red-500' : 'border-gray-300'
-              } rounded-md`}
-              classNames={{
-                trigger: `w-full ${
-                  error
-                    ? 'bg-danger-50 hover:bg-danger-200/50 focus:bg-danger-200/50 dark:hover:bg-gray-600'
-                    : 'bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:data-[hover=true]:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600'
-                } py-[26px] mt-5`,
-                label: 'text-xl font-medium pb-1',
-              }}
-              isDisabled={isDisabledField}
-              onChange={(e) => {
-                onChange(e.target.value);
-                clearErrorOnChange(name, errors, clearErrors);
-              }}
-              onClose={onBlur}
-              isInvalid={!!error}
-              errorMessage={error?.message}
-            >
-              {BRANDS.map((brand) => (
-                <SelectItem key={brand.key} value={brand.key}>
-                  {brand.label}
-                </SelectItem>
-              ))}
-            </Select>
-          </div>
-        )}
-      />
-
-      <div className="grid grid-cols-10 gap-4 pt-12">
-        <div className="col-span-5">
-          <Controller
-            name="price"
-            control={control}
-            render={({
-              field: { name, onChange, value, ...rest },
-              fieldState: { error },
-            }) => {
-              const formattedValue = formatPriceTyping(
-                value ? String(value) : '',
-              );
-
-              return (
-                <Input
-                  label="Price"
-                  value={formattedValue}
-                  classNames={{ base: 'h-[71px]' }}
-                  isInvalid={!!error}
-                  errorMessage={
-                    error?.message === 'Required'
-                      ? MESSAGES.ERROR.FIELD_REQUIRED
-                      : error?.message
-                  }
-                  isDisabled={isDisabledField}
-                  onChange={(e) => {
-                    const rawValue = e.target.value.replace(/\$|,/g, '');
-                    onChange(rawValue);
-                    clearErrorOnChange(name, errors, clearErrors);
-                  }}
-                  {...rest}
-                />
-              );
-            }}
-          />
-        </div>
-
-        {/* Negotiable Checkbox */}
-        <div className="col-span-5 flex items-center ml-4">
-          <Controller
-            name="negotiable"
-            control={control}
-            render={({ field: { onChange, value, ...rest } }) => (
-              <>
-                <Checkbox
-                  aria-label="Negotiable"
-                  value={value ? 'true' : 'false'}
-                  onChange={onChange}
-                  {...rest}
-                  size="lg"
-                />
-                <Text
-                  text="Negotiable"
-                  className="ml-2 color-blue.900 leading-[18.51px]"
-                />
-              </>
-            )}
-          />
-        </div>
-      </div>
-
-      <div className="flex flex-col pt-8">
-        <label className="text-xl font-medium pb-2">Descriptions</label>
+      <div className="flex flex-col gap-[7px_0] mt-[30px]">
         <Controller
-          name="description"
+          name="title"
           control={control}
           render={({
             field: { name, onChange, ...rest },
             fieldState: { error },
           }) => (
-            <Textarea
-              classNames={{
-                input:
-                  'group-data-[has-value=true]:text-blue-800/70 dark:group-data-[has-value=true]:text-white/70',
-                inputWrapper: [
-                  'bg-gray-50 dark:bg-gray-600',
-                  'hover:data-[hover:true]:bg-gray-200/50 dark:hover:data-[hover:true]:bg-gray-900',
-                  'focus-within:bg-gray-50 dark:focus-within:bg-gray-600',
-                  'group-data-[focus=true]:bg-gray-50 dark:group-data-[focus=true]:bg-gray-600',
-                ],
-              }}
+            <Input
+              label="Product Name"
+              classNames={{ base: 'h-[71px]' }}
               isInvalid={!!error}
               errorMessage={error?.message}
               isDisabled={isDisabledField}
               onChange={(e) => {
                 onChange(e.target.value);
+
                 clearErrorOnChange(name, errors, clearErrors);
               }}
               {...rest}
             />
           )}
         />
+
+        <Controller
+          name="brand"
+          control={control}
+          render={({
+            field: { name, onChange, value, onBlur },
+            fieldState: { error },
+          }) => (
+            <div className="flex flex-col w-full h-[100px]">
+              <Select
+                name={name}
+                id="brand"
+                defaultSelectedKeys={[value as string]}
+                labelPlacement="outside"
+                placeholder=" "
+                label="Brand"
+                className={`w-full ${
+                  error ? 'border-red-500' : 'border-gray-300'
+                } rounded-md`}
+                classNames={{
+                  trigger: `w-full ${
+                    error
+                      ? 'bg-danger-50 hover:bg-danger-200/50 focus:bg-danger-200/50 dark:hover:bg-gray-600'
+                      : 'bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:data-[hover=true]:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600'
+                  } py-[26px]`,
+                  label:
+                    'text-xl font-medium pb-1 !text-blue-800 dark:!text-white',
+                }}
+                isDisabled={isDisabledField}
+                onChange={(e) => {
+                  onChange(e.target.value);
+                  clearErrorOnChange(name, errors, clearErrors);
+                }}
+                onClose={onBlur}
+                isInvalid={!!error}
+                errorMessage={error?.message}
+              >
+                {BRANDS.map((brand) => (
+                  <SelectItem key={brand.key} value={brand.key}>
+                    {brand.label}
+                  </SelectItem>
+                ))}
+              </Select>
+            </div>
+          )}
+        />
+
+        <div className="grid grid-cols-10 gap-4">
+          <div className="col-span-5">
+            <Controller
+              name="price"
+              control={control}
+              render={({
+                field: { name, onChange, value, ...rest },
+                fieldState: { error },
+              }) => {
+                const formattedValue = formatPriceTyping(
+                  value ? String(value) : '',
+                );
+
+                return (
+                  <Input
+                    label="Price"
+                    value={formattedValue}
+                    classNames={{ base: 'h-[71px]' }}
+                    isInvalid={!!error}
+                    errorMessage={
+                      error?.message === 'Required'
+                        ? MESSAGES.ERROR.FIELD_REQUIRED
+                        : error?.message
+                    }
+                    isDisabled={isDisabledField}
+                    onChange={(e) => {
+                      const rawValue = e.target.value.replace(/\$|,/g, '');
+                      onChange(rawValue);
+                      clearErrorOnChange(name, errors, clearErrors);
+                    }}
+                    {...rest}
+                  />
+                );
+              }}
+            />
+          </div>
+
+          {/* Negotiable Checkbox */}
+          <div className="col-span-5 flex items-center ml-4">
+            <Controller
+              name="negotiable"
+              control={control}
+              render={({ field: { onChange, value, ...rest } }) => (
+                <>
+                  <Checkbox
+                    aria-label="Negotiable"
+                    value={value ? 'true' : 'false'}
+                    onChange={onChange}
+                    {...rest}
+                    size="lg"
+                  />
+                  <Text
+                    text="Negotiable"
+                    className="ml-2 color-blue.900 leading-[18.51px]"
+                  />
+                </>
+              )}
+            />
+          </div>
+        </div>
+
+        <div className="flex flex-col h-[125px]">
+          <label className="text-xl font-medium pb-2">Descriptions</label>
+          <Controller
+            name="description"
+            control={control}
+            render={({
+              field: { name, onChange, ...rest },
+              fieldState: { error },
+            }) => (
+              <Textarea
+                classNames={{
+                  input:
+                    'group-data-[has-value=true]:text-blue-800/70 dark:group-data-[has-value=true]:text-white/70',
+                  inputWrapper: [
+                    'bg-gray-50 dark:bg-gray-600',
+                    'hover:data-[hover:true]:bg-gray-200/50 dark:hover:data-[hover:true]:bg-gray-900',
+                    'focus-within:bg-gray-50 dark:focus-within:bg-gray-600',
+                    'group-data-[focus=true]:bg-gray-50 dark:group-data-[focus=true]:bg-gray-600',
+                  ],
+                }}
+                isInvalid={!!error}
+                errorMessage={error?.message}
+                isDisabled={isDisabledField}
+                onChange={(e) => {
+                  onChange(e.target.value);
+                  clearErrorOnChange(name, errors, clearErrors);
+                }}
+                {...rest}
+              />
+            )}
+          />
+        </div>
       </div>
 
       <Button
@@ -318,7 +321,7 @@ const ProductForm = ({
         isDisabled={isDisableSubmit || isPending || !isValid}
         size="lg"
         color="primary"
-        className="w-full mt-8 text-xl font-medium cursor-pointer"
+        className="w-full mt-[30px] text-xl font-medium cursor-pointer"
       >
         Save Product
       </Button>
