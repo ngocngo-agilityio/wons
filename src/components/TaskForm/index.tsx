@@ -188,7 +188,7 @@ const TaskForm = ({
         />
       </div>
 
-      <div className="flex justify-center mt-[21px]">
+      <div className="flex justify-center">
         <Controller
           control={control}
           name="images"
@@ -207,7 +207,7 @@ const TaskForm = ({
         />
       </div>
 
-      <div className="mt-5">
+      <div className="mt-3 flex flex-col gap-[15px_0]">
         <Controller
           name="title"
           control={control}
@@ -215,24 +215,23 @@ const TaskForm = ({
             field: { name, onChange, value, ...rest },
             fieldState: { error },
           }) => (
-            <div className="flex flex-col w-full h-[71px] mb-5">
-              <Input
-                label="Task Name"
-                isInvalid={!!error}
-                errorMessage={
-                  error?.message === 'Required'
-                    ? MESSAGES.ERROR.FIELD_REQUIRED
-                    : error?.message
-                }
-                isDisabled={isDisabledField}
-                value={value}
-                onChange={(e) => {
-                  onChange(e.target.value);
-                  clearErrorOnChange(name, errors, clearErrors);
-                }}
-                {...rest}
-              />
-            </div>
+            <Input
+              label="Task Name"
+              isInvalid={!!error}
+              classNames={{ base: 'h-[71px]' }}
+              errorMessage={
+                error?.message === 'Required'
+                  ? MESSAGES.ERROR.FIELD_REQUIRED
+                  : error?.message
+              }
+              isDisabled={isDisabledField}
+              value={value}
+              onChange={(e) => {
+                onChange(e.target.value);
+                clearErrorOnChange(name, errors, clearErrors);
+              }}
+              {...rest}
+            />
           )}
         />
 
@@ -243,7 +242,7 @@ const TaskForm = ({
             field: { name, onChange, value, onBlur },
             fieldState: { error },
           }) => (
-            <div className="flex flex-col w-full h-[71px] mb-12">
+            <div className="flex flex-col w-full h-[100px]">
               <Select
                 name={name}
                 id="label"
@@ -258,7 +257,7 @@ const TaskForm = ({
                 })}
                 classNames={{
                   trigger: clsx(
-                    'w-full py-[26px] mt-5',
+                    'w-full py-[26px]',
                     error
                       ? 'bg-danger-50 hover:data-[hover=true]:bg-danger-200/50 focus:bg-danger-200/50 dark:hover:data-[hover=true]:bg-gray-600'
                       : 'bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:data-[hover=true]:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600',
@@ -292,7 +291,7 @@ const TaskForm = ({
             fieldState: { error },
           }) => {
             return (
-              <div className="flex flex-col w-full h-[71px] mb-16">
+              <div className="flex flex-col w-full h-[100px]">
                 <Select
                   name={name}
                   id="level"
@@ -307,7 +306,7 @@ const TaskForm = ({
                   })}
                   classNames={{
                     trigger: clsx(
-                      'w-full py-[26px] mt-5',
+                      'w-full py-[26px]',
                       error
                         ? 'bg-danger-50 hover:data-[hover=true]:bg-danger-200/50 focus:bg-danger-200/50 dark:hover:data-[hover=true]:bg-gray-600'
                         : 'bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:data-[hover=true]:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600',
@@ -334,8 +333,8 @@ const TaskForm = ({
           }}
         />
 
-        <div className="flex flex-col">
-          <label className="text-xl font-medium pb-2">Description</label>
+        <div className="flex flex-col gap-[5px_0] h-[125px]">
+          <label className="text-xl font-medium">Description</label>
           <Controller
             name="description"
             control={control}
@@ -377,42 +376,44 @@ const TaskForm = ({
             field: { onChange, value, name, onBlur },
             fieldState: { error },
           }) => (
-            <Select
-              selectionMode="multiple"
-              label="Assignees"
-              defaultSelectedKeys={value}
-              placeholder=" "
-              onClose={onBlur}
-              labelPlacement="outside"
-              variant="flat"
-              isDisabled={isDisabledField}
-              classNames={{
-                trigger: clsx(
-                  'w-full py-[26px] mt-5',
-                  error
-                    ? 'bg-danger-50 hover:data-[hover=true]:bg-danger-200/50 focus:group-data-[focus=true]:bg-danger-200/50 dark:hover:data-[hover=true]:bg-gray-600'
-                    : 'bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:data-[hover=true]:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600',
-                ),
-                label:
-                  'text-xl font-medium pb-1 !text-blue-800 dark:!text-white',
-              }}
-              onChange={(e) => {
-                const selectedValues = e.target.value;
+            <div className="flex flex-col w-full h-[100px]">
+              <Select
+                selectionMode="multiple"
+                label="Assignees"
+                defaultSelectedKeys={value}
+                placeholder=" "
+                onClose={onBlur}
+                labelPlacement="outside"
+                variant="flat"
+                isDisabled={isDisabledField}
+                classNames={{
+                  trigger: clsx(
+                    'w-full py-[26px]',
+                    error
+                      ? 'bg-danger-50 hover:data-[hover=true]:bg-danger-200/50 focus:group-data-[focus=true]:bg-danger-200/50 dark:hover:data-[hover=true]:bg-gray-600'
+                      : 'bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:data-[hover=true]:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600',
+                  ),
+                  label:
+                    'text-xl font-medium pb-1 !text-blue-800 dark:!text-white',
+                }}
+                onChange={(e) => {
+                  const selectedValues = e.target.value;
 
-                // Check if selected values are empty and convert "," to an empty array
-                const cleanedValues =
-                  selectedValues === ',' ? '' : selectedValues;
-                onChange(cleanedValues);
+                  // Check if selected values are empty and convert "," to an empty array
+                  const cleanedValues =
+                    selectedValues === ',' ? '' : selectedValues;
+                  onChange(cleanedValues);
 
-                clearErrorOnChange(name, errors, clearErrors);
-              }}
-              isInvalid={!!error}
-              errorMessage={error?.message}
-            >
-              {usersOptions.map((option) => (
-                <SelectItem key={option.key}>{option.label}</SelectItem>
-              ))}
-            </Select>
+                  clearErrorOnChange(name, errors, clearErrors);
+                }}
+                isInvalid={!!error}
+                errorMessage={error?.message}
+              >
+                {usersOptions.map((option) => (
+                  <SelectItem key={option.key}>{option.label}</SelectItem>
+                ))}
+              </Select>
+            </div>
           )}
         />
       </div>
@@ -425,7 +426,7 @@ const TaskForm = ({
         }
         size="lg"
         color="primary"
-        className="w-full mt-8 text-xl font-medium cursor-pointer"
+        className="w-full mt-[30px] text-xl font-medium cursor-pointer"
       >
         Save Task
       </Button>
