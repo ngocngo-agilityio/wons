@@ -47,7 +47,7 @@ exports[`TaskForm should match snapshot 1`] = `
         </h2>
       </div>
       <div
-        class="flex justify-center mt-[21px]"
+        class="flex justify-center"
       >
         <div
           class="flex flex-col items-center mt-5"
@@ -120,57 +120,53 @@ exports[`TaskForm should match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="mt-5"
+        class="mt-3 flex flex-col gap-[15px_0]"
       >
         <div
-          class="flex flex-col w-full h-[71px] mb-5"
+          class="group flex flex-col data-[hidden=true]:hidden w-full group relative justify-end data-[has-label=true]:mt-[29px] h-[71px]"
+          data-filled="true"
+          data-filled-within="true"
+          data-has-elements="true"
+          data-has-label="true"
+          data-slot="base"
         >
           <div
-            class="group flex flex-col data-[hidden=true]:hidden w-full group relative justify-end data-[has-label=true]:mt-[29px]"
-            data-filled="true"
-            data-filled-within="true"
-            data-has-elements="true"
-            data-has-label="true"
-            data-slot="base"
+            class="h-full flex flex-col"
+            data-slot="main-wrapper"
           >
             <div
-              class="h-full flex flex-col"
-              data-slot="main-wrapper"
+              class="relative w-full inline-flex tap-highlight-transparent flex-row items-center shadow-sm gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-primary-100 text-primary placeholder:text-primary outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:bg-gray-900 focus-within:bg-gray-50 dark:focus-within:bg-gray-600 group-data-[focus=true]:bg-gray-50 dark:group-data-[focus=true]:bg-gray-600 h-12.5 p-3.75 rounded-[10px]"
+              data-slot="input-wrapper"
+              style="cursor: text;"
             >
-              <div
-                class="relative w-full inline-flex tap-highlight-transparent flex-row items-center shadow-sm gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-primary-100 text-primary placeholder:text-primary outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-offset-background bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:bg-gray-900 focus-within:bg-gray-50 dark:focus-within:bg-gray-600 group-data-[focus=true]:bg-gray-50 dark:group-data-[focus=true]:bg-gray-600 h-12.5 p-3.75 rounded-[10px] group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-blue-500"
-                data-slot="input-wrapper"
-                style="cursor: text;"
+              <label
+                class="absolute pointer-events-none origin-top-left rtl:origin-top-right subpixel-antialiased block will-change-auto !duration-200 !ease-out motion-reduce:transition-none transition-[transform,color,left,opacity] text-primary group-data-[filled-within=true]:pointer-events-auto pb-0 z-20 -translate-y-1/2 group-data-[filled-within=true]:left-0 left-3 rtl:left-auto rtl:right-3 group-data-[filled-within=true]:-translate-y-[calc(100%_+_theme(fontSize.small)/2_+_20px)] pe-2 max-w-full text-ellipsis overflow-hidden group-data-[filled-within=true]:!text-blue-800 dark:group-data-[filled-within=true]:!text-white font-medium text-xl top-5"
+                data-slot="label"
+                for="react-aria-:r5:"
+                id="react-aria-:r6:"
               >
-                <label
-                  class="absolute pointer-events-none origin-top-left rtl:origin-top-right subpixel-antialiased block will-change-auto !duration-200 !ease-out motion-reduce:transition-none transition-[transform,color,left,opacity] text-primary group-data-[filled-within=true]:pointer-events-auto pb-0 z-20 -translate-y-1/2 group-data-[filled-within=true]:left-0 left-3 rtl:left-auto rtl:right-3 group-data-[filled-within=true]:-translate-y-[calc(100%_+_theme(fontSize.small)/2_+_20px)] pe-2 max-w-full text-ellipsis overflow-hidden group-data-[filled-within=true]:!text-blue-800 dark:group-data-[filled-within=true]:!text-white font-medium text-xl top-5"
-                  data-slot="label"
-                  for="react-aria-:r5:"
-                  id="react-aria-:r6:"
-                >
-                  Task Name
-                </label>
-                <div
-                  class="inline-flex w-full items-center h-full box-border"
-                  data-slot="inner-wrapper"
-                >
-                  <input
-                    aria-label="Task Name"
-                    aria-labelledby="react-aria-:r5: react-aria-:r6:"
-                    class="w-full font-normal !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-blue-800/70 dark:text-white/70 placeholder:text-blue-800/40 dark:placeholder:text-white/40 bg-transparent text-md"
-                    data-slot="input"
-                    id="react-aria-:r5:"
-                    placeholder=" "
-                    type="text"
-                    value=""
-                  />
-                </div>
+                Task Name
+              </label>
+              <div
+                class="inline-flex w-full items-center h-full box-border"
+                data-slot="inner-wrapper"
+              >
+                <input
+                  aria-label="Task Name"
+                  aria-labelledby="react-aria-:r5: react-aria-:r6:"
+                  class="w-full font-normal !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-blue-800/70 dark:text-white/70 placeholder:text-blue-800/40 dark:placeholder:text-white/40 bg-transparent text-md"
+                  data-slot="input"
+                  id="react-aria-:r5:"
+                  placeholder=" "
+                  type="text"
+                  value=""
+                />
               </div>
             </div>
           </div>
         </div>
         <div
-          class="flex flex-col w-full h-[71px] mb-12"
+          class="flex flex-col w-full h-[100px]"
         >
           <div
             class="group flex flex-col transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] w-full rounded-md border-gray-300"
@@ -232,7 +228,7 @@ exports[`TaskForm should match snapshot 1`] = `
                 aria-expanded="false"
                 aria-haspopup="listbox"
                 aria-labelledby="react-aria-:rh: react-aria-:rd:"
-                class="relative px-3 gap-3 inline-flex flex-row items-center shadow-sm tap-highlight-transparent data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 h-10 min-h-10 rounded-medium outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 w-full py-[26px] mt-5 bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:data-[hover=true]:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600"
+                class="relative px-3 gap-3 inline-flex flex-row items-center shadow-sm tap-highlight-transparent data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 h-10 min-h-10 rounded-medium outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 w-full py-[26px] bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:data-[hover=true]:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600"
                 data-slot="trigger"
                 id="label"
                 type="button"
@@ -280,7 +276,7 @@ exports[`TaskForm should match snapshot 1`] = `
           </div>
         </div>
         <div
-          class="flex flex-col w-full h-[71px] mb-16"
+          class="flex flex-col w-full h-[100px]"
         >
           <div
             class="group flex flex-col transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] w-full rounded-md border-gray-300"
@@ -337,7 +333,7 @@ exports[`TaskForm should match snapshot 1`] = `
                 aria-expanded="false"
                 aria-haspopup="listbox"
                 aria-labelledby="react-aria-:rp: react-aria-:rl:"
-                class="relative px-3 gap-3 inline-flex flex-row items-center shadow-sm tap-highlight-transparent data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 h-10 min-h-10 rounded-medium outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 w-full py-[26px] mt-5 bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:data-[hover=true]:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600"
+                class="relative px-3 gap-3 inline-flex flex-row items-center shadow-sm tap-highlight-transparent data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 h-10 min-h-10 rounded-medium outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 w-full py-[26px] bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:data-[hover=true]:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600"
                 data-slot="trigger"
                 id="level"
                 type="button"
@@ -385,10 +381,10 @@ exports[`TaskForm should match snapshot 1`] = `
           </div>
         </div>
         <div
-          class="flex flex-col"
+          class="flex flex-col gap-[5px_0] h-[125px]"
         >
           <label
-            class="text-xl font-medium pb-2"
+            class="text-xl font-medium"
           >
             Description
           </label>
@@ -419,93 +415,97 @@ exports[`TaskForm should match snapshot 1`] = `
           </div>
         </div>
         <div
-          class="group flex flex-col w-full transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)]"
-          data-filled="true"
-          data-has-label="true"
-          data-slot="base"
+          class="flex flex-col w-full h-[100px]"
         >
           <div
-            aria-hidden="false"
-            data-a11y-ignore="aria-hidden-focus"
-            data-testid="hidden-select-container"
-            style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+            class="group flex flex-col w-full transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)]"
+            data-filled="true"
+            data-has-label="true"
+            data-slot="base"
           >
-            <input
-              aria-label="Input"
-              style="font-size: 16px;"
-              tabindex="-1"
-              type="text"
-              value=""
-            />
-            <label>
-              Assignees
-              <select
-                aria-label="Select"
-                multiple=""
-                tabindex="-1"
-                title=""
-              >
-                <option />
-              </select>
-            </label>
-          </div>
-          <div
-            class="w-full flex flex-col"
-            data-slot="mainWrapper"
-          >
-            <button
-              aria-expanded="false"
-              aria-haspopup="listbox"
-              aria-labelledby="react-aria-:r16: react-aria-:r12:"
-              class="relative px-3 gap-3 inline-flex flex-row items-center shadow-sm tap-highlight-transparent data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 h-10 min-h-10 rounded-medium outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 w-full py-[26px] mt-5 bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:data-[hover=true]:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600"
-              data-slot="trigger"
-              id="react-aria-:r11:"
-              type="button"
+            <div
+              aria-hidden="false"
+              data-a11y-ignore="aria-hidden-focus"
+              data-testid="hidden-select-container"
+              style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
             >
-              <label
-                class="block absolute subpixel-antialiased text-foreground-500 pointer-events-none will-change-auto origin-top-left rtl:origin-top-right !duration-200 !ease-out transition-[transform,color,left,opacity] motion-reduce:transition-none group-data-[filled=true]:text-foreground group-data-[filled=true]:pointer-events-auto z-20 top-1/2 -translate-y-1/2 group-data-[filled=true]:left-0 rtl:group-data-[filled=true]:right-0 rtl:group-data-[filled=true]:left-[unset] left-3 rtl:right-3 rtl:left-[unset] group-data-[filled=true]:-translate-y-[calc(100%_+_theme(fontSize.small)/2_+_20px)] pe-2 max-w-full text-ellipsis overflow-hidden text-xl font-medium pb-1 !text-blue-800 dark:!text-white"
-                data-slot="label"
-                id="react-aria-:r12:"
-              >
+              <input
+                aria-label="Input"
+                style="font-size: 16px;"
+                tabindex="-1"
+                type="text"
+                value=""
+              />
+              <label>
                 Assignees
-              </label>
-              <div
-                class="inline-flex h-full w-[calc(100%_-_theme(spacing.6))] min-h-4 items-center gap-1.5 box-border"
-                data-slot="innerWrapper"
-              >
-                <span
-                  class="text-foreground-500 font-normal w-full text-left rtl:text-right text-small truncate group-data-[has-value=true]:text-default-foreground"
-                  data-slot="value"
-                  id="react-aria-:r16:"
+                <select
+                  aria-label="Select"
+                  multiple=""
+                  tabindex="-1"
+                  title=""
                 >
-                   
-                </span>
-              </div>
-              <svg
-                aria-hidden="true"
-                class="absolute right-3 rtl:left-3 rtl:right-[unset] w-4 h-4 transition-transform duration-150 ease motion-reduce:transition-none data-[open=true]:rotate-180"
-                data-slot="selectorIcon"
-                fill="none"
-                focusable="false"
-                height="1em"
-                role="presentation"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-                width="1em"
+                  <option />
+                </select>
+              </label>
+            </div>
+            <div
+              class="w-full flex flex-col"
+              data-slot="mainWrapper"
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-labelledby="react-aria-:r16: react-aria-:r12:"
+                class="relative px-3 gap-3 inline-flex flex-row items-center shadow-sm tap-highlight-transparent data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 h-10 min-h-10 rounded-medium outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 w-full py-[26px] bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:data-[hover=true]:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600"
+                data-slot="trigger"
+                id="react-aria-:r11:"
+                type="button"
               >
-                <path
-                  d="m6 9 6 6 6-6"
-                />
-              </svg>
-            </button>
+                <label
+                  class="block absolute subpixel-antialiased text-foreground-500 pointer-events-none will-change-auto origin-top-left rtl:origin-top-right !duration-200 !ease-out transition-[transform,color,left,opacity] motion-reduce:transition-none group-data-[filled=true]:text-foreground group-data-[filled=true]:pointer-events-auto z-20 top-1/2 -translate-y-1/2 group-data-[filled=true]:left-0 rtl:group-data-[filled=true]:right-0 rtl:group-data-[filled=true]:left-[unset] left-3 rtl:right-3 rtl:left-[unset] group-data-[filled=true]:-translate-y-[calc(100%_+_theme(fontSize.small)/2_+_20px)] pe-2 max-w-full text-ellipsis overflow-hidden text-xl font-medium pb-1 !text-blue-800 dark:!text-white"
+                  data-slot="label"
+                  id="react-aria-:r12:"
+                >
+                  Assignees
+                </label>
+                <div
+                  class="inline-flex h-full w-[calc(100%_-_theme(spacing.6))] min-h-4 items-center gap-1.5 box-border"
+                  data-slot="innerWrapper"
+                >
+                  <span
+                    class="text-foreground-500 font-normal w-full text-left rtl:text-right text-small truncate group-data-[has-value=true]:text-default-foreground"
+                    data-slot="value"
+                    id="react-aria-:r16:"
+                  >
+                     
+                  </span>
+                </div>
+                <svg
+                  aria-hidden="true"
+                  class="absolute right-3 rtl:left-3 rtl:right-[unset] w-4 h-4 transition-transform duration-150 ease motion-reduce:transition-none data-[open=true]:rotate-180"
+                  data-slot="selectorIcon"
+                  fill="none"
+                  focusable="false"
+                  height="1em"
+                  role="presentation"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
       <button
-        class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-3 pointer-events-none [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-blue-500 border-transparent dark:bg-purple-600 text-white hover:bg-blue-100 opacity-50 px-[30px] pt-[15px] pb-[14px] rounded-[10px] border-[1px] h-auto min-w-max w-full mt-8 text-xl font-medium cursor-pointer"
+        class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-3 pointer-events-none [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-blue-500 border-transparent dark:bg-purple-600 text-white hover:bg-blue-100 opacity-50 px-[30px] pt-[15px] pb-[14px] rounded-[10px] border-[1px] h-auto min-w-max w-full mt-[30px] text-xl font-medium cursor-pointer"
         data-disabled="true"
         disabled=""
         type="submit"
