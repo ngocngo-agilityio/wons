@@ -21,7 +21,7 @@ exports[`Calendar should match snapshot 1`] = `
           id="react-aria-:r2:"
           role="application"
           style="--visible-months: 1; --calendar-width: 256px;"
-          value="2024-11-12"
+          value="2024-11-13"
         >
           <div
             class="flex absolute w-4/5 justify-between top-[17px] right-[24px] z-100 bg-white dark:bg-gray-400"
@@ -482,18 +482,15 @@ exports[`Calendar should match snapshot 1`] = `
                         </span>
                       </td>
                       <td
-                        aria-selected="true"
                         class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
                         data-slot="cell"
                         role="gridcell"
                       >
                         <span
-                          aria-label="Today, Tuesday, November 12, 2024 selected"
+                          aria-label="Tuesday, November 12, 2024"
                           class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
-                          data-selected="true"
-                          data-today="true"
                           role="button"
-                          tabindex="0"
+                          tabindex="-1"
                         >
                           <span>
                             12
@@ -501,15 +498,18 @@ exports[`Calendar should match snapshot 1`] = `
                         </span>
                       </td>
                       <td
+                        aria-selected="true"
                         class="py-0.5 px-0 text-[12.64px] leading-[16.46px]"
                         data-slot="cell"
                         role="gridcell"
                       >
                         <span
-                          aria-label="Wednesday, November 13, 2024"
+                          aria-label="Today, Wednesday, November 13, 2024 selected"
                           class="w-8 h-8 flex items-center text-foreground justify-center rounded-full box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[disabled=true]:text-default-300 data-[disabled=true]:cursor-default data-[readonly=true]:cursor-default data-[disabled=true]:transition-none data-[unavailable=true]:text-default-300 data-[unavailable=true]:cursor-default data-[unavailable=true]:line-through outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-none data-[selected=true]:shadow-none data-[selected=true]:text-primary-foreground data-[selected=true]:data-[hover=true]:bg-primary data-[selected=true]:data-[hover=true]:text-primary-foreground data-[selected=true]:bg-blue-500 dark:data-[selected=true]:bg-purple-600 dark:data-[selected=true]:text-black data-[today=true]:bg-purple-500 data-[today=true]:hover:bg-purple-600 dark:data-[today=true]:hover:bg-purple-500 data-[hover=true]:bg-gray-950 data-[hover=true]:text-black dark:data-[hover=true]:text-white"
+                          data-selected="true"
+                          data-today="true"
                           role="button"
-                          tabindex="-1"
+                          tabindex="0"
                         >
                           <span>
                             13
@@ -1250,10 +1250,10 @@ exports[`Calendar should match snapshot 1`] = `
                   class="rbc-day-bg"
                 />
                 <div
-                  class="rbc-day-bg rbc-today"
+                  class="rbc-day-bg"
                 />
                 <div
-                  class="rbc-day-bg"
+                  class="rbc-day-bg rbc-today"
                 />
                 <div
                   class="rbc-day-bg"
@@ -1297,7 +1297,7 @@ exports[`Calendar should match snapshot 1`] = `
                     </button>
                   </div>
                   <div
-                    class="rbc-date-cell rbc-now rbc-current"
+                    class="rbc-date-cell"
                     role="cell"
                   >
                     <button
@@ -1309,7 +1309,7 @@ exports[`Calendar should match snapshot 1`] = `
                     </button>
                   </div>
                   <div
-                    class="rbc-date-cell"
+                    class="rbc-date-cell rbc-now rbc-current"
                     role="cell"
                   >
                     <button

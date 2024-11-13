@@ -14,7 +14,7 @@ exports[`TaskCard Component matches the snapshot 1`] = `
     >
       <div
         aria-describedby="rfd-hidden-text-:r0:-hidden-text-:r1:"
-        class="w-full bg-white dark:bg-gray-400 p-[20px] rounded-5 shadow-md "
+        class="w-full max-w-[275px] bg-white dark:bg-gray-400 p-[20px] rounded-5 shadow-md "
         data-rfd-drag-handle-context-id=":r0:"
         data-rfd-drag-handle-draggable-id="1"
         data-rfd-draggable-context-id=":r0:"
@@ -27,7 +27,7 @@ exports[`TaskCard Component matches the snapshot 1`] = `
           class="flex flex-row items-center justify-between mb-[15px]"
         >
           <p
-            class="font-dm-sans text-blue-800 dark:text-white text-md text-md"
+            class="font-dm-sans text-blue-800 dark:text-white text-md text-md truncate"
           >
             Dashboard Design
           </p>
@@ -42,7 +42,7 @@ exports[`TaskCard Component matches the snapshot 1`] = `
           </span>
         </div>
         <p
-          class="font-dm-sans text-blue-800 dark:text-white text-md mt-[20px] text-sm text-justify"
+          class="font-dm-sans text-blue-800 dark:text-white text-md mt-[20px] text-sm text-justify line-clamp-[10]"
         >
           Discussion for management dashboard ui design
         </p>
@@ -50,7 +50,7 @@ exports[`TaskCard Component matches the snapshot 1`] = `
           class="mt-[20px]"
         >
           <div
-            class="flex flex-row justify-between max-w-[235px] gap-[0_12px] xl:gap-[0_21px]"
+            class="flex justify-between"
           >
             <div
               class="w-[107px] h-[90px] relative"
