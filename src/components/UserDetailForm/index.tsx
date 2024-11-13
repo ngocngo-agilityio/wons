@@ -105,7 +105,7 @@ const UserDetailForm = ({
 
         <div className="flex gap-[0_15px] items-center justify-end row-start-7 row-end--1 md:row-start-auto  md:row-end-auto">
           <Button
-            className="min-w-[93px] h-fit bg-white font-normal dark:bg-white text-center text-blue-500 dark:text-white/70 border-[1px] border-[rgba(58, 54, 219, 0.1)] py-[10px] rounded-[10px] font-DM-Sans text-[15px] font-normal leading-normal"
+            className="min-w-[93px] h-fit bg-white font-normal dark:bg-transparent text-center text-blue-500 dark:text-white/70 border-[1px] border-[rgba(58, 54, 219, 0.1)] py-[10px] rounded-[10px] font-DM-Sans text-[15px] font-normal leading-normal"
             type="button"
             onClick={onCancel}
             isDisabled={isSubmitting}
