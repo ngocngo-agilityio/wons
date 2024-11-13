@@ -101,7 +101,7 @@ const UserDetailClient = ({ user, id, onEdit }: UserDetailClientProps) => {
         <LoadingIndicator />
       ) : (
         <div className="flex flex-col justify-center items-center pb-[60px] bg-white dark:bg-gray-800 rounded-lg">
-          <div className="bg-blue-500 w-full h-20 rounded-tl-lg rounded-tr-lg bg-gradient-to-r from-blue-500 to-blue-300" />
+          <div className="bg-blue-500 w-full h-14 rounded-tl-lg rounded-tr-lg bg-gradient-to-r from-blue-500 to-blue-300" />
           {showEditForm ? (
             <UserDetailForm
               user={user}
