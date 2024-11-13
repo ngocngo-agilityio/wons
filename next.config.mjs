@@ -2,7 +2,7 @@
 
 const cspHeader = `
     default-src 'self';
-    script-src 'self' 'unsafe-eval' 'unsafe-inline';
+    script-src 'self';
     style-src 'self' 'unsafe-inline';
     img-src 'self' blob: data:;
     font-src 'self' https://fonts.gstatic.com;
@@ -11,12 +11,27 @@ const cspHeader = `
     base-uri 'self';
     form-action 'self';
     frame-ancestors 'none';
-    upgrade-insecure-requests;`;
+    upgrade-insecure-requests;
+    require-trusted-types-for 'script'`;
 
 const nextConfig = {
   swcMinify: true,
   experimental: {
-    optimizePackageImports: ['react-hook-form', '@/components', '@/ui', '@/types', '@/constants', '@/layouts', '@/actions', '@/contexts', '@/hooks', '@/services', '@/utils', '@/models'],
+    optimizePackageImports: [
+      'react-hook-form',
+      '@/components',
+      '@/ui',
+      '@/types',
+      '@/constants',
+      '@/layouts',
+      '@/actions',
+      '@/contexts',
+      '@/hooks',
+      '@/hocs',
+      '@/services',
+      '@/utils',
+      '@/models',
+    ],
   },
   reactStrictMode: false,
   staticPageGenerationTimeout: 1000,
