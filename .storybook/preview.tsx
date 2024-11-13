@@ -3,6 +3,7 @@ import type { Preview } from '@storybook/react';
 import React, { useEffect } from 'react';
 import { ThemeProvider, useTheme } from 'next-themes';
 import { NextUIProvider } from '@nextui-org/system';
+import { SessionProvider } from 'next-auth/react';
 
 // Themes
 import { colors } from '../src/themes';
@@ -67,9 +68,11 @@ const preview: Preview = {
               attribute="class"
               defaultTheme={context.globals.colorMode}
             >
-              <div className={`${DM_SANS_FONT.variable} font-dm-sans`}>
-                <Story />
-              </div>
+              <SessionProvider>
+                <div className={`${DM_SANS_FONT.variable} font-dm-sans`}>
+                  <Story />
+                </div>
+              </SessionProvider>
             </ThemeProvider>
           </ColorMode>
         </NextUIProvider>

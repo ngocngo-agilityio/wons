@@ -109,7 +109,7 @@ const TaskCard = ({ index, task, isAdmin }: TTaskCardProps) => {
     // If images exist and has exactly two items
     if (hasTwoImages)
       return (
-        <div className="flex flex-row justify-between max-w-[235px] gap-[0_12px] xl:gap-[0_21px]">
+        <div className="flex justify-between">
           {images.map((image, indexImage) => (
             <div
               className="w-[107px] h-[90px] relative"
@@ -231,14 +231,14 @@ const TaskCard = ({ index, task, isAdmin }: TTaskCardProps) => {
               ref={provided.innerRef}
               {...provided.draggableProps}
               {...provided.dragHandleProps}
-              className={`w-full bg-white dark:bg-gray-400 p-[20px] rounded-5 shadow-md ${
+              className={`w-full max-w-[275px] bg-white dark:bg-gray-400 p-[20px] rounded-5 shadow-md ${
                 snapshot.isDragging ? 'opacity-50' : ''
               }`}
               onClick={handleOpenModal}
               role="none"
             >
               <div className="flex flex-row items-center justify-between mb-[15px]">
-                <Text className="text-md" text={title} />
+                <Text className="text-md truncate" text={title} />
                 {isAdmin && (
                   <DropdownActions
                     id={id}
@@ -252,7 +252,7 @@ const TaskCard = ({ index, task, isAdmin }: TTaskCardProps) => {
               </div>
               <LevelChip level={level} />
               <Text
-                className="mt-[20px] text-sm text-justify"
+                className="mt-[20px] text-sm text-justify line-clamp-[10]"
                 text={description}
               />
 
