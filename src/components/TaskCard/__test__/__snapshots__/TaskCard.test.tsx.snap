@@ -27,7 +27,7 @@ exports[`TaskCard Component matches the snapshot 1`] = `
           class="flex flex-row items-center justify-between mb-[15px]"
         >
           <p
-            class="font-dm-sans text-blue-800 dark:text-white text-md text-md truncate"
+            class="font-dm-sans text-blue-800 dark:text-white text-md text-md truncate pr-1"
           >
             Dashboard Design
           </p>

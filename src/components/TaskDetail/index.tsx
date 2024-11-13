@@ -52,7 +52,10 @@ const TaskDetail = ({
         <div className="grid grid-cols-1 bg-red w-full">
           <div className="flex flex-row justify-between w-full mb-5">
             <Text className="text-md sm:text-xl w-[35%]" text="Title" />
-            <Text className="text-md sm:text-xl w-[65%]" text={title} />
+            <Text
+              className="text-md sm:text-xl w-[65%] truncate"
+              text={title}
+            />
           </div>
           <div className="flex flex-row justify-between w-full mb-5">
             <Text className="text-md sm:text-xl w-[35%]" text="Status" />
@@ -69,7 +72,7 @@ const TaskDetail = ({
           <div className="flex flex-row justify-between w-full mb-5">
             <Text className="text-md sm:text-xl w-[35%]" text="Description" />
             <Text
-              className="text-md sm:text-xl w-[65%] text-justify"
+              className="text-md sm:text-xl w-[65%] text-justify line-clamp-[10]"
               text={description}
             />
           </div>

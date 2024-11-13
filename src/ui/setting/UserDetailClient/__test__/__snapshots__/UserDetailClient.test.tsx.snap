@@ -12,7 +12,7 @@ exports[`UserDetailClient match snapshot 1`] = `
       class="flex flex-col justify-center items-center pb-[60px] bg-white dark:bg-gray-800 rounded-lg"
     >
       <div
-        class="bg-blue-500 w-full h-20 rounded-tl-lg rounded-tr-lg bg-gradient-to-r from-blue-500 to-blue-300"
+        class="bg-blue-500 w-full h-14 rounded-tl-lg rounded-tr-lg bg-gradient-to-r from-blue-500 to-blue-300"
       />
       <div
         class="p-[0_30px_0] w-full gap-[5px_0]"
@@ -111,7 +111,7 @@ exports[`UserDetailClient match snapshot with user null 1`] = `
       class="flex flex-col justify-center items-center pb-[60px] bg-white dark:bg-gray-800 rounded-lg"
     >
       <div
-        class="bg-blue-500 w-full h-20 rounded-tl-lg rounded-tr-lg bg-gradient-to-r from-blue-500 to-blue-300"
+        class="bg-blue-500 w-full h-14 rounded-tl-lg rounded-tr-lg bg-gradient-to-r from-blue-500 to-blue-300"
       />
       <div
         class="p-[0_30px_0] w-full gap-[5px_0]"

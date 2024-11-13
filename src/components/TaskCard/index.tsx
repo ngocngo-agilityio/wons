@@ -238,7 +238,7 @@ const TaskCard = ({ index, task, isAdmin }: TTaskCardProps) => {
               role="none"
             >
               <div className="flex flex-row items-center justify-between mb-[15px]">
-                <Text className="text-md truncate" text={title} />
+                <Text className="text-md truncate pr-1" text={title} />
                 {isAdmin && (
                   <DropdownActions
                     id={id}
