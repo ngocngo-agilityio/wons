@@ -209,7 +209,7 @@ exports[`CustomersTable Component renders the table headers and customer data co
                     href="mailto:john.doe@example.com"
                   >
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[190px]"
                     >
                       john.doe@example.com
                     </p>
@@ -309,7 +309,7 @@ exports[`CustomersTable Component renders the table headers and customer data co
                     href="mailto:jane.smith@example.com"
                   >
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[190px]"
                     >
                       jane.smith@example.com
                     </p>
