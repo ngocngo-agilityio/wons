@@ -3,6 +3,13 @@
     var(--c-calendar-white),
     var(--c-calendar-date-cell-background-dark)
   );
+  border-right: 1px solid
+    light-dark(
+      var(--c-calendar-date-cell-light),
+      var(--c-calendar-date-cell-dark)
+    ) !important;
+  border-bottom: none !important;
+  border-left: none !important;
 }
 
 .rbc-day-bg + .rbc-day-bg {
@@ -21,6 +28,8 @@
 }
 
 .rbc-date-cell {
+  padding: 0;
+  font-size: 25.63px;
   align-items: center;
   text-align: center;
   height: 100%;
@@ -42,19 +51,17 @@
   font-weight: 500;
 }
 
-.rbc-date-cell {
-  font-size: 25.63px;
-}
-
-.rbc-row-content {
-  height: 100%;
-}
-
 .rbc-allday-cell {
   display: none;
 }
 
 .rbc-header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: light-dark(var(--c-calendar-header-light), var(--c-calendar-white));
+  white-space: pre-line;
+  text-align: center;
   border-bottom: none;
 }
 
@@ -78,15 +85,7 @@
   display: flex;
   justify-content: stretch;
   flex-direction: column;
-}
-
-.rbc-header {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 28px;
-  color: light-dark(var(--c-calendar-header-light), var(--c-calendar-white));
-  white-space: pre-line;
-  text-align: center;
+  height: 100%;
 }
 
 .rbc-header + .rbc-header {
@@ -227,8 +226,7 @@
 }
 
 .rbc-row-segment {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 0 8px;
 }
 
 .rbc-time-header-content {
