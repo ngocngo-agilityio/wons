@@ -110,36 +110,38 @@ const TaskDrawer = ({ isAdmin }: TaskDrawerProps): JSX.Element => {
   }, [isDrawerOpen]);
 
   return (
-    <div className="flex flex-col md:flex-row justify-between md:items-center w-full md:w-fit">
+    <>
       {isAdmin && (
-        <Button
-          startContent={<BsPlus size={22} className="text-white" />}
-          color="primary"
-          className="base:w-full md:w-[122px] h-10 base:gap-2 md:gap-0.5"
-          onClick={handleOpenDrawer}
-        >
-          Add New Task
-        </Button>
-      )}
+        <div className="flex flex-col md:flex-row justify-between md:items-center w-full md:w-fit">
+          <Button
+            startContent={<BsPlus size={22} className="text-white" />}
+            color="primary"
+            className="base:w-full md:w-[122px] h-10 base:gap-2 md:gap-0.5"
+            onClick={handleOpenDrawer}
+          >
+            Add New Task
+          </Button>
 
-      {isDrawerOpen && (
-        <Drawer
-          open={isDrawerOpen}
-          onClose={handleCloseDrawer}
-          direction="right"
-          size={isGreaterThanMd ? 450 : 375}
-        >
-          <div className="p-8 bg-white dark:bg-gray-400 h-full max-w-full overflow-y-auto">
-            <TaskForm
-              onAvatarChange={handleAvatarChange}
-              onCloseDrawer={handleCloseDrawer}
-              key={isDrawerOpen ? 'open' : 'closed'}
-              onSubmit={handleFormSubmit}
-            />
-          </div>
-        </Drawer>
+          {isDrawerOpen && (
+            <Drawer
+              open={isDrawerOpen}
+              onClose={handleCloseDrawer}
+              direction="right"
+              size={isGreaterThanMd ? 450 : 375}
+            >
+              <div className="p-8 bg-white dark:bg-gray-400 h-full max-w-full overflow-y-auto">
+                <TaskForm
+                  onAvatarChange={handleAvatarChange}
+                  onCloseDrawer={handleCloseDrawer}
+                  key={isDrawerOpen ? 'open' : 'closed'}
+                  onSubmit={handleFormSubmit}
+                />
+              </div>
+            </Drawer>
+          )}
+        </div>
       )}
-    </div>
+    </>
   );
 };
 
