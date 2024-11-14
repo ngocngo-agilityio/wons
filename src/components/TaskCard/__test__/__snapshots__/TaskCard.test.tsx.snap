@@ -14,7 +14,7 @@ exports[`TaskCard Component matches the snapshot 1`] = `
     >
       <div
         aria-describedby="rfd-hidden-text-:r0:-hidden-text-:r1:"
-        class="w-full max-w-[275px] bg-white dark:bg-gray-400 p-[20px] rounded-5 shadow-md "
+        class="w-full bg-white dark:bg-gray-400 p-[20px] rounded-5 shadow-md "
         data-rfd-drag-handle-context-id=":r0:"
         data-rfd-drag-handle-draggable-id="1"
         data-rfd-draggable-context-id=":r0:"
@@ -173,40 +173,6 @@ exports[`TaskCard Component matches the snapshot 1`] = `
                 />
               </div>
             </div>
-            <button
-              aria-label="Plus Button"
-              class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 !gap-0 transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-teal-500 text-white dark:bg-teal-300 text-md min-w-max w-7 h-7 p-0 -ml-3 rounded-full border-0"
-              type="button"
-            >
-              <div
-                class="flex items-center"
-              >
-                <svg
-                  fill="none"
-                  height="1em"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <line
-                    x1="12"
-                    x2="12"
-                    y1="5"
-                    y2="19"
-                  />
-                  <line
-                    x1="5"
-                    x2="19"
-                    y1="12"
-                    y2="12"
-                  />
-                </svg>
-              </div>
-            </button>
           </div>
         </div>
       </div>
