@@ -12,4 +12,8 @@
   --c-calendar-show-more-light: #3a36db;
   --c-calendar-show-more-dark: #d2d1ff;
   --c-calender-row-border: #ffffff0d;
+
+  --c-scrollbar-track: #424242;
+  --c-scrollbar-thumb: #686868;
+  --c-scrollbar-thumb-hover: #676767;
 }

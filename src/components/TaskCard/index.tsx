@@ -231,7 +231,7 @@ const TaskCard = ({ index, task, isAdmin }: TTaskCardProps) => {
               ref={provided.innerRef}
               {...provided.draggableProps}
               {...provided.dragHandleProps}
-              className={`w-full max-w-[275px] bg-white dark:bg-gray-400 p-[20px] rounded-5 shadow-md ${
+              className={`w-full bg-white dark:bg-gray-400 p-[20px] rounded-5 shadow-md ${
                 snapshot.isDragging ? 'opacity-50' : ''
               }`}
               onClick={handleOpenModal}

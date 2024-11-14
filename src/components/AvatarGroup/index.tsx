@@ -2,14 +2,11 @@ import { memo } from 'react';
 import isEqual from 'react-fast-compare';
 import clsx from 'clsx';
 
-// components
-import { Button, ImageFallback } from '@/components';
+// Components
+import { ImageFallback } from '@/components';
 
-// models
+// Models
 import { TUser } from '@/models';
-
-// icons
-import { FiPlus } from 'react-icons/fi';
 
 // Types
 import { StrapiModel } from '@/types';
@@ -41,15 +38,6 @@ const AvatarGroup = ({ users }: AvatarGroupProps) => (
         );
       },
     )}
-
-    <Button
-      isIconOnly
-      color="success"
-      aria-label="Plus Button"
-      className="w-7 h-7 p-0 -ml-3 rounded-full border-0"
-    >
-      <FiPlus />
-    </Button>
   </div>
 );
 
