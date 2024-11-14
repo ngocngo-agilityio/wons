@@ -207,7 +207,7 @@ exports[`Customer List component should render all content with resolved data an
                     href="mailto:"
                   >
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[190px]"
                     />
                   </a>
                 </div>
@@ -301,7 +301,7 @@ exports[`Customer List component should render all content with resolved data an
                     href="mailto:"
                   >
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[190px]"
                     />
                   </a>
                 </div>
@@ -394,7 +394,7 @@ exports[`Customer List component should render all content with resolved data an
                     href="mailto:"
                   >
                     <p
-                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
+                      class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[190px]"
                     />
                   </a>
                 </div>

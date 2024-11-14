@@ -93,7 +93,7 @@ const CustomersTable = ({
                   <Text
                     size="md"
                     text={email}
-                    className="whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
+                    className="whitespace-nowrap overflow-hidden text-ellipsis max-w-[190px]"
                   />
                 </Link>
               </div>

@@ -229,7 +229,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                       href="mailto:arroragaur@gmail.com"
                     >
                       <p
-                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
+                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[190px]"
                       >
                         arroragaur@gmail.com
                       </p>
@@ -362,7 +362,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                       href="mailto:annejacob@gmail.com"
                     >
                       <p
-                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
+                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[190px]"
                       >
                         annejacob@gmail.com
                       </p>
@@ -494,7 +494,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                       href="mailto:johndoe@example.com"
                     >
                       <p
-                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
+                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[190px]"
                       >
                         johndoe@example.com
                       </p>
@@ -627,7 +627,7 @@ exports[`CustomerListClient section open customer details drawer 1`] = `
                       href="mailto:janesmith@example.com"
                     >
                       <p
-                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
+                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[190px]"
                       >
                         janesmith@example.com
                       </p>
@@ -1179,7 +1179,7 @@ exports[`CustomerListClient section should match with snapshot 1`] = `
                       href="mailto:arroragaur@gmail.com"
                     >
                       <p
-                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
+                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[190px]"
                       >
                         arroragaur@gmail.com
                       </p>
@@ -1312,7 +1312,7 @@ exports[`CustomerListClient section should match with snapshot 1`] = `
                       href="mailto:annejacob@gmail.com"
                     >
                       <p
-                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
+                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[190px]"
                       >
                         annejacob@gmail.com
                       </p>
@@ -1444,7 +1444,7 @@ exports[`CustomerListClient section should match with snapshot 1`] = `
                       href="mailto:johndoe@example.com"
                     >
                       <p
-                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
+                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[190px]"
                       >
                         johndoe@example.com
                       </p>
@@ -1577,7 +1577,7 @@ exports[`CustomerListClient section should match with snapshot 1`] = `
                       href="mailto:janesmith@example.com"
                     >
                       <p
-                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[150px]"
+                        class="font-dm-sans text-blue-800 dark:text-white text-md whitespace-nowrap overflow-hidden text-ellipsis max-w-[190px]"
                       >
                         janesmith@example.com
                       </p>
