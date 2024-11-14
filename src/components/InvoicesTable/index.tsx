@@ -39,6 +39,8 @@ type TInvoiceData = TInvoiceDataResponse;
 type TInvoicesTableProps = {
   data: TInvoiceData[];
   pageCount: number;
+  sortBy?: string;
+  order?: string;
   isAdmin: boolean;
   onEdit: (id: number) => void;
   onDelete: (invoiceId: number, invoiceProductIds: number[]) => void;
@@ -51,6 +53,8 @@ type TInvoicesTableProps = {
 const InvoicesTable = ({
   data = [],
   pageCount,
+  sortBy = '',
+  order = '',
   isAdmin,
   onEdit,
   onDelete,
@@ -295,6 +299,8 @@ const InvoicesTable = ({
         selectionMode={isAdmin ? 'multiple' : 'none'}
         columns={mappingContentColumns}
         data={data}
+        sortBy={sortBy}
+        order={order}
         onSort={onSort}
         onSelectChange={handleSelectChange}
         onRowAction={onRowAction}

@@ -47,6 +47,9 @@ const InvoiceListClient = ({
   const pathname = usePathname();
   const { replace, push } = useRouter();
   const { showToast } = useToast();
+  const paramsObject = searchParams
+    ? Object.fromEntries(searchParams.entries())
+    : {};
 
   const handleSort = useCallback(
     (value: string) => {
@@ -140,13 +143,15 @@ const InvoiceListClient = ({
       {isLoading && <LoadingIndicator />}
       <InvoicesTable
         data={invoiceList}
+        onSort={handleSort}
+        sortBy={paramsObject.sortBy}
+        order={paramsObject.order}
         pageCount={pageCount}
         onEdit={handleEdit}
         onDelete={handleDelete}
+        onRowAction={handleRowAction}
         onDeleteMultiple={handleDeleteMultiple}
         onToggleSelectStar={handleToggleSelectStart}
-        onSort={handleSort}
-        onRowAction={handleRowAction}
       />
     </>
   );
