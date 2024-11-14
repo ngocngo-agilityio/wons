@@ -7,26 +7,26 @@ import 'react-modern-drawer/dist/index.css';
 // Hocs
 import { withAccountState } from '@/hocs/withAccountState';
 
-// types
-import { TaskWithStringAssignees } from '@/types';
-
-// hooks
+// Hooks
 import { useBreakPoints, useToast } from '@/hooks';
 
-// actions
+// Actions
 import { createTask } from '@/actions';
 
-// constants
+// Constants
 import { MESSAGES } from '@/constants';
 
-// api
+// Api
 import { uploadImage } from '@/api/image';
 
-// utils
+// Utils
 import { formatErrorMessage, preventScrollFromState } from '@/utils';
 
-// components
+// Components
 import { BsPlus, Button, TaskForm } from '@/components';
+
+// Types
+import { TaskWithStringAssignees } from '@/types';
 
 interface TaskDrawerProps {
   isAdmin: boolean;
@@ -48,7 +48,6 @@ const TaskDrawer = ({ isAdmin }: TaskDrawerProps): JSX.Element => {
     setIsDrawerOpen(false);
   };
 
-  // TODO: handle later const handleFormSubmit = useCallback(
   const handleFormSubmit = useCallback(
     async (formData: TaskWithStringAssignees) => {
       if (avatarFiles && avatarFiles.length && isAvatarDirty) {
