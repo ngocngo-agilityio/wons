@@ -301,6 +301,8 @@ const ProductForm = ({
                     'group-data-[focus=true]:bg-gray-50 dark:group-data-[focus=true]:bg-gray-600',
                   ],
                 }}
+                rows={4}
+                disableAutosize
                 isInvalid={!!error}
                 errorMessage={error?.message}
                 isDisabled={isDisabledField}
@@ -321,7 +323,7 @@ const ProductForm = ({
         isDisabled={isDisableSubmit || isPending || !isValid}
         size="lg"
         color="primary"
-        className="w-full mt-[30px] text-xl font-medium cursor-pointer"
+        className="w-full mt-[45px] text-xl font-medium cursor-pointer"
       >
         Save Product
       </Button>
