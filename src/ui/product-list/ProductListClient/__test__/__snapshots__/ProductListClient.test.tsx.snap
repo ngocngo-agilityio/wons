@@ -345,6 +345,10 @@ exports[`Product list client calls close edit drawer 1`] = `
                         d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
                       />
                     </svg>
+                    <span
+                      class="nextui-ripple"
+                      style="position: absolute; background-color: currentColor; border-radius: 100%; transform-origin: center; pointer-events: none; overflow: hidden; inset: 0; z-index: 0; top: 0px; left: 0px; width: 0px; height: 0px; transform: scale(1.98286); opacity: 0.002999321241804853; will-change: transform, opacity;"
+                    />
                   </button>
                 </td>
               </tr>

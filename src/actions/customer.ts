@@ -12,7 +12,7 @@ import { ICustomer } from '@/models';
 import { formatErrorMessage } from '@/utils';
 
 // Constants
-import { API_PATH, TIME_BASE } from '@/constants';
+import { API_PATH } from '@/constants';
 
 // Types
 import { Method, TInvoiceListResponse } from '@/types';
@@ -43,11 +43,6 @@ export const deleteCustomer = async (id: number) => {
   try {
     const response: TInvoiceListResponse = await httpClient.getRequest({
       endpoint: `${API_PATH.INVOICES}?filters[customer][$eq]=${id}`,
-      configOptions: {
-        next: {
-          revalidate: TIME_BASE[3600],
-        },
-      },
     });
 
     response?.data?.forEach(async (invoice) => {

@@ -1,5 +1,5 @@
 // constants
-import { API_PATH, TIME_BASE } from '@/constants';
+import { API_PATH } from '@/constants';
 
 // models
 import { IStatistics } from '@/models';
@@ -24,11 +24,6 @@ export const getAllStatistics = async (): Promise<{
       StrapiResponse<StrapiModel<IStatistics>[]>
     >({
       endpoint: url,
-      configOptions: {
-        next: {
-          revalidate: TIME_BASE[3600],
-        },
-      },
     });
 
     if (!response?.data?.length) {

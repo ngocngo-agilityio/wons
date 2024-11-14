@@ -2,7 +2,7 @@ import { Metadata, ResolvingMetadata } from 'next';
 import { Suspense } from 'react';
 
 // Constants
-import { API_PATH, ROUTES, TIME_BASE } from '@/constants';
+import { API_PATH, ROUTES } from '@/constants';
 
 // Layouts
 import { DashBoardLayout } from '@/layouts';
@@ -28,11 +28,6 @@ export async function generateMetadata(
   const result: TInvoiceDetailsResponse =
     await httpClient.getRequest<TInvoiceDetailsResponse>({
       endpoint: `${API_PATH.INVOICES}/${id}?populate=customer&populate=invoice_products&populate=invoice_products.product`,
-      configOptions: {
-        next: {
-          revalidate: TIME_BASE[3600],
-        },
-      },
     });
 
   const { imageUrl, customer, invoiceId } = result?.data?.attributes ?? {};
