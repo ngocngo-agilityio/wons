@@ -3,7 +3,7 @@
 import { revalidateTag } from 'next/cache';
 
 // Constants
-import { API_PATH, TIME_BASE } from '@/constants';
+import { API_PATH } from '@/constants';
 
 // Models
 import { IProductDetail } from '@/models';
@@ -65,11 +65,6 @@ export const deleteProduct = async (id: number) => {
     const { data: responseInvoiceProducts }: TProductInvoiceListResponse =
       await httpClient.getRequest({
         endpoint: `${API_PATH.INVOICE_PRODUCTS}?filters[product][$eq]=${id}`,
-        configOptions: {
-          next: {
-            revalidate: TIME_BASE[3600],
-          },
-        },
       });
 
     const queryString = responseInvoiceProducts
@@ -90,11 +85,6 @@ export const deleteProduct = async (id: number) => {
       const responseInvoices: TProductInvoiceListResponse =
         await httpClient.getRequest({
           endpoint: `${API_PATH.INVOICES}?${queryString}`,
-          configOptions: {
-            next: {
-              revalidate: TIME_BASE[3600],
-            },
-          },
         });
 
       responseInvoices?.data?.forEach(async (invoice) => {

@@ -1,5 +1,5 @@
 // constants
-import { API_PATH, TIME_BASE } from '@/constants';
+import { API_PATH } from '@/constants';
 
 // models
 import { IProduct } from '@/models';
@@ -31,7 +31,6 @@ export const getAllProducts = async ({
       configOptions: {
         next: {
           tags: [API_PATH.PRODUCTS],
-          revalidate: TIME_BASE[3600],
         },
       },
     });
@@ -56,7 +55,6 @@ export const getProducts = async (): Promise<{
       configOptions: {
         next: {
           tags: [API_PATH.PRODUCTS],
-          revalidate: TIME_BASE[3600],
         },
       },
     });

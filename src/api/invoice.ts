@@ -1,5 +1,5 @@
 // Constants
-import { API_PATH, DEFAULT_PAGE, PAGE_SIZE, TIME_BASE } from '@/constants';
+import { API_PATH, DEFAULT_PAGE, PAGE_SIZE } from '@/constants';
 
 // Types
 import {
@@ -52,7 +52,6 @@ export const getInvoiceProducts = async ({
         configOptions: {
           next: {
             tags: [API_PATH.INVOICE_PRODUCTS],
-            revalidate: TIME_BASE[3600],
           },
         },
       },
@@ -84,7 +83,7 @@ export const getInvoices = async ({
     const response = await httpClient.getRequest<TInvoiceListResponse>({
       endpoint,
       configOptions: {
-        next: { tags: [API_PATH.INVOICES], revalidate: TIME_BASE[3600] },
+        next: { tags: [API_PATH.INVOICES] },
       },
     });
 
@@ -103,7 +102,7 @@ export const getInvoiceById = async ({ id }: InvoiceListConfigs) => {
     const response = await httpClient.getRequest<TInvoiceDetailsResponse>({
       endpoint,
       configOptions: {
-        next: { tags: [API_PATH.INVOICE], revalidate: TIME_BASE[3600] },
+        next: { tags: [API_PATH.INVOICE] },
       },
     });
 
