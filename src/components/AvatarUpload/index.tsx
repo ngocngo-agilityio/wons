@@ -30,9 +30,18 @@ const AvatarUpload = ({
   const [previewURL, setPreviewURL] = useState<string>('');
   const [errorMessage, setErrorMessage] = useState<string>(error);
 
+  const handleFocusBack = useCallback(() => {
+    setErrorMessage(previewURL ? '' : MESSAGES.ERROR.FIELD_REQUIRED);
+    window.removeEventListener('focus', handleFocusBack);
+  }, [previewURL]);
+
+  const handleClickInput = useCallback(() => {
+    window.addEventListener('focus', handleFocusBack);
+  }, [handleFocusBack]);
+
   const handleChangeFile = useCallback(
     (e: ChangeEvent<HTMLInputElement>) => {
-      const file = (e.target.files && e.target.files[0]) as File;
+      const file = e.target.files?.[0];
 
       if (!file) {
         return;
@@ -59,10 +68,11 @@ const AvatarUpload = ({
 
       const previewImage = URL.createObjectURL(file);
       setPreviewURL(previewImage);
+      window.removeEventListener('focus', handleFocusBack);
 
       onFileChange(file);
     },
-    [onFileChange, previewURL],
+    [handleFocusBack, onFileChange, previewURL],
   );
 
   const handleOnchange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -112,6 +122,7 @@ const AvatarUpload = ({
         errorMessage={errorMessage}
         isDisabled={isDisabled}
         data-testid="avatar-upload"
+        onClick={handleClickInput}
       />
 
       {(errorMessage || error) && (
