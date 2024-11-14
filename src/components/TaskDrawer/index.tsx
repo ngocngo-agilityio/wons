@@ -7,26 +7,26 @@ import 'react-modern-drawer/dist/index.css';
 // Hocs
 import { withAccountState } from '@/hocs/withAccountState';
 
-// types
-import { TaskWithStringAssignees } from '@/types';
-
-// hooks
+// Hooks
 import { useBreakPoints, useToast } from '@/hooks';
 
-// actions
+// Actions
 import { createTask } from '@/actions';
 
-// constants
+// Constants
 import { MESSAGES } from '@/constants';
 
-// api
+// Api
 import { uploadImage } from '@/api/image';
 
-// utils
+// Utils
 import { formatErrorMessage, preventScrollFromState } from '@/utils';
 
-// components
+// Components
 import { BsPlus, Button, TaskForm } from '@/components';
+
+// Types
+import { TaskWithStringAssignees } from '@/types';
 
 interface TaskDrawerProps {
   isAdmin: boolean;
@@ -48,7 +48,6 @@ const TaskDrawer = ({ isAdmin }: TaskDrawerProps): JSX.Element => {
     setIsDrawerOpen(false);
   };
 
-  // TODO: handle later const handleFormSubmit = useCallback(
   const handleFormSubmit = useCallback(
     async (formData: TaskWithStringAssignees) => {
       if (avatarFiles && avatarFiles.length && isAvatarDirty) {
@@ -110,36 +109,38 @@ const TaskDrawer = ({ isAdmin }: TaskDrawerProps): JSX.Element => {
   }, [isDrawerOpen]);
 
   return (
-    <div className="flex flex-col md:flex-row justify-between md:items-center w-full md:w-fit">
+    <>
       {isAdmin && (
-        <Button
-          startContent={<BsPlus size={22} className="text-white" />}
-          color="primary"
-          className="base:w-full md:w-[122px] h-10 base:gap-2 md:gap-0.5"
-          onClick={handleOpenDrawer}
-        >
-          Add New Task
-        </Button>
-      )}
+        <div className="flex flex-col md:flex-row justify-between md:items-center w-full md:w-fit">
+          <Button
+            startContent={<BsPlus size={22} className="text-white" />}
+            color="primary"
+            className="base:w-full md:w-[122px] h-10 base:gap-2 md:gap-0.5"
+            onClick={handleOpenDrawer}
+          >
+            Add New Task
+          </Button>
 
-      {isDrawerOpen && (
-        <Drawer
-          open={isDrawerOpen}
-          onClose={handleCloseDrawer}
-          direction="right"
-          size={isGreaterThanMd ? 450 : 375}
-        >
-          <div className="p-8 bg-white dark:bg-gray-400 h-full max-w-full overflow-y-auto">
-            <TaskForm
-              onAvatarChange={handleAvatarChange}
-              onCloseDrawer={handleCloseDrawer}
-              key={isDrawerOpen ? 'open' : 'closed'}
-              onSubmit={handleFormSubmit}
-            />
-          </div>
-        </Drawer>
+          {isDrawerOpen && (
+            <Drawer
+              open={isDrawerOpen}
+              onClose={handleCloseDrawer}
+              direction="right"
+              size={isGreaterThanMd ? 450 : 375}
+            >
+              <div className="p-8 bg-white dark:bg-gray-400 h-full max-w-full overflow-y-auto">
+                <TaskForm
+                  onAvatarChange={handleAvatarChange}
+                  onCloseDrawer={handleCloseDrawer}
+                  key={isDrawerOpen ? 'open' : 'closed'}
+                  onSubmit={handleFormSubmit}
+                />
+              </div>
+            </Drawer>
+          )}
+        </div>
       )}
-    </div>
+    </>
   );
 };
 
