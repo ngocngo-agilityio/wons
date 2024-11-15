@@ -55,7 +55,7 @@ export interface ICustomerFormProps {
 
 const CustomerForm = ({
   isDisabledField = false,
-  previewData = null,
+  previewData,
   onAvatarChange,
   onSubmit,
   onCloseDrawer,

@@ -16,10 +16,10 @@ interface TaskConfigs {
 }
 
 export const getTasks = async ({
-  filters,
-  query,
+  filters = [],
+  query = '',
 }: TaskConfigs): Promise<TTasksResponse> => {
-  const filterQuery: string = formatFilterMultipleUser(filters ?? []);
+  const filterQuery: string = formatFilterMultipleUser(filters);
   const searchBy: string = query
     ? `&filters[$and][0][title][$contains]=${query}`
     : '';

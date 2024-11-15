@@ -55,7 +55,7 @@ const Filter = ({
   popoverContentProps,
   listboxProps,
   listboxItemProps,
-  className,
+  className = '',
 }: IFilterProps) => {
   const searchParams = useSearchParams();
   const pathname = usePathname();
@@ -130,7 +130,7 @@ const Filter = ({
               onSelectionChange={handleSelect}
               {...listboxProps}
             >
-              {items.map(({ id, content, customElement }) => (
+              {items.map(({ id, content = '', customElement }) => (
                 <ListboxItem
                   key={id}
                   className="px-0 p-[8px_10px]"

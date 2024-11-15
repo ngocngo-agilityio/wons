@@ -47,7 +47,7 @@ const ProductForm = ({
   isDisabledField = false,
   onAvatarChange,
   onSubmit,
-  previewData = null,
+  previewData,
   onCloseDrawer,
 }: IProductFormProps) => {
   const {

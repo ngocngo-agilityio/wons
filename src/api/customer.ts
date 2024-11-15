@@ -22,8 +22,8 @@ interface CustomerListConfigs {
 export const getCustomers = async ({
   page = DEFAULT_PAGE,
   pageSize = PAGE_SIZE[10],
-  sortBy,
-  order,
+  sortBy = '',
+  order = '',
 }: CustomerListConfigs = {}): Promise<TCustomerListResponse> => {
   const sortValue = sortBy
     ? `&sort=${sortBy}:${order}`

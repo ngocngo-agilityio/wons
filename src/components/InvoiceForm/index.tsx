@@ -78,7 +78,7 @@ const InvoiceForm = ({
   products = [],
   customers = [],
   isEdit = false,
-  previewData = null,
+  previewData,
   previewInvoiceProducts,
   onSubmit,
 }: InvoiceFormProps) => {

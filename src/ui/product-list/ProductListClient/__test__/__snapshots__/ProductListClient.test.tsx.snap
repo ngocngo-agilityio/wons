@@ -176,9 +176,9 @@ exports[`Product list client calls close edit drawer 1`] = `
                 <th
                   aria-hidden="true"
                   class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
-                  data-key="undefined5"
+                  data-key="5"
                   data-testid="sort-btn"
-                  id="react-aria-:rau:-undefined5"
+                  id="react-aria-:rau:-5"
                   role="columnheader"
                   tabindex="-1"
                 >
@@ -347,7 +347,7 @@ exports[`Product list client calls close edit drawer 1`] = `
                     </svg>
                     <span
                       class="nextui-ripple"
-                      style="position: absolute; background-color: currentColor; border-radius: 100%; transform-origin: center; pointer-events: none; overflow: hidden; inset: 0; z-index: 0; top: 0px; left: 0px; width: 0px; height: 0px; transform: scale(1.99266); opacity: 0.0012847927064285614; will-change: transform, opacity;"
+                      style="position: absolute; background-color: currentColor; border-radius: 100%; transform-origin: center; pointer-events: none; overflow: hidden; inset: 0; z-index: 0; top: 0px; left: 0px; width: 0px; height: 0px; transform: scale(2); opacity: 0; will-change: auto;"
                     />
                   </button>
                 </td>
@@ -1226,9 +1226,9 @@ exports[`Product list client calls open details 1`] = `
                 <th
                   aria-hidden="true"
                   class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
-                  data-key="undefined5"
+                  data-key="5"
                   data-testid="sort-btn"
-                  id="react-aria-:r16:-undefined5"
+                  id="react-aria-:r16:-5"
                   role="columnheader"
                   tabindex="-1"
                 >
@@ -2379,9 +2379,9 @@ exports[`Product list client should match snapshot 1`] = `
                 <th
                   aria-hidden="true"
                   class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px]"
-                  data-key="undefined5"
+                  data-key="5"
                   data-testid="sort-btn"
-                  id="react-aria-:r0:-undefined5"
+                  id="react-aria-:r0:-5"
                   role="columnheader"
                   tabindex="-1"
                 >

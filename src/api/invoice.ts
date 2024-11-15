@@ -31,8 +31,8 @@ export interface InvoiceListConfigs {
 }
 
 export const getInvoiceProducts = async ({
-  sort,
-  filters,
+  sort = '',
+  filters = {},
   pageSize = PAGE_SIZE[4],
 }: IParameters): Promise<{
   error?: string;

@@ -84,7 +84,7 @@ const AddressInput = forwardRef<HTMLInputElement, AddressInputProps>(
         {locationsSuggestion.length !== 0 && isOpen && (
           <div className="shadow-md p-3 absolute z-50 bg-white dark:bg-gray-400 w-full">
             {locationsSuggestion.map(({ properties }: LocationItem) => {
-              const { formatted, name } = properties;
+              const { formatted = '', name = '' } = properties;
 
               return (
                 <LocationSuggestion

@@ -218,9 +218,9 @@ exports[`Invoice details should match snapshot 1`] = `
                   <th
                     aria-hidden="false"
                     class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-0 border-none"
-                    data-key="undefined0"
+                    data-key="0"
                     data-testid="sort-btn"
-                    id="react-aria-:r0:-undefined0"
+                    id="react-aria-:r0:-0"
                     role="columnheader"
                     tabindex="-1"
                   >
@@ -233,9 +233,9 @@ exports[`Invoice details should match snapshot 1`] = `
                   <th
                     aria-hidden="false"
                     class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-0 border-none"
-                    data-key="undefined1"
+                    data-key="1"
                     data-testid="sort-btn"
-                    id="react-aria-:r0:-undefined1"
+                    id="react-aria-:r0:-1"
                     role="columnheader"
                     tabindex="-1"
                   >
@@ -248,9 +248,9 @@ exports[`Invoice details should match snapshot 1`] = `
                   <th
                     aria-hidden="false"
                     class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-0 border-none"
-                    data-key="undefined2"
+                    data-key="2"
                     data-testid="sort-btn"
-                    id="react-aria-:r0:-undefined2"
+                    id="react-aria-:r0:-2"
                     role="columnheader"
                     tabindex="-1"
                   >
@@ -263,9 +263,9 @@ exports[`Invoice details should match snapshot 1`] = `
                   <th
                     aria-hidden="false"
                     class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-0 border-none"
-                    data-key="undefined3"
+                    data-key="3"
                     data-testid="sort-btn"
-                    id="react-aria-:r0:-undefined3"
+                    id="react-aria-:r0:-3"
                     role="columnheader"
                     tabindex="-1"
                   >
@@ -287,7 +287,7 @@ exports[`Invoice details should match snapshot 1`] = `
                 role="rowgroup"
               >
                 <tr
-                  aria-labelledby="react-aria-:r0:-6-undefined0"
+                  aria-labelledby="react-aria-:r0:-6-0"
                   class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 border-b-1 border-gray-50 dark:border-gray-50/50 bg-white dark:bg-gray-400"
                   data-first="true"
                   data-id="6"
@@ -299,7 +299,7 @@ exports[`Invoice details should match snapshot 1`] = `
                   <td
                     class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg px-0 leading-[17px] py-[17px]"
                     data-key="undefined-table-cell-0"
-                    id="react-aria-:r0:-6-undefined0"
+                    id="react-aria-:r0:-6-0"
                     role="rowheader"
                     tabindex="-1"
                   >

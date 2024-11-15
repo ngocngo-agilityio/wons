@@ -9,7 +9,7 @@ import { TableLayout } from '@/layouts';
 import { LIMIT_NUMBERS } from '@/constants';
 
 const TopSellingProducts = async () => {
-  const { data: topProducts } = await getAllProducts({
+  const { data: topProducts = [] } = await getAllProducts({
     limitNumber: LIMIT_NUMBERS.TOP_SELLING_PRODUCTS,
   });
 
@@ -22,7 +22,7 @@ const TopSellingProducts = async () => {
               {
                 id,
                 attributes: {
-                  imageUrl,
+                  imageUrl = '',
                   title = 'Product Title',
                   price = 0,
                   rating = 0,
