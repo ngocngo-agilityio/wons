@@ -1,6 +1,6 @@
 import { Card } from '@nextui-org/react';
 
-import { memo } from 'react';
+import { memo, ReactNode } from 'react';
 
 // components
 import { Text } from '@/components';
@@ -8,7 +8,7 @@ import { Text } from '@/components';
 interface StatisticCardProps {
   statistic: string;
   label: string;
-  icon: React.ReactNode;
+  icon: ReactNode;
   lightBgColor: string;
   darkBgColor: string;
 }

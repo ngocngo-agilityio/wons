@@ -1,16 +1,17 @@
 import { memo } from 'react';
 import { HiLocationMarker } from 'react-icons/hi';
 
+// Components
 import { Text } from '@/components';
 
 interface LocationSuggestionProps {
-  onClickSuggestion: (value: string) => void;
   formatted: string;
+  onClickSuggestion: (value: string) => void;
 }
 
 const LocationSuggestion = ({
-  onClickSuggestion,
   formatted,
+  onClickSuggestion,
 }: LocationSuggestionProps) => {
   const handleClickSuggestion = () => {
     onClickSuggestion(formatted);

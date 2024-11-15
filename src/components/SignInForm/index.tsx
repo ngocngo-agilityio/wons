@@ -1,6 +1,6 @@
 'use client';
 
-import { memo, useCallback, useMemo, useState, useTransition } from 'react';
+import { memo, useMemo, useState, useTransition } from 'react';
 import { Controller, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useRouter } from 'next/navigation';
@@ -82,10 +82,7 @@ const SignInForm = ({ onSubmit }: SignInFormProps) => {
   );
   const isDisableSubmit = !enableSubmit;
 
-  const handleToggleVisiblePassword = useCallback(
-    () => setIsShowPassword(!isShowPassword),
-    [isShowPassword],
-  );
+  const handleToggleVisiblePassword = () => setIsShowPassword(!isShowPassword);
 
   return (
     <form onSubmit={handleSubmit(handleSignIn)} className="w-full">

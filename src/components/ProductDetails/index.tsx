@@ -8,7 +8,7 @@ import { TProductInvoiceResponse } from '@/types';
 import { formatPrice, formatTotalAmount } from '@/utils';
 
 // Components
-import { ImageFallback, Text } from '../common';
+import { ImageFallback, Text } from '@/components';
 
 interface IProductDetailsProps {
   product: TProductInvoiceResponse;

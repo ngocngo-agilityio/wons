@@ -4,6 +4,7 @@ import { memo, useCallback, useState, useTransition, useEffect } from 'react';
 import { Draggable } from '@hello-pangea/dnd';
 import Drawer from 'react-modern-drawer';
 import dynamic from 'next/dynamic';
+import isEqual from 'react-fast-compare';
 
 // Types
 import { StrapiModel, Task, TaskWithStringAssignees, Level } from '@/types';
@@ -39,23 +40,24 @@ import {
 
 const DynamicTaskDetails = dynamic(() => import('../TaskDetail'));
 
-type TTaskCardProps = {
+interface TTaskCardProps {
   isAdmin: boolean;
   index: number;
   task: StrapiModel<Task>;
-};
+}
 
 const TaskCard = ({ index, task, isAdmin }: TTaskCardProps) => {
   const [isShowModal, setIsShowModal] = useState(false);
   const [taskByID, setTaskByID] = useState({});
   const [isLoading, setIsLoading] = useState(false);
-  const { showToast } = useToast();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [taskForm, setTaskForm] = useState<TaskWithStringAssignees>();
-  const [isPending, startTransition] = useTransition();
   const [idTask, setIdTask] = useState<number>();
   const [avatarFiles, setAvatarFiles] = useState<File[]>();
   const [isAvatarDirty, setIsAvatarDirty] = useState(false);
+
+  const { showToast } = useToast();
+  const [isPending, startTransition] = useTransition();
   const { isGreaterThanMd } = useBreakPoints();
 
   const { id, attributes } = task ?? {};
@@ -154,10 +156,10 @@ const TaskCard = ({ index, task, isAdmin }: TTaskCardProps) => {
     setIsShowModal(false);
   };
 
-  const handleAvatarChange = useCallback((files: File[]) => {
+  const handleAvatarChange = (files: File[]) => {
     setAvatarFiles(files);
     setIsAvatarDirty(true);
-  }, []);
+  };
 
   const handleCloseFormModal = () => {
     setIsDrawerOpen(false);
@@ -302,4 +304,4 @@ const TaskCard = ({ index, task, isAdmin }: TTaskCardProps) => {
   );
 };
 
-export default withAccountState<TTaskCardProps>(memo(TaskCard));
+export default withAccountState<TTaskCardProps>(memo(TaskCard, isEqual));
