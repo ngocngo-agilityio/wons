@@ -1,7 +1,10 @@
-// apis
+// Apis
 import { getCustomers } from '@/api';
 
-// uis
+// Constants
+import { DEFAULT_PAGE } from '@/constants';
+
+// UIs
 import { CustomerListClient } from '@/ui';
 
 type TCustomerListProps = {
@@ -11,11 +14,11 @@ type TCustomerListProps = {
 };
 
 const CustomerList = async ({
-  page,
+  page = DEFAULT_PAGE,
   sortBy = '',
   order = '',
 }: TCustomerListProps) => {
-  const { data: customerRes, meta } = await getCustomers({
+  const { data: customerRes = [], meta } = await getCustomers({
     page,
     sortBy,
     order,

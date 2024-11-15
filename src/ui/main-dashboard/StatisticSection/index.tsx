@@ -10,7 +10,7 @@ import { StatisticCard, NoProductAvailable } from '@/components';
 import { getAllStatistics } from '@/api';
 
 const StatisticSection = async () => {
-  const { data: statisticsData } = await getAllStatistics();
+  const { data: statisticsData = [] } = await getAllStatistics();
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8">

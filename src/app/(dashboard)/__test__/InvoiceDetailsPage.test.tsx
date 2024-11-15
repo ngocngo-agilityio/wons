@@ -67,11 +67,11 @@ describe('InvoiceDetails', () => {
     const metadata = await generateMetadata({ params: { id: 1 } }, parent);
 
     expect(metadata).toEqual({
-      title: `Invoice ID: undefined`,
+      title: `Invoice ID: `,
       description: `undefined invoice details about id, products, title,...`,
       openGraph: {
-        images: [undefined],
-        title: `Invoice ID: undefined`,
+        images: [''],
+        title: `Invoice ID: `,
         description: `undefined invoice details about id, products, title,...`,
       },
     });

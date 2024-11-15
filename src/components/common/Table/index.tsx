@@ -137,7 +137,12 @@ const TableCustom = <T extends { id: string }>({
     >
       <TableHeader className="border-spacing-y-0">
         {columns.map((columnConfig, index) => {
-          const { value, header, isSort, isCustomStyle } = columnConfig;
+          const {
+            value = '',
+            header,
+            isSort = false,
+            isCustomStyle = false,
+          } = columnConfig;
 
           const handleSort = () => {
             onSort?.(value as string);

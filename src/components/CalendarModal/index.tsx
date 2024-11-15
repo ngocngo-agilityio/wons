@@ -61,7 +61,7 @@ const CalendarModal = ({
   time,
   isOpen,
   user,
-  previewData = null,
+  previewData,
   setIsTask,
   onClose,
   onSubmit,

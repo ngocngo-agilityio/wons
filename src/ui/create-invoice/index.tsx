@@ -11,8 +11,8 @@ import { formattedResponseData, generateRandomID } from '@/utils';
 import { InvoiceForm } from '@/components';
 
 const CreateInvoice = async () => {
-  const { data: products } = await getProducts();
-  const { data: customers } = await getCustomers();
+  const { data: products = [] } = await getProducts();
+  const { data: customers = [] } = await getCustomers();
 
   return (
     <div className="bg-white dark:bg-gray-400 p-[30px] pb-[70px] rounded-[10px] h-[calc(full-60px)] flex w-full justify-center">

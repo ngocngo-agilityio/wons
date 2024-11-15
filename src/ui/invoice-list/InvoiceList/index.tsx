@@ -1,6 +1,9 @@
 // APIs
 import { getInvoices } from '@/api';
 
+// Constants
+import { DEFAULT_PAGE } from '@/constants';
+
 // Utils
 import { InvoiceListClient } from '@/ui';
 
@@ -12,10 +15,10 @@ export type TInvoiceListProps = {
 };
 
 const InvoiceList = async ({
-  sortOrder,
-  sortBy,
-  query,
-  page,
+  sortOrder = '',
+  sortBy = '',
+  query = '',
+  page = DEFAULT_PAGE,
 }: TInvoiceListProps): Promise<JSX.Element> => {
   const invoicesRes = await getInvoices({
     sortOrder,

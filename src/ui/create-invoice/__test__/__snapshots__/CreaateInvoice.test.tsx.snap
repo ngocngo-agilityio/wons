@@ -711,9 +711,9 @@ exports[`CreateInvoice Component Test should render all content with resolved da
                     <th
                       aria-hidden="true"
                       class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px] border-none"
-                      data-key="undefined4"
+                      data-key="4"
                       data-testid="sort-btn"
-                      id="react-aria-:r1m:-undefined4"
+                      id="react-aria-:r1m:-4"
                       role="columnheader"
                       tabindex="-1"
                     >
@@ -1671,9 +1671,9 @@ exports[`CreateInvoice Component Test should render content with empty 1`] = `
                     <th
                       aria-hidden="true"
                       class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px] border-none"
-                      data-key="undefined4"
+                      data-key="4"
                       data-testid="sort-btn"
-                      id="react-aria-:r3r:-undefined4"
+                      id="react-aria-:r3r:-4"
                       role="columnheader"
                       tabindex="-1"
                     >

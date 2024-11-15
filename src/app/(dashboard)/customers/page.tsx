@@ -40,7 +40,7 @@ type TInvoiceListPageProps = {
 const CustomerListPage = ({
   searchParams,
 }: TInvoiceListPageProps): JSX.Element => {
-  const { page = DEFAULT_PAGE, order, sortBy } = searchParams || {};
+  const { page = DEFAULT_PAGE, order = '', sortBy = '' } = searchParams || {};
 
   return (
     <main>

@@ -56,7 +56,7 @@ const TaskForm = ({
   isDisabledField = false,
   onSubmit,
   setReset,
-  previewData = null,
+  previewData,
   onCloseDrawer,
   onAvatarChange,
 }: ITaskFormProps) => {

@@ -78,17 +78,10 @@ const TaskDrawer = ({ isAdmin }: TaskDrawerProps): JSX.Element => {
           ...restFormData,
         });
 
-        if (error) {
-          showToast({
-            description: error,
-            status: MESSAGES.STATUS.ERROR,
-          });
-        } else {
-          showToast({
-            description: MESSAGES.SUCCESS.CREATE_TASK,
-            status: MESSAGES.STATUS.SUCCESS,
-          });
-        }
+        showToast({
+          description: error ?? MESSAGES.SUCCESS.CREATE_TASK,
+          status: error ? MESSAGES.STATUS.ERROR : MESSAGES.STATUS.SUCCESS,
+        });
       });
 
       if (!isPending) {

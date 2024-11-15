@@ -11,7 +11,7 @@ interface ErrorProps {
   className?: string;
 }
 
-const ErrorBoundary = ({ error, reset, className }: ErrorProps) => {
+const ErrorBoundary = ({ error, reset, className = '' }: ErrorProps) => {
   // Attempt to recover by trying to re-render the segment
   const handleReset = () => {
     reset?.();

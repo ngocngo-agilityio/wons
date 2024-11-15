@@ -30,7 +30,11 @@ export async function generateMetadata(
       endpoint: `${API_PATH.INVOICES}/${id}?populate=customer&populate=invoice_products&populate=invoice_products.product`,
     });
 
-  const { imageUrl, customer, invoiceId } = result?.data?.attributes ?? {};
+  const {
+    imageUrl = '',
+    customer,
+    invoiceId = '',
+  } = result?.data?.attributes ?? {};
 
   const nameCustomer = customer?.data?.attributes?.fullName;
 

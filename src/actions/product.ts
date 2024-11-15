@@ -62,7 +62,7 @@ export const updateProduct = async (
 
 export const deleteProduct = async (id: number) => {
   try {
-    const { data: responseInvoiceProducts }: TProductInvoiceListResponse =
+    const { data: responseInvoiceProducts = [] }: TProductInvoiceListResponse =
       await httpClient.getRequest({
         endpoint: `${API_PATH.INVOICE_PRODUCTS}?filters[product][$eq]=${id}`,
       });
