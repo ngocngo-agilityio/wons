@@ -3,9 +3,9 @@ import { memo } from 'react';
 // Libs
 import { Chip } from '@nextui-org/react';
 
-type TGenderStatusProps = {
+interface TGenderStatusProps {
   gender: 'male' | 'female';
-};
+}
 
 const GenderStatusComponent = ({ gender }: TGenderStatusProps): JSX.Element => {
   const chipClasses = {

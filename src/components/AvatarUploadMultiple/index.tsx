@@ -1,21 +1,24 @@
 'use client';
 
-import { ChangeEvent, MouseEvent, memo, useCallback, useState } from 'react';
+import { ChangeEvent, MouseEvent, memo, useState } from 'react';
+import isEqual from 'react-fast-compare';
 
 // Icons
 import { IoCamera, IoClose } from 'react-icons/io5';
 
+// constants
+import { MESSAGES } from '@/constants';
+
+// Utils
+import { filterDataByIndex } from '@/utils';
+
 // Components
 import { Input, Button, Text, ImageFallback } from '@/components';
 
-// constants
-import { MESSAGES } from '@/constants';
-import { filterDataByIndex } from '@/utils';
-
-export type TAvatarUploadMultipleProps = {
+export interface TAvatarUploadMultipleProps {
   previewFiles?: string[];
   onFileChange: (previewFiles?: string[], selectedFiles?: File[]) => void;
-};
+}
 
 const AvatarUploadMultiple = ({
   previewFiles = [],
@@ -27,49 +30,43 @@ const AvatarUploadMultiple = ({
   const [errorMessage, setErrorMessage] = useState<string>('');
   const isUploadDisabled = currentPreviewFiles?.length >= 2;
 
-  const uploadMultipleFile = useCallback(
-    (event: ChangeEvent<HTMLInputElement>) => {
-      const values = Array.from(event.target.files ?? []);
-      const allSelectedFiles = [...selectedFiles, ...values];
+  const uploadMultipleFile = (event: ChangeEvent<HTMLInputElement>) => {
+    const values = Array.from(event.target.files ?? []);
+    const allSelectedFiles = [...selectedFiles, ...values];
 
-      if (currentPreviewFiles.length > 2) {
-        setErrorMessage(MESSAGES.ERROR.MAX_IMAGE);
-        return;
-      }
+    if (currentPreviewFiles.length > 2) {
+      setErrorMessage(MESSAGES.ERROR.MAX_IMAGE);
+      return;
+    }
 
-      if (currentPreviewFiles.length === 1 && values.length > 2) {
-        setErrorMessage(MESSAGES.ERROR.UPLOAD_IMAGE_SIZE);
-        return;
-      }
+    if (currentPreviewFiles.length === 1 && values.length > 2) {
+      setErrorMessage(MESSAGES.ERROR.UPLOAD_IMAGE_SIZE);
+      return;
+    }
 
-      setErrorMessage('');
-      setSelectedFiles(allSelectedFiles);
+    setErrorMessage('');
+    setSelectedFiles(allSelectedFiles);
 
-      const newPreviewFiles: string[] = [
-        ...currentPreviewFiles,
-        ...values.map((value) => URL.createObjectURL(value)),
-      ];
+    const newPreviewFiles: string[] = [
+      ...currentPreviewFiles,
+      ...values.map((value) => URL.createObjectURL(value)),
+    ];
 
-      setCurrentPreviewFiles(newPreviewFiles);
-      onFileChange(newPreviewFiles, allSelectedFiles);
-    },
-    [currentPreviewFiles, onFileChange, selectedFiles],
-  );
+    setCurrentPreviewFiles(newPreviewFiles);
+    onFileChange(newPreviewFiles, allSelectedFiles);
+  };
 
-  const clickInput = useCallback((event: MouseEvent<HTMLInputElement>) => {
+  const clickInput = (event: MouseEvent<HTMLInputElement>) => {
     (event.target as HTMLInputElement).value = '';
-  }, []);
+  };
 
-  const deleteFile = useCallback(
-    (indexFile: number) => {
-      const updatedPreviewFiles = filterDataByIndex(previewFiles, indexFile);
-      const updatedSelectedFiles = filterDataByIndex(selectedFiles, indexFile);
+  const deleteFile = (indexFile: number) => {
+    const updatedPreviewFiles = filterDataByIndex(previewFiles, indexFile);
+    const updatedSelectedFiles = filterDataByIndex(selectedFiles, indexFile);
 
-      setCurrentPreviewFiles(updatedPreviewFiles);
-      onFileChange(updatedPreviewFiles, updatedSelectedFiles);
-    },
-    [onFileChange, previewFiles, selectedFiles],
-  );
+    setCurrentPreviewFiles(updatedPreviewFiles);
+    onFileChange(updatedPreviewFiles, updatedSelectedFiles);
+  };
 
   return (
     <div className="flex flex-col items-center mt-5">
@@ -132,4 +129,4 @@ const AvatarUploadMultiple = ({
   );
 };
 
-export default memo(AvatarUploadMultiple);
+export default memo(AvatarUploadMultiple, isEqual);

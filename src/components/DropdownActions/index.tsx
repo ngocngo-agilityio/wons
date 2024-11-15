@@ -21,35 +21,35 @@ import { ConfirmModal } from '@/components';
 
 interface DropdownActionsProps {
   id: number;
-  onEdit: (id: number) => void;
-  onDelete: (id: number) => void;
   isIconOnly?: boolean;
   disableAnimation?: boolean;
   customClassName?: string;
+  onEdit: (id: number) => void;
+  onDelete: (id: number) => void;
 }
 
 const DropdownActions = ({
-  id,
   onEdit,
   onDelete,
+  id,
   isIconOnly = false,
   disableAnimation = false,
-  customClassName,
+  customClassName = '',
 }: DropdownActionsProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleDelete = useCallback(() => setIsModalOpen(true), []);
+  const handleDelete = () => setIsModalOpen(true);
 
   const handleConfirmDelete = useCallback(() => {
     onDelete(id);
     setIsModalOpen(false);
   }, [id, onDelete]);
 
-  const handleCancelDelete = useCallback(() => {
+  const handleCancelDelete = () => {
     setIsModalOpen(false);
-  }, []);
+  };
 
-  const handleEdit = useCallback(() => onEdit(id), [id, onEdit]);
+  const handleEdit = () => onEdit(id);
 
   return (
     <>

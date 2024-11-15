@@ -1,7 +1,7 @@
 import { memo } from 'react';
 
 // Components
-import { ImageFallback, Text } from '@/components/common';
+import { ImageFallback, Text } from '@/components';
 
 interface ICustomerDetailsHeader {
   avatar: string;

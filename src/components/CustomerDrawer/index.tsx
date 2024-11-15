@@ -47,10 +47,10 @@ const CustomerDrawer = (): JSX.Element => {
     lockScroll();
   }, [lockScroll]);
 
-  const handleCloseDrawer = () => {
+  const handleCloseDrawer = useCallback(() => {
     setIsDrawerOpen(false);
     unlockScroll();
-  };
+  }, [unlockScroll]);
 
   const handleFormSubmit = useCallback(
     async (formData: ICustomer) => {

@@ -14,9 +14,9 @@ import { StrapiModel } from '@/types';
 // Utils
 import { getSubarray } from '@/utils';
 
-type AvatarGroupProps = {
+interface AvatarGroupProps {
   users: StrapiModel<Omit<TUser, 'id'>>[];
-};
+}
 
 const AvatarGroup = ({ users }: AvatarGroupProps) => (
   <div className="flex items-center">
