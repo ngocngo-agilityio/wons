@@ -45,8 +45,12 @@ export const formatTotalAmount = (
 export const InsertSkeletonRow = (quantity: number) =>
   Array.from({ length: quantity }, (_, i) => ({ id: i + 1 }));
 
-export const formattedResponseData = <T>(data: StrapiModel<T>[]) =>
-  data.map((item) => {
+export const formattedResponseData = <T>(data: StrapiModel<T>[]) => {
+  if (!data || !Array.isArray(data)) {
+    return [];
+  }
+
+  return data.map((item) => {
     const { id, attributes } = item;
 
     return {
@@ -54,6 +58,7 @@ export const formattedResponseData = <T>(data: StrapiModel<T>[]) =>
       ...attributes,
     };
   });
+};
 
 export const formatPhoneNumber = (value: string) => {
   const phone = value.replace(/[()\\-]/g, ' ');
