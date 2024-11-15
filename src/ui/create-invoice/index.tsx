@@ -19,8 +19,8 @@ const CreateInvoice = async () => {
       <InvoiceForm
         invoiceId={generateRandomID()}
         onSubmit={createInvoice}
-        products={formattedResponseData(products ?? [])}
-        customers={formattedResponseData(customers ?? [])}
+        products={formattedResponseData(products)}
+        customers={formattedResponseData(customers)}
       />
     </div>
   );

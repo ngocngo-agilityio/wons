@@ -15,7 +15,7 @@ interface EditInvoiceProps {
 }
 
 const EditInvoice = async ({ id }: EditInvoiceProps) => {
-  const [{ data: products }, { data: customers }, { data: invoice }] =
+  const [{ data: products = [] }, { data: customers = [] }, { data: invoice }] =
     await Promise.all([
       getProducts(),
       getCustomers(),
@@ -54,8 +54,8 @@ const EditInvoice = async ({ id }: EditInvoiceProps) => {
     <EditInvoiceClient
       invoice={formattedInvoice}
       invoiceProducts={formattedPreviewProduct}
-      products={formattedResponseData(products ?? [])}
-      customers={formattedResponseData(customers ?? [])}
+      products={formattedResponseData(products)}
+      customers={formattedResponseData(customers)}
       onEditInvoice={editInvoice}
     />
   );
