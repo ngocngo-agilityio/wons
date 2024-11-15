@@ -11,18 +11,18 @@ dayjs.extend(customParseFormat);
 
 interface DateTimePickerModalProps {
   isOpen: boolean;
-  onClose: () => void;
   selectedDate: string;
   selectedTime: string;
+  onClose: () => void;
   onDateChange: (date: string) => void;
   onTimeChange: (time: string) => void;
 }
 
 const DateTimePickerModal = ({
   isOpen,
-  onClose,
   selectedDate,
   selectedTime,
+  onClose,
   onDateChange,
   onTimeChange,
 }: DateTimePickerModalProps) => (

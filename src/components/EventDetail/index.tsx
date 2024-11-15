@@ -40,14 +40,15 @@ export interface EventCardProps {
   link?: string;
   isOpen: boolean;
   isAdmin: boolean;
+  id: number;
   onCloseModal: () => void;
   onEdit?: (id: number) => void;
   onDelete?: (id: number) => void;
-  id: number;
 }
 
 const EventDetail = ({
   title,
+  id,
   time,
   location = '',
   description = '',
@@ -58,7 +59,6 @@ const EventDetail = ({
   onCloseModal,
   onEdit,
   onDelete,
-  id,
 }: EventCardProps) => {
   const handleJoinGoogleMeet = () => {
     // TODO: will handle again later
@@ -66,11 +66,11 @@ const EventDetail = ({
   };
 
   const handleEdit = () => {
-    onEdit?.(id);
+    onEdit && onEdit(id);
   };
 
   const handleDelete = () => {
-    onDelete?.(id);
+    onDelete && onDelete(id);
   };
 
   return (

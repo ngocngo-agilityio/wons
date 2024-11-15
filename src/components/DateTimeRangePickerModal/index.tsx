@@ -18,10 +18,10 @@ dayjs.extend(customParseFormat);
 
 interface DateTimePickerModalProps {
   isOpen: boolean;
-  onClose: () => void;
   selectedDate: string;
   selectedStartTime: string;
   selectedEndTime: string;
+  onClose: () => void;
   onDateChange: (date: string) => void;
   onStartTimeChange: (time: string) => void;
   onEndTimeChange: (time: string) => void;
@@ -29,10 +29,10 @@ interface DateTimePickerModalProps {
 
 const DateTimeRangePickerModal = ({
   isOpen,
-  onClose,
   selectedDate,
   selectedStartTime,
   selectedEndTime,
+  onClose,
   onDateChange,
   onStartTimeChange,
   onEndTimeChange,

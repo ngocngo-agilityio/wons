@@ -10,22 +10,22 @@ import { ImageFallback, Input } from '@/components';
 // constants
 import { MAX_SIZE, MESSAGES, REGEX } from '@/constants';
 
-export type TUpdateProfileProps = {
+export interface TUpdateProfileProps {
   onFileChange: (file: File) => void;
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
   value: string;
   error?: string;
   isDisabled?: boolean;
   additionalClass?: string;
-};
+}
 
 const AvatarUpload = ({
   value,
   error = '',
-  onChange,
-  onFileChange,
   isDisabled = false,
   additionalClass = '',
+  onChange,
+  onFileChange,
 }: TUpdateProfileProps) => {
   const [previewURL, setPreviewURL] = useState<string>('');
   const [errorMessage, setErrorMessage] = useState<string>(error);
@@ -39,41 +39,38 @@ const AvatarUpload = ({
     window.addEventListener('focus', handleFocusBack);
   }, [handleFocusBack]);
 
-  const handleChangeFile = useCallback(
-    (e: ChangeEvent<HTMLInputElement>) => {
-      const file = e.target.files?.[0];
+  const handleChangeFile = (e: ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
 
-      if (!file) {
-        return;
-      }
+    if (!file) {
+      return;
+    }
 
-      if (!REGEX.IMG.test(file.name)) {
-        const error = MESSAGES.ERROR.UPLOAD_IMAGE;
-        setErrorMessage(error);
-        return;
-      }
+    if (!REGEX.IMG.test(file.name)) {
+      const error = MESSAGES.ERROR.UPLOAD_IMAGE;
+      setErrorMessage(error);
+      return;
+    }
 
-      if (file.size > MAX_SIZE) {
-        const error = MESSAGES.ERROR.UPLOAD_IMAGE_SIZE;
-        setErrorMessage(error);
-        return;
-      }
+    if (file.size > MAX_SIZE) {
+      const error = MESSAGES.ERROR.UPLOAD_IMAGE_SIZE;
+      setErrorMessage(error);
+      return;
+    }
 
-      setErrorMessage('');
+    setErrorMessage('');
 
-      if (previewURL) {
-        URL.revokeObjectURL(previewURL);
-        setPreviewURL('');
-      }
+    if (previewURL) {
+      URL.revokeObjectURL(previewURL);
+      setPreviewURL('');
+    }
 
-      const previewImage = URL.createObjectURL(file);
-      setPreviewURL(previewImage);
-      window.removeEventListener('focus', handleFocusBack);
+    const previewImage = URL.createObjectURL(file);
+    setPreviewURL(previewImage);
+    window.removeEventListener('focus', handleFocusBack);
 
-      onFileChange(file);
-    },
-    [handleFocusBack, onFileChange, previewURL],
-  );
+    onFileChange(file);
+  };
 
   const handleOnchange = (e: ChangeEvent<HTMLInputElement>) => {
     handleChangeFile(e);

@@ -12,12 +12,12 @@ import { Heading, TaskCard } from '@/components';
 // types
 import { StrapiModel, Task, TaskStatus } from '@/types';
 
-type TColumnProps = {
+interface TColumnProps {
   status: TaskStatus;
   tasks: StrapiModel<Task>[];
-};
+}
 
-const Column = ({ status, tasks = [] }: TColumnProps) => (
+const Column = ({ status, tasks }: TColumnProps) => (
   <Droppable droppableId={status}>
     {(provided) => (
       <div
@@ -40,6 +40,4 @@ const Column = ({ status, tasks = [] }: TColumnProps) => (
   </Droppable>
 );
 
-export default memo(Column, isEqual) as <T>(
-  props: TColumnProps & T,
-) => JSX.Element;
+export default memo(Column, isEqual);

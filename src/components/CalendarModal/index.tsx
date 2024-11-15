@@ -42,9 +42,6 @@ interface EventFormModalProps {
   timeRange?: TimeRangeProps;
   time?: string;
   isOpen: boolean;
-  repeatSetting?: string;
-  guests?: string[];
-  location?: string;
   user?: TUser;
   previewData?: EventForm | TaskForm | null;
   isEdit?: boolean;
@@ -55,8 +52,8 @@ interface EventFormModalProps {
 }
 
 const CalendarModal = ({
-  title = '',
-  eventTitle = '',
+  title,
+  eventTitle,
   date,
   timeRange,
   isEdit = false,

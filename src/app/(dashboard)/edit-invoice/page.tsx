@@ -30,9 +30,7 @@ interface CustomersProps {
   };
 }
 
-const EditInvoicePage = async ({
-  searchParams,
-}: CustomersProps): Promise<JSX.Element> => {
+const EditInvoicePage = ({ searchParams }: CustomersProps) => {
   const { id } = searchParams;
 
   return (

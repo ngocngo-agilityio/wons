@@ -1,6 +1,6 @@
 'use client';
 
-import { memo, useCallback, useMemo, useTransition } from 'react';
+import { memo, useMemo, useTransition } from 'react';
 import { Select, SelectItem } from '@nextui-org/react';
 import { Controller, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -47,17 +47,17 @@ const genders = [
 
 export interface ICustomerFormProps {
   isDisabledField?: boolean;
-  onAvatarChange: (file: File) => void;
-  onSubmit: (data: ICustomer) => void;
   previewData?: ICustomer | null;
   onCloseDrawer?: () => void;
+  onAvatarChange: (file: File) => void;
+  onSubmit: (data: ICustomer) => void;
 }
 
 const CustomerForm = ({
   isDisabledField = false,
+  previewData = null,
   onAvatarChange,
   onSubmit,
-  previewData = null,
   onCloseDrawer,
 }: ICustomerFormProps) => {
   const {
@@ -104,15 +104,12 @@ const CustomerForm = ({
     ? !(enableSubmit || !getDirtyState(defaultValues ?? {}, watch()))
     : !allFieldsFilled;
 
-  const saveData = useCallback(
-    async (formData: Partial<ICustomer>) => {
-      startTransition(async () => {
-        await onSubmit(formData as ICustomer);
-        reset();
-      });
-    },
-    [onSubmit, reset],
-  );
+  const saveData = async (formData: Partial<ICustomer>) => {
+    startTransition(async () => {
+      await onSubmit(formData as ICustomer);
+      reset();
+    });
+  };
 
   return (
     <form

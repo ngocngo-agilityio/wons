@@ -22,10 +22,8 @@ import {
 
 const Pagination = dynamic(() => import('@/components/common/Pagination'));
 
-type TCustomerData = TCustomerDataResponse;
-
-type CustomersTableProps = {
-  data: TCustomerData[];
+interface CustomersTableProps {
+  data: TCustomerDataResponse[];
   pageCount: number;
   sortBy?: string;
   order?: string;
@@ -34,7 +32,7 @@ type CustomersTableProps = {
   onSort: (field: string) => void;
   onDelete: (id: number) => void;
   onRowAction?: (key: Key) => void;
-};
+}
 
 const CustomersTable = ({
   data = [],
@@ -52,7 +50,7 @@ const CustomersTable = ({
       [
         {
           header: 'Name',
-          accessor: (customerData: TCustomerData) => {
+          accessor: (customerData: TCustomerDataResponse) => {
             const { attributes } = customerData || {};
             const {
               avatar = '',
@@ -83,7 +81,7 @@ const CustomersTable = ({
         },
         {
           header: 'Email',
-          accessor: (customerData: TCustomerData) => {
+          accessor: (customerData: TCustomerDataResponse) => {
             const { attributes } = customerData || {};
             const { email = '' } = attributes || {};
 
@@ -104,7 +102,7 @@ const CustomersTable = ({
         },
         {
           header: 'Phone Number',
-          accessor: (customerData: TCustomerData) => {
+          accessor: (customerData: TCustomerDataResponse) => {
             const { attributes } = customerData || {};
             const { phone = '' } = attributes || {};
 
@@ -123,7 +121,7 @@ const CustomersTable = ({
         },
         {
           header: 'Gender',
-          accessor: (customerData: TCustomerData) => {
+          accessor: (customerData: TCustomerDataResponse) => {
             const { attributes } = customerData || {};
             const gender = attributes?.gender || 'male';
 
@@ -136,7 +134,7 @@ const CustomersTable = ({
         },
         {
           ...(isAdmin && {
-            accessor: (customerData: TCustomerData) => {
+            accessor: (customerData: TCustomerDataResponse) => {
               const { id } = customerData || {};
 
               return (

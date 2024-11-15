@@ -1,7 +1,7 @@
 import { memo } from 'react';
 
 // Components
-import { EmailIcon, FaLocationDot, ImPhone, Text } from '@/components/common';
+import { EmailIcon, FaLocationDot, ImPhone, Text } from '@/components';
 
 // Utils
 import { formatPhoneNumberTyping } from '@/utils';
