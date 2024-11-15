@@ -1,13 +1,15 @@
 import { memo } from 'react';
+import isEqual from 'react-fast-compare';
 
 // Libs
 import { Chip } from '@nextui-org/react';
 
 // Types
 import { InvoiceStatus } from '@/types';
-type TInvoiceStatusProps = {
+
+interface TInvoiceStatusProps {
   variant?: InvoiceStatus;
-};
+}
 
 const InvoiceStatusComponent = ({
   variant = InvoiceStatus.Complete,
@@ -49,4 +51,4 @@ const InvoiceStatusComponent = ({
   );
 };
 
-export default memo(InvoiceStatusComponent);
+export default memo(InvoiceStatusComponent, isEqual);

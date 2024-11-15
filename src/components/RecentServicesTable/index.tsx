@@ -1,7 +1,7 @@
 'use client';
 
 import { usePathname, useSearchParams, useRouter } from 'next/navigation';
-import { memo, useMemo } from 'react';
+import { memo, useCallback, useMemo } from 'react';
 import { Chip } from '@nextui-org/react';
 
 // Utils
@@ -17,18 +17,23 @@ import { TInvoiceProduct, IProduct } from '@/models';
 import { ORDER, SEARCH_QUERIES } from '@/constants';
 
 // Components
-import { ImageFallback, Table, Text } from '@/components/common';
+import { ImageFallback, Table, Text } from '@/components';
 
 interface IRecentServicesTable {
   data: StrapiModel<TInvoiceProduct<StrapiModel<IProduct>>>[];
   order?: string;
 }
 
-const RecentServicesTable = ({
-  data = [],
-  order = '',
-}: IRecentServicesTable) => {
+const RecentServicesTable = ({ data, order = '' }: IRecentServicesTable) => {
   const { ASC, DESC } = ORDER;
+
+  const searchParams = useSearchParams();
+
+  const pathname = usePathname();
+  const { replace } = useRouter();
+  const paramsObject = searchParams
+    ? Object.fromEntries(searchParams.entries())
+    : {};
 
   const mappingContentColumns = useMemo(
     () => [
@@ -112,24 +117,20 @@ const RecentServicesTable = ({
     ],
     [],
   );
-  const searchParams = useSearchParams();
 
-  const pathname = usePathname();
-  const { replace } = useRouter();
-  const paramsObject = searchParams
-    ? Object.fromEntries(searchParams.entries())
-    : {};
+  const handleSort = useCallback(
+    (value: string) => {
+      const params = new URLSearchParams(searchParams);
 
-  const handleSort = (value: string) => {
-    const params = new URLSearchParams(searchParams);
+      if (value) {
+        params.set(SEARCH_QUERIES.SORT_BY, value);
+        params.set(SEARCH_QUERIES.ORDER, order === DESC ? ASC : DESC);
+      }
 
-    if (value) {
-      params.set(SEARCH_QUERIES.SORT_BY, value);
-      params.set(SEARCH_QUERIES.ORDER, order === DESC ? ASC : DESC);
-    }
-
-    replace(`${pathname}?${params.toString()}`, { scroll: false });
-  };
+      replace(`${pathname}?${params.toString()}`, { scroll: false });
+    },
+    [order, pathname, replace, searchParams],
+  );
 
   return (
     <Table

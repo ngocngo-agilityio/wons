@@ -1,4 +1,4 @@
-import { memo, useCallback } from 'react';
+import { memo } from 'react';
 
 // Libs
 import clsx from 'clsx';
@@ -6,21 +6,18 @@ import clsx from 'clsx';
 // Components
 import { Button, FaStar } from '@/components';
 
-export type TStartButtonProps = {
+export interface TStartButtonProps {
   id: number;
   isSelected: boolean;
   onClick: (id: number, isSelected: boolean) => void;
-};
+}
 
 const StartButton = ({
   id,
   isSelected,
   onClick,
 }: TStartButtonProps): JSX.Element => {
-  const handleOnClick = useCallback(
-    () => onClick(id, isSelected),
-    [id, isSelected, onClick],
-  );
+  const handleOnClick = () => onClick(id, isSelected);
 
   return (
     <Button

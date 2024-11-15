@@ -1,6 +1,6 @@
 'use client';
 
-import { memo, useCallback, useState } from 'react';
+import { memo, useState } from 'react';
 import Link from 'next/link';
 import { Controller, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -56,15 +56,9 @@ const SignUpForm = ({ isPending = false, onSubmit }: ISignUpFormProps) => {
   const isEnableSubmit =
     isChecked && isEnableSubmitButton(REQUIRED_FIELDS, dirtyItems, errors);
 
-  const handleToggleVisiblePassword = useCallback(
-    () => setIsShowPassword(!isShowPassword),
-    [isShowPassword],
-  );
+  const handleToggleVisiblePassword = () => setIsShowPassword(!isShowPassword);
 
-  const handleCheckBoxChange = useCallback(
-    () => setIsChecked(!isChecked),
-    [isChecked],
-  );
+  const handleCheckBoxChange = () => setIsChecked(!isChecked);
 
   const handleSignUp = (formData: ISignUpFormData) =>
     onSubmit({ ...formData, avatar: IMAGES.AVATAR_DEFAULT });

@@ -65,6 +65,10 @@ const InvoiceProductTable = ({
   errorProducts,
   productsValues,
 }: InvoiceProductTableProps) => {
+  const { ASC, DESC } = ORDER;
+  const [order, setOrder] = useState<string>(ASC);
+  const [sortBy, setSortBy] = useState<string>('');
+
   const { control, setError, clearErrors } = useForm();
 
   useEffect(() => {
@@ -284,10 +288,6 @@ const InvoiceProductTable = ({
   const dataTable =
     productsValues.length > 0 ? productsValues : [initInvoiceProduct];
 
-  const { ASC, DESC } = ORDER;
-  const [order, setOrder] = useState<string>(ASC);
-  const [sortBy, setSortBy] = useState<string>('');
-
   const handleSort = useCallback(
     (sortBy: string) => {
       setSortBy(sortBy);
@@ -345,6 +345,4 @@ const InvoiceProductTable = ({
   );
 };
 
-export default memo(InvoiceProductTable, isEqual) as <T>(
-  props: InvoiceProductTableProps & T,
-) => JSX.Element;
+export default memo(InvoiceProductTable, isEqual);

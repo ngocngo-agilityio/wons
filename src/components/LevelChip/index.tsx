@@ -1,4 +1,5 @@
 import { memo } from 'react';
+import isEqual from 'react-fast-compare';
 
 // Libs
 import { Chip } from '@nextui-org/react';
@@ -6,10 +7,10 @@ import { Chip } from '@nextui-org/react';
 // Types
 import { TSize, Level } from '@/types';
 
-type TLevelCardProps = {
+interface TLevelCardProps {
   level: Level;
   size?: TSize;
-};
+}
 
 const LevelChip = ({ level, size = 'md' }: TLevelCardProps): JSX.Element => {
   const chipClasses = {
@@ -51,4 +52,4 @@ const LevelChip = ({ level, size = 'md' }: TLevelCardProps): JSX.Element => {
   );
 };
 
-export default memo(LevelChip);
+export default memo(LevelChip, isEqual);

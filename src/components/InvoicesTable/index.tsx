@@ -34,10 +34,8 @@ import {
 const Pagination = dynamic(() => import('@/components/common/Pagination'));
 const ConfirmModal = dynamic(() => import('@/components/common/ConfirmModal'));
 
-type TInvoiceData = TInvoiceDataResponse;
-
-type TInvoicesTableProps = {
-  data: TInvoiceData[];
+interface TInvoicesTableProps {
+  data: TInvoiceDataResponse[];
   pageCount: number;
   sortBy?: string;
   order?: string;
@@ -48,7 +46,7 @@ type TInvoicesTableProps = {
   onToggleSelectStar: (id: number, isSelected: boolean) => void;
   onSort: (field: string) => void;
   onRowAction: (key: Key) => void;
-};
+}
 
 const InvoicesTable = ({
   data = [],
@@ -118,16 +116,16 @@ const InvoicesTable = ({
     setIsModalOpen(false);
   }, [data, onDeleteMultiple, selectedInvoiceIds]);
 
-  const handleCancelDeleteMultiple = useCallback(() => {
+  const handleCancelDeleteMultiple = () => {
     setIsModalOpen(false);
-  }, []);
+  };
 
   const mappingContentColumns = useMemo(
     () =>
       [
         {
           header: 'Invoice Id',
-          accessor: (invoiceData: TInvoiceData) => {
+          accessor: (invoiceData: TInvoiceDataResponse) => {
             const { attributes } = invoiceData || {};
 
             const { invoiceId } = attributes || {};
@@ -139,7 +137,7 @@ const InvoicesTable = ({
         },
         {
           header: 'Name',
-          accessor: (invoice: TInvoiceData) => {
+          accessor: (invoice: TInvoiceDataResponse) => {
             const { attributes: invoiceAttributes } = invoice || {};
             const { customer } = invoiceAttributes || {};
             const { data } = customer || {};
@@ -170,7 +168,7 @@ const InvoicesTable = ({
         },
         {
           header: 'Email',
-          accessor: (invoice: TInvoiceData) => {
+          accessor: (invoice: TInvoiceDataResponse) => {
             const { attributes: invoiceAttributes } = invoice || {};
             const { email = '' } = invoiceAttributes || {};
 
@@ -192,7 +190,7 @@ const InvoicesTable = ({
         },
         {
           header: 'Date',
-          accessor: (invoice: TInvoiceData) => {
+          accessor: (invoice: TInvoiceDataResponse) => {
             const { attributes: invoiceAttributes } = invoice || {};
             const { date = '' } = invoiceAttributes || {};
 
@@ -216,7 +214,7 @@ const InvoicesTable = ({
         },
         {
           header: 'Status',
-          accessor: (invoice: TInvoiceData) => {
+          accessor: (invoice: TInvoiceDataResponse) => {
             const { attributes: invoiceAttributes } = invoice || {};
             const { status = InvoiceStatus.Pending } = invoiceAttributes || {};
 
@@ -226,7 +224,7 @@ const InvoicesTable = ({
           isSort: true,
         },
         {
-          accessor: (invoice: TInvoiceData) => {
+          accessor: (invoice: TInvoiceDataResponse) => {
             const { attributes: invoiceAttributes, id } = invoice || {};
             const { isSelected = false } = invoiceAttributes || {};
 
@@ -257,7 +255,7 @@ const InvoicesTable = ({
               </Button>
             ),
 
-            accessor: (invoice: TInvoiceData) => {
+            accessor: (invoice: TInvoiceDataResponse) => {
               const { id } = invoice || {};
 
               return (

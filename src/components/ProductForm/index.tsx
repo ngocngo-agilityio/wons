@@ -1,9 +1,10 @@
 'use client';
 
-import { memo, useCallback, useMemo, useTransition } from 'react';
+import { memo, useMemo, useTransition } from 'react';
 import { Select, SelectItem, Textarea } from '@nextui-org/react';
 import { Controller, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+import isEqual from 'react-fast-compare';
 
 // Constants
 import { BRANDS, MESSAGES } from '@/constants';
@@ -30,24 +31,24 @@ import {
 // Models
 import { IProductDetail } from '@/models';
 
-// icons
+// Icons
 import { GrPrevious } from 'react-icons/gr';
 
 const REQUIRED_FIELDS = ['title', 'brand', 'imageUrl', 'description', 'price'];
 
 export interface IProductFormProps {
   isDisabledField?: boolean;
+  previewData?: IProductDetail | null;
   onAvatarChange: (file: File) => void;
   onSubmit: (data: IProductDetail) => void;
-  previewData?: IProductDetail | null;
   onCloseDrawer?: () => void;
 }
 
 const ProductForm = ({
   isDisabledField = false,
+  previewData,
   onAvatarChange,
   onSubmit,
-  previewData,
   onCloseDrawer,
 }: IProductFormProps) => {
   const {
@@ -92,23 +93,20 @@ const ProductForm = ({
     ? !(enableSubmit || !getDirtyState(defaultValues ?? {}, watch()))
     : !allFieldsFilled;
 
-  const saveData = useCallback(
-    async (formData: Partial<IProductDetail>) => {
-      if (!formData.imageUrl) {
-        setError('imageUrl', {
-          type: 'manual',
-          message: MESSAGES.ERROR.FIELD_REQUIRED,
-        });
-
-        return;
-      }
-
-      startTransition(async () => {
-        await onSubmit(formData as IProductDetail);
+  const saveData = async (formData: Partial<IProductDetail>) => {
+    if (!formData.imageUrl) {
+      setError('imageUrl', {
+        type: 'manual',
+        message: MESSAGES.ERROR.FIELD_REQUIRED,
       });
-    },
-    [onSubmit, setError],
-  );
+
+      return;
+    }
+
+    startTransition(async () => {
+      await onSubmit(formData as IProductDetail);
+    });
+  };
 
   return (
     <form
@@ -331,4 +329,4 @@ const ProductForm = ({
   );
 };
 
-export default memo(ProductForm);
+export default memo(ProductForm, isEqual);
