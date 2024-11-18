@@ -28,7 +28,7 @@ const InvoiceDetailsHeader = ({
   const { EMAIL, PHONE } = DEFAULT_VALUE_INVOICE;
 
   return (
-    <div className="flex items-center justify-between bg-gray-50 dark:bg-gray-600 px-4 md:px-6 py-6">
+    <header className="flex items-center justify-between bg-gray-50 dark:bg-gray-600 px-4 md:px-6 py-6">
       <div className="flex flex-col gap-[37px]">
         <ImageFallback
           src={IMAGES.LOGO_COMPANY}
@@ -124,6 +124,7 @@ const InvoiceDetailsHeader = ({
           <div className="flex flex-col">
             <Text text="Invoice date" size="2xs" />
             <Text
+              as="time"
               text={formatDate(date, DAYJS_PATTERN['MMMM D, YYYY'])}
               size="2xs"
               className="text-gray-200"
@@ -131,7 +132,7 @@ const InvoiceDetailsHeader = ({
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

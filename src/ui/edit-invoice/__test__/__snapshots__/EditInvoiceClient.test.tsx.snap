@@ -537,7 +537,7 @@ exports[`EditInvoiceClient section should match with snapshot 1`] = `
         <div
           class="mt-[30px] sm:mt-[17px]"
         >
-          <div
+          <section
             class="flex items-center justify-between"
           >
             <p
@@ -573,7 +573,7 @@ exports[`EditInvoiceClient section should match with snapshot 1`] = `
                 />
               </svg>
             </button>
-          </div>
+          </section>
           <div
             class="mt-[17px]"
           >
@@ -1512,7 +1512,7 @@ exports[`EditInvoiceClient section should match with snapshot with invoice is nu
         <div
           class="mt-[30px] sm:mt-[17px]"
         >
-          <div
+          <section
             class="flex items-center justify-between"
           >
             <p
@@ -1548,7 +1548,7 @@ exports[`EditInvoiceClient section should match with snapshot with invoice is nu
                 />
               </svg>
             </button>
-          </div>
+          </section>
           <div
             class="mt-[17px]"
           >

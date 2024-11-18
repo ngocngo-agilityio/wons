@@ -18,7 +18,11 @@ const Sidebar = () => {
     role = ROLES[0],
   } = user || {};
 
-  return <SidebarClient avatar={avatar} fullName={fullName} role={role.name} />;
+  return (
+    <aside>
+      <SidebarClient avatar={avatar} fullName={fullName} role={role.name} />
+    </aside>
+  );
 };
 
 export default Sidebar;

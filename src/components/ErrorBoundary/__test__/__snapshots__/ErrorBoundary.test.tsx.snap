@@ -11,7 +11,7 @@ exports[`ErrorBoundary Component Should render ErrorBoundary Component correctly
         <script>
           !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&false)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}else{c.add('light')}if(e==='light'||e==='dark'||!e)d.style.colorScheme=e||'light'}catch(e){}}()
         </script>
-        <div
+        <section
           class="text-center h-screen flex justify-center items-center flex-col"
         >
           <h2
@@ -33,7 +33,7 @@ exports[`ErrorBoundary Component Should render ErrorBoundary Component correctly
               Try again
             </div>
           </button>
-        </div>
+        </section>
       </div>
     </div>
   </body>,
@@ -44,7 +44,7 @@ exports[`ErrorBoundary Component Should render ErrorBoundary Component correctly
       <script>
         !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&false)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}else{c.add('light')}if(e==='light'||e==='dark'||!e)d.style.colorScheme=e||'light'}catch(e){}}()
       </script>
-      <div
+      <section
         class="text-center h-screen flex justify-center items-center flex-col"
       >
         <h2
@@ -66,7 +66,7 @@ exports[`ErrorBoundary Component Should render ErrorBoundary Component correctly
             Try again
           </div>
         </button>
-      </div>
+      </section>
     </div>
   </div>,
   "debug": [Function],

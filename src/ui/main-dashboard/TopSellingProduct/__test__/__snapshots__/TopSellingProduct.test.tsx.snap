@@ -52,7 +52,7 @@ exports[`TopSellingProducts component renders correctly and matches snapshot 1`]
                 />
               </div>
             </div>
-            <div
+            <section
               class="sm:ml-4 flex-1 text-center sm:text-left"
             >
               <h3
@@ -140,7 +140,7 @@ exports[`TopSellingProducts component renders correctly and matches snapshot 1`]
                 $
                 100
               </p>
-            </div>
+            </section>
           </div>
         </div>
         <div
@@ -181,7 +181,7 @@ exports[`TopSellingProducts component renders correctly and matches snapshot 1`]
                 />
               </div>
             </div>
-            <div
+            <section
               class="sm:ml-4 flex-1 text-center sm:text-left"
             >
               <h3
@@ -269,7 +269,7 @@ exports[`TopSellingProducts component renders correctly and matches snapshot 1`]
                 $
                 200
               </p>
-            </div>
+            </section>
           </div>
         </div>
         <div
@@ -310,7 +310,7 @@ exports[`TopSellingProducts component renders correctly and matches snapshot 1`]
                 />
               </div>
             </div>
-            <div
+            <section
               class="sm:ml-4 flex-1 text-center sm:text-left"
             >
               <h3
@@ -398,7 +398,7 @@ exports[`TopSellingProducts component renders correctly and matches snapshot 1`]
                 $
                 200
               </p>
-            </div>
+            </section>
           </div>
         </div>
       </div>

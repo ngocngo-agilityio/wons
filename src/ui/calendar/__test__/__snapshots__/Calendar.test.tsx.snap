@@ -826,7 +826,7 @@ exports[`Calendar should match snapshot 1`] = `
           </div>
         </a>
       </div>
-      <div
+      <section
         class="flex-1 overflow-auto"
       >
         <div
@@ -1607,7 +1607,7 @@ exports[`Calendar should match snapshot 1`] = `
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   </div>
 </div>

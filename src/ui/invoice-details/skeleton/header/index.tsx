@@ -7,7 +7,7 @@ import { ImageFallback, Text } from '@/components';
 import { IMAGES } from '@/constants';
 
 const InvoiceDetailsHeaderSkeleton = () => (
-  <div className="flex items-center justify-between bg-gray-50 dark:bg-blue-800 base:px-2 md:pl-7.5 md:pr-5 pb-6.5 pt-10">
+  <header className="flex items-center justify-between bg-gray-50 dark:bg-blue-800 base:px-2 md:pl-7.5 md:pr-5 pb-6.5 pt-10">
     <div className="flex flex-col gap-[37px]">
       <ImageFallback
         src={IMAGES.LOGO_COMPANY}
@@ -66,7 +66,7 @@ const InvoiceDetailsHeaderSkeleton = () => (
         </div>
       </div>
     </div>
-  </div>
+  </header>
 );
 
 export default InvoiceDetailsHeaderSkeleton;

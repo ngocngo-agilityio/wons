@@ -175,7 +175,7 @@ const TaskForm = ({
       className="w-full max-w-2xl mx-auto mt-20"
       onSubmit={handleSubmit(saveData)}
     >
-      <div className="flex items-center gap-5">
+      <section className="flex items-center gap-5">
         <Button
           onClick={onCloseDrawer}
           className="bg-transparent dark:bg-transparent text-gray-200 dark:text-gray-300 hover:data-[hover=true]:bg-transparent dark:hover:data-[hover=true]:bg-transparent"
@@ -186,7 +186,7 @@ const TaskForm = ({
           title={previewData ? 'Update Task' : 'Add a New Task'}
           className="text-center"
         />
-      </div>
+      </section>
 
       <div className="flex justify-center">
         <Controller

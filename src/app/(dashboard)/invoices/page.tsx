@@ -45,24 +45,22 @@ const InvoiceListPage = ({
   } = searchParams || {};
 
   return (
-    <main>
-      <DashBoardLayout
-        title={PAGE_TITLES.INVOICE}
-        rightContent={<InvoiceListActions />}
+    <DashBoardLayout
+      title={PAGE_TITLES.INVOICE}
+      rightContent={<InvoiceListActions />}
+    >
+      <Suspense
+        key={order + sortBy + query + page}
+        fallback={<InvoiceListSkeleton />}
       >
-        <Suspense
-          key={order + sortBy + query + page}
-          fallback={<InvoiceListSkeleton />}
-        >
-          <InvoiceList
-            sortBy={sortBy}
-            sortOrder={order}
-            query={query}
-            page={+page}
-          />
-        </Suspense>
-      </DashBoardLayout>
-    </main>
+        <InvoiceList
+          sortBy={sortBy}
+          sortOrder={order}
+          query={query}
+          page={+page}
+        />
+      </Suspense>
+    </DashBoardLayout>
   );
 };
 

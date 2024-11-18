@@ -14,16 +14,16 @@ exports[`UserDetailClient match snapshot 1`] = `
       <div
         class="bg-blue-500 w-full h-14 rounded-tl-lg rounded-tr-lg bg-gradient-to-r from-blue-500 to-blue-300"
       />
-      <div
+      <section
         class="p-[0_30px_0] w-full gap-[5px_0]"
       >
-        <div
+        <header
           class="m-[30px_0] flex flex-col sm:flex-row justify-between items-center"
         >
           <div
             class="sm:flex gap-[0_20px]"
           >
-            <div
+            <figure
               class="relative w-[128px] h-[128px]"
             >
               <img
@@ -44,19 +44,19 @@ exports[`UserDetailClient match snapshot 1`] = `
                   class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
                 />
               </div>
-            </div>
-            <div
+            </figure>
+            <figcaption
               class="flex flex-col justify-center text-center sm:text-left m-[20px_0] sm:m-0"
             >
-              <dt
+              <h1
                 class="font-dm-sans text-blue-800 dark:text-white text-2xl font-bold capitalize"
               />
-              <dd
+              <p
                 class="font-dm-sans text-blue-800 dark:text-white text-md text-gray-900/80"
               >
                 Admin
-              </dd>
-            </div>
+              </p>
+            </figcaption>
           </div>
           <button
             class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-blue-500 border-transparent dark:bg-purple-600 text-white hover:bg-blue-100 rounded-[10px] border-[1px] min-w-max h-fit text-[15px] font-medium md:w-auto py-[10px] px-[25px]"
@@ -68,7 +68,7 @@ exports[`UserDetailClient match snapshot 1`] = `
               Edit Profile
             </div>
           </button>
-        </div>
+        </header>
         <div
           class="flex flex-col gap-[2px_0] p-[15px_0] border-solid border-b-1 border-gray-100"
         >
@@ -93,7 +93,7 @@ exports[`UserDetailClient match snapshot 1`] = `
             class="font-dm-sans text-blue-800 dark:text-white text-md text-gray-900/80"
           />
         </div>
-      </div>
+      </section>
     </div>
   </div>
 </div>
@@ -113,16 +113,16 @@ exports[`UserDetailClient match snapshot with user null 1`] = `
       <div
         class="bg-blue-500 w-full h-14 rounded-tl-lg rounded-tr-lg bg-gradient-to-r from-blue-500 to-blue-300"
       />
-      <div
+      <section
         class="p-[0_30px_0] w-full gap-[5px_0]"
       >
-        <div
+        <header
           class="m-[30px_0] flex flex-col sm:flex-row justify-between items-center"
         >
           <div
             class="sm:flex gap-[0_20px]"
           >
-            <div
+            <figure
               class="relative w-[128px] h-[128px]"
             >
               <img
@@ -143,21 +143,21 @@ exports[`UserDetailClient match snapshot with user null 1`] = `
                   class="opacity-0 group-data-[loaded=true]:opacity-100 transition-opacity motion-reduce:transition-none !duration-300"
                 />
               </div>
-            </div>
-            <div
+            </figure>
+            <figcaption
               class="flex flex-col justify-center text-center sm:text-left m-[20px_0] sm:m-0"
             >
-              <dt
+              <h1
                 class="font-dm-sans text-blue-800 dark:text-white text-2xl font-bold capitalize"
               >
                 Super Admin
-              </dt>
-              <dd
+              </h1>
+              <p
                 class="font-dm-sans text-blue-800 dark:text-white text-md text-gray-900/80"
               >
                 Admin
-              </dd>
-            </div>
+              </p>
+            </figcaption>
           </div>
           <button
             class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-blue-500 border-transparent dark:bg-purple-600 text-white hover:bg-blue-100 rounded-[10px] border-[1px] min-w-max h-fit text-[15px] font-medium md:w-auto py-[10px] px-[25px]"
@@ -169,7 +169,7 @@ exports[`UserDetailClient match snapshot with user null 1`] = `
               Edit Profile
             </div>
           </button>
-        </div>
+        </header>
         <div
           class="flex flex-col gap-[2px_0] p-[15px_0] border-solid border-b-1 border-gray-100"
         >
@@ -198,7 +198,7 @@ exports[`UserDetailClient match snapshot with user null 1`] = `
             admin1@gmail.com
           </dd>
         </div>
-      </div>
+      </section>
     </div>
   </div>
 </div>

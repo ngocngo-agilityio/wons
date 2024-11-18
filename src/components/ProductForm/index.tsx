@@ -113,7 +113,7 @@ const ProductForm = ({
       className="w-full max-w-2xl mx-auto mt-20"
       onSubmit={handleSubmit(saveData)}
     >
-      <div className="flex items-center">
+      <section className="flex items-center">
         <Button
           data-testid="close-product-form"
           onClick={onCloseDrawer}
@@ -125,7 +125,7 @@ const ProductForm = ({
           title={previewData ? 'Update Product' : 'Add a New Product'}
           className="text-center whitespace-nowrap w-full"
         />
-      </div>
+      </section>
 
       <div className="flex justify-center mt-[39px]">
         <Controller

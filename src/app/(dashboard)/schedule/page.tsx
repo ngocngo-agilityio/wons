@@ -46,35 +46,33 @@ interface ISchedulePage {
 }
 
 const SchedulePage = async ({ searchParams }: ISchedulePage) => (
-  <main>
-    <DashBoardLayout
-      title={PAGE_TITLES.TASK_PREVIEW}
-      rightContent={<ScheduleListFilter />}
-    >
-      <div className="md:flex md:justify-between md:items-center">
-        <Tabs
-          defaultSelectedKey={TASK_TABS[1].key}
-          disabledKeys={[TASK_TABS[0].key, TASK_TABS[2].key]}
-          tabs={TASK_TABS}
-          customVariant="secondary"
-          className="p-0 base:w-full md:w-fit"
-          classNames={{
-            tabList: 'base:w-full md:w-fit',
-          }}
-        />
+  <DashBoardLayout
+    title={PAGE_TITLES.TASK_PREVIEW}
+    rightContent={<ScheduleListFilter />}
+  >
+    <div className="md:flex md:justify-between md:items-center">
+      <Tabs
+        defaultSelectedKey={TASK_TABS[1].key}
+        disabledKeys={[TASK_TABS[0].key, TASK_TABS[2].key]}
+        tabs={TASK_TABS}
+        customVariant="secondary"
+        className="p-0 base:w-full md:w-fit"
+        classNames={{
+          tabList: 'base:w-full md:w-fit',
+        }}
+      />
 
-        <div className="flex items-center base:gap-10 md:gap-5 mt-10 md:mt-0 base:flex-col md:flex-row">
-          <SearchInput className="base:w-full md:w-fit" />
+      <div className="flex items-center base:gap-10 md:gap-5 mt-10 md:mt-0 base:flex-col md:flex-row">
+        <SearchInput className="base:w-full md:w-fit" />
 
-          <TaskDrawer />
-        </div>
+        <TaskDrawer />
       </div>
+    </div>
 
-      <Suspense fallback={<SkeletonTaskListBoard />}>
-        <TaskListBoard searchParams={searchParams} />
-      </Suspense>
-    </DashBoardLayout>
-  </main>
+    <Suspense fallback={<SkeletonTaskListBoard />}>
+      <TaskListBoard searchParams={searchParams} />
+    </Suspense>
+  </DashBoardLayout>
 );
 
 export default SchedulePage;

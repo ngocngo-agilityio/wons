@@ -534,7 +534,7 @@ exports[`CreateInvoice Component Test should render all content with resolved da
       <div
         class="mt-[30px] sm:mt-[17px]"
       >
-        <div
+        <section
           class="flex items-center justify-between"
         >
           <p
@@ -570,7 +570,7 @@ exports[`CreateInvoice Component Test should render all content with resolved da
               />
             </svg>
           </button>
-        </div>
+        </section>
         <div
           class="mt-[17px]"
         >
@@ -1494,7 +1494,7 @@ exports[`CreateInvoice Component Test should render content with empty 1`] = `
       <div
         class="mt-[30px] sm:mt-[17px]"
       >
-        <div
+        <section
           class="flex items-center justify-between"
         >
           <p
@@ -1530,7 +1530,7 @@ exports[`CreateInvoice Component Test should render content with empty 1`] = `
               />
             </svg>
           </button>
-        </div>
+        </section>
         <div
           class="mt-[17px]"
         >

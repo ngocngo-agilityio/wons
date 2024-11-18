@@ -173,11 +173,13 @@ const CalendarTaskForm = ({
           <div>
             <div className="flex gap-1">
               <Text
+                as="time"
                 className="text-blue-800 text-[12px] font-normal leading-normal col-span-1"
                 text={formattedDate} // Display date
               />
               <Text as="span" text="-" />
               <Text
+                as="time"
                 className="text-blue-800 text-[12px] font-normal leading-normal col-span-1 uppercase"
                 text={timeDate} // Display time
               />

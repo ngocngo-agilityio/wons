@@ -30,7 +30,7 @@ const DesktopSidebar = ({
   const isOpenSidebar = toggleDesktopSidebar === SidebarState.Open;
 
   return (
-    <section className={clsx('relative', isOpenSidebar ? 'left-0' : 'm-7.5')}>
+    <div className={clsx('relative', isOpenSidebar ? 'left-0' : 'm-7.5')}>
       <div
         className={clsx(
           'bg-white dark:bg-gray-400 px-6.25 py-7.5 flex flex-col min-h-full',
@@ -61,7 +61,7 @@ const DesktopSidebar = ({
           />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

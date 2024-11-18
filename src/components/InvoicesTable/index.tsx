@@ -202,6 +202,7 @@ const InvoicesTable = ({
                   className="text-teal-500 dark:text-teal-300"
                 />
                 <Text
+                  as="time"
                   size="md"
                   text={dayjs(date).format(DAYJS_PATTERN['DD MMM, YYYY'])}
                   className="text-nowrap"

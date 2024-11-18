@@ -8,101 +8,99 @@ exports[`DashboardLayout should match snapshot 1`] = `
     <script>
       !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&false)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}else{c.add('light')}if(e==='light'||e==='dark'||!e)d.style.colorScheme=e||'light'}catch(e){}}()
     </script>
-    <section>
-      <div
-        class="base:mb-10 md:mb-7.5 w-full md:flex md:justify-between md:items-center"
+    <section
+      class="base:mb-10 md:mb-7.5 w-full md:flex md:justify-between md:items-center"
+    >
+      <h1
+        aria-level="1"
+        class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl w-full base:mb-8 md:mb-0"
       >
-        <h2
-          aria-level="2"
-          class="font-bold font-dm-sans text-blue-800 dark:text-white text-5xl w-full base:mb-8 md:mb-0"
-        >
-          Dashboard
-        </h2>
+        Dashboard
+      </h1>
+      <div
+        class="group flex flex-col data-[hidden=true]:hidden w-full group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] is-filled"
+        data-filled="true"
+        data-filled-within="true"
+        data-has-value="true"
+        data-slot="base"
+      >
         <div
-          class="group flex flex-col data-[hidden=true]:hidden w-full group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] is-filled"
-          data-filled="true"
-          data-filled-within="true"
-          data-has-value="true"
-          data-slot="base"
+          class="h-full flex flex-col"
+          data-slot="main-wrapper"
         >
           <div
-            class="h-full flex flex-col"
-            data-slot="main-wrapper"
+            class="relative w-full inline-flex tap-highlight-transparent flex-row items-center shadow-sm px-3 gap-3 data-[hover=true]:bg-default-200 h-10 min-h-10 rounded-medium transition-background motion-reduce:transition-none !duration-150 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-white dark:bg-gray-400 hover:bg-white dark:hover:bg-gray-400 focus-within:bg-white dark:focus-within:bg-gray-400 group-data-[focus=true]:bg-white dark:group-data-[focus=true]:bg-gray-400 pl-5 pr-3.5 py-3 md:max-w-[230px] is-filled"
+            data-slot="input-wrapper"
+            style="cursor: text;"
           >
             <div
-              class="relative w-full inline-flex tap-highlight-transparent flex-row items-center shadow-sm px-3 gap-3 data-[hover=true]:bg-default-200 h-10 min-h-10 rounded-medium transition-background motion-reduce:transition-none !duration-150 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-white dark:bg-gray-400 hover:bg-white dark:hover:bg-gray-400 focus-within:bg-white dark:focus-within:bg-gray-400 group-data-[focus=true]:bg-white dark:group-data-[focus=true]:bg-gray-400 pl-5 pr-3.5 py-3 md:max-w-[230px] is-filled"
-              data-slot="input-wrapper"
-              style="cursor: text;"
+              class="inline-flex w-full items-center h-full box-border"
+              data-slot="inner-wrapper"
             >
-              <div
-                class="inline-flex w-full items-center h-full box-border"
-                data-slot="inner-wrapper"
+              <svg
+                class="w-3 h-3 text-blue-800/60 dark:text-white/60 cursor-pointer"
+                fill="currentColor"
+                height="1em"
+                id="search"
+                stroke="currentColor"
+                stroke-width="0"
+                version="1.1"
+                viewBox="0 0 24 24"
+                width="1em"
+                x="0px"
+                xmlns="http://www.w3.org/2000/svg"
+                y="0px"
               >
-                <svg
-                  class="w-3 h-3 text-blue-800/60 dark:text-white/60 cursor-pointer"
-                  fill="currentColor"
-                  height="1em"
-                  id="search"
-                  stroke="currentColor"
-                  stroke-width="0"
-                  version="1.1"
-                  viewBox="0 0 24 24"
-                  width="1em"
-                  x="0px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  y="0px"
-                >
-                  <g>
-                    <path
-                      d="M20.031,20.79c0.46,0.46,1.17-0.25,0.71-0.7l-3.75-3.76c1.27-1.41,2.04-3.27,2.04-5.31
+                <g>
+                  <path
+                    d="M20.031,20.79c0.46,0.46,1.17-0.25,0.71-0.7l-3.75-3.76c1.27-1.41,2.04-3.27,2.04-5.31
 		c0-4.39-3.57-7.96-7.96-7.96s-7.96,3.57-7.96,7.96c0,4.39,3.57,7.96,7.96,7.96c1.98,0,3.81-0.73,5.21-1.94L20.031,20.79z
 		 M4.11,11.02c0-3.84,3.13-6.96,6.96-6.96c3.84,0,6.96,3.12,6.96,6.96c0,3.84-3.12,6.96-6.96,6.96C7.24,17.98,4.11,14.86,4.11,11.02
 		z"
-                    />
-                  </g>
-                </svg>
-                <input
-                  aria-label="Search"
-                  class="w-full font-normal bg-transparent !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-small peer pr-6 rtl:pr-0 rtl:pl-6 group-data-[has-value=true]:text-default-foreground text-blue-800 dark:text-white placeholder:text-sm placeholder:text-blue-800/50 dark:placeholder:text-white/50 is-filled"
-                  data-filled="true"
-                  data-filled-within="true"
-                  data-has-start-content="true"
-                  data-slot="input"
-                  id="react-aria-:r0:"
-                  placeholder="Search"
-                  type="text"
-                  value="()=>"John Deo""
-                />
-                <span
-                  aria-label="clear input"
-                  class="p-2 -m-2 z-10 hidden absolute right-3 rtl:right-auto rtl:left-3 appearance-none select-none opacity-0 hover:!opacity-100 cursor-pointer active:!opacity-70 rounded-full outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-large peer-data-[filled=true]:opacity-70 peer-data-[filled=true]:block transition-opacity motion-reduce:transition-none"
-                  data-slot="clear-button"
-                  role="button"
-                  tabindex="0"
+                  />
+                </g>
+              </svg>
+              <input
+                aria-label="Search"
+                class="w-full font-normal bg-transparent !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-small peer pr-6 rtl:pr-0 rtl:pl-6 group-data-[has-value=true]:text-default-foreground text-blue-800 dark:text-white placeholder:text-sm placeholder:text-blue-800/50 dark:placeholder:text-white/50 is-filled"
+                data-filled="true"
+                data-filled-within="true"
+                data-has-start-content="true"
+                data-slot="input"
+                id="react-aria-:r0:"
+                placeholder="Search"
+                type="text"
+                value="()=>"John Deo""
+              />
+              <span
+                aria-label="clear input"
+                class="p-2 -m-2 z-10 hidden absolute right-3 rtl:right-auto rtl:left-3 appearance-none select-none opacity-0 hover:!opacity-100 cursor-pointer active:!opacity-70 rounded-full outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-large peer-data-[filled=true]:opacity-70 peer-data-[filled=true]:block transition-opacity motion-reduce:transition-none"
+                data-slot="clear-button"
+                role="button"
+                tabindex="0"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  height="1em"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                  width="1em"
                 >
-                  <svg
-                    aria-hidden="true"
-                    focusable="false"
-                    height="1em"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                    width="1em"
-                  >
-                    <path
-                      d="M12 2a10 10 0 1010 10A10.016 10.016 0 0012 2zm3.36 12.3a.754.754 0 010 1.06.748.748 0 01-1.06 0l-2.3-2.3-2.3 2.3a.748.748 0 01-1.06 0 .754.754 0 010-1.06l2.3-2.3-2.3-2.3A.75.75 0 019.7 8.64l2.3 2.3 2.3-2.3a.75.75 0 011.06 1.06l-2.3 2.3z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </span>
-              </div>
+                  <path
+                    d="M12 2a10 10 0 1010 10A10.016 10.016 0 0012 2zm3.36 12.3a.754.754 0 010 1.06.748.748 0 01-1.06 0l-2.3-2.3-2.3 2.3a.748.748 0 01-1.06 0 .754.754 0 010-1.06l2.3-2.3-2.3-2.3A.75.75 0 019.7 8.64l2.3 2.3 2.3-2.3a.75.75 0 011.06 1.06l-2.3 2.3z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
             </div>
           </div>
         </div>
       </div>
-      <div
-        class="bg-black/50 w-full h-screen"
-      />
     </section>
+    <div
+      class="bg-black/50 w-full h-screen"
+    />
   </div>
 </div>
 `;

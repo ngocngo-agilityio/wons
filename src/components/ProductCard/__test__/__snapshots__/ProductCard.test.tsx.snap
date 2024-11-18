@@ -39,7 +39,7 @@ exports[`ProductCard component renders correctly and matches snapshot 1`] = `
             />
           </div>
         </div>
-        <div
+        <section
           class="sm:ml-4 flex-1 text-center sm:text-left"
         >
           <h3
@@ -127,7 +127,7 @@ exports[`ProductCard component renders correctly and matches snapshot 1`] = `
             $
             87
           </p>
-        </div>
+        </section>
       </div>
     </div>
   </div>

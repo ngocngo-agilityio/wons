@@ -20,7 +20,7 @@ interface TColumnProps {
 const Column = ({ status, tasks }: TColumnProps) => (
   <Droppable droppableId={status}>
     {(provided) => (
-      <div
+      <section
         className="w-full md:w-1/4 flex-grow"
         {...provided.droppableProps}
         ref={provided.innerRef}
@@ -35,7 +35,7 @@ const Column = ({ status, tasks }: TColumnProps) => (
           ))}
           {provided.placeholder}
         </div>
-      </div>
+      </section>
     )}
   </Droppable>
 );

@@ -79,7 +79,7 @@ const SidebarFooter = ({
   return (
     <>
       {isPending && <LoadingIndicator />}
-      <section className="flex flex-col gap-7.5">
+      <div className="flex flex-col gap-7.5">
         <DynamicThemeSwitcher />
         <div
           className={clsx(
@@ -116,7 +116,7 @@ const SidebarFooter = ({
             <IoLogOut className="text-blue-800/40 dark:text-white/50 w-5 h-5" />
           </Button>
         </div>
-      </section>
+      </div>
       <ConfirmModal
         title="Sign out"
         content="Are you sure you would like to Sign out?"

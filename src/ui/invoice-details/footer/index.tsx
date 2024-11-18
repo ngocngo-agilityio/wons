@@ -11,7 +11,7 @@ const InvoiceDetailsFooter = () => {
   const { EMAIL, PHONE } = DEFAULT_VALUE_INVOICE;
 
   return (
-    <div className="flex base:flex-col lg:flex-row base:gap-5 lg:justify-between base:px-2 md:pl-7.5 md:pr-5">
+    <footer className="flex base:flex-col lg:flex-row base:gap-5 lg:justify-between base:px-2 md:pl-7.5 md:pr-5">
       <div className="flex flex-col">
         <Text
           text="Your company"
@@ -60,7 +60,7 @@ const InvoiceDetailsFooter = () => {
           className="text-gray-200"
         />
       </div>
-    </div>
+    </footer>
   );
 };
 

@@ -83,14 +83,15 @@ const EventDetail = ({
       <ModalContent className="relative top-0 left-0 p-[30px_30px_40px] bg-white dark:bg-gray-800 rounded-[10px] shadow-[-14px_30px_20px_0px_rgba(0,0,0,0.05)] w-[467px]">
         <>
           <div className="p-4">
-            <div className="mb-8">
+            <section className="mb-8">
               <Heading title={title} className="mb-2" />
               <Text
+                as="time"
                 size="2xl"
                 className="opacity-70 font-medium uppercase"
                 text={time}
               />
-            </div>
+            </section>
             {location && (
               <div className="flex items-center mt-4">
                 <FaLocationDot

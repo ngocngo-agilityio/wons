@@ -11,7 +11,7 @@ exports[`TaskForm should match snapshot 1`] = `
     <form
       class="w-full max-w-2xl mx-auto mt-20"
     >
-      <div
+      <section
         class="flex items-center gap-5"
       >
         <button
@@ -45,7 +45,7 @@ exports[`TaskForm should match snapshot 1`] = `
         >
           Add a New Task
         </h2>
-      </div>
+      </section>
       <div
         class="flex justify-center"
       >
