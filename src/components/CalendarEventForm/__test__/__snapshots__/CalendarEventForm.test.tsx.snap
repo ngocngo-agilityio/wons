@@ -70,21 +70,21 @@ exports[`CalendarEventForm render successful 1`] = `
         <div
           class="flex gap-1"
         >
-          <p
+          <time
             class="font-dm-sans text-blue-800 dark:text-white text-md text-blue-800 text-[12px] font-normal leading-normal col-span-1"
           >
             Thursday, February 1, 2024
-          </p>
+          </time>
           <span
             class="font-dm-sans text-blue-800 dark:text-white text-md"
           >
             -
           </span>
-          <p
+          <time
             class="font-dm-sans text-blue-800 dark:text-white text-md text-blue-800 text-[12px] font-normal leading-normal col-span-1 uppercase"
           >
             undefined - undefined
-          </p>
+          </time>
         </div>
         <p
           class="font-dm-sans text-blue-800 dark:text-white text-md text-[rgba(1, 13, 28, 0.50)] text-opacity-50 text-[12px] font-normal leading-normal col-span-2"

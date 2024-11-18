@@ -530,7 +530,7 @@ exports[`EditInvoice Component Test match snapshot with data null 1`] = `
         <div
           class="mt-[30px] sm:mt-[17px]"
         >
-          <div
+          <section
             class="flex items-center justify-between"
           >
             <p
@@ -566,7 +566,7 @@ exports[`EditInvoice Component Test match snapshot with data null 1`] = `
                 />
               </svg>
             </button>
-          </div>
+          </section>
           <div
             class="mt-[17px]"
           >
@@ -1513,7 +1513,7 @@ exports[`EditInvoice Component Test should render all content with resolved data
         <div
           class="mt-[30px] sm:mt-[17px]"
         >
-          <div
+          <section
             class="flex items-center justify-between"
           >
             <p
@@ -1549,7 +1549,7 @@ exports[`EditInvoice Component Test should render all content with resolved data
                 />
               </svg>
             </button>
-          </div>
+          </section>
           <div
             class="mt-[17px]"
           >

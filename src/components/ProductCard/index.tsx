@@ -46,7 +46,7 @@ const ProductCard = ({
           />
         </div>
 
-        <div className="sm:ml-4 flex-1 text-center sm:text-left">
+        <section className="sm:ml-4 flex-1 text-center sm:text-left">
           <h3 className="text-black dark:text-white font-semibold text-lg sm:text-xl">
             {title}
           </h3>
@@ -63,7 +63,7 @@ const ProductCard = ({
           <p className="text-black dark:text-white text-2xl font-semibold">
             ${formattedPrice}
           </p>
-        </div>
+        </section>
       </div>
     </Card>
   );

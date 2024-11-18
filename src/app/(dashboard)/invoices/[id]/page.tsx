@@ -56,16 +56,14 @@ const InvoiceDetailsPage = ({ params }: IInvoiceDetailsPageProps) => {
   const id: number = params.id;
 
   return (
-    <main>
-      <DashBoardLayout title="Invoice Details">
-        <Suspense
-          key={`${ROUTES.INVOICE}/${id}`}
-          fallback={<InvoiceDetailsSkeleton />}
-        >
-          <InvoiceDetailsSection id={id} />
-        </Suspense>
-      </DashBoardLayout>
-    </main>
+    <DashBoardLayout title="Invoice Details">
+      <Suspense
+        key={`${ROUTES.INVOICE}/${id}`}
+        fallback={<InvoiceDetailsSkeleton />}
+      >
+        <InvoiceDetailsSection id={id} />
+      </Suspense>
+    </DashBoardLayout>
   );
 };
 

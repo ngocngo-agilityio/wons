@@ -8,7 +8,7 @@ exports[`MobileSidebar is render correctly 1`] = `
     <script>
       !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&false)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}else{c.add('light')}if(e==='light'||e==='dark'||!e)d.style.colorScheme=e||'light'}catch(e){}}()
     </script>
-    <section
+    <div
       class="fixed top-0 duration-700 z-50 -left-60"
       data-testid="mobile-sidebar-section"
     >
@@ -389,7 +389,7 @@ exports[`MobileSidebar is render correctly 1`] = `
               </a>
             </ul>
           </div>
-          <section
+          <div
             class="flex flex-col gap-7.5"
           >
             <div
@@ -460,10 +460,10 @@ exports[`MobileSidebar is render correctly 1`] = `
                 </div>
               </button>
             </div>
-          </section>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   </div>
 </div>
 `;

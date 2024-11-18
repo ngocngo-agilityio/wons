@@ -11,7 +11,7 @@ exports[`Task List Board should match snapshot 1`] = `
     <div
       class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 w-full h-full base:mt-10 md:mt-6"
     >
-      <div
+      <section
         class="w-full md:w-1/4 flex-grow"
         data-rfd-droppable-context-id=":r0:"
         data-rfd-droppable-id="ToDo"
@@ -190,8 +190,8 @@ exports[`Task List Board should match snapshot 1`] = `
             </div>
           </div>
         </div>
-      </div>
-      <div
+      </section>
+      <section
         class="w-full md:w-1/4 flex-grow"
         data-rfd-droppable-context-id=":r0:"
         data-rfd-droppable-id="In Progress"
@@ -205,8 +205,8 @@ exports[`Task List Board should match snapshot 1`] = `
         <div
           class="space-y-4 max-h-[calc(100vh-300px)] overflow-auto"
         />
-      </div>
-      <div
+      </section>
+      <section
         class="w-full md:w-1/4 flex-grow"
         data-rfd-droppable-context-id=":r0:"
         data-rfd-droppable-id="In Review"
@@ -220,8 +220,8 @@ exports[`Task List Board should match snapshot 1`] = `
         <div
           class="space-y-4 max-h-[calc(100vh-300px)] overflow-auto"
         />
-      </div>
-      <div
+      </section>
+      <section
         class="w-full md:w-1/4 flex-grow"
         data-rfd-droppable-context-id=":r0:"
         data-rfd-droppable-id="Done"
@@ -235,7 +235,7 @@ exports[`Task List Board should match snapshot 1`] = `
         <div
           class="space-y-4 max-h-[calc(100vh-300px)] overflow-auto"
         />
-      </div>
+      </section>
     </div>
   </div>
 </div>
@@ -252,7 +252,7 @@ exports[`Task List Board should match snapshot with search params is undefined 1
     <div
       class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 w-full h-full base:mt-10 md:mt-6"
     >
-      <div
+      <section
         class="w-full md:w-1/4 flex-grow"
         data-rfd-droppable-context-id=":ra:"
         data-rfd-droppable-id="ToDo"
@@ -431,8 +431,8 @@ exports[`Task List Board should match snapshot with search params is undefined 1
             </div>
           </div>
         </div>
-      </div>
-      <div
+      </section>
+      <section
         class="w-full md:w-1/4 flex-grow"
         data-rfd-droppable-context-id=":ra:"
         data-rfd-droppable-id="In Progress"
@@ -446,8 +446,8 @@ exports[`Task List Board should match snapshot with search params is undefined 1
         <div
           class="space-y-4 max-h-[calc(100vh-300px)] overflow-auto"
         />
-      </div>
-      <div
+      </section>
+      <section
         class="w-full md:w-1/4 flex-grow"
         data-rfd-droppable-context-id=":ra:"
         data-rfd-droppable-id="In Review"
@@ -461,8 +461,8 @@ exports[`Task List Board should match snapshot with search params is undefined 1
         <div
           class="space-y-4 max-h-[calc(100vh-300px)] overflow-auto"
         />
-      </div>
-      <div
+      </section>
+      <section
         class="w-full md:w-1/4 flex-grow"
         data-rfd-droppable-context-id=":ra:"
         data-rfd-droppable-id="Done"
@@ -476,7 +476,7 @@ exports[`Task List Board should match snapshot with search params is undefined 1
         <div
           class="space-y-4 max-h-[calc(100vh-300px)] overflow-auto"
         />
-      </div>
+      </section>
     </div>
   </div>
 </div>

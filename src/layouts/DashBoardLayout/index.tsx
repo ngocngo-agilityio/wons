@@ -15,18 +15,20 @@ const DashboardLayout = ({
   children,
   rightContent,
 }: IDashboardLayout) => (
-  <section>
-    <div
+  <>
+    <section
       className={clsx(
         'base:mb-10 md:mb-7.5',
         'w-full md:flex md:justify-between md:items-center',
       )}
     >
-      {title && <Heading className="w-full base:mb-8 md:mb-0" title={title} />}
+      {title && (
+        <Heading className="w-full base:mb-8 md:mb-0" title={title} as="h1" />
+      )}
       {rightContent}
-    </div>
+    </section>
     {children}
-  </section>
+  </>
 );
 
 export default memo(DashboardLayout);

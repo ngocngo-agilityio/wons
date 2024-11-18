@@ -7,7 +7,7 @@ import { ROUTES } from '@/constants';
 import { Button, Heading, Text } from '../common';
 
 const NotFoundComponent = () => (
-  <div className="text-center h-full flex justify-center items-center flex-col">
+  <section className="text-center h-full flex justify-center items-center flex-col">
     <Heading title="Not Found" className="text-6xl" />
     <Text text="Could not find requested resource" className="mt-4" />
     <Link
@@ -18,7 +18,7 @@ const NotFoundComponent = () => (
         Return Home
       </Button>
     </Link>
-  </div>
+  </section>
 );
 
 export default NotFoundComponent;

@@ -36,7 +36,7 @@ const MobileSidebar = ({
         onClick={onOutsideClick}
       />
     )}
-    <section
+    <div
       className={clsx(
         'fixed top-0 duration-700 z-50',
         isToggleMobileSidebar ? 'left-0' : '-left-60',
@@ -58,7 +58,7 @@ const MobileSidebar = ({
           />
         </div>
       </div>
-    </section>
+    </div>
   </>
 );
 

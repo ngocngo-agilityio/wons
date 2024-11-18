@@ -117,7 +117,7 @@ const CustomerForm = ({
       className="w-full max-w-2xl mx-auto"
       onSubmit={handleSubmit(saveData)}
     >
-      <div className="flex items-center justify-between">
+      <section className="flex items-center justify-between">
         <Heading title={previewData ? 'Update Customer' : 'Add Customer'} />
         <Button
           onClick={onCloseDrawer}
@@ -126,7 +126,7 @@ const CustomerForm = ({
         >
           <IoClose size={20} />
         </Button>
-      </div>
+      </section>
 
       <div className="flex justify-center mt-[39px]">
         <Controller

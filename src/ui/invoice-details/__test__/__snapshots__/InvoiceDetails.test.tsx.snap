@@ -11,7 +11,7 @@ exports[`Invoice details should match snapshot 1`] = `
     <div
       class="max-w-[1440px] m-auto base:px-2 base:py-5 lg:p-7.5 bg-white dark:bg-gray-400 rounded-10"
     >
-      <div
+      <header
         class="flex items-center justify-between bg-gray-50 dark:bg-gray-600 px-4 md:px-6 py-6"
       >
         <div
@@ -181,15 +181,15 @@ exports[`Invoice details should match snapshot 1`] = `
               >
                 Invoice date
               </p>
-              <p
+              <time
                 class="font-dm-sans text-blue-800 dark:text-white text-2xs text-gray-200"
               >
                 September 10, 2024
-              </p>
+              </time>
             </div>
           </div>
         </div>
-      </div>
+      </header>
       <div
         class="px-4 md:px-6 pb-6 pt-6"
       >
@@ -462,7 +462,7 @@ exports[`Invoice details should match snapshot 1`] = `
           </p>
         </div>
       </div>
-      <div
+      <footer
         class="flex base:flex-col lg:flex-row base:gap-5 lg:justify-between base:px-2 md:pl-7.5 md:pr-5"
       >
         <div
@@ -533,7 +533,7 @@ exports[`Invoice details should match snapshot 1`] = `
              business register under no. 87650000
           </p>
         </div>
-      </div>
+      </footer>
     </div>
   </div>
 </div>

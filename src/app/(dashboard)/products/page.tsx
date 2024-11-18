@@ -43,20 +43,18 @@ const ProductListPage = ({
   const { page = DEFAULT_PAGE, startTime = '', endTime = '' } = searchParams;
 
   return (
-    <main>
-      <DashBoardLayout
-        title={PAGE_TITLES.PRODUCT}
-        rightContent={<DateRangePicker />}
+    <DashBoardLayout
+      title={PAGE_TITLES.PRODUCT}
+      rightContent={<DateRangePicker />}
+    >
+      <ProductDrawer />
+      <Suspense
+        key={page + startTime + endTime}
+        fallback={<ProductListSkeleton />}
       >
-        <ProductDrawer />
-        <Suspense
-          key={page + startTime + endTime}
-          fallback={<ProductListSkeleton />}
-        >
-          <ProductList searchParams={searchParams} />
-        </Suspense>
-      </DashBoardLayout>
-    </main>
+        <ProductList searchParams={searchParams} />
+      </Suspense>
+    </DashBoardLayout>
   );
 };
 

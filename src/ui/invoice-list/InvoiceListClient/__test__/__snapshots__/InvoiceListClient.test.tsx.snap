@@ -452,11 +452,11 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
                         fill-rule="evenodd"
                       />
                     </svg>
-                    <p
+                    <time
                       class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
                     >
                       10 Sep, 2024
-                    </p>
+                    </time>
                   </div>
                 </td>
                 <td
@@ -706,11 +706,11 @@ exports[`InvoiceListClient section should match with snapshot 1`] = `
                         fill-rule="evenodd"
                       />
                     </svg>
-                    <p
+                    <time
                       class="font-dm-sans text-blue-800 dark:text-white text-md text-nowrap"
                     >
                       10 Sep, 2024
-                    </p>
+                    </time>
                   </div>
                 </td>
                 <td

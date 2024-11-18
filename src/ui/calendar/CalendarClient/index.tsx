@@ -370,7 +370,7 @@ const CalendarClient = ({
         </Button>
       </div>
 
-      <div className="flex-1 overflow-auto">
+      <section className="flex-1 overflow-auto">
         <CalendarBase
           {...rest}
           formats={{
@@ -396,7 +396,7 @@ const CalendarClient = ({
             setView(Views.DAY); // Set to the day view after clicking on the header date if needed
           }}
         />
-      </div>
+      </section>
 
       {selectedEvent && (
         <div className="event-detail-container">

@@ -43,16 +43,14 @@ const CustomerListPage = ({
   const { page = DEFAULT_PAGE, order = '', sortBy = '' } = searchParams || {};
 
   return (
-    <main>
-      <DashBoardLayout
-        title={PAGE_TITLES.CUSTOMER}
-        rightContent={<CustomerDrawer />}
-      >
-        <Suspense key={page} fallback={<CustomerListSkeleton />}>
-          <CustomerList page={+page} order={order} sortBy={sortBy} />
-        </Suspense>
-      </DashBoardLayout>
-    </main>
+    <DashBoardLayout
+      title={PAGE_TITLES.CUSTOMER}
+      rightContent={<CustomerDrawer />}
+    >
+      <Suspense key={page} fallback={<CustomerListSkeleton />}>
+        <CustomerList page={+page} order={order} sortBy={sortBy} />
+      </Suspense>
+    </DashBoardLayout>
   );
 };
 

@@ -20,7 +20,7 @@ const ErrorBoundary = ({ error, reset, className = '' }: ErrorProps) => {
   const checkTypeError = typeof error === 'string' ? error : '';
 
   return (
-    <div
+    <section
       className={cn(
         'text-center h-screen flex justify-center items-center flex-col',
         className,
@@ -31,7 +31,7 @@ const ErrorBoundary = ({ error, reset, className = '' }: ErrorProps) => {
       <Button onClick={handleReset} color="primary" className="mt-8">
         Try again
       </Button>
-    </div>
+    </section>
   );
 };
 

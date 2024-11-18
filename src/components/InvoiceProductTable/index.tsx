@@ -306,7 +306,7 @@ const InvoiceProductTable = ({
 
   return (
     <>
-      <div className="flex items-center justify-between">
+      <section className="flex items-center justify-between">
         <Text
           text="Product Description"
           size="xl"
@@ -325,7 +325,7 @@ const InvoiceProductTable = ({
             />
           }
         />
-      </div>
+      </section>
 
       <div className="mt-[17px]">
         <Table
