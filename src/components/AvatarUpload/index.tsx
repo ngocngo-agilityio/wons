@@ -11,12 +11,13 @@ import { ImageFallback, Input } from '@/components';
 import { MAX_SIZE, MESSAGES, REGEX } from '@/constants';
 
 export interface TUpdateProfileProps {
-  onFileChange: (file: File) => void;
-  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  isRequired?: boolean;
   value: string;
   error?: string;
   isDisabled?: boolean;
   additionalClass?: string;
+  onFileChange: (file: File) => void;
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
 const AvatarUpload = ({
@@ -24,6 +25,7 @@ const AvatarUpload = ({
   error = '',
   isDisabled = false,
   additionalClass = '',
+  isRequired = true,
   onChange,
   onFileChange,
 }: TUpdateProfileProps) => {
@@ -33,13 +35,17 @@ const AvatarUpload = ({
   const { FIELD_REQUIRED, UPLOAD_IMAGE, UPLOAD_IMAGE_SIZE } = MESSAGES.ERROR;
 
   const handleFocusBack = useCallback(() => {
-    setErrorMessage(previewURL ? '' : FIELD_REQUIRED);
-    window.removeEventListener('focus', handleFocusBack);
-  }, [previewURL]);
+    if (isRequired && !value) {
+      setErrorMessage(previewURL ? '' : FIELD_REQUIRED);
+      window.removeEventListener('focus', handleFocusBack);
+    }
+  }, [isRequired, previewURL, value]);
 
   const handleClickInput = useCallback(() => {
-    window.addEventListener('focus', handleFocusBack);
-  }, [handleFocusBack]);
+    if (isRequired && !value) {
+      window.addEventListener('focus', handleFocusBack);
+    }
+  }, [handleFocusBack, isRequired, value]);
 
   const handleChangeFile = (e: ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -71,7 +77,9 @@ const AvatarUpload = ({
 
     const previewImage = URL.createObjectURL(file);
     setPreviewURL(previewImage);
-    window.removeEventListener('focus', handleFocusBack);
+    if (isRequired && !value) {
+      window.removeEventListener('focus', handleFocusBack);
+    }
 
     onFileChange(file);
   };
