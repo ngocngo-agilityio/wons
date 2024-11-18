@@ -4,10 +4,13 @@ import { lazy, Suspense } from 'react';
 // Layouts
 import { DashBoardLayout } from '@/layouts';
 
-const LazyCreateInvoice = lazy(() => import('@/ui/create-invoice'));
+// Components
+import { SkeletonInvoiceForm } from '@/components';
 
 // Constants
 import { IMAGES } from '@/constants';
+
+const LazyCreateInvoice = lazy(() => import('@/ui/create-invoice'));
 
 export const metadata: Metadata = {
   title: 'Wons Create New Invoice',
@@ -27,7 +30,7 @@ export const metadata: Metadata = {
 const CreateInvoicePage = async (): Promise<JSX.Element> => {
   return (
     <DashBoardLayout title="Create New Invoice">
-      <Suspense>
+      <Suspense fallback={<SkeletonInvoiceForm />}>
         <LazyCreateInvoice />
       </Suspense>
     </DashBoardLayout>
