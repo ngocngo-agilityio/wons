@@ -1,6 +1,6 @@
 'use client';
 
-import { memo, useCallback } from 'react';
+import { memo } from 'react';
 import { cn } from '@nextui-org/react';
 import { Navigate, ToolbarProps, Views } from 'react-big-calendar';
 import { FaCaretLeft, FaCaretRight } from 'react-icons/fa';
@@ -8,18 +8,15 @@ import { FaCaretLeft, FaCaretRight } from 'react-icons/fa';
 import { Button, Heading, Text } from '@/components';
 
 const CustomToolBar = ({ label, view, onView, onNavigate }: ToolbarProps) => {
-  const handleViewDay = useCallback(() => onView(Views.DAY), [onView]);
+  const handleViewDay = () => onView(Views.DAY);
 
-  const handleViewWeek = useCallback(() => onView(Views.WEEK), [onView]);
+  const handleViewWeek = () => onView(Views.WEEK);
 
-  const handleViewMonth = useCallback(() => onView(Views.MONTH), [onView]);
+  const handleViewMonth = () => onView(Views.MONTH);
 
-  const handleBack = useCallback(
-    () => onNavigate(Navigate.PREVIOUS),
-    [onNavigate],
-  );
+  const handleBack = () => onNavigate(Navigate.PREVIOUS);
 
-  const handleNext = useCallback(() => onNavigate(Navigate.NEXT), [onNavigate]);
+  const handleNext = () => onNavigate(Navigate.NEXT);
 
   return (
     <>

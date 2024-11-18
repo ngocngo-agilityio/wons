@@ -1,7 +1,6 @@
 'use client';
 
 // Libs
-import { useCallback } from 'react';
 import { useTheme } from 'next-themes';
 
 // Constants
@@ -13,11 +12,11 @@ import { Button, FiSun, IoMoonOutline } from '@/components/common';
 const ThemeSwitcher = () => {
   const { theme, setTheme } = useTheme();
 
-  const handleToggleColorMode = useCallback(() => {
+  const handleToggleColorMode = () => {
     if (theme === THEME_MODES.DARK) return setTheme(THEME_MODES.LIGHT);
 
     return setTheme(THEME_MODES.DARK);
-  }, [setTheme, theme]);
+  };
 
   return (
     <Button

@@ -1,6 +1,6 @@
 'use client';
 
-import { memo, useCallback, useEffect, useState } from 'react';
+import { memo, SyntheticEvent, useEffect, useState } from 'react';
 import Image, { ImageProps } from 'next/image';
 
 // Constants
@@ -21,12 +21,12 @@ interface ImageFallbackProps extends Omit<ImageProps, 'placeholder'> {
 }
 
 const ImageFallback = ({
-  src,
-  alt,
   blurDataURL = BLUR_SRC.DEFAULT,
   fallbackSrc = FALLBACK_SRC.DEFAULT,
   placeholder = 'blur',
   className = '',
+  src,
+  alt,
   width,
   height,
   ...rest
@@ -38,20 +38,14 @@ const ImageFallback = ({
     setImgSrc(src);
   }, [src]);
 
-  const handleFallbackImage = useCallback(
-    () => setImgSrc(fallbackSrc),
-    [fallbackSrc],
-  );
+  const handleFallbackImage = () => setImgSrc(fallbackSrc);
 
-  const handleLoad = useCallback(
-    (event: React.SyntheticEvent<HTMLImageElement>) => {
-      const img = event.currentTarget;
-      if (img.naturalWidth === 0) setImgSrc(fallbackSrc);
-    },
-    [fallbackSrc],
-  );
+  const handleLoad = (event: SyntheticEvent<HTMLImageElement>) => {
+    const img = event.currentTarget;
+    if (img.naturalWidth === 0) setImgSrc(fallbackSrc);
+  };
 
-  const handleLoadingComplete = useCallback(() => setLoaded(true), []);
+  const handleLoadingComplete = () => setLoaded(true);
 
   return (
     <>

@@ -284,7 +284,7 @@ exports[`EditInvoiceClient section should match with snapshot 1`] = `
                       data-slot="value"
                       id="react-aria-:r13:"
                     >
-
+                       
                     </span>
                   </div>
                   <svg
@@ -534,7 +534,7 @@ exports[`EditInvoiceClient section should match with snapshot 1`] = `
             </div>
           </div>
         </div>
-        <div
+        <section
           class="flex items-center justify-between"
         >
           <p
@@ -570,7 +570,7 @@ exports[`EditInvoiceClient section should match with snapshot 1`] = `
               />
             </svg>
           </button>
-        </div>
+        </section>
         <div
           class="mt-[17px]"
         >
@@ -1255,7 +1255,7 @@ exports[`EditInvoiceClient section should match with snapshot with invoice is nu
                       data-slot="value"
                       id="react-aria-:r38:"
                     >
-
+                       
                     </span>
                   </div>
                   <svg
@@ -1505,7 +1505,7 @@ exports[`EditInvoiceClient section should match with snapshot with invoice is nu
             </div>
           </div>
         </div>
-        <div
+        <section
           class="flex items-center justify-between"
         >
           <p
@@ -1541,7 +1541,7 @@ exports[`EditInvoiceClient section should match with snapshot with invoice is nu
               />
             </svg>
           </button>
-        </div>
+        </section>
         <div
           class="mt-[17px]"
         >
