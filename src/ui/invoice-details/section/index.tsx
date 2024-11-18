@@ -22,7 +22,7 @@ interface IInvoiceDetailsSectionProps {
 
 const InvoiceDetailsSection = async ({ id }: IInvoiceDetailsSectionProps) => {
   const { data } = await getInvoiceById({
-    id: id,
+    id,
   });
   const invoices: StrapiModel<TInvoiceProduct<StrapiModel<IProduct>>>[] =
     data?.attributes?.invoice_products?.data;

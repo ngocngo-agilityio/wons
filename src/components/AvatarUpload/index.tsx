@@ -30,8 +30,10 @@ const AvatarUpload = ({
   const [previewURL, setPreviewURL] = useState<string>('');
   const [errorMessage, setErrorMessage] = useState<string>(error);
 
+  const { FIELD_REQUIRED, UPLOAD_IMAGE, UPLOAD_IMAGE_SIZE } = MESSAGES.ERROR;
+
   const handleFocusBack = useCallback(() => {
-    setErrorMessage(previewURL ? '' : MESSAGES.ERROR.FIELD_REQUIRED);
+    setErrorMessage(previewURL ? '' : FIELD_REQUIRED);
     window.removeEventListener('focus', handleFocusBack);
   }, [previewURL]);
 
@@ -47,14 +49,16 @@ const AvatarUpload = ({
     }
 
     if (!REGEX.IMG.test(file.name)) {
-      const error = MESSAGES.ERROR.UPLOAD_IMAGE;
+      const error = UPLOAD_IMAGE;
       setErrorMessage(error);
+
       return;
     }
 
     if (file.size > MAX_SIZE) {
-      const error = MESSAGES.ERROR.UPLOAD_IMAGE_SIZE;
+      const error = UPLOAD_IMAGE_SIZE;
       setErrorMessage(error);
+
       return;
     }
 

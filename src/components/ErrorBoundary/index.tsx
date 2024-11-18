@@ -17,6 +17,8 @@ const ErrorBoundary = ({ error, reset, className = '' }: ErrorProps) => {
     reset?.();
   };
 
+  const checkTypeError = typeof error === 'string' ? error : '';
+
   return (
     <div
       className={cn(
@@ -25,7 +27,7 @@ const ErrorBoundary = ({ error, reset, className = '' }: ErrorProps) => {
       )}
     >
       <Heading title="Something went wrong!" className="text-4xl" />
-      <Text text={typeof error === 'string' ? error : ''} />
+      <Text text={checkTypeError} />
       <Button onClick={handleReset} color="primary" className="mt-8">
         Try again
       </Button>

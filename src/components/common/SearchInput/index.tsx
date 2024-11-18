@@ -15,11 +15,11 @@ const SearchInput = ({ ...props }: InputProps) => {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
+  const { PAGE, QUERY } = SEARCH_QUERIES;
   const defaultValueSearch: string = searchParams
-    ?.get(SEARCH_QUERIES.QUERY)
+    ?.get(QUERY)
     ?.toString() as string;
 
-  const { PAGE, QUERY } = SEARCH_QUERIES;
   const params = new URLSearchParams(searchParams);
 
   const handleSearch = useDebouncedCallback(

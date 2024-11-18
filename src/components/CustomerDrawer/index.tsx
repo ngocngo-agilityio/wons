@@ -61,6 +61,11 @@ const CustomerDrawer = (): JSX.Element => {
       }
 
       startTransition(async () => {
+        const {
+          SUCCESS: { CREATE_CUSTOMER },
+          STATUS: { ERROR, SUCCESS },
+        } = MESSAGES;
+
         const { error } = await createCustomer({
           ...formData,
           phone: formatPhoneNumberTyping(formData.phone),
@@ -68,8 +73,8 @@ const CustomerDrawer = (): JSX.Element => {
         });
 
         showToast({
-          description: error ?? MESSAGES.SUCCESS.CREATE_CUSTOMER,
-          status: error ? MESSAGES.STATUS.ERROR : MESSAGES.STATUS.SUCCESS,
+          description: error ?? CREATE_CUSTOMER,
+          status: error ? ERROR : SUCCESS,
         });
       });
 

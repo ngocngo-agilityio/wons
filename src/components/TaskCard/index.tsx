@@ -70,6 +70,11 @@ const TaskCard = ({ index, task, isAdmin }: TTaskCardProps) => {
     label = 'todo',
   } = attributes ?? {};
 
+  const {
+    SUCCESS: { DELETE_TASK, UPDATE_TASK },
+    STATUS: { ERROR, SUCCESS },
+  } = MESSAGES;
+
   const handleDelete = useCallback(
     async (id: number) => {
       setIsLoading(true);
@@ -81,8 +86,8 @@ const TaskCard = ({ index, task, isAdmin }: TTaskCardProps) => {
       const { error } = res || {};
 
       showToast({
-        description: error || MESSAGES.SUCCESS.DELETE_TASK,
-        status: error ? MESSAGES.STATUS.ERROR : MESSAGES.STATUS.SUCCESS,
+        description: error || DELETE_TASK,
+        status: error ? ERROR : SUCCESS,
       });
     },
     [showToast],
@@ -203,15 +208,15 @@ const TaskCard = ({ index, task, isAdmin }: TTaskCardProps) => {
           if (error) {
             showToast({
               description: error,
-              status: MESSAGES.STATUS.ERROR,
+              status: ERROR,
             });
 
             return;
           }
 
           showToast({
-            description: MESSAGES.SUCCESS.UPDATE_TASK,
-            status: MESSAGES.STATUS.SUCCESS,
+            description: UPDATE_TASK,
+            status: SUCCESS,
           });
         }
       });

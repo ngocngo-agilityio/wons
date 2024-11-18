@@ -34,13 +34,18 @@ const AvatarUploadMultiple = ({
     const values = Array.from(event.target.files ?? []);
     const allSelectedFiles = [...selectedFiles, ...values];
 
-    if (currentPreviewFiles.length > 2) {
-      setErrorMessage(MESSAGES.ERROR.MAX_IMAGE);
+    const {
+      ERROR: { MAX_IMAGE, UPLOAD_IMAGE_SIZE },
+    } = MESSAGES;
+    const currentPreviewFilesLength = currentPreviewFiles.length;
+
+    if (currentPreviewFilesLength > 2) {
+      setErrorMessage(MAX_IMAGE);
       return;
     }
 
-    if (currentPreviewFiles.length === 1 && values.length > 2) {
-      setErrorMessage(MESSAGES.ERROR.UPLOAD_IMAGE_SIZE);
+    if (currentPreviewFilesLength === 1 && values.length > 2) {
+      setErrorMessage(UPLOAD_IMAGE_SIZE);
       return;
     }
 

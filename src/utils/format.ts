@@ -50,9 +50,7 @@ export const formattedResponseData = <T>(data: StrapiModel<T>[]) => {
     return [];
   }
 
-  return data.map((item) => {
-    const { id, attributes } = item;
-
+  return data.map(({ id, attributes }) => {
     return {
       id,
       ...attributes,
@@ -123,16 +121,18 @@ export const formatAmountWithDiscount = (
   return `${formatPrice(total, true)} USD`;
 };
 
-export const formatDateString = (date: DateValue) =>
-  `${date.year}-${String(date.month).padStart(2, '0')}-${String(date.day).padStart(2, '0')}`;
+export const formatDateString = ({ day, month, year }: DateValue) =>
+  `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
 
-export const formatDatePicker = (
-  date: CalendarDate | CalendarDateTime | ZonedDateTime,
-) => {
+export const formatDatePicker = ({
+  day,
+  month,
+  year,
+}: CalendarDate | CalendarDateTime | ZonedDateTime) => {
   // Pad the month and day with a leading zero if they are single digits
-  const formattedMonth = String(date.month).padStart(2, '0');
-  const formattedDay = String(date.day).padStart(2, '0');
-  const formattedYear = String(date.year);
+  const formattedMonth = String(month).padStart(2, '0');
+  const formattedDay = String(day).padStart(2, '0');
+  const formattedYear = String(year);
 
   return `${formattedYear}-${formattedMonth}-${formattedDay}`;
 };
@@ -198,9 +198,8 @@ export const getSubarray = <T>(
   return data.slice(startNumber, endNumber);
 };
 
-export const capitalizeFirstLetter = (value: string = '') => {
-  return value.charAt(0).toUpperCase() + value.slice(1);
-};
+export const capitalizeFirstLetter = (value: string = '') =>
+  value.charAt(0).toUpperCase() + value.slice(1);
 
 export const formatTimeCalendar = (value: string) => {
   const object = dayjs(value).toObject();

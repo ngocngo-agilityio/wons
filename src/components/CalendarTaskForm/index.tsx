@@ -179,7 +179,7 @@ const CalendarTaskForm = ({
               <Text as="span" text="-" />
               <Text
                 className="text-blue-800 text-[12px] font-normal leading-normal col-span-1 uppercase"
-                text={`${timeDate}`} // Display time
+                text={timeDate} // Display time
               />
             </div>
 

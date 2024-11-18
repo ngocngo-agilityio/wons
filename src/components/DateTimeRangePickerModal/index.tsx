@@ -38,6 +38,7 @@ const DateTimeRangePickerModal = ({
   onEndTimeChange,
 }: DateTimePickerModalProps) => {
   const [errorMessage, setErrorMessage] = useState<string>('');
+  const { START_TIME, END_TIME } = MESSAGES.ERROR;
 
   const handleStartTimeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedTime = e.target.value;
@@ -46,7 +47,7 @@ const DateTimeRangePickerModal = ({
 
     setErrorMessage(
       dayjs(formattedTime, 'hh:mma').isAfter(dayjs(selectedEndTime, 'hh:mma'))
-        ? MESSAGES.ERROR.START_TIME
+        ? START_TIME
         : '',
     );
 
@@ -60,7 +61,7 @@ const DateTimeRangePickerModal = ({
 
     setErrorMessage(
       dayjs(selectedStartTime, 'hh:mma').isAfter(dayjs(formattedTime, 'hh:mma'))
-        ? MESSAGES.ERROR.END_TIME
+        ? END_TIME
         : '',
     );
 

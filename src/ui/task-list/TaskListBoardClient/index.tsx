@@ -33,6 +33,8 @@ const TaskListBoardClient = ({ data }: ITaskListBoardProps) => {
 
   const handleDragEnd = (result: DropResult) => {
     const { source, destination, draggableId } = result;
+    const { droppableId, index } = source;
+
     const taskByID: StrapiModel<Task> = data.find(
       ({ id }) => id === Number(draggableId),
     ) as StrapiModel<Task>;
@@ -43,16 +45,14 @@ const TaskListBoardClient = ({ data }: ITaskListBoardProps) => {
       destination.droppableId as TaskStatus,
     );
 
-    const sourceColumn = mapTaskStatusToStateKey(
-      source.droppableId as TaskStatus,
-    );
+    const sourceColumn = mapTaskStatusToStateKey(droppableId as TaskStatus);
 
     const sourceTasks = Array.from(tasks[sourceColumn]);
     const destinationTasks = Array.from(tasks[destinationColumn]);
 
-    const [movedTask] = sourceTasks.splice(source.index, 1);
+    const [movedTask] = sourceTasks.splice(index, 1);
 
-    if (source.droppableId !== destination.droppableId) {
+    if (droppableId !== destination.droppableId) {
       destinationTasks.splice(destination.index, 0, movedTask);
     } else {
       sourceTasks.splice(destination.index, 0, movedTask);

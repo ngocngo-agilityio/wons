@@ -53,6 +53,10 @@ const ProductDrawer = ({ isAdmin }: ProductDrawerProps): JSX.Element => {
   const handleFormSubmit = useCallback(
     async (formData: IProductDetail) => {
       formData.rating = RATING_PRODUCT;
+      const {
+        SUCCESS: { CREATE_PRODUCT },
+        STATUS: { ERROR, SUCCESS },
+      } = MESSAGES;
 
       if (avatarFile && isAvatarDirty) {
         const { url = '' } = await handleUpdateImage(avatarFile);
@@ -66,8 +70,8 @@ const ProductDrawer = ({ isAdmin }: ProductDrawerProps): JSX.Element => {
       });
 
       showToast({
-        description: error || MESSAGES.SUCCESS.CREATE_PRODUCT,
-        status: error ? MESSAGES.STATUS.ERROR : MESSAGES.STATUS.SUCCESS,
+        description: error || CREATE_PRODUCT,
+        status: error ? ERROR : SUCCESS,
       });
 
       setIsDrawerOpen(false);

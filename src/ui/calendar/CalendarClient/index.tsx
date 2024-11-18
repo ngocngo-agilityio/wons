@@ -116,6 +116,18 @@ const CalendarClient = ({
   const [isLoading, setIsLoading] = useState(false);
   const { showToast } = useToast();
 
+  const {
+    SUCCESS: {
+      UPDATE_EVENT,
+      CREATE_EVENT,
+      UPDATE_TASK,
+      CREATE_TASK,
+      DELETE_TASK,
+      DELETE_EVENT,
+    },
+    STATUS: { ERROR, SUCCESS },
+  } = MESSAGES;
+
   const handleCloseModal = useCallback(() => {
     setIsModalOpen(false);
     setIsTask(false);
@@ -123,23 +135,23 @@ const CalendarClient = ({
   }, []);
 
   const handleSelectSlot = useCallback(
-    (slotInfo: SlotInfo) => {
+    ({ start, end }: SlotInfo) => {
       // Check for duplicate time range (12:00 AM - 12:00 AM) on date click in month view
       const isTimeRangeDuplicate =
-        slotInfo.start.getHours() === slotInfo.end.getHours() &&
-        slotInfo.start.getMinutes() === slotInfo.end.getMinutes();
+        start.getHours() === end.getHours() &&
+        start.getMinutes() === end.getMinutes();
 
       // Add 30 minutes to slotInfo when time range is duplicate
       const adjustedEndTime = isTimeRangeDuplicate
-        ? new Date(slotInfo.end.getTime() + 30 * 60 * 1000)
-        : slotInfo.end;
+        ? new Date(end.getTime() + 30 * 60 * 1000)
+        : end;
 
-      if (dayjs(slotInfo.start).isBefore(dayjs(), 'day')) {
+      if (dayjs(start).isBefore(dayjs(), 'day')) {
         return;
       }
 
       setSlot({
-        start: slotInfo.start,
+        start: start,
         end: adjustedEndTime,
       });
 
@@ -174,8 +186,8 @@ const CalendarClient = ({
 
         const { error } = response || {};
         showToast({
-          description: error || MESSAGES.SUCCESS.UPDATE_EVENT,
-          status: error ? MESSAGES.STATUS.ERROR : MESSAGES.STATUS.SUCCESS,
+          description: error || UPDATE_EVENT,
+          status: error ? ERROR : SUCCESS,
         });
 
         if (!error) {
@@ -192,8 +204,8 @@ const CalendarClient = ({
 
       const { error } = response || {};
       showToast({
-        description: error || MESSAGES.SUCCESS.CREATE_EVENT,
-        status: error ? MESSAGES.STATUS.ERROR : MESSAGES.STATUS.SUCCESS,
+        description: error || CREATE_EVENT,
+        status: error ? ERROR : SUCCESS,
       });
     }
 
@@ -214,8 +226,8 @@ const CalendarClient = ({
 
         const { error } = response || {};
         showToast({
-          description: error || MESSAGES.SUCCESS.UPDATE_TASK,
-          status: error ? MESSAGES.STATUS.ERROR : MESSAGES.STATUS.SUCCESS,
+          description: error || UPDATE_TASK,
+          status: error ? ERROR : SUCCESS,
         });
 
         if (!error) {
@@ -233,8 +245,8 @@ const CalendarClient = ({
 
       const { error } = response || {};
       showToast({
-        description: error || MESSAGES.SUCCESS.CREATE_TASK,
-        status: error ? MESSAGES.STATUS.ERROR : MESSAGES.STATUS.SUCCESS,
+        description: error || CREATE_TASK,
+        status: error ? ERROR : SUCCESS,
       });
     }
 
@@ -278,8 +290,8 @@ const CalendarClient = ({
         setIsLoading(false);
         const { error } = response || {};
         showToast({
-          description: error || MESSAGES.SUCCESS.DELETE_EVENT,
-          status: error ? MESSAGES.STATUS.ERROR : MESSAGES.STATUS.SUCCESS,
+          description: error || DELETE_EVENT,
+          status: error ? ERROR : SUCCESS,
         });
 
         if (!error) {
@@ -295,8 +307,8 @@ const CalendarClient = ({
         setIsLoading(false);
         const { error } = response || {};
         showToast({
-          description: error || MESSAGES.SUCCESS.DELETE_TASK,
-          status: error ? MESSAGES.STATUS.ERROR : MESSAGES.STATUS.SUCCESS,
+          description: error || DELETE_TASK,
+          status: error ? ERROR : SUCCESS,
         });
 
         if (!error) {
@@ -311,8 +323,8 @@ const CalendarClient = ({
     }
   }, [isTask, selectedEvent, showToast]);
 
-  const handleDateSelect = (date: DateValue) => {
-    const calendarDate = new CalendarDate(date.year, date.month, date.day);
+  const handleDateSelect = ({ day, month, year }: DateValue) => {
+    const calendarDate = new CalendarDate(year, month, day);
 
     setSelectedDate(calendarDate);
 

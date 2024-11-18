@@ -40,6 +40,11 @@ const TaskDrawer = ({ isAdmin }: TaskDrawerProps): JSX.Element => {
   const { showToast } = useToast();
   const { isGreaterThanMd } = useBreakPoints();
 
+  const {
+    SUCCESS: { CREATE_TASK },
+    STATUS: { ERROR, SUCCESS },
+  } = MESSAGES;
+
   const handleOpenDrawer = useCallback(() => {
     setIsDrawerOpen(true);
   }, []);
@@ -79,8 +84,8 @@ const TaskDrawer = ({ isAdmin }: TaskDrawerProps): JSX.Element => {
         });
 
         showToast({
-          description: error ?? MESSAGES.SUCCESS.CREATE_TASK,
-          status: error ? MESSAGES.STATUS.ERROR : MESSAGES.STATUS.SUCCESS,
+          description: error ?? CREATE_TASK,
+          status: error ? ERROR : SUCCESS,
         });
       });
 

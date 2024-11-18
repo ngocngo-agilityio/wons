@@ -13,11 +13,10 @@ import { Button, ImageFallback, Text } from '@/components';
 
 const AccountSuccess = (): JSX.Element => {
   const { theme } = useTheme();
+  const { ACCOUNT_SUCCESS_LIGHT, ACCOUNT_SUCCESS_DARK } = IMAGES;
 
   const imgSrc =
-    theme === THEME_MODES.LIGHT
-      ? IMAGES.ACCOUNT_SUCCESS_LIGHT
-      : IMAGES.ACCOUNT_SUCCESS_DARK;
+    theme === THEME_MODES.LIGHT ? ACCOUNT_SUCCESS_LIGHT : ACCOUNT_SUCCESS_DARK;
 
   return (
     <div className="bg-50 dark:bg-gray-600 flex justify-center items-center h-screen">

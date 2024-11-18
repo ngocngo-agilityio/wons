@@ -17,15 +17,13 @@ interface IToastListProps {
 
 const ToastList = ({ toasts, onClose }: IToastListProps) => (
   <div className="fixed top-4 right-4">
-    {toasts.map((toast) => {
-      const {
+    {toasts.map(
+      ({
         id = '',
         title = '',
         description = '',
         status = MESSAGES.STATUS.SUCCESS,
-      } = toast;
-
-      return (
+      }) => (
         <Toast
           data-testid="toast"
           key={id}
@@ -35,8 +33,8 @@ const ToastList = ({ toasts, onClose }: IToastListProps) => (
           status={status}
           onClose={onClose}
         />
-      );
-    })}
+      ),
+    )}
   </div>
 );
 

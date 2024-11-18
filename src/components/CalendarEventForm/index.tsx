@@ -278,8 +278,8 @@ const CalendarEventForm = ({
                 }}
                 {...rest}
               >
-                {usersOptions.map((option) => (
-                  <SelectItem key={option.key}>{option.label}</SelectItem>
+                {usersOptions.map(({ key, label }) => (
+                  <SelectItem key={key}>{label}</SelectItem>
                 ))}
               </Select>
             )}

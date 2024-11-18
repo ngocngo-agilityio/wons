@@ -23,6 +23,7 @@ const SignUpForm = (): JSX.Element => {
   const [isPending, setIsPending] = useState(false);
   const { showToast } = useToast();
   const router = useRouter();
+  const { ERROR } = MESSAGES.STATUS;
 
   const handleSignUp = useCallback(
     async (formData: ISignUpFormData) => {
@@ -41,7 +42,7 @@ const SignUpForm = (): JSX.Element => {
 
         return showToast({
           description: signUpError,
-          status: MESSAGES.STATUS.ERROR,
+          status: ERROR,
         });
       }
 
@@ -53,7 +54,7 @@ const SignUpForm = (): JSX.Element => {
 
         return showToast({
           description: loginRes,
-          status: MESSAGES.STATUS.ERROR,
+          status: ERROR,
         });
       }
 
