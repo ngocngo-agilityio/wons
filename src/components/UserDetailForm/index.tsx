@@ -89,6 +89,7 @@ const UserDetailForm = ({
           }) => (
             <AvatarUpload
               additionalClass="md:justify-self-start"
+              isRequired={false}
               value={value ?? ''}
               error={error?.message}
               isDisabled={isSubmitting}
