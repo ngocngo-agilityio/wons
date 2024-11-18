@@ -51,6 +51,11 @@ const InvoiceListClient = ({
     ? Object.fromEntries(searchParams.entries())
     : {};
 
+  const {
+    SUCCESS: { DELETE_INVOICE, UPDATE_INVOICE },
+    STATUS: { ERROR, SUCCESS },
+  } = MESSAGES;
+
   const handleSort = useCallback(
     (value: string) => {
       const params = new URLSearchParams(searchParams);
@@ -92,8 +97,8 @@ const InvoiceListClient = ({
       const { error } = res || {};
 
       showToast({
-        description: error || MESSAGES.SUCCESS.DELETE_INVOICE,
-        status: error ? MESSAGES.STATUS.ERROR : MESSAGES.STATUS.SUCCESS,
+        description: error || DELETE_INVOICE,
+        status: error ? ERROR : SUCCESS,
       });
     },
     [showToast],
@@ -109,8 +114,8 @@ const InvoiceListClient = ({
       const { error } = res || {};
 
       showToast({
-        description: error || MESSAGES.SUCCESS.DELETE_INVOICE,
-        status: error ? MESSAGES.STATUS.ERROR : MESSAGES.STATUS.SUCCESS,
+        description: error || DELETE_INVOICE,
+        status: error ? ERROR : SUCCESS,
       });
     },
     [showToast],
@@ -126,8 +131,8 @@ const InvoiceListClient = ({
       const { error } = res || {};
 
       showToast({
-        description: error || MESSAGES.SUCCESS.UPDATE_INVOICE,
-        status: error ? MESSAGES.STATUS.ERROR : MESSAGES.STATUS.SUCCESS,
+        description: error || UPDATE_INVOICE,
+        status: error ? ERROR : SUCCESS,
       });
     },
     [showToast],

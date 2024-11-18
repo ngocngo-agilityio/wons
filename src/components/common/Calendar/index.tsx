@@ -15,14 +15,14 @@ const CalendarCustom = ({
   onDateSelect,
   ...props
 }: CalendarCustomProps) => {
-  const todayDate = today(getLocalTimeZone());
+  const { month, year } = today(getLocalTimeZone());
   // Initialize selected date, current month, and current year
   const [selectedDate, setSelectedDate] = useState<DateValue | null>(value);
   const [currentMonth, setCurrentMonth] = useState<number>(
-    value ? value.month : todayDate.month, // Check for null here
+    value ? value.month : month, // Check for null here
   );
   const [currentYear, setCurrentYear] = useState<number>(
-    value ? value.year : todayDate.year, // Check for null here
+    value ? value.year : year, // Check for null here
   );
 
   useEffect(() => {
@@ -55,8 +55,7 @@ const CalendarCustom = ({
     setCurrentYear(year);
   };
 
-  const isCurrentMonth =
-    currentMonth === todayDate.month && currentYear === todayDate.year;
+  const isCurrentMonth = currentMonth === month && currentYear === year;
 
   const displayDate = new Date(
     currentYear,

@@ -31,14 +31,15 @@ const Pagination = ({ ...props }: NextUIPaginationProps) => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const { replace } = useRouter();
+  const { PAGE } = SEARCH_QUERIES;
 
-  const currentPage = searchParams?.get(SEARCH_QUERIES.PAGE) || DEFAULT_PAGE;
+  const currentPage = searchParams?.get(PAGE) || DEFAULT_PAGE;
 
   const handlePageChange = useCallback(
     (page: number) => {
       const params = new URLSearchParams(searchParams);
 
-      params.set(SEARCH_QUERIES.PAGE, page.toString());
+      params.set(PAGE, page.toString());
 
       replace(`${pathname}?${params.toString()}`, { scroll: false });
     },

@@ -1,5 +1,7 @@
 // Components
 import { MedalIcon, Text } from '@/components';
+
+// Models
 import { IProduct } from '@/models';
 
 // Types

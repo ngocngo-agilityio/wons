@@ -58,7 +58,7 @@ const CalendarModal = ({
   timeRange,
   isEdit = false,
   isTask = false,
-  time,
+  time = '',
   isOpen,
   user,
   previewData,
@@ -101,7 +101,7 @@ const CalendarModal = ({
           previewData={previewData}
           date={date}
           onClose={onClose}
-          time={time ?? ''}
+          time={time}
           onSubmit={onSubmit}
         />
       ),

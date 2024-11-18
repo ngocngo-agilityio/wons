@@ -64,6 +64,11 @@ const ProductListClient = ({
   const [isLoading, setIsLoading] = useState(false);
   const { isGreaterThanLg } = useBreakPoints();
 
+  const {
+    SUCCESS: { DELETE_CUSTOMER, UPDATE_PRODUCT },
+    STATUS: { ERROR, SUCCESS },
+  } = MESSAGES;
+
   // Func
   const handleDeleteProduct = useCallback(
     async (id: number) => {
@@ -76,8 +81,8 @@ const ProductListClient = ({
       const { error } = res || {};
 
       showToast({
-        description: error || MESSAGES.SUCCESS.DELETE_CUSTOMER,
-        status: error ? MESSAGES.STATUS.ERROR : MESSAGES.STATUS.SUCCESS,
+        description: error || DELETE_CUSTOMER,
+        status: error ? ERROR : SUCCESS,
       });
     },
     [onDelete, showToast],
@@ -153,8 +158,8 @@ const ProductListClient = ({
       const { error } = (await onEdit(formData, idProduct)) ?? {};
 
       showToast({
-        description: error ?? MESSAGES.SUCCESS.UPDATE_PRODUCT,
-        status: error ? MESSAGES.STATUS.ERROR : MESSAGES.STATUS.SUCCESS,
+        description: error ?? UPDATE_PRODUCT,
+        status: error ? ERROR : SUCCESS,
       });
 
       setToggleEditProduct(false);

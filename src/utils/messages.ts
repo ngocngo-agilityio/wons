@@ -21,6 +21,7 @@ const TStrapiErrorResponseSchema = z.object({
 });
 
 export const formatErrorMessage = (errorResponse: unknown): string => {
+  const { UNKNOWN_ERROR } = MESSAGES.ERROR;
   let errorMessage = '';
 
   const parseResult = TStrapiErrorResponseSchema.safeParse(errorResponse);
@@ -30,12 +31,12 @@ export const formatErrorMessage = (errorResponse: unknown): string => {
 
     const { message } = strapiErrorResponse.error;
 
-    errorMessage = ERROR_MAPPER[message] || MESSAGES.ERROR.UNKNOWN_ERROR;
+    errorMessage = ERROR_MAPPER[message] || UNKNOWN_ERROR;
   }
 
   // Set default message if unknown error
   if (!errorMessage) {
-    errorMessage = MESSAGES.ERROR.UNKNOWN_ERROR;
+    errorMessage = UNKNOWN_ERROR;
   }
 
   return errorMessage;

@@ -111,9 +111,9 @@ const InvoiceForm = ({
     },
   });
 
-  const optionsCustomers = customers.map((customer) => ({
-    value: customer.id.toString(),
-    label: customer.lastName,
+  const optionsCustomers = customers.map(({ id, lastName }) => ({
+    value: id.toString(),
+    label: lastName,
   }));
 
   // Checking to disable/enable submit button
@@ -128,6 +128,7 @@ const InvoiceForm = ({
   const allFieldsFilled = requiredField.every((field) => {
     const isDirty = dirtyItems.includes(field);
     const hasError = errors[field as keyof Partial<TInvoiceFormData>];
+
     return isDirty && !hasError;
   });
 
@@ -144,15 +145,23 @@ const InvoiceForm = ({
     productsValues.some((obj) => Object.values(obj).some((value) => !value));
 
   const handleSubmitButton = async (formData: TInvoiceFormData) => {
+    const {
+      ERROR: { FIELD_REQUIRED },
+      STATUS: { ERROR, SUCCESS },
+      SUCCESS: { UPDATE_INVOICE, CREATE_INVOICE },
+    } = MESSAGES;
+
     if (hasEmptyField) {
-      return setErrorProducts(MESSAGES.ERROR.FIELD_REQUIRED);
+      return setErrorProducts(FIELD_REQUIRED);
     }
+
+    const { customerId, ...otherFormData } = formData;
 
     startTransition(async () => {
       const { error, data } = await onSubmit(
         {
-          ...formData,
-          customerId: formData.customerId.toString(),
+          ...otherFormData,
+          customerId: customerId.toString(),
           invoiceId,
         },
         productsValues,
@@ -161,18 +170,17 @@ const InvoiceForm = ({
       if (error) {
         showToast({
           description: error,
-          status: MESSAGES.STATUS.ERROR,
+          status: ERROR,
         });
+
         return;
       }
 
       data && router.push(`${ROUTES.INVOICE}/${data.id}`);
 
       showToast({
-        description: previewData
-          ? MESSAGES.SUCCESS.UPDATE_INVOICE
-          : MESSAGES.SUCCESS.CREATE_INVOICE,
-        status: MESSAGES.STATUS.SUCCESS,
+        description: previewData ? UPDATE_INVOICE : CREATE_INVOICE,
+        status: SUCCESS,
       });
     });
   };
@@ -279,9 +287,9 @@ const InvoiceForm = ({
                   isInvalid={!!error}
                   errorMessage={error?.message}
                 >
-                  {optionsCustomers.map((customer) => (
-                    <SelectItem key={customer.value} value={customer.value}>
-                      {customer.label}
+                  {optionsCustomers.map(({ label, value }) => (
+                    <SelectItem key={value} value={value}>
+                      {label}
                     </SelectItem>
                   ))}
                 </Select>
@@ -327,9 +335,9 @@ const InvoiceForm = ({
                   isInvalid={!!error}
                   errorMessage={error?.message}
                 >
-                  {INVOICE_STATUS.map((status) => (
-                    <SelectItem key={status.key} value={status.key}>
-                      {status.label}
+                  {INVOICE_STATUS.map(({ key, label }) => (
+                    <SelectItem key={key} value={key}>
+                      {label}
                     </SelectItem>
                   ))}
                 </Select>

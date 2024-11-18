@@ -28,12 +28,16 @@ export const authenticate = async (
   try {
     await signIn(AUTH_METHODS.CREDENTIALS, formData);
   } catch (error) {
+    const {
+      ERROR: { EMAIL_PASSWORD_INVALID, UNKNOWN_ERROR },
+    } = MESSAGES;
+
     if (error instanceof AuthError) {
       const errorMessages: { [key: string]: string } = {
-        [ERROR_TYPES.CREDENTIALS_SIGN_IN]:
-          MESSAGES.ERROR.EMAIL_PASSWORD_INVALID,
+        [ERROR_TYPES.CREDENTIALS_SIGN_IN]: EMAIL_PASSWORD_INVALID,
       };
-      return errorMessages[error.type] || MESSAGES.ERROR.UNKNOWN_ERROR;
+
+      return errorMessages[error.type] || UNKNOWN_ERROR;
     }
     throw error;
   }

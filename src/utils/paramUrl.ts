@@ -77,10 +77,7 @@ export const formatFilterMultipleUser = (values: string[]) => {
  * @param value - 'david,lionel';
  * @returns - ['david', 'lionel']
  */
-export const convertStringToArray = (value: string) => {
-  return value.split(',');
-};
+export const convertStringToArray = (value: string) => value.split(',');
 
-export const formatOptionsSelection = (object: Selection) => {
-  return Array.from(object).join(', ');
-};
+export const formatOptionsSelection = (object: Selection) =>
+  Array.from(object).join(', ');

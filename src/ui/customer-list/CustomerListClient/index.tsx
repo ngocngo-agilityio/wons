@@ -86,6 +86,11 @@ const CustomerListClient = ({
     ? Object.fromEntries(searchParams.entries())
     : {};
 
+  const {
+    SUCCESS: { DELETE_CUSTOMER, UPDATE_CUSTOMER },
+    STATUS: { ERROR, SUCCESS },
+  } = MESSAGES;
+
   const handleCloseFormDrawer = () => {
     setToggleForm(false);
   };
@@ -116,8 +121,8 @@ const CustomerListClient = ({
       const { error } = res || {};
 
       showToast({
-        description: error || MESSAGES.SUCCESS.DELETE_CUSTOMER,
-        status: error ? MESSAGES.STATUS.ERROR : MESSAGES.STATUS.SUCCESS,
+        description: error || DELETE_CUSTOMER,
+        status: error ? ERROR : SUCCESS,
       });
     },
     [showToast],
@@ -179,8 +184,8 @@ const CustomerListClient = ({
           const { error } = await updateCustomer(idCustomer, formattedPayload);
 
           showToast({
-            description: error ?? MESSAGES.SUCCESS.UPDATE_CUSTOMER,
-            status: error ? MESSAGES.STATUS.ERROR : MESSAGES.STATUS.SUCCESS,
+            description: error ?? UPDATE_CUSTOMER,
+            status: error ? ERROR : SUCCESS,
           });
         }
       });

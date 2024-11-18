@@ -71,7 +71,7 @@ const ProductForm = ({
       negotiable: false,
     },
   });
-
+  const { FIELD_REQUIRED } = MESSAGES.ERROR;
   const [isPending, startTransition] = useTransition();
 
   // Checking to disable/enable submit button
@@ -97,7 +97,7 @@ const ProductForm = ({
     if (!formData.imageUrl) {
       setError('imageUrl', {
         type: 'manual',
-        message: MESSAGES.ERROR.FIELD_REQUIRED,
+        message: FIELD_REQUIRED,
       });
 
       return;
@@ -208,9 +208,9 @@ const ProductForm = ({
                 isInvalid={!!error}
                 errorMessage={error?.message}
               >
-                {BRANDS.map((brand) => (
-                  <SelectItem key={brand.key} value={brand.key}>
-                    {brand.label}
+                {BRANDS.map(({ key, label }) => (
+                  <SelectItem key={key} value={key}>
+                    {label}
                   </SelectItem>
                 ))}
               </Select>
@@ -239,7 +239,7 @@ const ProductForm = ({
                     isInvalid={!!error}
                     errorMessage={
                       error?.message === 'Required'
-                        ? MESSAGES.ERROR.FIELD_REQUIRED
+                        ? FIELD_REQUIRED
                         : error?.message
                     }
                     isDisabled={isDisabledField}

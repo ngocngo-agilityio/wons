@@ -30,9 +30,9 @@ const Column = ({ status, tasks }: TColumnProps) => (
           title={status}
         />
         <div className="space-y-4 max-h-[calc(100vh-300px)] overflow-auto">
-          {tasks.map((task, index) => {
-            return <TaskCard key={task.id} index={index} task={task} />;
-          })}
+          {tasks.map((task, index) => (
+            <TaskCard key={task.id} index={index} task={task} />
+          ))}
           {provided.placeholder}
         </div>
       </div>

@@ -80,7 +80,7 @@ const TaskForm = ({
         : '',
     },
   });
-
+  const { FIELD_REQUIRED } = MESSAGES.ERROR;
   const [isPending, startTransition] = useTransition();
 
   useEffect(() => {
@@ -220,9 +220,7 @@ const TaskForm = ({
               isInvalid={!!error}
               classNames={{ base: 'h-[71px]' }}
               errorMessage={
-                error?.message === 'Required'
-                  ? MESSAGES.ERROR.FIELD_REQUIRED
-                  : error?.message
+                error?.message === 'Required' ? FIELD_REQUIRED : error?.message
               }
               isDisabled={isDisabledField}
               value={value}
@@ -273,9 +271,9 @@ const TaskForm = ({
                 isInvalid={!!error}
                 errorMessage={error?.message}
               >
-                {STATUS.map((status) => (
-                  <SelectItem key={status.key} value={status.key}>
-                    {status.label}
+                {STATUS.map(({ key, label }) => (
+                  <SelectItem key={key} value={key}>
+                    {label}
                   </SelectItem>
                 ))}
               </Select>
@@ -355,7 +353,7 @@ const TaskForm = ({
                 isInvalid={!!error}
                 errorMessage={
                   error?.message === 'Required'
-                    ? MESSAGES.ERROR.FIELD_REQUIRED
+                    ? FIELD_REQUIRED
                     : error?.message
                 }
                 isDisabled={isDisabledField}
@@ -409,8 +407,8 @@ const TaskForm = ({
                 isInvalid={!!error}
                 errorMessage={error?.message}
               >
-                {usersOptions.map((option) => (
-                  <SelectItem key={option.key}>{option.label}</SelectItem>
+                {usersOptions.map(({ key, label }) => (
+                  <SelectItem key={key}>{label}</SelectItem>
                 ))}
               </Select>
             </div>

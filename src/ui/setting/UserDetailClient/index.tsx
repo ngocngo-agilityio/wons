@@ -44,6 +44,11 @@ const UserDetailClient = ({ user, id, onEdit }: UserDetailClientProps) => {
     role = ROLES[0].name,
   } = user ?? {};
 
+  const {
+    SUCCESS: { UPDATE_PROFILE },
+    STATUS: { ERROR, SUCCESS },
+  } = MESSAGES;
+
   const handleEditFormToggle = () => {
     setShowEditForm((prevValue) => !prevValue);
   };
@@ -75,8 +80,8 @@ const UserDetailClient = ({ user, id, onEdit }: UserDetailClientProps) => {
         );
 
         showToast({
-          description: error ?? MESSAGES.SUCCESS.UPDATE_PROFILE,
-          status: error ? MESSAGES.STATUS.ERROR : MESSAGES.STATUS.SUCCESS,
+          description: error ?? UPDATE_PROFILE,
+          status: error ? ERROR : SUCCESS,
         });
 
         await update({

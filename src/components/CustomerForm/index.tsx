@@ -335,9 +335,9 @@ const CustomerForm = ({
                 isInvalid={!!error}
                 errorMessage={error?.message}
               >
-                {genders.map((gender) => (
-                  <SelectItem key={gender.key} value={gender.key}>
-                    {gender.label}
+                {genders.map(({ key, label }) => (
+                  <SelectItem key={key} value={key}>
+                    {label}
                   </SelectItem>
                 ))}
               </Select>

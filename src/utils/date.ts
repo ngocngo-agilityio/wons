@@ -33,12 +33,15 @@ export const getStartTimeDatePicker = (
 ): DateRangeState => {
   // Get the current date in the local timezone
   const currentDate = today(getLocalTimeZone());
-  const defaultStartTime = currentDate.add({
+
+  // Default start time
+  const { day, month, year } = currentDate.add({
     days: -date,
   });
-  const defaultStartTimeIso = `${defaultStartTime.year}-${String(
-    defaultStartTime.month,
-  ).padStart(2, '0')}-${String(defaultStartTime.day).padStart(2, '0')}`;
+  const defaultStartTimeIso = `${year}-${String(month).padStart(
+    2,
+    '0',
+  )}-${String(day).padStart(2, '0')}`;
 
   return {
     start: parseDate(
@@ -74,9 +77,7 @@ export const convertToCalendarDate = (
 };
 
 // Function to convert the custom date object to a JavaScript Date object
-const convertToDate = (calendarDate: DateValue) => {
-  const { day, month, year } = calendarDate;
-
+const convertToDate = ({ day, month, year }: DateValue) => {
   // JavaScript Date's month is 0-indexed, so subtract 1 from month
   return new Date(year, month - 1, day);
 };
@@ -106,8 +107,8 @@ export const formatToCalendarDate = (value: Date) => {
  * @param value - A CalendarDate object with year, month, and day properties
  * @returns A JavaScript Date object
  */
-export const formatToStandardDate = (value: CalendarDate) => {
-  return new Date(value.year, value.month - 1, value.day);
+export const formatToStandardDate = ({ day, month, year }: CalendarDate) => {
+  return new Date(year, month - 1, day);
 };
 
 /**
