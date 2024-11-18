@@ -6,14 +6,14 @@ exports[`CreateInvoice Component Test should render all content with resolved da
     class="bg-white dark:bg-gray-400 p-[30px] pb-[70px] rounded-[10px] h-[calc(full-60px)] flex w-full justify-center"
   >
     <form
-      class="w-full max-w-[700px] justify-center"
+      class="w-full max-w-[700px]"
       data-testid="invoice-form"
     >
       <div
-        class="flex flex-col sm:flex-row sm:gap-[30px] sm:mt-[30px]"
+        class="flex flex-col sm:flex-row sm:gap-[0_30px] sm:mt-[30px]"
       >
         <div
-          class="group flex flex-col data-[hidden=true]:hidden w-full opacity-disabled pointer-events-none group relative justify-end data-[has-label=true]:mt-[29px] h-[74px] is-filled"
+          class="group flex flex-col data-[hidden=true]:hidden w-full opacity-disabled pointer-events-none group relative justify-end data-[has-label=true]:mt-[29px] h-[71px] is-filled"
           data-disabled="true"
           data-filled="true"
           data-filled-within="true"
@@ -61,7 +61,7 @@ exports[`CreateInvoice Component Test should render all content with resolved da
           </div>
         </div>
         <div
-          class="group flex flex-col data-[has-helper=true]:pb-[calc(theme(fontSize.tiny)_+8px)] gap-y-1.5 group w-full mt-1"
+          class="group flex flex-col data-[has-helper=true]:pb-[calc(theme(fontSize.tiny)_+8px)] gap-y-1.5 group w-full h-[100px]"
           data-has-end-content="true"
           data-slot="base"
         >
@@ -213,10 +213,10 @@ exports[`CreateInvoice Component Test should render all content with resolved da
         </div>
       </div>
       <div
-        class="flex flex-col sm:flex-row mt-8 sm:mt-0 gap-[30px]"
+        class="flex flex-col sm:flex-row sm:gap-[0_30px]"
       >
         <div
-          class="flex flex-col w-full h-[71px] mb-12"
+          class="flex flex-col w-full h-[100px]"
         >
           <div
             class="group flex flex-col transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] w-full rounded-md border-gray-300"
@@ -267,7 +267,7 @@ exports[`CreateInvoice Component Test should render all content with resolved da
                 aria-expanded="false"
                 aria-haspopup="listbox"
                 aria-labelledby="react-aria-:r13: react-aria-:rv:"
-                class="relative px-3 gap-3 inline-flex flex-row items-center shadow-sm tap-highlight-transparent data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 h-10 min-h-10 rounded-medium outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 w-full py-[26px] mt-5 bg-gray-50 dark:bg-gray-600 hover:bg-gray-200/50 dark:hover:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600"
+                class="relative px-3 gap-3 inline-flex flex-row items-center shadow-sm tap-highlight-transparent data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 h-10 min-h-10 rounded-medium outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 w-full py-[26px] bg-gray-50 dark:bg-gray-600 hover:bg-gray-200/50 dark:hover:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600"
                 data-slot="trigger"
                 id="customerId"
                 type="button"
@@ -288,7 +288,7 @@ exports[`CreateInvoice Component Test should render all content with resolved da
                     data-slot="value"
                     id="react-aria-:r13:"
                   >
-                     
+
                   </span>
                 </div>
                 <svg
@@ -315,7 +315,7 @@ exports[`CreateInvoice Component Test should render all content with resolved da
           </div>
         </div>
         <div
-          class="flex flex-col w-full h-[71px] mb-12"
+          class="flex flex-col w-full h-[100px]"
         >
           <div
             class="group flex flex-col transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] w-full rounded-md border-gray-300"
@@ -372,7 +372,7 @@ exports[`CreateInvoice Component Test should render all content with resolved da
                 aria-expanded="false"
                 aria-haspopup="listbox"
                 aria-labelledby="react-aria-:r1b: react-aria-:r17:"
-                class="relative px-3 gap-3 inline-flex flex-row items-center shadow-sm tap-highlight-transparent data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 h-10 min-h-10 rounded-medium outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 w-full py-[26px] mt-5 bg-gray-50 dark:bg-gray-600 hover:bg-gray-200/50 dark:hover:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600"
+                class="relative px-3 gap-3 inline-flex flex-row items-center shadow-sm tap-highlight-transparent data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 h-10 min-h-10 rounded-medium outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 w-full py-[26px] bg-gray-50 dark:bg-gray-600 hover:bg-gray-200/50 dark:hover:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600"
                 data-slot="trigger"
                 id="status"
                 type="button"
@@ -393,7 +393,7 @@ exports[`CreateInvoice Component Test should render all content with resolved da
                     data-slot="value"
                     id="react-aria-:r1b:"
                   >
-                     
+
                   </span>
                 </div>
                 <svg
@@ -421,10 +421,10 @@ exports[`CreateInvoice Component Test should render all content with resolved da
         </div>
       </div>
       <div
-        class="flex flex-col sm:flex-row gap-[30px] mt-[30px]"
+        class="grid grid-cols-1 sm:grid-cols-2 sm:gap-[0_30px]"
       >
         <div
-          class="group flex flex-col data-[hidden=true]:hidden w-full group relative justify-end data-[has-label=true]:mt-[29px] h-[74px] flex-1"
+          class="group flex flex-col data-[hidden=true]:hidden w-full group relative justify-end data-[has-label=true]:mt-[29px] h-[71px]"
           data-filled="true"
           data-filled-within="true"
           data-has-elements="true"
@@ -470,7 +470,7 @@ exports[`CreateInvoice Component Test should render all content with resolved da
           class="relative flex-1"
         >
           <div
-            class="group flex flex-col data-[hidden=true]:hidden w-full group relative justify-end data-[has-label=true]:mt-[29px] flex-1"
+            class="group flex flex-col data-[hidden=true]:hidden w-full group relative justify-end data-[has-label=true]:mt-[29px] h-[71px] flex-1"
             data-filled="true"
             data-filled-within="true"
             data-has-elements="true"
@@ -482,7 +482,7 @@ exports[`CreateInvoice Component Test should render all content with resolved da
               data-slot="main-wrapper"
             >
               <div
-                class="relative w-full inline-flex tap-highlight-transparent flex-row items-center shadow-sm gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-primary-100 text-primary placeholder:text-primary outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-offset-background bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:bg-gray-900 focus-within:bg-gray-50 dark:focus-within:bg-gray-600 group-data-[focus=true]:bg-gray-50 dark:group-data-[focus=true]:bg-gray-600 h-12.5 p-3.75 rounded-[10px] group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-blue-500"
+                class="relative w-full inline-flex tap-highlight-transparent flex-row items-center shadow-sm gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-primary-100 text-primary placeholder:text-primary outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:bg-gray-900 focus-within:bg-gray-50 dark:focus-within:bg-gray-600 group-data-[focus=true]:bg-gray-50 dark:group-data-[focus=true]:bg-gray-600 h-12.5 p-3.75 rounded-[10px]"
                 data-slot="input-wrapper"
                 style="cursor: text;"
               >
@@ -532,416 +532,412 @@ exports[`CreateInvoice Component Test should render all content with resolved da
         </div>
       </div>
       <div
-        class="mt-[30px] sm:mt-[17px]"
+        class="flex items-center justify-between"
       >
-        <section
-          class="flex items-center justify-between"
+        <p
+          class="font-dm-sans text-blue-800 dark:text-white text-xl font-medium leading-[20.83px]"
         >
-          <p
-            class="font-dm-sans text-blue-800 dark:text-white text-xl font-medium leading-[20.83px]"
-          >
-            Product Description
-          </p>
-          <button
-            aria-label="Add new product"
-            class="z-0 group relative items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none hover:!bg-default border-transparent text-blue-800 dark:text-white hover:bg-gray-200/50 dark:hover:bg-gray-900 text-md rounded-[10px] border-[1px] h-auto min-w-max bg-white block dark:bg-gray-400 p-0"
-            type="button"
-          >
-            <div
-              class="flex items-center"
-            />
-            <svg
-              aria-hidden="true"
-              class="text-blue-500 dark:text-purple-600"
-              fill="currentColor"
-              focusable="false"
-              height="34"
-              stroke="currentColor"
-              stroke-width="0"
-              tabindex="-1"
-              viewBox="0 0 24 24"
-              width="34"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 2l.324 .001l.318 .004l.616 .017l.299 .013l.579 .034l.553 .046c4.785 .464 6.732 2.411 7.196 7.196l.046 .553l.034 .579c.005 .098 .01 .198 .013 .299l.017 .616l.005 .642l-.005 .642l-.017 .616l-.013 .299l-.034 .579l-.046 .553c-.464 4.785 -2.411 6.732 -7.196 7.196l-.553 .046l-.579 .034c-.098 .005 -.198 .01 -.299 .013l-.616 .017l-.642 .005l-.642 -.005l-.616 -.017l-.299 -.013l-.579 -.034l-.553 -.046c-4.785 -.464 -6.732 -2.411 -7.196 -7.196l-.046 -.553l-.034 -.579a28.058 28.058 0 0 1 -.013 -.299l-.017 -.616c-.003 -.21 -.005 -.424 -.005 -.642l.001 -.324l.004 -.318l.017 -.616l.013 -.299l.034 -.579l.046 -.553c.464 -4.785 2.411 -6.732 7.196 -7.196l.553 -.046l.579 -.034c.098 -.005 .198 -.01 .299 -.013l.616 -.017c.21 -.003 .424 -.005 .642 -.005zm0 6a1 1 0 0 0 -1 1v2h-2l-.117 .007a1 1 0 0 0 .117 1.993h2v2l.007 .117a1 1 0 0 0 1.993 -.117v-2h2l.117 -.007a1 1 0 0 0 -.117 -1.993h-2v-2l-.007 -.117a1 1 0 0 0 -.993 -.883z"
-                fill="currentColor"
-                stroke-width="0"
-              />
-            </svg>
-          </button>
-        </section>
-        <div
-          class="mt-[17px]"
+          Product Description
+        </p>
+        <button
+          aria-label="Add new product"
+          class="z-0 group relative items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none hover:!bg-default border-transparent text-blue-800 dark:text-white hover:bg-gray-200/50 dark:hover:bg-gray-900 text-md rounded-[10px] border-[1px] h-auto min-w-max bg-white block dark:bg-gray-400 p-0"
+          type="button"
         >
           <div
-            class="flex-col relative gap-4 w-full grid"
+            class="flex items-center"
+          />
+          <svg
+            aria-hidden="true"
+            class="text-blue-500 dark:text-purple-600"
+            fill="currentColor"
+            focusable="false"
+            height="34"
+            stroke="currentColor"
+            stroke-width="0"
+            tabindex="-1"
+            viewBox="0 0 24 24"
+            width="34"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <div
-              class="z-0 flex flex-col relative justify-between gap-4 bg-content1 overflow-auto w-full p-0 shadow-none dark:bg-gray-400 rounded-none"
+            <path
+              d="M12 2l.324 .001l.318 .004l.616 .017l.299 .013l.579 .034l.553 .046c4.785 .464 6.732 2.411 7.196 7.196l.046 .553l.034 .579c.005 .098 .01 .198 .013 .299l.017 .616l.005 .642l-.005 .642l-.017 .616l-.013 .299l-.034 .579l-.046 .553c-.464 4.785 -2.411 6.732 -7.196 7.196l-.553 .046l-.579 .034c-.098 .005 -.198 .01 -.299 .013l-.616 .017l-.642 .005l-.642 -.005l-.616 -.017l-.299 -.013l-.579 -.034l-.553 -.046c-4.785 -.464 -6.732 -2.411 -7.196 -7.196l-.046 -.553l-.034 -.579a28.058 28.058 0 0 1 -.013 -.299l-.017 -.616c-.003 -.21 -.005 -.424 -.005 -.642l.001 -.324l.004 -.318l.017 -.616l.013 -.299l.034 -.579l.046 -.553c.464 -4.785 2.411 -6.732 7.196 -7.196l.553 -.046l.579 -.034c.098 -.005 .198 -.01 .299 -.013l.616 -.017c.21 -.003 .424 -.005 .642 -.005zm0 6a1 1 0 0 0 -1 1v2h-2l-.117 .007a1 1 0 0 0 .117 1.993h2v2l.007 .117a1 1 0 0 0 1.993 -.117v-2h2l.117 -.007a1 1 0 0 0 -.117 -1.993h-2v-2l-.007 -.117a1 1 0 0 0 -.993 -.883z"
+              fill="currentColor"
+              stroke-width="0"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="mt-[17px]"
+      >
+        <div
+          class="flex-col relative gap-4 w-full grid"
+        >
+          <div
+            class="z-0 flex flex-col relative justify-between gap-4 bg-content1 overflow-auto w-full p-0 shadow-none dark:bg-gray-400 rounded-none"
+          >
+            <table
+              aria-describedby=""
+              aria-label="Table"
+              class="min-w-full h-auto table-auto w-full px-0 dark:[&>tbody>*:nth-child(odd)]:bg-gray-400 [&>tbody>*:nth-child(even)]:bg-gray-50/50 dark:[&>tbody>*:nth-child(even)]:bg-gray-600"
+              id="react-aria-:r1m:"
+              role="grid"
+              tabindex="0"
             >
-              <table
-                aria-describedby=""
-                aria-label="Table"
-                class="min-w-full h-auto table-auto w-full px-0 dark:[&>tbody>*:nth-child(odd)]:bg-gray-400 [&>tbody>*:nth-child(even)]:bg-gray-50/50 dark:[&>tbody>*:nth-child(even)]:bg-gray-600"
-                id="react-aria-:r1m:"
-                role="grid"
-                tabindex="0"
+              <thead
+                class="[&>tr]:first:rounded-lg"
+                role="rowgroup"
               >
-                <thead
-                  class="[&>tr]:first:rounded-lg"
-                  role="rowgroup"
+                <tr
+                  class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2"
+                  role="row"
                 >
-                  <tr
-                    class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2"
-                    role="row"
+                  <th
+                    aria-hidden="false"
+                    class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px] border-none"
+                    data-key="title0"
+                    data-testid="sort-btn"
+                    id="react-aria-:r1m:-title0"
+                    role="columnheader"
+                    tabindex="-1"
                   >
-                    <th
-                      aria-hidden="false"
-                      class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px] border-none"
-                      data-key="title0"
-                      data-testid="sort-btn"
-                      id="react-aria-:r1m:-title0"
-                      role="columnheader"
-                      tabindex="-1"
+                    <div
+                      class="flex items-center gap-2"
                     >
-                      <div
-                        class="flex items-center gap-2"
+                      Product Name
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        Product Name
-                        <svg
-                          fill="currentColor"
-                          height="1em"
-                          stroke="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 512 512"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
-                          />
-                        </svg>
-                      </div>
-                    </th>
-                    <th
-                      aria-hidden="false"
-                      class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px] border-none"
-                      data-key="price1"
-                      data-testid="sort-btn"
-                      id="react-aria-:r1m:-price1"
-                      role="columnheader"
-                      tabindex="-1"
+                        <path
+                          d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                        />
+                      </svg>
+                    </div>
+                  </th>
+                  <th
+                    aria-hidden="false"
+                    class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px] border-none"
+                    data-key="price1"
+                    data-testid="sort-btn"
+                    id="react-aria-:r1m:-price1"
+                    role="columnheader"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="flex items-center gap-2"
                     >
-                      <div
-                        class="flex items-center gap-2"
+                      Rate
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        Rate
-                        <svg
-                          fill="currentColor"
-                          height="1em"
-                          stroke="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 512 512"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
-                          />
-                        </svg>
-                      </div>
-                    </th>
-                    <th
-                      aria-hidden="false"
-                      class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px] border-none"
-                      data-key="quantity2"
-                      data-testid="sort-btn"
-                      id="react-aria-:r1m:-quantity2"
-                      role="columnheader"
-                      tabindex="-1"
+                        <path
+                          d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                        />
+                      </svg>
+                    </div>
+                  </th>
+                  <th
+                    aria-hidden="false"
+                    class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px] border-none"
+                    data-key="quantity2"
+                    data-testid="sort-btn"
+                    id="react-aria-:r1m:-quantity2"
+                    role="columnheader"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="flex items-center gap-2"
                     >
-                      <div
-                        class="flex items-center gap-2"
+                      QTY
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        QTY
-                        <svg
-                          fill="currentColor"
-                          height="1em"
-                          stroke="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 512 512"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
-                          />
-                        </svg>
-                      </div>
-                    </th>
-                    <th
-                      aria-hidden="false"
-                      class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px] border-none"
-                      data-key="amount3"
-                      data-testid="sort-btn"
-                      id="react-aria-:r1m:-amount3"
-                      role="columnheader"
-                      tabindex="-1"
+                        <path
+                          d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                        />
+                      </svg>
+                    </div>
+                  </th>
+                  <th
+                    aria-hidden="false"
+                    class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px] border-none"
+                    data-key="amount3"
+                    data-testid="sort-btn"
+                    id="react-aria-:r1m:-amount3"
+                    role="columnheader"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="flex items-center gap-2"
                     >
-                      <div
-                        class="flex items-center gap-2"
+                      Amount
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        Amount
-                        <svg
-                          fill="currentColor"
-                          height="1em"
-                          stroke="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 512 512"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
-                          />
-                        </svg>
-                      </div>
-                    </th>
-                    <th
-                      aria-hidden="true"
-                      class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px] border-none"
-                      data-key="4"
-                      data-testid="sort-btn"
-                      id="react-aria-:r1m:-4"
-                      role="columnheader"
-                      tabindex="-1"
-                    >
-                      <div
-                        class="flex items-center gap-2"
-                      />
-                    </th>
-                  </tr>
-                  <tr
+                        <path
+                          d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                        />
+                      </svg>
+                    </div>
+                  </th>
+                  <th
                     aria-hidden="true"
-                    class="w-px h-px block"
-                    style="margin-left: 0.25rem; margin-top: 0.25rem;"
-                    tabindex="-1"
-                  />
-                </thead>
-                <tbody
-                  role="rowgroup"
-                >
-                  <tr
-                    aria-labelledby="react-aria-:r1m:-$.5.0-title0"
-                    class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 border-b-1 border-gray-50 dark:border-gray-50/50 bg-white dark:bg-gray-400"
-                    data-first="true"
-                    data-key="$.5.0"
-                    data-last="true"
-                    role="row"
+                    class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px] border-none"
+                    data-key="4"
+                    data-testid="sort-btn"
+                    id="react-aria-:r1m:-4"
+                    role="columnheader"
                     tabindex="-1"
                   >
-                    <td
-                      class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
-                      data-key="title-table-cell-0"
-                      id="react-aria-:r1m:-$.5.0-title0"
-                      role="rowheader"
-                      tabindex="-1"
+                    <div
+                      class="flex items-center gap-2"
+                    />
+                  </th>
+                </tr>
+                <tr
+                  aria-hidden="true"
+                  class="w-px h-px block"
+                  style="margin-left: 0.25rem; margin-top: 0.25rem;"
+                  tabindex="-1"
+                />
+              </thead>
+              <tbody
+                role="rowgroup"
+              >
+                <tr
+                  aria-labelledby="react-aria-:r1m:-$.5.0-title0"
+                  class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 border-b-1 border-gray-50 dark:border-gray-50/50 bg-white dark:bg-gray-400"
+                  data-first="true"
+                  data-key="$.5.0"
+                  data-last="true"
+                  role="row"
+                  tabindex="-1"
+                >
+                  <td
+                    class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                    data-key="title-table-cell-0"
+                    id="react-aria-:r1m:-$.5.0-title0"
+                    role="rowheader"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="group flex flex-col w-full transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)]"
+                      data-slot="base"
                     >
                       <div
-                        class="group flex flex-col w-full transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)]"
-                        data-slot="base"
+                        aria-hidden="false"
+                        data-a11y-ignore="aria-hidden-focus"
+                        data-testid="hidden-select-container"
+                        style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
                       >
-                        <div
-                          aria-hidden="false"
-                          data-a11y-ignore="aria-hidden-focus"
-                          data-testid="hidden-select-container"
-                          style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
-                        >
-                          <input
-                            aria-label="Input"
-                            style="font-size: 16px;"
+                        <input
+                          aria-label="Input"
+                          style="font-size: 16px;"
+                          tabindex="-1"
+                          type="text"
+                          value="0"
+                        />
+                        <label>
+                          <select
+                            aria-label="Select"
+                            name="productName_0"
                             tabindex="-1"
-                            type="text"
-                            value="0"
-                          />
-                          <label>
-                            <select
-                              aria-label="Select"
-                              name="productName_0"
-                              tabindex="-1"
-                              title=""
-                            >
-                              <option />
-                            </select>
-                          </label>
-                        </div>
-                        <div
-                          class="w-full flex flex-col"
-                          data-slot="mainWrapper"
-                        >
-                          <button
-                            aria-expanded="false"
-                            aria-haspopup="listbox"
-                            aria-label="Product Name field"
-                            aria-labelledby="react-aria-:r1v: react-aria-:r1q:"
-                            class="relative px-3 gap-3 inline-flex flex-row items-center shadow-sm tap-highlight-transparent data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 h-10 min-h-10 rounded-medium outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:data-[hover=true]:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600 w-40"
-                            data-slot="trigger"
-                            id="react-aria-:r1q:"
-                            type="button"
+                            title=""
                           >
-                            <div
-                              class="inline-flex h-full w-[calc(100%_-_theme(spacing.6))] min-h-4 items-center gap-1.5 box-border"
-                              data-slot="innerWrapper"
-                            >
-                              <span
-                                class="text-foreground-500 font-normal w-full text-left rtl:text-right text-small truncate group-data-[has-value=true]:text-default-foreground"
-                                data-slot="value"
-                                id="react-aria-:r1v:"
-                              />
-                            </div>
-                            <svg
-                              aria-hidden="true"
-                              class="absolute right-3 rtl:left-3 rtl:right-[unset] w-4 h-4 transition-transform duration-150 ease motion-reduce:transition-none data-[open=true]:rotate-180"
-                              data-slot="selectorIcon"
-                              fill="none"
-                              focusable="false"
-                              height="1em"
-                              role="presentation"
-                              stroke="currentColor"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="1.5"
-                              viewBox="0 0 24 24"
-                              width="1em"
-                            >
-                              <path
-                                d="m6 9 6 6 6-6"
-                              />
-                            </svg>
-                          </button>
-                        </div>
+                            <option />
+                          </select>
+                        </label>
                       </div>
-                    </td>
-                    <td
-                      class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
-                      data-key="price-table-cell-1"
-                      role="gridcell"
-                      tabindex="-1"
-                    >
-                      <p
-                        class="font-dm-sans text-blue-800 dark:text-white text-md"
-                      >
-                        $0
-                      </p>
-                    </td>
-                    <td
-                      class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
-                      data-key="quantity-table-cell-2"
-                      role="gridcell"
-                      tabindex="-1"
-                    >
                       <div
-                        class="group flex flex-col data-[hidden=true]:hidden group relative justify-end data-[has-label=true]:mt-[29px] w-[65px] is-filled"
-                        data-filled="true"
-                        data-filled-within="true"
-                        data-has-value="true"
-                        data-slot="base"
+                        class="w-full flex flex-col"
+                        data-slot="mainWrapper"
                       >
-                        <div
-                          class="h-full flex flex-col"
-                          data-slot="main-wrapper"
+                        <button
+                          aria-expanded="false"
+                          aria-haspopup="listbox"
+                          aria-label="Product Name field"
+                          aria-labelledby="react-aria-:r1v: react-aria-:r1q:"
+                          class="relative px-3 gap-3 inline-flex flex-row items-center shadow-sm tap-highlight-transparent data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 h-10 min-h-10 rounded-medium outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:data-[hover=true]:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600 w-40"
+                          data-slot="trigger"
+                          id="react-aria-:r1q:"
+                          type="button"
                         >
                           <div
-                            class="relative w-full inline-flex tap-highlight-transparent flex-row items-center gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-primary-100 text-primary placeholder:text-primary outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background hover:data-[hover=true]:bg-gray-200/50 dark:hover:bg-gray-900 focus-within:bg-gray-50 dark:focus-within:bg-gray-600 group-data-[focus=true]:bg-gray-50 dark:group-data-[focus=true]:bg-gray-600 h-12.5 p-3.75 rounded-[10px] bg-white dark:bg-gray-400 shadow-none px-2 is-filled"
-                            data-slot="input-wrapper"
-                            style="cursor: text;"
+                            class="inline-flex h-full w-[calc(100%_-_theme(spacing.6))] min-h-4 items-center gap-1.5 box-border"
+                            data-slot="innerWrapper"
                           >
-                            <div
-                              class="inline-flex w-full items-center h-full box-border"
-                              data-slot="inner-wrapper"
+                            <span
+                              class="text-foreground-500 font-normal w-full text-left rtl:text-right text-small truncate group-data-[has-value=true]:text-default-foreground"
+                              data-slot="value"
+                              id="react-aria-:r1v:"
+                            />
+                          </div>
+                          <svg
+                            aria-hidden="true"
+                            class="absolute right-3 rtl:left-3 rtl:right-[unset] w-4 h-4 transition-transform duration-150 ease motion-reduce:transition-none data-[open=true]:rotate-180"
+                            data-slot="selectorIcon"
+                            fill="none"
+                            focusable="false"
+                            height="1em"
+                            role="presentation"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            viewBox="0 0 24 24"
+                            width="1em"
+                          >
+                            <path
+                              d="m6 9 6 6 6-6"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                    data-key="price-table-cell-1"
+                    role="gridcell"
+                    tabindex="-1"
+                  >
+                    <p
+                      class="font-dm-sans text-blue-800 dark:text-white text-md"
+                    >
+                      $0
+                    </p>
+                  </td>
+                  <td
+                    class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                    data-key="quantity-table-cell-2"
+                    role="gridcell"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="group flex flex-col data-[hidden=true]:hidden group relative justify-end data-[has-label=true]:mt-[29px] w-[65px] is-filled"
+                      data-filled="true"
+                      data-filled-within="true"
+                      data-has-value="true"
+                      data-slot="base"
+                    >
+                      <div
+                        class="h-full flex flex-col"
+                        data-slot="main-wrapper"
+                      >
+                        <div
+                          class="relative w-full inline-flex tap-highlight-transparent flex-row items-center gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-primary-100 text-primary placeholder:text-primary outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background hover:data-[hover=true]:bg-gray-200/50 dark:hover:bg-gray-900 focus-within:bg-gray-50 dark:focus-within:bg-gray-600 group-data-[focus=true]:bg-gray-50 dark:group-data-[focus=true]:bg-gray-600 h-12.5 p-3.75 rounded-[10px] bg-white dark:bg-gray-400 shadow-none px-2 is-filled"
+                          data-slot="input-wrapper"
+                          style="cursor: text;"
+                        >
+                          <div
+                            class="inline-flex w-full items-center h-full box-border"
+                            data-slot="inner-wrapper"
+                          >
+                            <input
+                              aria-label="Quantity field"
+                              class="w-full font-normal !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-blue-800/70 dark:text-white/70 placeholder:text-blue-800/40 dark:placeholder:text-white/40 bg-transparent text-md is-filled"
+                              data-filled="true"
+                              data-filled-within="true"
+                              data-has-end-content="true"
+                              data-slot="input"
+                              id="react-aria-:r20:"
+                              placeholder=" "
+                              type="text"
+                              value="0"
+                            />
+                            <p
+                              class="font-dm-sans text-blue-800 dark:text-white text-md"
                             >
-                              <input
-                                aria-label="Quantity field"
-                                class="w-full font-normal !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-blue-800/70 dark:text-white/70 placeholder:text-blue-800/40 dark:placeholder:text-white/40 bg-transparent text-md is-filled"
-                                data-filled="true"
-                                data-filled-within="true"
-                                data-has-end-content="true"
-                                data-slot="input"
-                                id="react-aria-:r20:"
-                                placeholder=" "
-                                type="text"
-                                value="0"
-                              />
-                              <p
-                                class="font-dm-sans text-blue-800 dark:text-white text-md"
-                              >
-                                Pcs
-                              </p>
-                            </div>
+                              Pcs
+                            </p>
                           </div>
                         </div>
                       </div>
-                    </td>
-                    <td
-                      class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
-                      data-key="amount-table-cell-3"
-                      role="gridcell"
-                      tabindex="-1"
+                    </div>
+                  </td>
+                  <td
+                    class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                    data-key="amount-table-cell-3"
+                    role="gridcell"
+                    tabindex="-1"
+                  >
+                    <p
+                      class="font-dm-sans text-blue-800 dark:text-white text-md text-end text-teal-700 pr-3"
                     >
-                      <p
-                        class="font-dm-sans text-blue-800 dark:text-white text-md text-end text-teal-700 pr-3"
-                      >
-                        $0
-                      </p>
-                    </td>
-                    <td
-                      class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
-                      data-key="undefined-table-cell-4"
-                      role="gridcell"
-                      tabindex="-1"
+                      $0
+                    </p>
+                  </td>
+                  <td
+                    class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                    data-key="undefined-table-cell-4"
+                    role="gridcell"
+                    tabindex="-1"
+                  >
+                    <button
+                      aria-label="Remove product"
+                      class="z-0 group relative items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none hover:!bg-default border-transparent text-blue-800 dark:text-white hover:bg-gray-200/50 dark:hover:bg-gray-900 text-md border-[1px] h-auto min-w-max rounded-full block p-[10px] bg-pink-500/5 dark:bg-pink-500/5"
+                      data-id="0"
+                      type="button"
                     >
-                      <button
-                        aria-label="Remove product"
-                        class="z-0 group relative items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none hover:!bg-default border-transparent text-blue-800 dark:text-white hover:bg-gray-200/50 dark:hover:bg-gray-900 text-md border-[1px] h-auto min-w-max rounded-full block p-[10px] bg-pink-500/5 dark:bg-pink-500/5"
-                        data-id="0"
-                        type="button"
+                      <div
+                        class="flex items-center"
+                      />
+                      <svg
+                        aria-hidden="true"
+                        class="text-pink-500"
+                        fill="currentColor"
+                        focusable="false"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        tabindex="-1"
+                        viewBox="0 0 448 512"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <div
-                          class="flex items-center"
+                        <path
+                          d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
                         />
-                        <svg
-                          aria-hidden="true"
-                          class="text-pink-500"
-                          fill="currentColor"
-                          focusable="false"
-                          height="1em"
-                          stroke="currentColor"
-                          stroke-width="0"
-                          tabindex="-1"
-                          viewBox="0 0 448 512"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
-                          />
-                        </svg>
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+                      </svg>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
       <div
-        class="flex flex-col sm:flex-row sm:gap-[30px]"
+        class="flex flex-col sm:flex-row base:gap-[20px_0] sm:gap-[0_30px] base:mt-5 sm:mt-[30px]"
       >
         <a
           aria-label="Cancel"
-          class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-3 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-transparent text-blue-500 border-blue-500 dark:border-purple-600 hover:bg-blue-500 hover:text-white dark:hover:text-blue-800 dark:hover:bg-white px-[30px] pt-[15px] pb-[14px] text-md rounded-[10px] border-[1px] h-auto min-w-max w-full mt-10 dark:text-purple-450"
+          class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-3 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-transparent text-blue-500 border-blue-500 dark:border-purple-600 hover:bg-blue-500 hover:text-white dark:hover:text-blue-800 dark:hover:bg-white px-[30px] pt-[15px] pb-[14px] text-md rounded-[10px] border-[1px] h-auto min-w-max w-full dark:text-purple-450"
           href="/invoices"
           role="button"
           tabindex="0"
@@ -953,7 +949,7 @@ exports[`CreateInvoice Component Test should render all content with resolved da
           </div>
         </a>
         <button
-          class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-3 pointer-events-none [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-blue-500 border-transparent dark:bg-purple-600 text-white hover:bg-blue-100 opacity-50 cursor-not-allowed px-[30px] pt-[15px] pb-[14px] text-md rounded-[10px] border-[1px] h-auto min-w-max w-full mt-[20px] sm:mt-10"
+          class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-3 pointer-events-none [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-blue-500 border-transparent dark:bg-purple-600 text-white hover:bg-blue-100 opacity-50 cursor-not-allowed px-[30px] pt-[15px] pb-[14px] text-md rounded-[10px] border-[1px] h-auto min-w-max w-full"
           data-disabled="true"
           disabled=""
           type="submit"
@@ -976,14 +972,14 @@ exports[`CreateInvoice Component Test should render content with empty 1`] = `
     class="bg-white dark:bg-gray-400 p-[30px] pb-[70px] rounded-[10px] h-[calc(full-60px)] flex w-full justify-center"
   >
     <form
-      class="w-full max-w-[700px] justify-center"
+      class="w-full max-w-[700px]"
       data-testid="invoice-form"
     >
       <div
-        class="flex flex-col sm:flex-row sm:gap-[30px] sm:mt-[30px]"
+        class="flex flex-col sm:flex-row sm:gap-[0_30px] sm:mt-[30px]"
       >
         <div
-          class="group flex flex-col data-[hidden=true]:hidden w-full opacity-disabled pointer-events-none group relative justify-end data-[has-label=true]:mt-[29px] h-[74px] is-filled"
+          class="group flex flex-col data-[hidden=true]:hidden w-full opacity-disabled pointer-events-none group relative justify-end data-[has-label=true]:mt-[29px] h-[71px] is-filled"
           data-disabled="true"
           data-filled="true"
           data-filled-within="true"
@@ -1031,7 +1027,7 @@ exports[`CreateInvoice Component Test should render content with empty 1`] = `
           </div>
         </div>
         <div
-          class="group flex flex-col data-[has-helper=true]:pb-[calc(theme(fontSize.tiny)_+8px)] gap-y-1.5 group w-full mt-1"
+          class="group flex flex-col data-[has-helper=true]:pb-[calc(theme(fontSize.tiny)_+8px)] gap-y-1.5 group w-full h-[100px]"
           data-has-end-content="true"
           data-slot="base"
         >
@@ -1183,10 +1179,10 @@ exports[`CreateInvoice Component Test should render content with empty 1`] = `
         </div>
       </div>
       <div
-        class="flex flex-col sm:flex-row mt-8 sm:mt-0 gap-[30px]"
+        class="flex flex-col sm:flex-row sm:gap-[0_30px]"
       >
         <div
-          class="flex flex-col w-full h-[71px] mb-12"
+          class="flex flex-col w-full h-[100px]"
         >
           <div
             class="group flex flex-col transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] w-full rounded-md border-gray-300"
@@ -1227,7 +1223,7 @@ exports[`CreateInvoice Component Test should render content with empty 1`] = `
                 aria-expanded="false"
                 aria-haspopup="listbox"
                 aria-labelledby="react-aria-:r38: react-aria-:r34:"
-                class="relative px-3 gap-3 inline-flex flex-row items-center shadow-sm tap-highlight-transparent data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 h-10 min-h-10 rounded-medium outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 w-full py-[26px] mt-5 bg-gray-50 dark:bg-gray-600 hover:bg-gray-200/50 dark:hover:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600"
+                class="relative px-3 gap-3 inline-flex flex-row items-center shadow-sm tap-highlight-transparent data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 h-10 min-h-10 rounded-medium outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 w-full py-[26px] bg-gray-50 dark:bg-gray-600 hover:bg-gray-200/50 dark:hover:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600"
                 data-slot="trigger"
                 id="customerId"
                 type="button"
@@ -1248,7 +1244,7 @@ exports[`CreateInvoice Component Test should render content with empty 1`] = `
                     data-slot="value"
                     id="react-aria-:r38:"
                   >
-                     
+
                   </span>
                 </div>
                 <svg
@@ -1275,7 +1271,7 @@ exports[`CreateInvoice Component Test should render content with empty 1`] = `
           </div>
         </div>
         <div
-          class="flex flex-col w-full h-[71px] mb-12"
+          class="flex flex-col w-full h-[100px]"
         >
           <div
             class="group flex flex-col transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] w-full rounded-md border-gray-300"
@@ -1332,7 +1328,7 @@ exports[`CreateInvoice Component Test should render content with empty 1`] = `
                 aria-expanded="false"
                 aria-haspopup="listbox"
                 aria-labelledby="react-aria-:r3g: react-aria-:r3c:"
-                class="relative px-3 gap-3 inline-flex flex-row items-center shadow-sm tap-highlight-transparent data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 h-10 min-h-10 rounded-medium outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 w-full py-[26px] mt-5 bg-gray-50 dark:bg-gray-600 hover:bg-gray-200/50 dark:hover:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600"
+                class="relative px-3 gap-3 inline-flex flex-row items-center shadow-sm tap-highlight-transparent data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 h-10 min-h-10 rounded-medium outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 w-full py-[26px] bg-gray-50 dark:bg-gray-600 hover:bg-gray-200/50 dark:hover:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600"
                 data-slot="trigger"
                 id="status"
                 type="button"
@@ -1353,7 +1349,7 @@ exports[`CreateInvoice Component Test should render content with empty 1`] = `
                     data-slot="value"
                     id="react-aria-:r3g:"
                   >
-                     
+
                   </span>
                 </div>
                 <svg
@@ -1381,10 +1377,10 @@ exports[`CreateInvoice Component Test should render content with empty 1`] = `
         </div>
       </div>
       <div
-        class="flex flex-col sm:flex-row gap-[30px] mt-[30px]"
+        class="grid grid-cols-1 sm:grid-cols-2 sm:gap-[0_30px]"
       >
         <div
-          class="group flex flex-col data-[hidden=true]:hidden w-full group relative justify-end data-[has-label=true]:mt-[29px] h-[74px] flex-1"
+          class="group flex flex-col data-[hidden=true]:hidden w-full group relative justify-end data-[has-label=true]:mt-[29px] h-[71px]"
           data-filled="true"
           data-filled-within="true"
           data-has-elements="true"
@@ -1430,7 +1426,7 @@ exports[`CreateInvoice Component Test should render content with empty 1`] = `
           class="relative flex-1"
         >
           <div
-            class="group flex flex-col data-[hidden=true]:hidden w-full group relative justify-end data-[has-label=true]:mt-[29px] flex-1"
+            class="group flex flex-col data-[hidden=true]:hidden w-full group relative justify-end data-[has-label=true]:mt-[29px] h-[71px] flex-1"
             data-filled="true"
             data-filled-within="true"
             data-has-elements="true"
@@ -1442,7 +1438,7 @@ exports[`CreateInvoice Component Test should render content with empty 1`] = `
               data-slot="main-wrapper"
             >
               <div
-                class="relative w-full inline-flex tap-highlight-transparent flex-row items-center shadow-sm gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-primary-100 text-primary placeholder:text-primary outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-offset-background bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:bg-gray-900 focus-within:bg-gray-50 dark:focus-within:bg-gray-600 group-data-[focus=true]:bg-gray-50 dark:group-data-[focus=true]:bg-gray-600 h-12.5 p-3.75 rounded-[10px] group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-blue-500"
+                class="relative w-full inline-flex tap-highlight-transparent flex-row items-center shadow-sm gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-primary-100 text-primary placeholder:text-primary outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:bg-gray-900 focus-within:bg-gray-50 dark:focus-within:bg-gray-600 group-data-[focus=true]:bg-gray-50 dark:group-data-[focus=true]:bg-gray-600 h-12.5 p-3.75 rounded-[10px]"
                 data-slot="input-wrapper"
                 style="cursor: text;"
               >
@@ -1492,416 +1488,412 @@ exports[`CreateInvoice Component Test should render content with empty 1`] = `
         </div>
       </div>
       <div
-        class="mt-[30px] sm:mt-[17px]"
+        class="flex items-center justify-between"
       >
-        <section
-          class="flex items-center justify-between"
+        <p
+          class="font-dm-sans text-blue-800 dark:text-white text-xl font-medium leading-[20.83px]"
         >
-          <p
-            class="font-dm-sans text-blue-800 dark:text-white text-xl font-medium leading-[20.83px]"
-          >
-            Product Description
-          </p>
-          <button
-            aria-label="Add new product"
-            class="z-0 group relative items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none hover:!bg-default border-transparent text-blue-800 dark:text-white hover:bg-gray-200/50 dark:hover:bg-gray-900 text-md rounded-[10px] border-[1px] h-auto min-w-max bg-white block dark:bg-gray-400 p-0"
-            type="button"
-          >
-            <div
-              class="flex items-center"
-            />
-            <svg
-              aria-hidden="true"
-              class="text-blue-500 dark:text-purple-600"
-              fill="currentColor"
-              focusable="false"
-              height="34"
-              stroke="currentColor"
-              stroke-width="0"
-              tabindex="-1"
-              viewBox="0 0 24 24"
-              width="34"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 2l.324 .001l.318 .004l.616 .017l.299 .013l.579 .034l.553 .046c4.785 .464 6.732 2.411 7.196 7.196l.046 .553l.034 .579c.005 .098 .01 .198 .013 .299l.017 .616l.005 .642l-.005 .642l-.017 .616l-.013 .299l-.034 .579l-.046 .553c-.464 4.785 -2.411 6.732 -7.196 7.196l-.553 .046l-.579 .034c-.098 .005 -.198 .01 -.299 .013l-.616 .017l-.642 .005l-.642 -.005l-.616 -.017l-.299 -.013l-.579 -.034l-.553 -.046c-4.785 -.464 -6.732 -2.411 -7.196 -7.196l-.046 -.553l-.034 -.579a28.058 28.058 0 0 1 -.013 -.299l-.017 -.616c-.003 -.21 -.005 -.424 -.005 -.642l.001 -.324l.004 -.318l.017 -.616l.013 -.299l.034 -.579l.046 -.553c.464 -4.785 2.411 -6.732 7.196 -7.196l.553 -.046l.579 -.034c.098 -.005 .198 -.01 .299 -.013l.616 -.017c.21 -.003 .424 -.005 .642 -.005zm0 6a1 1 0 0 0 -1 1v2h-2l-.117 .007a1 1 0 0 0 .117 1.993h2v2l.007 .117a1 1 0 0 0 1.993 -.117v-2h2l.117 -.007a1 1 0 0 0 -.117 -1.993h-2v-2l-.007 -.117a1 1 0 0 0 -.993 -.883z"
-                fill="currentColor"
-                stroke-width="0"
-              />
-            </svg>
-          </button>
-        </section>
-        <div
-          class="mt-[17px]"
+          Product Description
+        </p>
+        <button
+          aria-label="Add new product"
+          class="z-0 group relative items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none hover:!bg-default border-transparent text-blue-800 dark:text-white hover:bg-gray-200/50 dark:hover:bg-gray-900 text-md rounded-[10px] border-[1px] h-auto min-w-max bg-white block dark:bg-gray-400 p-0"
+          type="button"
         >
           <div
-            class="flex-col relative gap-4 w-full grid"
+            class="flex items-center"
+          />
+          <svg
+            aria-hidden="true"
+            class="text-blue-500 dark:text-purple-600"
+            fill="currentColor"
+            focusable="false"
+            height="34"
+            stroke="currentColor"
+            stroke-width="0"
+            tabindex="-1"
+            viewBox="0 0 24 24"
+            width="34"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <div
-              class="z-0 flex flex-col relative justify-between gap-4 bg-content1 overflow-auto w-full p-0 shadow-none dark:bg-gray-400 rounded-none"
+            <path
+              d="M12 2l.324 .001l.318 .004l.616 .017l.299 .013l.579 .034l.553 .046c4.785 .464 6.732 2.411 7.196 7.196l.046 .553l.034 .579c.005 .098 .01 .198 .013 .299l.017 .616l.005 .642l-.005 .642l-.017 .616l-.013 .299l-.034 .579l-.046 .553c-.464 4.785 -2.411 6.732 -7.196 7.196l-.553 .046l-.579 .034c-.098 .005 -.198 .01 -.299 .013l-.616 .017l-.642 .005l-.642 -.005l-.616 -.017l-.299 -.013l-.579 -.034l-.553 -.046c-4.785 -.464 -6.732 -2.411 -7.196 -7.196l-.046 -.553l-.034 -.579a28.058 28.058 0 0 1 -.013 -.299l-.017 -.616c-.003 -.21 -.005 -.424 -.005 -.642l.001 -.324l.004 -.318l.017 -.616l.013 -.299l.034 -.579l.046 -.553c.464 -4.785 2.411 -6.732 7.196 -7.196l.553 -.046l.579 -.034c.098 -.005 .198 -.01 .299 -.013l.616 -.017c.21 -.003 .424 -.005 .642 -.005zm0 6a1 1 0 0 0 -1 1v2h-2l-.117 .007a1 1 0 0 0 .117 1.993h2v2l.007 .117a1 1 0 0 0 1.993 -.117v-2h2l.117 -.007a1 1 0 0 0 -.117 -1.993h-2v-2l-.007 -.117a1 1 0 0 0 -.993 -.883z"
+              fill="currentColor"
+              stroke-width="0"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="mt-[17px]"
+      >
+        <div
+          class="flex-col relative gap-4 w-full grid"
+        >
+          <div
+            class="z-0 flex flex-col relative justify-between gap-4 bg-content1 overflow-auto w-full p-0 shadow-none dark:bg-gray-400 rounded-none"
+          >
+            <table
+              aria-describedby=""
+              aria-label="Table"
+              class="min-w-full h-auto table-auto w-full px-0 dark:[&>tbody>*:nth-child(odd)]:bg-gray-400 [&>tbody>*:nth-child(even)]:bg-gray-50/50 dark:[&>tbody>*:nth-child(even)]:bg-gray-600"
+              id="react-aria-:r3r:"
+              role="grid"
+              tabindex="0"
             >
-              <table
-                aria-describedby=""
-                aria-label="Table"
-                class="min-w-full h-auto table-auto w-full px-0 dark:[&>tbody>*:nth-child(odd)]:bg-gray-400 [&>tbody>*:nth-child(even)]:bg-gray-50/50 dark:[&>tbody>*:nth-child(even)]:bg-gray-600"
-                id="react-aria-:r3r:"
-                role="grid"
-                tabindex="0"
+              <thead
+                class="[&>tr]:first:rounded-lg"
+                role="rowgroup"
               >
-                <thead
-                  class="[&>tr]:first:rounded-lg"
-                  role="rowgroup"
+                <tr
+                  class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2"
+                  role="row"
                 >
-                  <tr
-                    class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2"
-                    role="row"
+                  <th
+                    aria-hidden="false"
+                    class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px] border-none"
+                    data-key="title0"
+                    data-testid="sort-btn"
+                    id="react-aria-:r3r:-title0"
+                    role="columnheader"
+                    tabindex="-1"
                   >
-                    <th
-                      aria-hidden="false"
-                      class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px] border-none"
-                      data-key="title0"
-                      data-testid="sort-btn"
-                      id="react-aria-:r3r:-title0"
-                      role="columnheader"
-                      tabindex="-1"
+                    <div
+                      class="flex items-center gap-2"
                     >
-                      <div
-                        class="flex items-center gap-2"
+                      Product Name
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        Product Name
-                        <svg
-                          fill="currentColor"
-                          height="1em"
-                          stroke="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 512 512"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
-                          />
-                        </svg>
-                      </div>
-                    </th>
-                    <th
-                      aria-hidden="false"
-                      class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px] border-none"
-                      data-key="price1"
-                      data-testid="sort-btn"
-                      id="react-aria-:r3r:-price1"
-                      role="columnheader"
-                      tabindex="-1"
+                        <path
+                          d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                        />
+                      </svg>
+                    </div>
+                  </th>
+                  <th
+                    aria-hidden="false"
+                    class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px] border-none"
+                    data-key="price1"
+                    data-testid="sort-btn"
+                    id="react-aria-:r3r:-price1"
+                    role="columnheader"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="flex items-center gap-2"
                     >
-                      <div
-                        class="flex items-center gap-2"
+                      Rate
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        Rate
-                        <svg
-                          fill="currentColor"
-                          height="1em"
-                          stroke="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 512 512"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
-                          />
-                        </svg>
-                      </div>
-                    </th>
-                    <th
-                      aria-hidden="false"
-                      class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px] border-none"
-                      data-key="quantity2"
-                      data-testid="sort-btn"
-                      id="react-aria-:r3r:-quantity2"
-                      role="columnheader"
-                      tabindex="-1"
+                        <path
+                          d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                        />
+                      </svg>
+                    </div>
+                  </th>
+                  <th
+                    aria-hidden="false"
+                    class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px] border-none"
+                    data-key="quantity2"
+                    data-testid="sort-btn"
+                    id="react-aria-:r3r:-quantity2"
+                    role="columnheader"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="flex items-center gap-2"
                     >
-                      <div
-                        class="flex items-center gap-2"
+                      QTY
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        QTY
-                        <svg
-                          fill="currentColor"
-                          height="1em"
-                          stroke="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 512 512"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
-                          />
-                        </svg>
-                      </div>
-                    </th>
-                    <th
-                      aria-hidden="false"
-                      class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px] border-none"
-                      data-key="amount3"
-                      data-testid="sort-btn"
-                      id="react-aria-:r3r:-amount3"
-                      role="columnheader"
-                      tabindex="-1"
+                        <path
+                          d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                        />
+                      </svg>
+                    </div>
+                  </th>
+                  <th
+                    aria-hidden="false"
+                    class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px] border-none"
+                    data-key="amount3"
+                    data-testid="sort-btn"
+                    id="react-aria-:r3r:-amount3"
+                    role="columnheader"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="flex items-center gap-2"
                     >
-                      <div
-                        class="flex items-center gap-2"
+                      Amount
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        Amount
-                        <svg
-                          fill="currentColor"
-                          height="1em"
-                          stroke="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 512 512"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
-                          />
-                        </svg>
-                      </div>
-                    </th>
-                    <th
-                      aria-hidden="true"
-                      class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px] border-none"
-                      data-key="4"
-                      data-testid="sort-btn"
-                      id="react-aria-:r3r:-4"
-                      role="columnheader"
-                      tabindex="-1"
-                    >
-                      <div
-                        class="flex items-center gap-2"
-                      />
-                    </th>
-                  </tr>
-                  <tr
+                        <path
+                          d="m98 190.06 139.78 163.12a24 24 0 0 0 36.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                        />
+                      </svg>
+                    </div>
+                  </th>
+                  <th
                     aria-hidden="true"
-                    class="w-px h-px block"
-                    style="margin-left: 0.25rem; margin-top: 0.25rem;"
-                    tabindex="-1"
-                  />
-                </thead>
-                <tbody
-                  role="rowgroup"
-                >
-                  <tr
-                    aria-labelledby="react-aria-:r3r:-$.5.0-title0"
-                    class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 border-b-1 border-gray-50 dark:border-gray-50/50 bg-white dark:bg-gray-400"
-                    data-first="true"
-                    data-key="$.5.0"
-                    data-last="true"
-                    role="row"
+                    class="group h-10 align-middle whitespace-nowrap text-foreground-500 text-tiny rtl:first:rounded-r-lg rtl:first:rounded-l-[unset] rtl:last:rounded-l-lg rtl:last:rounded-r-[unset] data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start first:rounded-l-none last:rounded-r-none py-0 cursor-pointer font-normal bg-white dark:bg-gray-400 border-b-[1px] border-blue-800/5 dark:border-white/5 px-[21px] border-none"
+                    data-key="4"
+                    data-testid="sort-btn"
+                    id="react-aria-:r3r:-4"
+                    role="columnheader"
                     tabindex="-1"
                   >
-                    <td
-                      class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
-                      data-key="title-table-cell-0"
-                      id="react-aria-:r3r:-$.5.0-title0"
-                      role="rowheader"
-                      tabindex="-1"
+                    <div
+                      class="flex items-center gap-2"
+                    />
+                  </th>
+                </tr>
+                <tr
+                  aria-hidden="true"
+                  class="w-px h-px block"
+                  style="margin-left: 0.25rem; margin-top: 0.25rem;"
+                  tabindex="-1"
+                />
+              </thead>
+              <tbody
+                role="rowgroup"
+              >
+                <tr
+                  aria-labelledby="react-aria-:r3r:-$.5.0-title0"
+                  class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 border-b-1 border-gray-50 dark:border-gray-50/50 bg-white dark:bg-gray-400"
+                  data-first="true"
+                  data-key="$.5.0"
+                  data-last="true"
+                  role="row"
+                  tabindex="-1"
+                >
+                  <td
+                    class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                    data-key="title-table-cell-0"
+                    id="react-aria-:r3r:-$.5.0-title0"
+                    role="rowheader"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="group flex flex-col w-full transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)]"
+                      data-slot="base"
                     >
                       <div
-                        class="group flex flex-col w-full transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)]"
-                        data-slot="base"
+                        aria-hidden="false"
+                        data-a11y-ignore="aria-hidden-focus"
+                        data-testid="hidden-select-container"
+                        style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
                       >
-                        <div
-                          aria-hidden="false"
-                          data-a11y-ignore="aria-hidden-focus"
-                          data-testid="hidden-select-container"
-                          style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
-                        >
-                          <input
-                            aria-label="Input"
-                            style="font-size: 16px;"
+                        <input
+                          aria-label="Input"
+                          style="font-size: 16px;"
+                          tabindex="-1"
+                          type="text"
+                          value="0"
+                        />
+                        <label>
+                          <select
+                            aria-label="Select"
+                            name="productName_0"
                             tabindex="-1"
-                            type="text"
-                            value="0"
-                          />
-                          <label>
-                            <select
-                              aria-label="Select"
-                              name="productName_0"
-                              tabindex="-1"
-                              title=""
-                            >
-                              <option />
-                            </select>
-                          </label>
-                        </div>
-                        <div
-                          class="w-full flex flex-col"
-                          data-slot="mainWrapper"
-                        >
-                          <button
-                            aria-expanded="false"
-                            aria-haspopup="listbox"
-                            aria-label="Product Name field"
-                            aria-labelledby="react-aria-:r44: react-aria-:r3v:"
-                            class="relative px-3 gap-3 inline-flex flex-row items-center shadow-sm tap-highlight-transparent data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 h-10 min-h-10 rounded-medium outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:data-[hover=true]:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600 w-40"
-                            data-slot="trigger"
-                            id="react-aria-:r3v:"
-                            type="button"
+                            title=""
                           >
-                            <div
-                              class="inline-flex h-full w-[calc(100%_-_theme(spacing.6))] min-h-4 items-center gap-1.5 box-border"
-                              data-slot="innerWrapper"
-                            >
-                              <span
-                                class="text-foreground-500 font-normal w-full text-left rtl:text-right text-small truncate group-data-[has-value=true]:text-default-foreground"
-                                data-slot="value"
-                                id="react-aria-:r44:"
-                              />
-                            </div>
-                            <svg
-                              aria-hidden="true"
-                              class="absolute right-3 rtl:left-3 rtl:right-[unset] w-4 h-4 transition-transform duration-150 ease motion-reduce:transition-none data-[open=true]:rotate-180"
-                              data-slot="selectorIcon"
-                              fill="none"
-                              focusable="false"
-                              height="1em"
-                              role="presentation"
-                              stroke="currentColor"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="1.5"
-                              viewBox="0 0 24 24"
-                              width="1em"
-                            >
-                              <path
-                                d="m6 9 6 6 6-6"
-                              />
-                            </svg>
-                          </button>
-                        </div>
+                            <option />
+                          </select>
+                        </label>
                       </div>
-                    </td>
-                    <td
-                      class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
-                      data-key="price-table-cell-1"
-                      role="gridcell"
-                      tabindex="-1"
-                    >
-                      <p
-                        class="font-dm-sans text-blue-800 dark:text-white text-md"
-                      >
-                        $0
-                      </p>
-                    </td>
-                    <td
-                      class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
-                      data-key="quantity-table-cell-2"
-                      role="gridcell"
-                      tabindex="-1"
-                    >
                       <div
-                        class="group flex flex-col data-[hidden=true]:hidden group relative justify-end data-[has-label=true]:mt-[29px] w-[65px] is-filled"
-                        data-filled="true"
-                        data-filled-within="true"
-                        data-has-value="true"
-                        data-slot="base"
+                        class="w-full flex flex-col"
+                        data-slot="mainWrapper"
                       >
-                        <div
-                          class="h-full flex flex-col"
-                          data-slot="main-wrapper"
+                        <button
+                          aria-expanded="false"
+                          aria-haspopup="listbox"
+                          aria-label="Product Name field"
+                          aria-labelledby="react-aria-:r44: react-aria-:r3v:"
+                          class="relative px-3 gap-3 inline-flex flex-row items-center shadow-sm tap-highlight-transparent data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 h-10 min-h-10 rounded-medium outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 bg-gray-50 dark:bg-gray-600 hover:data-[hover=true]:bg-gray-200/50 dark:hover:data-[hover=true]:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600 w-40"
+                          data-slot="trigger"
+                          id="react-aria-:r3v:"
+                          type="button"
                         >
                           <div
-                            class="relative w-full inline-flex tap-highlight-transparent flex-row items-center gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-primary-100 text-primary placeholder:text-primary outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background hover:data-[hover=true]:bg-gray-200/50 dark:hover:bg-gray-900 focus-within:bg-gray-50 dark:focus-within:bg-gray-600 group-data-[focus=true]:bg-gray-50 dark:group-data-[focus=true]:bg-gray-600 h-12.5 p-3.75 rounded-[10px] bg-white dark:bg-gray-400 shadow-none px-2 is-filled"
-                            data-slot="input-wrapper"
-                            style="cursor: text;"
+                            class="inline-flex h-full w-[calc(100%_-_theme(spacing.6))] min-h-4 items-center gap-1.5 box-border"
+                            data-slot="innerWrapper"
                           >
-                            <div
-                              class="inline-flex w-full items-center h-full box-border"
-                              data-slot="inner-wrapper"
+                            <span
+                              class="text-foreground-500 font-normal w-full text-left rtl:text-right text-small truncate group-data-[has-value=true]:text-default-foreground"
+                              data-slot="value"
+                              id="react-aria-:r44:"
+                            />
+                          </div>
+                          <svg
+                            aria-hidden="true"
+                            class="absolute right-3 rtl:left-3 rtl:right-[unset] w-4 h-4 transition-transform duration-150 ease motion-reduce:transition-none data-[open=true]:rotate-180"
+                            data-slot="selectorIcon"
+                            fill="none"
+                            focusable="false"
+                            height="1em"
+                            role="presentation"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            viewBox="0 0 24 24"
+                            width="1em"
+                          >
+                            <path
+                              d="m6 9 6 6 6-6"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                    data-key="price-table-cell-1"
+                    role="gridcell"
+                    tabindex="-1"
+                  >
+                    <p
+                      class="font-dm-sans text-blue-800 dark:text-white text-md"
+                    >
+                      $0
+                    </p>
+                  </td>
+                  <td
+                    class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                    data-key="quantity-table-cell-2"
+                    role="gridcell"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="group flex flex-col data-[hidden=true]:hidden group relative justify-end data-[has-label=true]:mt-[29px] w-[65px] is-filled"
+                      data-filled="true"
+                      data-filled-within="true"
+                      data-has-value="true"
+                      data-slot="base"
+                    >
+                      <div
+                        class="h-full flex flex-col"
+                        data-slot="main-wrapper"
+                      >
+                        <div
+                          class="relative w-full inline-flex tap-highlight-transparent flex-row items-center gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-primary-100 text-primary placeholder:text-primary outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background hover:data-[hover=true]:bg-gray-200/50 dark:hover:bg-gray-900 focus-within:bg-gray-50 dark:focus-within:bg-gray-600 group-data-[focus=true]:bg-gray-50 dark:group-data-[focus=true]:bg-gray-600 h-12.5 p-3.75 rounded-[10px] bg-white dark:bg-gray-400 shadow-none px-2 is-filled"
+                          data-slot="input-wrapper"
+                          style="cursor: text;"
+                        >
+                          <div
+                            class="inline-flex w-full items-center h-full box-border"
+                            data-slot="inner-wrapper"
+                          >
+                            <input
+                              aria-label="Quantity field"
+                              class="w-full font-normal !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-blue-800/70 dark:text-white/70 placeholder:text-blue-800/40 dark:placeholder:text-white/40 bg-transparent text-md is-filled"
+                              data-filled="true"
+                              data-filled-within="true"
+                              data-has-end-content="true"
+                              data-slot="input"
+                              id="react-aria-:r45:"
+                              placeholder=" "
+                              type="text"
+                              value="0"
+                            />
+                            <p
+                              class="font-dm-sans text-blue-800 dark:text-white text-md"
                             >
-                              <input
-                                aria-label="Quantity field"
-                                class="w-full font-normal !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-blue-800/70 dark:text-white/70 placeholder:text-blue-800/40 dark:placeholder:text-white/40 bg-transparent text-md is-filled"
-                                data-filled="true"
-                                data-filled-within="true"
-                                data-has-end-content="true"
-                                data-slot="input"
-                                id="react-aria-:r45:"
-                                placeholder=" "
-                                type="text"
-                                value="0"
-                              />
-                              <p
-                                class="font-dm-sans text-blue-800 dark:text-white text-md"
-                              >
-                                Pcs
-                              </p>
-                            </div>
+                              Pcs
+                            </p>
                           </div>
                         </div>
                       </div>
-                    </td>
-                    <td
-                      class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
-                      data-key="amount-table-cell-3"
-                      role="gridcell"
-                      tabindex="-1"
+                    </div>
+                  </td>
+                  <td
+                    class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                    data-key="amount-table-cell-3"
+                    role="gridcell"
+                    tabindex="-1"
+                  >
+                    <p
+                      class="font-dm-sans text-blue-800 dark:text-white text-md text-end text-teal-700 pr-3"
                     >
-                      <p
-                        class="font-dm-sans text-blue-800 dark:text-white text-md text-end text-teal-700 pr-3"
-                      >
-                        $0
-                      </p>
-                    </td>
-                    <td
-                      class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
-                      data-key="undefined-table-cell-4"
-                      role="gridcell"
-                      tabindex="-1"
+                      $0
+                    </p>
+                  </td>
+                  <td
+                    class="relative align-middle whitespace-normal text-small font-normal [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 data-[selected=true]:before:opacity-100 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground first:before:rounded-l-lg rtl:first:before:rounded-r-lg rtl:first:before:rounded-l-[unset] last:before:rounded-r-lg rtl:last:before:rounded-l-lg rtl:last:before:rounded-r-[unset] text-start first:rounded-l-lg first:group-data-[middle=true]:before:rounded-l-lg last:rounded-r-lg leading-[17px] py-[17px] px-[21px]"
+                    data-key="undefined-table-cell-4"
+                    role="gridcell"
+                    tabindex="-1"
+                  >
+                    <button
+                      aria-label="Remove product"
+                      class="z-0 group relative items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none hover:!bg-default border-transparent text-blue-800 dark:text-white hover:bg-gray-200/50 dark:hover:bg-gray-900 text-md border-[1px] h-auto min-w-max rounded-full block p-[10px] bg-pink-500/5 dark:bg-pink-500/5"
+                      data-id="0"
+                      type="button"
                     >
-                      <button
-                        aria-label="Remove product"
-                        class="z-0 group relative items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none hover:!bg-default border-transparent text-blue-800 dark:text-white hover:bg-gray-200/50 dark:hover:bg-gray-900 text-md border-[1px] h-auto min-w-max rounded-full block p-[10px] bg-pink-500/5 dark:bg-pink-500/5"
-                        data-id="0"
-                        type="button"
+                      <div
+                        class="flex items-center"
+                      />
+                      <svg
+                        aria-hidden="true"
+                        class="text-pink-500"
+                        fill="currentColor"
+                        focusable="false"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        tabindex="-1"
+                        viewBox="0 0 448 512"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <div
-                          class="flex items-center"
+                        <path
+                          d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
                         />
-                        <svg
-                          aria-hidden="true"
-                          class="text-pink-500"
-                          fill="currentColor"
-                          focusable="false"
-                          height="1em"
-                          stroke="currentColor"
-                          stroke-width="0"
-                          tabindex="-1"
-                          viewBox="0 0 448 512"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
-                          />
-                        </svg>
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+                      </svg>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
       <div
-        class="flex flex-col sm:flex-row sm:gap-[30px]"
+        class="flex flex-col sm:flex-row base:gap-[20px_0] sm:gap-[0_30px] base:mt-5 sm:mt-[30px]"
       >
         <a
           aria-label="Cancel"
-          class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-3 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-transparent text-blue-500 border-blue-500 dark:border-purple-600 hover:bg-blue-500 hover:text-white dark:hover:text-blue-800 dark:hover:bg-white px-[30px] pt-[15px] pb-[14px] text-md rounded-[10px] border-[1px] h-auto min-w-max w-full mt-10 dark:text-purple-450"
+          class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-3 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-transparent text-blue-500 border-blue-500 dark:border-purple-600 hover:bg-blue-500 hover:text-white dark:hover:text-blue-800 dark:hover:bg-white px-[30px] pt-[15px] pb-[14px] text-md rounded-[10px] border-[1px] h-auto min-w-max w-full dark:text-purple-450"
           href="/invoices"
           role="button"
           tabindex="0"
@@ -1913,7 +1905,7 @@ exports[`CreateInvoice Component Test should render content with empty 1`] = `
           </div>
         </a>
         <button
-          class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-3 pointer-events-none [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-blue-500 border-transparent dark:bg-purple-600 text-white hover:bg-blue-100 opacity-50 cursor-not-allowed px-[30px] pt-[15px] pb-[14px] text-md rounded-[10px] border-[1px] h-auto min-w-max w-full mt-[20px] sm:mt-10"
+          class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-3 pointer-events-none [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-blue-500 border-transparent dark:bg-purple-600 text-white hover:bg-blue-100 opacity-50 cursor-not-allowed px-[30px] pt-[15px] pb-[14px] text-md rounded-[10px] border-[1px] h-auto min-w-max w-full"
           data-disabled="true"
           disabled=""
           type="submit"

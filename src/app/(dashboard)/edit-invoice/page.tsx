@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { Suspense } from 'react';
 
 // Layouts
 import { DashBoardLayout } from '@/layouts';
@@ -8,6 +9,9 @@ import { IMAGES } from '@/constants';
 
 // UI
 import { EditInvoice } from '@/ui';
+
+// Components
+import { SkeletonInvoiceForm } from '@/components';
 
 export const metadata: Metadata = {
   title: 'Wons Edit Invoice',
@@ -35,7 +39,9 @@ const EditInvoicePage = ({ searchParams }: CustomersProps) => {
 
   return (
     <DashBoardLayout title="Edit Invoice">
-      <EditInvoice id={id} />
+      <Suspense fallback={<SkeletonInvoiceForm />}>
+        <EditInvoice id={id} />
+      </Suspense>
     </DashBoardLayout>
   );
 };
