@@ -9,7 +9,7 @@ exports[`Account success page match snapshot 1`] = `
       !function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&false)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}else{c.add('light')}if(e==='light'||e==='dark'||!e)d.style.colorScheme=e||'light'}catch(e){}}()
     </script>
     <div
-      class="py-[193px] px-6 bg-50 dark:bg-gray-600 "
+      class="bg-50 dark:bg-gray-600 flex justify-center items-center h-screen"
     >
       <div
         class="flex flex-col relative overflow-hidden h-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 rounded-large transition-transform-background motion-reduce:transition-none shadow-none rounded-10 mx-auto bg-white dark:bg-gray-400 base:w-full base:h-[500px] sm:w-[550px] sm:h-[550px] md:w-[600px] md:h-[600px] xl:w-[726px] xl:h-[726px]"

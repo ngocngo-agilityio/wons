@@ -20,7 +20,7 @@ const AccountSuccess = (): JSX.Element => {
       : IMAGES.ACCOUNT_SUCCESS_DARK;
 
   return (
-    <div className="py-[193px] px-6 bg-50 dark:bg-gray-600 ">
+    <div className="bg-50 dark:bg-gray-600 flex justify-center items-center h-screen">
       <Card className="shadow-none rounded-10 mx-auto bg-white dark:bg-gray-400 base:w-full base:h-[500px] sm:w-[550px] sm:h-[550px] md:w-[600px] md:h-[600px] xl:w-[726px] xl:h-[726px] ">
         <CardBody className="flex flex-col items-center">
           <ImageFallback
