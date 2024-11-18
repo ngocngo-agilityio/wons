@@ -33,7 +33,7 @@ exports[`UserDetail render successful 1`] = `
             />
           </div>
         </div>
-        <dl
+        <div
           class="flex flex-col justify-center text-center sm:text-left m-[20px_0] sm:m-0"
         >
           <dt
@@ -46,7 +46,7 @@ exports[`UserDetail render successful 1`] = `
           >
             Admin
           </dd>
-        </dl>
+        </div>
       </div>
       <button
         class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-blue-500 border-transparent dark:bg-purple-600 text-white hover:bg-blue-100 rounded-[10px] border-[1px] min-w-max h-fit text-[15px] font-medium md:w-auto py-[10px] px-[25px]"
@@ -59,7 +59,7 @@ exports[`UserDetail render successful 1`] = `
         </div>
       </button>
     </div>
-    <dl
+    <div
       class="flex flex-col gap-[2px_0] p-[15px_0] border-solid border-b-1 border-gray-100"
     >
       <dt
@@ -72,8 +72,8 @@ exports[`UserDetail render successful 1`] = `
       >
         admin
       </dd>
-    </dl>
-    <dl
+    </div>
+    <div
       class="flex flex-col gap-[2px_0] p-[15px_0] border-solid border-b-1 border-gray-100"
     >
       <dt
@@ -86,7 +86,7 @@ exports[`UserDetail render successful 1`] = `
       >
         admin1@gmail.com
       </dd>
-    </dl>
+    </div>
   </div>
 </div>
 `;
