@@ -38,6 +38,4 @@ const ToastList = ({ toasts, onClose }: IToastListProps) => (
   </div>
 );
 
-export default memo(ToastList, isEqual) as <T>(
-  props: IToastListProps & T,
-) => JSX.Element;
+export default memo(ToastList, isEqual);

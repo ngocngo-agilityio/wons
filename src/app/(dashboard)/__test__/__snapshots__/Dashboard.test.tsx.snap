@@ -29,35 +29,8 @@ exports[`dashboard page should match snapshot 1`] = `
             <p
               class="text-[15.02px] ml-[17.96px]"
             >
-              <p
-                class="text-[15.02px] ml-[17.96px]"
-              >
-                12-11-2024
-              </p>
-              <div
-                class="absolute flex items-center h-full right-0 px-2"
-              >
-                <button
-                  aria-label="start date"
-                  class="flex h-[15px] w-[15px] justify-center items-center rounded-full hover:bg-gray-100"
-                >
-                  <svg
-                    class="w-[8.43px]"
-                    fill="currentColor"
-                    height="1em"
-                    stroke="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 512 512"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
+              12-11-2024
+            </p>
             <div
               class="absolute flex items-center h-full right-0 px-2"
             >
@@ -65,14 +38,15 @@ exports[`dashboard page should match snapshot 1`] = `
                 aria-label="start date"
                 class="flex h-[15px] w-[15px] justify-center items-center rounded-full hover:bg-gray-100"
               >
-                18-11-2024
-              </p>
-              <div
-                class="absolute flex items-center h-full right-0 px-2"
-              >
-                <button
-                  aria-label="end date"
-                  class="flex h-[15px] w-[15px] justify-center items-center rounded-full hover:bg-gray-100"
+                <svg
+                  class="w-[8.43px]"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
@@ -260,104 +234,27 @@ exports[`dashboard page should match snapshot 1`] = `
                 >
                   <div
                     aria-describedby="react-aria-description-2"
-                    aria-label="Start Date"
-                    aria-labelledby="react-aria-:r1:"
-                    class="flex h-full gap-x-0.5 w-full font-normal text-small"
-                    data-slot="start-input"
-                    role="presentation"
-                    style="max-width: fit-content;"
-                    value="2024-11-12"
+                    aria-label="month, End Date, "
+                    aria-labelledby="react-aria-:rr: react-aria-:r1:"
+                    aria-valuemax="12"
+                    aria-valuemin="1"
+                    aria-valuenow="11"
+                    aria-valuetext="11 – November"
+                    autocorrect="off"
+                    class="group first:-ml-0.5 [&:not(:first-child)]:-ml-1 px-0.5 my-auto box-content tabular-nums text-start inline-block outline-none focus:shadow-sm rounded-md text-foreground-500 data-[editable=true]:text-foreground data-[editable=true]:data-[placeholder=true]:text-foreground-500 data-[invalid=true]:text-danger-300 data-[invalid=true]:data-[editable=true]:text-danger data-[invalid=true]:focus:bg-danger-400/50 dark:data-[invalid=true]:focus:bg-danger-400/20 data-[invalid=true]:data-[editable=true]:focus:text-danger focus:bg-default-400/50 data-[editable=true]:focus:text-default-foreground"
+                    contenteditable="true"
+                    data-editable="true"
+                    data-slot="segment"
+                    data-type="month"
+                    enterkeyhint="next"
+                    id="react-aria-:rr:"
+                    inputmode="numeric"
+                    role="spinbutton"
+                    spellcheck="false"
+                    style="caret-color: transparent;"
+                    tabindex="0"
                   >
-                    <div
-                      aria-describedby="react-aria-description-2"
-                      aria-label="month, Start Date, "
-                      aria-labelledby="react-aria-:rc: react-aria-:r1:"
-                      aria-valuemax="12"
-                      aria-valuemin="1"
-                      aria-valuenow="11"
-                      aria-valuetext="11 – November"
-                      autocorrect="off"
-                      class="group first:-ml-0.5 [&:not(:first-child)]:-ml-1 px-0.5 my-auto box-content tabular-nums text-start inline-block outline-none focus:shadow-sm rounded-md text-foreground-500 data-[editable=true]:text-foreground data-[editable=true]:data-[placeholder=true]:text-foreground-500 data-[invalid=true]:text-danger-300 data-[invalid=true]:data-[editable=true]:text-danger data-[invalid=true]:focus:bg-danger-400/50 dark:data-[invalid=true]:focus:bg-danger-400/20 data-[invalid=true]:data-[editable=true]:focus:text-danger focus:bg-default-400/50 data-[editable=true]:focus:text-default-foreground"
-                      contenteditable="true"
-                      data-editable="true"
-                      data-slot="segment"
-                      data-type="month"
-                      enterkeyhint="next"
-                      id="react-aria-:rc:"
-                      inputmode="numeric"
-                      role="spinbutton"
-                      spellcheck="false"
-                      style="caret-color: transparent;"
-                      tabindex="0"
-                    >
-                      11
-                    </div>
-                    <div
-                      aria-hidden="true"
-                      class="group first:-ml-0.5 [&:not(:first-child)]:-ml-1 px-0.5 my-auto box-content tabular-nums text-start inline-block outline-none focus:shadow-sm rounded-md text-foreground-500 data-[editable=true]:text-foreground data-[editable=true]:data-[placeholder=true]:text-foreground-500 data-[invalid=true]:text-danger-300 data-[invalid=true]:data-[editable=true]:text-danger data-[invalid=true]:focus:bg-danger-400/50 dark:data-[invalid=true]:focus:bg-danger-400/20 data-[invalid=true]:data-[editable=true]:focus:text-danger focus:bg-default-400/50 data-[editable=true]:focus:text-default-foreground"
-                      data-slot="segment"
-                      data-type="literal"
-                    >
-                      /
-                    </div>
-                    <div
-                      aria-label="day, Start Date, "
-                      aria-labelledby="react-aria-:rg: react-aria-:r1:"
-                      aria-valuemax="30"
-                      aria-valuemin="1"
-                      aria-valuenow="12"
-                      aria-valuetext="12"
-                      autocorrect="off"
-                      class="group first:-ml-0.5 [&:not(:first-child)]:-ml-1 px-0.5 my-auto box-content tabular-nums text-start inline-block outline-none focus:shadow-sm rounded-md text-foreground-500 data-[editable=true]:text-foreground data-[editable=true]:data-[placeholder=true]:text-foreground-500 data-[invalid=true]:text-danger-300 data-[invalid=true]:data-[editable=true]:text-danger data-[invalid=true]:focus:bg-danger-400/50 dark:data-[invalid=true]:focus:bg-danger-400/20 data-[invalid=true]:data-[editable=true]:focus:text-danger focus:bg-default-400/50 data-[editable=true]:focus:text-default-foreground"
-                      contenteditable="true"
-                      data-editable="true"
-                      data-slot="segment"
-                      data-type="day"
-                      enterkeyhint="next"
-                      id="react-aria-:rg:"
-                      inputmode="numeric"
-                      role="spinbutton"
-                      spellcheck="false"
-                      style="caret-color: transparent;"
-                      tabindex="0"
-                    >
-                      12
-                    </div>
-                    <div
-                      aria-hidden="true"
-                      class="group first:-ml-0.5 [&:not(:first-child)]:-ml-1 px-0.5 my-auto box-content tabular-nums text-start inline-block outline-none focus:shadow-sm rounded-md text-foreground-500 data-[editable=true]:text-foreground data-[editable=true]:data-[placeholder=true]:text-foreground-500 data-[invalid=true]:text-danger-300 data-[invalid=true]:data-[editable=true]:text-danger data-[invalid=true]:focus:bg-danger-400/50 dark:data-[invalid=true]:focus:bg-danger-400/20 data-[invalid=true]:data-[editable=true]:focus:text-danger focus:bg-default-400/50 data-[editable=true]:focus:text-default-foreground"
-                      data-slot="segment"
-                      data-type="literal"
-                    >
-                      /
-                    </div>
-                    <div
-                      aria-label="year, Start Date, "
-                      aria-labelledby="react-aria-:rk: react-aria-:r1:"
-                      aria-valuemax="9999"
-                      aria-valuemin="1"
-                      aria-valuenow="2024"
-                      aria-valuetext="2024"
-                      autocorrect="off"
-                      class="group first:-ml-0.5 [&:not(:first-child)]:-ml-1 px-0.5 my-auto box-content tabular-nums text-start inline-block outline-none focus:shadow-sm rounded-md text-foreground-500 data-[editable=true]:text-foreground data-[editable=true]:data-[placeholder=true]:text-foreground-500 data-[invalid=true]:text-danger-300 data-[invalid=true]:data-[editable=true]:text-danger data-[invalid=true]:focus:bg-danger-400/50 dark:data-[invalid=true]:focus:bg-danger-400/20 data-[invalid=true]:data-[editable=true]:focus:text-danger focus:bg-default-400/50 data-[editable=true]:focus:text-default-foreground"
-                      contenteditable="true"
-                      data-editable="true"
-                      data-slot="segment"
-                      data-type="year"
-                      enterkeyhint="next"
-                      id="react-aria-:rk:"
-                      inputmode="numeric"
-                      role="spinbutton"
-                      spellcheck="false"
-                      style="caret-color: transparent;"
-                      tabindex="0"
-                    >
-                      2024
-                    </div>
-                    <input
-                      type="hidden"
-                      value="2024-11-12"
-                    />
+                    11
                   </div>
                   <div
                     aria-hidden="true"
@@ -365,107 +262,7 @@ exports[`dashboard page should match snapshot 1`] = `
                     data-slot="segment"
                     data-type="literal"
                   >
-                    -
-                  </span>
-                  <div
-                    aria-describedby="react-aria-description-2"
-                    aria-label="End Date"
-                    aria-labelledby="react-aria-:r1:"
-                    class="flex h-full gap-x-0.5 w-full font-normal text-small"
-                    data-slot="end-input"
-                    role="presentation"
-                    value="2024-11-18"
-                  >
-                    <div
-                      aria-describedby="react-aria-description-2"
-                      aria-label="month, End Date, "
-                      aria-labelledby="react-aria-:rr: react-aria-:r1:"
-                      aria-valuemax="12"
-                      aria-valuemin="1"
-                      aria-valuenow="11"
-                      aria-valuetext="11 – November"
-                      autocorrect="off"
-                      class="group first:-ml-0.5 [&:not(:first-child)]:-ml-1 px-0.5 my-auto box-content tabular-nums text-start inline-block outline-none focus:shadow-sm rounded-md text-foreground-500 data-[editable=true]:text-foreground data-[editable=true]:data-[placeholder=true]:text-foreground-500 data-[invalid=true]:text-danger-300 data-[invalid=true]:data-[editable=true]:text-danger data-[invalid=true]:focus:bg-danger-400/50 dark:data-[invalid=true]:focus:bg-danger-400/20 data-[invalid=true]:data-[editable=true]:focus:text-danger focus:bg-default-400/50 data-[editable=true]:focus:text-default-foreground"
-                      contenteditable="true"
-                      data-editable="true"
-                      data-slot="segment"
-                      data-type="month"
-                      enterkeyhint="next"
-                      id="react-aria-:rr:"
-                      inputmode="numeric"
-                      role="spinbutton"
-                      spellcheck="false"
-                      style="caret-color: transparent;"
-                      tabindex="0"
-                    >
-                      11
-                    </div>
-                    <div
-                      aria-hidden="true"
-                      class="group first:-ml-0.5 [&:not(:first-child)]:-ml-1 px-0.5 my-auto box-content tabular-nums text-start inline-block outline-none focus:shadow-sm rounded-md text-foreground-500 data-[editable=true]:text-foreground data-[editable=true]:data-[placeholder=true]:text-foreground-500 data-[invalid=true]:text-danger-300 data-[invalid=true]:data-[editable=true]:text-danger data-[invalid=true]:focus:bg-danger-400/50 dark:data-[invalid=true]:focus:bg-danger-400/20 data-[invalid=true]:data-[editable=true]:focus:text-danger focus:bg-default-400/50 data-[editable=true]:focus:text-default-foreground"
-                      data-slot="segment"
-                      data-type="literal"
-                    >
-                      /
-                    </div>
-                    <div
-                      aria-label="day, End Date, "
-                      aria-labelledby="react-aria-:rv: react-aria-:r1:"
-                      aria-valuemax="30"
-                      aria-valuemin="1"
-                      aria-valuenow="18"
-                      aria-valuetext="18"
-                      autocorrect="off"
-                      class="group first:-ml-0.5 [&:not(:first-child)]:-ml-1 px-0.5 my-auto box-content tabular-nums text-start inline-block outline-none focus:shadow-sm rounded-md text-foreground-500 data-[editable=true]:text-foreground data-[editable=true]:data-[placeholder=true]:text-foreground-500 data-[invalid=true]:text-danger-300 data-[invalid=true]:data-[editable=true]:text-danger data-[invalid=true]:focus:bg-danger-400/50 dark:data-[invalid=true]:focus:bg-danger-400/20 data-[invalid=true]:data-[editable=true]:focus:text-danger focus:bg-default-400/50 data-[editable=true]:focus:text-default-foreground"
-                      contenteditable="true"
-                      data-editable="true"
-                      data-slot="segment"
-                      data-type="day"
-                      enterkeyhint="next"
-                      id="react-aria-:rv:"
-                      inputmode="numeric"
-                      role="spinbutton"
-                      spellcheck="false"
-                      style="caret-color: transparent;"
-                      tabindex="0"
-                    >
-                      18
-                    </div>
-                    <div
-                      aria-hidden="true"
-                      class="group first:-ml-0.5 [&:not(:first-child)]:-ml-1 px-0.5 my-auto box-content tabular-nums text-start inline-block outline-none focus:shadow-sm rounded-md text-foreground-500 data-[editable=true]:text-foreground data-[editable=true]:data-[placeholder=true]:text-foreground-500 data-[invalid=true]:text-danger-300 data-[invalid=true]:data-[editable=true]:text-danger data-[invalid=true]:focus:bg-danger-400/50 dark:data-[invalid=true]:focus:bg-danger-400/20 data-[invalid=true]:data-[editable=true]:focus:text-danger focus:bg-default-400/50 data-[editable=true]:focus:text-default-foreground"
-                      data-slot="segment"
-                      data-type="literal"
-                    >
-                      /
-                    </div>
-                    <div
-                      aria-label="year, End Date, "
-                      aria-labelledby="react-aria-:r13: react-aria-:r1:"
-                      aria-valuemax="9999"
-                      aria-valuemin="1"
-                      aria-valuenow="2024"
-                      aria-valuetext="2024"
-                      autocorrect="off"
-                      class="group first:-ml-0.5 [&:not(:first-child)]:-ml-1 px-0.5 my-auto box-content tabular-nums text-start inline-block outline-none focus:shadow-sm rounded-md text-foreground-500 data-[editable=true]:text-foreground data-[editable=true]:data-[placeholder=true]:text-foreground-500 data-[invalid=true]:text-danger-300 data-[invalid=true]:data-[editable=true]:text-danger data-[invalid=true]:focus:bg-danger-400/50 dark:data-[invalid=true]:focus:bg-danger-400/20 data-[invalid=true]:data-[editable=true]:focus:text-danger focus:bg-default-400/50 data-[editable=true]:focus:text-default-foreground"
-                      contenteditable="true"
-                      data-editable="true"
-                      data-slot="segment"
-                      data-type="year"
-                      enterkeyhint="next"
-                      id="react-aria-:r13:"
-                      inputmode="numeric"
-                      role="spinbutton"
-                      spellcheck="false"
-                      style="caret-color: transparent;"
-                      tabindex="0"
-                    >
-                      2024
-                    </div>
-                    <input
-                      type="hidden"
-                      value="2024-11-18"
-                    />
+                    /
                   </div>
                   <div
                     aria-label="day, End Date, "

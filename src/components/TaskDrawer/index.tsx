@@ -97,10 +97,10 @@ const TaskDrawer = ({ isAdmin }: TaskDrawerProps): JSX.Element => {
     [avatarFiles, isAvatarDirty, isPending, showToast],
   );
 
-  const handleAvatarChange = useCallback((files: File[]) => {
+  const handleAvatarChange = (files: File[]) => {
     setAvatarFiles(files);
     setIsAvatarDirty(true);
-  }, []);
+  };
 
   useEffect(() => {
     preventScrollFromState(isDrawerOpen);
