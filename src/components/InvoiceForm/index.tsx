@@ -182,10 +182,10 @@ const InvoiceForm = ({
       {isPending && <LoadingIndicator />}
       <form
         data-testid="invoice-form"
-        className="w-full max-w-[700px] justify-center"
+        className="w-full max-w-[700px]"
         onSubmit={handleSubmit(handleSubmitButton)}
       >
-        <div className="flex flex-col sm:flex-row sm:gap-[30px] sm:mt-[30px]">
+        <div className="flex flex-col sm:flex-row sm:gap-[0_30px] sm:mt-[30px]">
           {/* Invoice Id*/}
           <Controller
             name="invoiceId"
@@ -194,7 +194,7 @@ const InvoiceForm = ({
               <Input
                 isDisabled
                 label="Invoice Id"
-                classNames={{ base: 'h-[74px]' }}
+                classNames={{ base: 'h-[71px]' }}
                 value={`#${invoiceId}`}
               />
             )}
@@ -232,15 +232,15 @@ const InvoiceForm = ({
                   minValue={currentDate}
                   label="Date"
                   isInvalid={!!error}
-                  className="mt-1"
                   errorMessage={error?.message}
+                  className="h-[100px]"
                 />
               );
             }}
           />
         </div>
 
-        <div className="flex flex-col sm:flex-row mt-8 sm:mt-0 gap-[30px]">
+        <div className="flex flex-col sm:flex-row sm:gap-[0_30px]">
           {/* Customer */}
           <Controller
             name="customerId"
@@ -249,7 +249,7 @@ const InvoiceForm = ({
               field: { name, onChange, value, onBlur },
               fieldState: { error },
             }) => (
-              <div className="flex flex-col w-full h-[71px] mb-12">
+              <div className="flex flex-col w-full h-[100px]">
                 <Select
                   name={name}
                   id="customerId"
@@ -264,7 +264,7 @@ const InvoiceForm = ({
                   })}
                   classNames={{
                     trigger: clsx(
-                      'w-full py-[26px] mt-5',
+                      'w-full py-[26px]',
                       error
                         ? 'bg-danger-50 hover:bg-danger-200/50 focus:bg-danger-200/50 dark:hover:bg-gray-600'
                         : 'bg-gray-50 dark:bg-gray-600 hover:bg-gray-200/50 dark:hover:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600',
@@ -297,7 +297,7 @@ const InvoiceForm = ({
               field: { name, onChange, value, onBlur },
               fieldState: { error },
             }) => (
-              <div className="flex flex-col w-full h-[71px] mb-12">
+              <div className="flex flex-col w-full h-[100px]">
                 <Select
                   name={name}
                   id="status"
@@ -312,7 +312,7 @@ const InvoiceForm = ({
                   })}
                   classNames={{
                     trigger: clsx(
-                      'w-full py-[26px] mt-5',
+                      'w-full py-[26px]',
                       error
                         ? 'bg-danger-50 hover:bg-danger-200/50 focus:bg-danger-200/50 dark:hover:bg-gray-600'
                         : 'bg-gray-50 dark:bg-gray-600 hover:bg-gray-200/50 dark:hover:bg-gray-900 focus:bg-gray-50 dark:focus:bg-gray-600',
@@ -338,7 +338,7 @@ const InvoiceForm = ({
           />
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-[30px] mt-[30px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-[0_30px]">
           {/*Email*/}
           <Controller
             name="email"
@@ -348,9 +348,8 @@ const InvoiceForm = ({
               fieldState: { error },
             }) => (
               <Input
-                className="flex-1"
                 label="Email"
-                classNames={{ base: 'h-[74px]' }}
+                classNames={{ base: 'h-[71px]' }}
                 type="email"
                 isInvalid={!!error}
                 errorMessage={error?.message}
@@ -374,9 +373,10 @@ const InvoiceForm = ({
               fieldState: { error },
             }) => (
               <AddressInput
+                className="flex-1"
                 isInvalid={!!error}
                 errorMessage={error?.message}
-                className="flex-1"
+                classNames={{ base: 'h-[71px]' }}
                 onChange={(value) => {
                   onChange(value);
 
@@ -390,23 +390,21 @@ const InvoiceForm = ({
           />
         </div>
 
-        <div className="mt-[30px] sm:mt-[17px]">
-          <InvoiceProductTable
-            products={products}
-            productsValues={productsValues}
-            errorProducts={errorProducts}
-            setErrorProducts={setErrorProducts}
-            setProductsValues={setProductsValues}
-          />
-        </div>
+        <InvoiceProductTable
+          products={products}
+          productsValues={productsValues}
+          errorProducts={errorProducts}
+          setErrorProducts={setErrorProducts}
+          setProductsValues={setProductsValues}
+        />
 
-        <div className="flex flex-col sm:flex-row sm:gap-[30px]">
+        <div className="flex flex-col sm:flex-row base:gap-[20px_0] sm:gap-[0_30px] base:mt-5 sm:mt-[30px]">
           <Button
             as={Link}
             href={ROUTES.INVOICE}
             size="lg"
             color="secondary"
-            className="w-full mt-10 dark:text-purple-450"
+            className="w-full dark:text-purple-450"
             aria-label="Cancel"
           >
             Cancel
@@ -417,7 +415,7 @@ const InvoiceForm = ({
             isLoading={isPending}
             size="lg"
             color="primary"
-            className="w-full mt-[20px] sm:mt-10"
+            className="w-full"
           >
             {isEdit ? 'Update Invoice' : 'Create Invoice'}
           </Button>
