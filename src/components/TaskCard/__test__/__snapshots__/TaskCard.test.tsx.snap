@@ -50,14 +50,14 @@ exports[`TaskCard Component matches the snapshot 1`] = `
           class="mt-[20px]"
         >
           <div
-            class="flex justify-between"
+            class="flex gap-[0_10px] 2xl:gap-0 lg:justify-around"
           >
             <div
               class="w-[107px] h-[90px] relative"
             >
               <img
                 alt="Dashboard Design"
-                class="opacity-0 hidden rounded-[10px] object-cover"
+                class="opacity-0 hidden rounded-10 object-cover"
                 data-nimg="fill"
                 decoding="async"
                 fetchpriority="high"
@@ -79,7 +79,7 @@ exports[`TaskCard Component matches the snapshot 1`] = `
             >
               <img
                 alt="Dashboard Design"
-                class="opacity-0 hidden rounded-[10px] object-cover"
+                class="opacity-0 hidden rounded-10 object-cover"
                 data-nimg="fill"
                 decoding="async"
                 fetchpriority="high"
