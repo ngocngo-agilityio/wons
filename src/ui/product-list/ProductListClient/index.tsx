@@ -62,7 +62,7 @@ const ProductListClient = ({
   const [idProduct, setIdProduct] = useState<number>(0);
   const { showToast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
-  const { isGreaterThanLg } = useBreakPoints();
+  const { isLessThanSm } = useBreakPoints();
 
   const {
     SUCCESS: { DELETE_CUSTOMER, UPDATE_PRODUCT },
@@ -189,10 +189,13 @@ const ProductListClient = ({
           open={toggleProductDetails}
           onClose={handleCloseProductDetail}
           direction="right"
-          size={isGreaterThanLg ? 369 : 302}
+          size={isLessThanSm ? '100%' : 369}
           className="overflow-y-auto"
         >
-          <ProductDetails product={productDetailsByID} />
+          <ProductDetails
+            product={productDetailsByID}
+            onCloseDrawer={handleCloseDrawer}
+          />
         </Drawer>
       )}
       {toggleEditProduct && (
@@ -200,7 +203,7 @@ const ProductListClient = ({
           open={toggleEditProduct}
           onClose={handleCloseDrawer}
           direction="right"
-          size={isGreaterThanLg ? 369 : 302}
+          size={isLessThanSm ? '100%' : 369}
         >
           <div className="p-8 bg-white dark:bg-gray-400 h-full max-w-full overflow-y-auto">
             <ProductForm

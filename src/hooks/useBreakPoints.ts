@@ -32,6 +32,7 @@ export const useBreakPoints = () => {
     isGreaterThanLg: windowWidth >= breakpointsNumber.lg,
     isGreaterThanXl: windowWidth >= breakpointsNumber.xl,
     isGreaterThan2Xl: windowWidth >= breakpointsNumber['2xl'],
+    isLessThanSm: windowWidth < breakpointsNumber.sm,
     isSmOrLess: windowWidth < breakpointsNumber.md,
     isMdOrLess: windowWidth < breakpointsNumber.lg,
     isLgOrLess: windowWidth < breakpointsNumber.xl,

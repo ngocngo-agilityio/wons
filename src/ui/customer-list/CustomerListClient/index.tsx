@@ -77,7 +77,7 @@ const CustomerListClient = ({
   const [customerForm, setCustomerForm] = useState<ICustomer>();
   const [idCustomer, setIdCustomer] = useState<number>();
   const [toggleForm, setToggleForm] = useState<boolean>(false);
-  const { isGreaterThanMd } = useBreakPoints();
+  const { isLessThanSm } = useBreakPoints();
 
   const searchParams = useSearchParams();
   const pathname = usePathname();
@@ -221,7 +221,7 @@ const CustomerListClient = ({
           open={toggleForm}
           onClose={handleCloseFormDrawer}
           direction="right"
-          size={isGreaterThanMd ? 450 : 375}
+          size={isLessThanSm ? '100%' : 369}
           className="overflow-auto"
         >
           <div className="p-5 relative bg-white dark:bg-gray-400 h-full max-w-full">
@@ -249,12 +249,13 @@ const CustomerListClient = ({
           open={toggleDetails}
           onClose={handleCloseDrawer}
           direction="right"
-          size={302}
+          size={isLessThanSm ? '100%' : 369}
           className="overflow-y-auto"
         >
           <CustomerDetails
             customer={customerDetails}
             isLoading={isLoadingDetails}
+            onCloseDrawer={handleCloseDrawer}
           />
         </Drawer>
       )}

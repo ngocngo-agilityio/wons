@@ -32,7 +32,7 @@ const CustomerDrawer = (): JSX.Element => {
   const [isAvatarDirty, setIsAvatarDirty] = useState(false);
   const [isPending, startTransition] = useTransition();
   const { showToast } = useToast();
-  const { isGreaterThanMd } = useBreakPoints();
+  const { isLessThanSm } = useBreakPoints();
 
   const lockScroll = useCallback(() => {
     document.body.style.overflow = 'hidden';
@@ -56,7 +56,6 @@ const CustomerDrawer = (): JSX.Element => {
     async (formData: ICustomer) => {
       if (avatarFile && isAvatarDirty) {
         const { url = '' } = await handleUpdateImage(avatarFile);
-
         formData.avatar = url;
       }
 
@@ -84,7 +83,6 @@ const CustomerDrawer = (): JSX.Element => {
     },
     [avatarFile, isAvatarDirty, showToast, unlockScroll],
   );
-
   const handleAvatarChange = useCallback((avatarFile: File) => {
     setAvatarFile(avatarFile);
     setIsAvatarDirty(true);
@@ -109,7 +107,7 @@ const CustomerDrawer = (): JSX.Element => {
           open={isDrawerOpen}
           onClose={handleCloseDrawer}
           direction="right"
-          size={isGreaterThanMd ? 450 : 375}
+          size={isLessThanSm ? '100%' : 369}
         >
           <div
             data-testid="customer-drawer"
