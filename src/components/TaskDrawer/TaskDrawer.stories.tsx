@@ -38,7 +38,7 @@ type Story = StoryObj<typeof TaskDrawer>;
 
 const BasicUsage = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const { isGreaterThanMd } = useBreakPoints();
+  const { isLessThanSm } = useBreakPoints();
 
   const handleOpenDrawer = () => {
     setIsDrawerOpen(true);
@@ -64,7 +64,7 @@ const BasicUsage = () => {
           open={isDrawerOpen}
           onClose={handleCloseDrawer}
           direction="right"
-          size={isGreaterThanMd ? 450 : 375}
+          size={isLessThanSm ? '100%' : 369}
         >
           <div className="p-8 bg-white dark:bg-gray-400 h-full max-w-full overflow-y-auto">
             <TaskForm
