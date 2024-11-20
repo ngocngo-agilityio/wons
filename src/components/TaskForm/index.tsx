@@ -175,16 +175,17 @@ const TaskForm = ({
       className="w-full max-w-2xl mx-auto mt-20"
       onSubmit={handleSubmit(saveData)}
     >
-      <section className="flex items-center gap-5">
+      <section className="grid grid-cols-[auto_1fr_60px] sm:flex items-center gap-5">
         <Button
           onClick={onCloseDrawer}
-          className="bg-transparent dark:bg-transparent text-gray-200 dark:text-gray-300 hover:data-[hover=true]:bg-transparent dark:hover:data-[hover=true]:bg-transparent"
+          className="float-left bg-transparent dark:bg-transparent text-gray-200 dark:text-gray-300 hover:data-[hover=true]:bg-transparent dark:hover:data-[hover=true]:bg-transparent"
         >
           <GrPrevious size={20} />
         </Button>
+
         <Heading
           title={previewData ? 'Update Task' : 'Add a New Task'}
-          className="text-center"
+          className="col-start-2 col-end-3 text-center"
         />
       </section>
 

@@ -58,7 +58,7 @@ const TaskCard = ({ index, task, isAdmin }: TTaskCardProps) => {
 
   const { showToast } = useToast();
   const [isPending, startTransition] = useTransition();
-  const { isGreaterThanMd } = useBreakPoints();
+  const { isLessThanSm } = useBreakPoints();
 
   const { id, attributes } = task ?? {};
   const {
@@ -116,7 +116,7 @@ const TaskCard = ({ index, task, isAdmin }: TTaskCardProps) => {
     // If images exist and has exactly two items
     if (hasTwoImages)
       return (
-        <div className="flex justify-between">
+        <div className="flex gap-[0_10px] 2xl:gap-0 lg:justify-around">
           {images.map((image, indexImage) => (
             <div
               className="w-[107px] h-[90px] relative"
@@ -126,7 +126,7 @@ const TaskCard = ({ index, task, isAdmin }: TTaskCardProps) => {
                 fill
                 alt={title}
                 src={image}
-                className="rounded-[10px] object-cover"
+                className="rounded-10 object-cover"
               />
             </div>
           ))}
@@ -140,7 +140,7 @@ const TaskCard = ({ index, task, isAdmin }: TTaskCardProps) => {
           alt={title}
           src={images[0]}
           fill
-          className="object-cover"
+          className="rounded-10 object-cover"
         />
       </div>
     );
@@ -289,7 +289,7 @@ const TaskCard = ({ index, task, isAdmin }: TTaskCardProps) => {
                 open={isDrawerOpen}
                 onClose={handleCloseFormModal}
                 direction="right"
-                size={isGreaterThanMd ? 450 : 375}
+                size={isLessThanSm ? '100%' : 369}
               >
                 <div className="p-8 bg-white dark:bg-gray-400 h-full max-w-full overflow-y-auto">
                   <TaskForm

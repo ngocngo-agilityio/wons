@@ -3,18 +3,21 @@ import isEqual from 'react-fast-compare';
 
 // Types
 import { TProductInvoiceResponse } from '@/types';
-
 // Utils
 import { formatPrice, formatTotalAmount } from '@/utils';
 
+// Icons
+import { GrPrevious } from 'react-icons/gr';
+
 // Components
-import { ImageFallback, Text } from '@/components';
+import { ImageFallback, Text, Button } from '@/components';
 
 interface IProductDetailsProps {
   product: TProductInvoiceResponse;
+  onCloseDrawer?: () => void;
 }
 
-const ProductDetails = ({ product }: IProductDetailsProps) => {
+const ProductDetails = ({ product, onCloseDrawer }: IProductDetailsProps) => {
   const {
     quantity = 0,
     price = 0,
@@ -32,7 +35,15 @@ const ProductDetails = ({ product }: IProductDetailsProps) => {
   } = product?.attributes ?? {};
 
   return (
-    <div className="min-h-full base:w-[302px] lg:w-[369px] max-w-[369px] bg-white dark:bg-gray-400 py-[62px] px-6">
+    <div className="min-h-full bg-white dark:bg-gray-400 py-[62px] px-6">
+      <Button
+        data-testid="close-product-form"
+        onClick={onCloseDrawer}
+        className="p-2 bg-transparent dark:bg-transparent text-gray-200 dark:text-gray-300 hover:bg-transparent dark:hover:bg-transparent"
+      >
+        <GrPrevious size={20} />
+      </Button>
+
       <div className="flex flex-col items-center gap-4 border-b-1 border-blue-800/10 dark:border-white/10 pb-7.5">
         <div className="relative w-28 h-28">
           <ImageFallback
@@ -48,6 +59,7 @@ const ProductDetails = ({ product }: IProductDetailsProps) => {
           <Text text={brand} size="md" />
         </div>
       </div>
+
       <div className="flex flex-col gap-2.5 mt-10">
         <Text
           text="Information"

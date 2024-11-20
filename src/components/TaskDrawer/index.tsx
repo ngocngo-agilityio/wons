@@ -38,7 +38,7 @@ const TaskDrawer = ({ isAdmin }: TaskDrawerProps): JSX.Element => {
   const [isAvatarDirty, setIsAvatarDirty] = useState(false);
   const [isPending, startTransition] = useTransition();
   const { showToast } = useToast();
-  const { isGreaterThanMd } = useBreakPoints();
+  const { isLessThanSm } = useBreakPoints();
 
   const {
     SUCCESS: { CREATE_TASK },
@@ -124,7 +124,7 @@ const TaskDrawer = ({ isAdmin }: TaskDrawerProps): JSX.Element => {
               open={isDrawerOpen}
               onClose={handleCloseDrawer}
               direction="right"
-              size={isGreaterThanMd ? 450 : 375}
+              size={isLessThanSm ? '100%' : 369}
             >
               <div className="p-8 bg-white dark:bg-gray-400 h-full max-w-full overflow-y-auto">
                 <TaskForm

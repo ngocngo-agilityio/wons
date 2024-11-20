@@ -88,7 +88,6 @@ const ProductForm = ({
     const hasError = errors[field as keyof Partial<IProductDetail>];
     return isDirty && !hasError;
   });
-
   const isDisableSubmit = previewData
     ? !(enableSubmit || !getDirtyState(defaultValues ?? {}, watch()))
     : !allFieldsFilled;
@@ -113,7 +112,7 @@ const ProductForm = ({
       className="w-full max-w-2xl mx-auto mt-20"
       onSubmit={handleSubmit(saveData)}
     >
-      <section className="flex items-center">
+      <section className="grid grid-cols-[auto_1fr_36px] sm:flex items-center">
         <Button
           data-testid="close-product-form"
           onClick={onCloseDrawer}
@@ -121,9 +120,10 @@ const ProductForm = ({
         >
           <GrPrevious size={20} />
         </Button>
+
         <Heading
           title={previewData ? 'Update Product' : 'Add a New Product'}
-          className="text-center whitespace-nowrap w-full"
+          className="col-start-2 col-end-3 text-center whitespace-nowrap w-full"
         />
       </section>
 
@@ -147,7 +147,6 @@ const ProductForm = ({
           )}
         />
       </div>
-
       <div className="flex flex-col gap-[7px_0] mt-[30px]">
         <Controller
           name="title"
