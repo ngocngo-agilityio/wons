@@ -32,33 +32,34 @@ const AvatarUploadMultiple = ({
 
   const uploadMultipleFile = (event: ChangeEvent<HTMLInputElement>) => {
     const values = Array.from(event.target.files ?? []);
-    const allSelectedFiles = [...selectedFiles, ...values];
 
     const {
-      ERROR: { MAX_IMAGE, UPLOAD_IMAGE_SIZE },
+      ERROR: { MAX_IMAGE },
     } = MESSAGES;
-    const currentPreviewFilesLength = currentPreviewFiles.length;
 
-    if (currentPreviewFilesLength > 2) {
+    if (currentPreviewFiles.length + values.length > 2) {
       setErrorMessage(MAX_IMAGE);
       return;
     }
 
-    if (currentPreviewFilesLength === 1 && values.length > 2) {
-      setErrorMessage(UPLOAD_IMAGE_SIZE);
-      return;
-    }
-
     setErrorMessage('');
-    setSelectedFiles(allSelectedFiles);
 
-    const newPreviewFiles: string[] = [
-      ...currentPreviewFiles,
-      ...values.map((value) => URL.createObjectURL(value)),
-    ];
+    setSelectedFiles((prevSelectedFiles) => {
+      const updatedSelectedFiles = [...prevSelectedFiles, ...values];
+      onFileChange(
+        [
+          ...currentPreviewFiles,
+          ...values.map((file) => URL.createObjectURL(file)),
+        ],
+        updatedSelectedFiles,
+      );
+      return updatedSelectedFiles;
+    });
 
-    setCurrentPreviewFiles(newPreviewFiles);
-    onFileChange(newPreviewFiles, allSelectedFiles);
+    setCurrentPreviewFiles((prevPreviewFiles) => [
+      ...prevPreviewFiles,
+      ...values.map((file) => URL.createObjectURL(file)),
+    ]);
   };
 
   const clickInput = (event: MouseEvent<HTMLInputElement>) => {
@@ -66,10 +67,15 @@ const AvatarUploadMultiple = ({
   };
 
   const deleteFile = (indexFile: number) => {
-    const updatedPreviewFiles = filterDataByIndex(previewFiles, indexFile);
+    const updatedPreviewFiles = filterDataByIndex(
+      currentPreviewFiles,
+      indexFile,
+    );
     const updatedSelectedFiles = filterDataByIndex(selectedFiles, indexFile);
 
     setCurrentPreviewFiles(updatedPreviewFiles);
+    setSelectedFiles(updatedSelectedFiles);
+
     onFileChange(updatedPreviewFiles, updatedSelectedFiles);
   };
 

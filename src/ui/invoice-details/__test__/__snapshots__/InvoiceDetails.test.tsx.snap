@@ -469,12 +469,12 @@ exports[`Invoice details should match snapshot 1`] = `
           class="flex flex-col"
         >
           <p
-            class="font-dm-sans text-blue-800 dark:text-white text-4xs text-gray-200 uppercase"
+            class="font-dm-sans text-blue-800 dark:text-white text-2xs text-gray-200 uppercase"
           >
             Your company
           </p>
           <p
-            class="font-dm-sans text-blue-800 dark:text-white text-4xs text-gray-200"
+            class="font-dm-sans text-blue-800 dark:text-white text-2xs text-gray-200"
           >
             1331 Hart Ridge Road, 48436 Gaines, MI
           </p>
@@ -486,7 +486,7 @@ exports[`Invoice details should match snapshot 1`] = `
             class="flex items-center gap-2.5"
           >
             <p
-              class="font-dm-sans text-blue-500 dark:text-purple-600 text-4xs"
+              class="font-dm-sans text-blue-500 dark:text-purple-600 text-2xs"
             >
               @
             </p>
@@ -494,7 +494,7 @@ exports[`Invoice details should match snapshot 1`] = `
               href="mailto:your.mail@gmail.com"
             >
               <p
-                class="font-dm-sans text-blue-800 dark:text-white text-4xs text-gray-200"
+                class="font-dm-sans text-blue-800 dark:text-white text-2xs text-gray-200"
               >
                 your.mail@gmail.com
               </p>
@@ -504,7 +504,7 @@ exports[`Invoice details should match snapshot 1`] = `
             class="flex items-center gap-2.5"
           >
             <p
-              class="font-dm-sans text-blue-500 dark:text-purple-600 text-4xs"
+              class="font-dm-sans text-blue-500 dark:text-purple-600 text-2xs"
             >
               m
             </p>
@@ -512,7 +512,7 @@ exports[`Invoice details should match snapshot 1`] = `
               href="tel:+386 989 271 3115"
             >
               <p
-                class="font-dm-sans text-blue-800 dark:text-white text-4xs text-gray-200"
+                class="font-dm-sans text-blue-800 dark:text-white text-2xs text-gray-200"
               >
                 +386 989 271 3115
               </p>
@@ -523,12 +523,12 @@ exports[`Invoice details should match snapshot 1`] = `
           class="flex lg:flex-col lg:items-end text-gray-200 text-[6px] leading-[10px]"
         >
           <p
-            class="font-dm-sans text-blue-800 dark:text-white text-4xs text-gray-200"
+            class="font-dm-sans text-blue-800 dark:text-white text-2xs text-gray-200"
           >
             The company is registered in the
           </p>
           <p
-            class="font-dm-sans text-blue-800 dark:text-white text-4xs text-gray-200"
+            class="font-dm-sans text-blue-800 dark:text-white text-2xs text-gray-200"
           >
              business register under no. 87650000
           </p>

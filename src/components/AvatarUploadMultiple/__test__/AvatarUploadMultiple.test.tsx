@@ -83,9 +83,7 @@ describe('AvatarUploadMultiple Component', () => {
 
     fireEvent.change(input, { target: { files: [file1, file2, file3] } });
 
-    expect(
-      screen.getByText(MESSAGES.ERROR.UPLOAD_IMAGE_SIZE),
-    ).toBeInTheDocument();
+    expect(screen.getByText(MESSAGES.ERROR.MAX_IMAGE)).toBeInTheDocument();
     expect(mockOnFileChange).not.toHaveBeenCalled();
   });
 
