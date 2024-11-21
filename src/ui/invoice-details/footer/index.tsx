@@ -15,12 +15,12 @@ const InvoiceDetailsFooter = () => {
       <div className="flex flex-col">
         <Text
           text="Your company"
-          size="4xs"
+          size="2xs"
           className="text-gray-200 uppercase"
         />
         <Text
           text="1331 Hart Ridge Road, 48436 Gaines, MI"
-          size="4xs"
+          size="2xs"
           className="text-gray-200"
         />
       </div>
@@ -29,21 +29,21 @@ const InvoiceDetailsFooter = () => {
         <div className="flex items-center gap-2.5">
           <Text
             text="@"
-            size="4xs"
+            size="2xs"
             textColor="text-blue-500 dark:text-purple-600"
           />
           <Link href={`mailto:${EMAIL}`}>
-            <Text text={EMAIL} size="4xs" className="text-gray-200" />
+            <Text text={EMAIL} size="2xs" className="text-gray-200" />
           </Link>
         </div>
         <div className="flex items-center gap-2.5">
           <Text
             text="m"
-            size="4xs"
+            size="2xs"
             textColor="text-blue-500 dark:text-purple-600"
           />
           <Link as={`tel:${PHONE}`} href={`tel:${PHONE}`}>
-            <Text text={PHONE} size="4xs" className="text-gray-200" />
+            <Text text={PHONE} size="2xs" className="text-gray-200" />
           </Link>
         </div>
       </div>
@@ -51,12 +51,12 @@ const InvoiceDetailsFooter = () => {
       <div className="flex lg:flex-col lg:items-end text-gray-200 text-[6px] leading-[10px]">
         <Text
           text="The company is registered in the"
-          size="4xs"
+          size="2xs"
           className="text-gray-200"
         />
         <Text
           text="&nbsp;business register under no. 87650000"
-          size="4xs"
+          size="2xs"
           className="text-gray-200"
         />
       </div>
