@@ -5,7 +5,7 @@ export const colors = {
     500: '#d50101', // dark red
   },
   blue: {
-    200: '#A6A2F1',
+    200: '#a6a2f1',
     300: '#364152',
     400: '#515c6a', // light blue
     500: '#3a36db', // bright blue
