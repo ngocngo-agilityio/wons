@@ -121,7 +121,7 @@ const CustomerListClient = ({
       const { error } = res || {};
 
       showToast({
-        description: error || DELETE_CUSTOMER,
+        description: error ?? DELETE_CUSTOMER,
         status: error ? ERROR : SUCCESS,
       });
     },
@@ -192,7 +192,7 @@ const CustomerListClient = ({
 
       setToggleForm(false);
     },
-    [idCustomer, showToast, avatarFile, isAvatarDirty],
+    [avatarFile, isAvatarDirty, idCustomer, showToast],
   );
 
   useEffect(() => {

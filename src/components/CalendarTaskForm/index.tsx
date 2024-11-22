@@ -158,10 +158,7 @@ const CalendarTaskForm = ({
           )}
         />
 
-        <div
-          className="flex mt-[25px] gap-[0_15px]"
-          onClick={toggleDateTimePicker}
-        >
+        <div className="flex mt-[25px] gap-[0_15px]">
           <Button
             className="bg-pink-50 dark:bg-pink-600 text-pink-500 dark:text-pink-500 border-none rounded-full w-10 h-10 flex justify-center items-center cursor-pointer px-0"
             data-testid="time-button"

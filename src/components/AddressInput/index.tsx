@@ -15,6 +15,8 @@ import { HiLocationMarker } from 'react-icons/hi';
 
 // Components
 import { Input, LocationSuggestion } from '@/components';
+
+// Services
 import { getLocationSuggestion } from '@/services';
 
 interface AddressInputProps extends Omit<InputProps, 'onChange'> {
