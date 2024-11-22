@@ -42,7 +42,7 @@ const SearchInput = ({ ...props }: InputProps) => {
   const handleClearSearchInput = useCallback(() => {
     params.delete(QUERY);
     replace(`${pathname}?${params.toString()}`);
-  }, [params, pathname]);
+  }, [params, pathname, replace]);
 
   return (
     <Input

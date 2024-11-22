@@ -145,7 +145,7 @@ const TableCustom = <T extends { id: string }>({
           } = columnConfig;
 
           const handleSort = () => {
-            onSort?.(value as string);
+            onSort?.(value);
           };
 
           return (

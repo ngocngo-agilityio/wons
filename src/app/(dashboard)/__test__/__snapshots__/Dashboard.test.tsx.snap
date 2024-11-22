@@ -23,8 +23,9 @@ exports[`dashboard page should match snapshot 1`] = `
         <div
           class="flex justify-between md:gap-[15.85px]"
         >
-          <div
-            class="flex max-w-36 w-36 relative bg-white cursor-pointer dark:bg-gray-400 rounded-[5.28px] h-[42.25px] items-center"
+          <button
+            class="z-0 group box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover border-transparent text-blue-800 dark:text-white hover:bg-gray-200/50 dark:hover:bg-gray-900 pb-2.5 pt-[11px] text-md border-[1px] min-w-max flex max-w-36 w-36 relative bg-white cursor-pointer dark:bg-gray-400 rounded-[5.28px] h-[42.25px] items-center px-0 justify-start gap-6"
+            type="button"
           >
             <p
               class="text-[15.02px] ml-[17.96px]"
@@ -32,31 +33,39 @@ exports[`dashboard page should match snapshot 1`] = `
               16-11-2024
             </p>
             <div
-              class="absolute flex items-center h-full right-0 px-2"
+              class="flex items-center"
             >
-              <button
-                aria-label="start date"
-                class="flex h-[15px] w-[15px] justify-center items-center rounded-full hover:bg-gray-100"
+              <p
+                class="font-dm-sans text-blue-800 dark:text-white text-md text-[15.02px] ml-[17.96px]"
               >
-                <svg
-                  class="w-[8.43px]"
-                  fill="currentColor"
-                  height="1em"
-                  stroke="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 512 512"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                  />
-                </svg>
-              </button>
+                16-11-2024
+              </p>
             </div>
-          </div>
-          <div
-            class="flex max-w-36 w-36 relative bg-white cursor-pointer dark:bg-gray-400 rounded-[5.28px] h-[42.25px] items-center"
+            <div
+              aria-hidden="true"
+              class="flex items-center justify-center w-[15px] h-[15px]  rounded-full hover:bg-gray-100"
+              focusable="false"
+              tabindex="-1"
+            >
+              <svg
+                class="w-[8.43px] h-[8.43px]"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                />
+              </svg>
+            </div>
+          </button>
+          <button
+            class="z-0 group box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover border-transparent text-blue-800 dark:text-white hover:bg-gray-200/50 dark:hover:bg-gray-900 pb-2.5 pt-[11px] text-md border-[1px] min-w-max flex max-w-36 w-36 relative bg-white cursor-pointer dark:bg-gray-400 rounded-[5.28px] h-[42.25px] items-center px-0 justify-start gap-6"
+            type="button"
           >
             <p
               class="text-[15.02px] ml-[17.96px]"
@@ -64,29 +73,36 @@ exports[`dashboard page should match snapshot 1`] = `
               22-11-2024
             </p>
             <div
-              class="absolute flex items-center h-full right-0 px-2"
+              class="flex items-center"
             >
-              <button
-                aria-label="end date"
-                class="flex h-[15px] w-[15px] justify-center items-center rounded-full hover:bg-gray-100"
+              <p
+                class="font-dm-sans text-blue-800 dark:text-white text-md text-[15.02px] ml-[17.96px]"
               >
-                <svg
-                  class="w-[8.43px]"
-                  fill="currentColor"
-                  height="1em"
-                  stroke="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 512 512"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                  />
-                </svg>
-              </button>
+                22-11-2024
+              </p>
             </div>
-          </div>
+            <div
+              aria-hidden="true"
+              class="flex items-center justify-center w-[15px] h-[15px]  rounded-full hover:bg-gray-100"
+              focusable="false"
+              tabindex="-1"
+            >
+              <svg
+                class="w-[8.43px] h-[8.43px]"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                />
+              </svg>
+            </div>
+          </button>
         </div>
         <div
           class="absolute z-[-1] w-full top-0"

@@ -34,6 +34,9 @@ import { DateRangeState } from '@/types';
 // Icons
 import { FaChevronDown } from 'react-icons/fa6';
 
+// Components
+import { Text, Button } from '@/components';
+
 interface DateRangePickerBaseProps extends DateRangePickerProps {}
 
 const DateRangePicker = ({
@@ -102,28 +105,26 @@ const DateRangePicker = ({
       <div className="flex justify-between md:gap-[15.85px]">
         {dateRange &&
           Object.keys(dateRange).map((key) => (
-            <div
+            <Button
               key={key}
-              className="flex max-w-36 w-36 relative bg-white cursor-pointer dark:bg-gray-400 rounded-[5.28px] h-[42.25px] items-center"
+              className="flex max-w-36 w-36 relative bg-white cursor-pointer dark:bg-gray-400 rounded-[5.28px] h-[42.25px] items-center px-0 justify-start gap-6"
               onClick={handleOpenDatePicker}
+              endContent={
+                <div className="flex items-center justify-center w-[15px] h-[15px]  rounded-full hover:bg-gray-100">
+                  <FaChevronDown className="w-[8.43px] h-[8.43px]" />
+                </div>
+              }
             >
-              <p className="text-[15.02px] ml-[17.96px]">
-                {formatDate(
+              <Text
+                text={formatDate(
                   dateRange?.[key as keyof typeof dateRange].toDate(
                     getLocalTimeZone(),
                   ),
                   DAYJS_PATTERN['DD-MM-YYYY'],
                 )}
-              </p>
-              <div className="absolute flex items-center h-full right-0 px-2">
-                <button
-                  className="flex h-[15px] w-[15px] justify-center items-center rounded-full hover:bg-gray-100"
-                  aria-label={`${key} date`}
-                >
-                  <FaChevronDown className="w-[8.43px]" />
-                </button>
-              </div>
-            </div>
+                className="text-[15.02px] ml-[17.96px]"
+              />
+            </Button>
           ))}
       </div>
       <div className="absolute z-[-1] w-full top-0">
