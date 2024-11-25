@@ -14,6 +14,10 @@ jest.mock('@/api', () => ({
   getInvoiceProducts: jest.fn(),
 }));
 
+jest.mock('react-scan', () => ({
+  scan: jest.fn(() => {}),
+}));
+
 describe('RecentServicesSection', () => {
   const renderUI = async () =>
     testLibJestUtils.render(

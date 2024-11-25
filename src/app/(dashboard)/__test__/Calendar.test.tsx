@@ -11,6 +11,10 @@ jest.mock('@/api', () => ({
   })),
 }));
 
+jest.mock('react-scan', () => ({
+  scan: jest.fn(() => {}),
+}));
+
 describe('Calendar page', () => {
   it('should match snapshot', async () => {
     const { container } = testLibJestUtils.render(<CalendarPage />);

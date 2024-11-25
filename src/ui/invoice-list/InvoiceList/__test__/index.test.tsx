@@ -15,6 +15,10 @@ jest.mock('@/api', () => ({
   getInvoices: jest.fn(),
 }));
 
+jest.mock('react-scan', () => ({
+  scan: jest.fn(() => {}),
+}));
+
 describe('InvoiceList section', () => {
   afterEach(() => {
     jest.clearAllMocks();

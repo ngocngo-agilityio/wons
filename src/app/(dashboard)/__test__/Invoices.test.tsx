@@ -8,6 +8,10 @@ jest.mock('@/layouts', () => ({
   DashBoardLayout: () => <div>DashBoardLayout</div>,
 }));
 
+jest.mock('react-scan', () => ({
+  scan: jest.fn(() => {}),
+}));
+
 describe('CustomerListPage render', () => {
   it('should render and match with snapshot', async () => {
     const { container } = testLibJestUtils.render(

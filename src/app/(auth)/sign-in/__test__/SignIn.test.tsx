@@ -10,6 +10,10 @@ jest.mock('next/navigation', () => ({
 
 const mockedUseRouter = useRouter as jest.Mock;
 
+jest.mock('react-scan', () => ({
+  scan: jest.fn(() => {}),
+}));
+
 describe('SignUpPage', () => {
   mockedUseRouter.mockReturnValue({
     pathname: '/',

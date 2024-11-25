@@ -1,5 +1,8 @@
 import ProductList from '..';
 
+jest.mock('react-scan', () => ({
+  scan: jest.fn(() => {}),
+}));
 describe('Product list', () => {
   it('should match snapshot', async () => {
     const { container } = testLibJestUtils.render(
