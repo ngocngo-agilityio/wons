@@ -8,6 +8,10 @@ jest.mock('next/navigation', () => ({
   notFound: jest.fn(),
 }));
 
+jest.mock('react-scan', () => ({
+  scan: jest.fn(() => {}),
+}));
+
 describe('CreateInvoice Page render', () => {
   it('should render and match with snapshot', async () => {
     const { container } = render(await CreateInvoicePage());

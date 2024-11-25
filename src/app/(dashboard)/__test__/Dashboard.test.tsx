@@ -4,6 +4,10 @@ import { MOCK_INVOICES, MOCK_PRODUCTS_WITH_STRAPI_MODEL } from '@/mocks';
 // Page
 import DashboardPage from '../page';
 
+jest.mock('react-scan', () => ({
+  scan: jest.fn(() => {}),
+}));
+
 jest.mock('@/api', () => ({
   ...jest.requireActual('@/api'),
   getInvoiceProducts: jest.fn(() => ({

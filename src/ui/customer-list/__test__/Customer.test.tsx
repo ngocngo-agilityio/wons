@@ -15,6 +15,10 @@ jest.mock('@/api', () => ({
   getCustomers: jest.fn(),
 }));
 
+jest.mock('react-scan', () => ({
+  scan: jest.fn(() => {}),
+}));
+
 async function resolvedComponent<T>(Component: FunctionComponent<T>, props: T) {
   const ComponentResolved = await Component(props);
   return () => ComponentResolved;

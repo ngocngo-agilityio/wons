@@ -11,6 +11,10 @@ import {
 // UI
 import { EditInvoice } from '@/ui';
 
+jest.mock('react-scan', () => ({
+  scan: jest.fn(() => {}),
+}));
+
 jest.mock('@/api', () => ({
   ...jest.requireActual('@/api'),
   getProducts: jest.fn(),

@@ -14,6 +14,10 @@ jest.mock('@/services', () => ({
   },
 }));
 
+jest.mock('react-scan', () => ({
+  scan: jest.fn(() => {}),
+}));
+
 describe('InvoiceDetails', () => {
   afterEach(() => {
     jest.clearAllMocks();
